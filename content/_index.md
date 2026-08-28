@@ -3,7 +3,7 @@ title: "Home"
 description: "Piano & synth musician, MIDI specialist, and online course creator"
 ---
 
-## Hi, I'm Andy
+## Hi, I'm Andy Montgomery
 
 I'm a pianist and synthesizer player with around 30 years of hands-on MIDI experience. These days I split my time between creating original instrumental music and teaching others how to do the same — whether that's improvising freely at the piano or building a MIDI-powered home studio from scratch.
 
