@@ -3,16 +3,12 @@ title: "Home"
 description: "Piano & synth musician, MIDI specialist, and online course creator"
 ---
 
-## Hi, I'm Andy Montgomery
+## Learn to Play & Improvise — Without the Sheet Music
 
-I'm a pianist and synthesizer player with around 30 years of hands-on MIDI experience. These days I split my time between creating original instrumental music and teaching others how to do the same — whether that's improvising freely at the piano or building a MIDI-powered home studio from scratch.
+Ever wish you could just sit down at the piano and play whatever's in your head — no sheet music, no memorized routine, just you and the keys? That's exactly what the **Piano Improvisation Course 2026** teaches.
 
-### What I teach
+Created together with my brother John, this course breaks improvisation down into clear, practical steps — so instead of feeling stuck staring at a blank keyboard, you'll build the confidence to explore chords, melodies, and your own musical ideas freely.
 
-**[Piano Improvisation Course](/courses/piano-improvisation/)** — co-created with my brother John, this course helps players of all levels learn to improvise confidently at the piano.
+Whether you're a complete beginner or already play but feel boxed in by written music, this course meets you where you are and gives you a real path to musical freedom at the piano.
 
-**MIDI for Home Studios** *(coming soon)* — a practical, beginner-to-intermediate course on setting up and using MIDI in a small home recording setup — covering everything from basic connections to hardware sync and CC automation.
-
-### Follow along
-
-I share instrumental pieces and behind-the-scenes looks at my MIDI setup on YouTube — new content posted regularly.
+**[Enroll in the Piano Improvisation Course →](https://www.udemy.com/course/modern-piano-improvisation-2026/?referralCode=E278D68B938351D04AD6)**
