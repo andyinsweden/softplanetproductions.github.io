@@ -1,9 +1,4 @@
 [[main]]
-  name = "Home"
-  pageRef = "/"
-  weight = 10
-
-[[main]]
   name = "Piano Improvisation Course"
   pageRef = "/courses/piano-improvisation"
   weight = 20

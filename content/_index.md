@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: ""
 description: "Piano & synth musician, MIDI specialist, and online course creator"
 ---
 
