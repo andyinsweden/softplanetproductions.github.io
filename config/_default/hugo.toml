@@ -3,6 +3,7 @@
 # https://jpanther.github.io/congo/docs/getting-started/
 
 theme = "congo"
+title = "Softplanet Productions"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
