@@ -3,8 +3,8 @@ label = "English (Australia)"
 direction = "ltr"
 weight = 1
 
-title = "Congo"
-copyright = "&copy; 2024 Congo contributors"
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
 
 [params]
   dateFormat = "2 January 2006"
