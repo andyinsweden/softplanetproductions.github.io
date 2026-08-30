@@ -26,4 +26,5 @@ This service is available to **UK-based schools, colleges, and educational insti
 
 Ready to discuss licensing for your school or college? Contact us directly to talk through your requirements and get a tailored quote.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet80y3qktK3Kx-vdTzeHHoMSnD7-uHmNCg_EKTvHphk7t1Bg/viewform?embedded=true" width="600" height="1281" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe data-tally-src="https://tally.so/embed/Y5APVJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="783" frameborder="0" marginheight="0" marginwidth="0" title="Sibelius Licensing Enquiry"></iframe>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
