@@ -8,7 +8,8 @@
   pageRef = "/courses/midi"
   weight = 30
 
-  [[main]] name = "Sibelius Site Licenses" 
+  [[main]] 
+  name = "Sibelius Site Licenses" 
   pageRef = "/services/sibelius-site-licenses" 
   weight = 40
 
