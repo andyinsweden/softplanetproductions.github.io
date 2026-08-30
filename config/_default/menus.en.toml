@@ -1,24 +1,24 @@
 [[main]]
   name = "MIDI Course"
-  pageRef = "/courses/midi-home-studio"
+  pageRef = "courses/midi-home-studio"
   weight = 20
 
 [[main]]
   name = "Piano Improvisation Course"
-  pageRef = "/courses/piano-improvisation"
+  pageRef = "courses/piano-improvisation"
   weight = 30
 
 [[main]] 
   name = "Sibelius Site Licenses" 
-  pageRef = "/services/sibelius-site-licenses" 
+  pageRef = "services/sibelius-site-licenses" 
   weight = 40
 
  [[main]]
   name = "Piano Scores" 
-  pageRef = "/piano-scores" 
+  pageRef = "piano-scores" 
   weight = 45 
 
 [[main]]
   name = "Tutorials"
-  pageRef = "/posts"
+  pageRef = "posts"
   weight = 50
