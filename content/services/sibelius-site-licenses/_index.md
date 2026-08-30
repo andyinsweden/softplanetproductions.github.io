@@ -26,4 +26,4 @@ This service is available to **UK-based schools, colleges, and educational insti
 
 Ready to discuss licensing for your school or college? Contact us directly to talk through your requirements and get a tailored quote.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet80y3qktK3Kx-vdTzeHHoMSnD7-uHmNCg_EKTvHphk7t1Bg/viewform?embedded=true" width="640" height="1281" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet80y3qktK3Kx-vdTzeHHoMSnD7-uHmNCg_EKTvHphk7t1Bg/viewform?embedded=true" width="600" height="1281" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
