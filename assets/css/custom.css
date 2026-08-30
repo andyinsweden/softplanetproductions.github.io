@@ -21,3 +21,12 @@ h1 { font-family: 'Roboto', sans-serif !important;
         font-weight: 200 !important; 
         font-size: 1.5rem !important; } 
         .home-narrow { max-width: 768px !important; margin: 0 auto !important; } 
+
+        :root,
+:root[data-scheme="light"] {
+  --color-neutral-50: 245 245 243; /* F5F5F3 in RGB, space-separated for Tailwind opacity support */
+}
+
+body {
+  background-color: #F5F5F3; !important;
+}
