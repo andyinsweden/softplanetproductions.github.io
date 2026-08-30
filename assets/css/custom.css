@@ -13,5 +13,5 @@ h1 { font-family: 'Roboto', sans-serif !important;
     box-sizing: border-box !important; 
     padding-top: 5.5rem !important; 
     padding-bottom: 5.5rem !important; 
-    padding-left: max(1.5rem, calc((100vw - 48rem) / 2)) !important; 
-    padding-right: max(1.5rem, calc((100vw - 48rem) / 2)) !important; }
+    padding-left: max(1.5rem, calc((100vw - 72rem) / 2)) !important; 
+    padding-right: max(1.5rem, calc((100vw - 72rem) / 2)) !important; }
