@@ -15,4 +15,8 @@ h1 { font-family: 'Roboto', sans-serif !important;
     padding-bottom: 5.5rem !important; 
     padding-left: 1.5rem !important; 
     padding-right: 1.5rem !important; }
-    @media (min-width: 40rem) { h1 { padding-left: 3.5rem !important; padding-right: 3.5rem !important; } } @media (min-width: 48rem) { h1 { padding-left: 6rem !important; padding-right: 6rem !important; } } @media (min-width: 64rem) { h1 { padding-left: 8rem !important; padding-right: 8rem !important; } } @media (min-width: 80rem) { h1 { padding-left: max(8rem, calc((100vw - 80rem) / 2 + 8rem)) !important; padding-right: max(8rem, calc((100vw - 80rem) / 2 + 8rem)) !important; } } 
+    @media (min-width: 40rem) { h1 { padding-left: 3.5rem !important; padding-right: 3.5rem !important; } } @media (min-width: 48rem) { h1 { padding-left: 6rem !important; padding-right: 6rem !important; } } @media (min-width: 64rem) { h1 { padding-left: 8rem !important; padding-right: 8rem !important; } } @media (min-width: 80rem) { h1 { padding-left: max(8rem, calc((100vw - 80rem) / 2 + 8rem)) !important; padding-right: max(8rem, calc((100vw - 80rem) / 2 + 8rem)) !important; } }
+    
+    h2 { font-family: roboto, sans-serif !important; 
+        font-weight: 200 !important; 
+        font-size: 1.5rem !important; } 
