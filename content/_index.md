@@ -1,7 +1,8 @@
 ---
 title: "Softplanet Productions | Musicals, Piano Course & CDs"
-description: "Original musicals, a piano improvisation course, audio CDs, and Sibelius site licensing from brothers John & Andy Montgomery at Softplanet Productions."
+description: "Original musicals, a piano improvisation course, audio CDs, and Sibelius site licensing from brothers John & Andy Montgomery at Softplanet Productions."  
 ---
+<div class="home-narrow">
 
 John & Andy Montgomery | Softplanet Productions
 
@@ -21,3 +22,4 @@ Have questions about stage rights, Sibelius licensing, or CD orders? Reach out d
 Phone: 01334 461244
 
 Shipping: Worldwide delivery for CDs, script packages, and educational media.
+</div>
