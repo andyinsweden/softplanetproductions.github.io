@@ -13,5 +13,6 @@ h1 { font-family: 'Roboto', sans-serif !important;
     box-sizing: border-box !important; 
     padding-top: 5.5rem !important; 
     padding-bottom: 5.5rem !important; 
-    padding-left: max(1.5rem, calc((100vw - 72rem) / 2)) !important; 
-    padding-right: max(1.5rem, calc((100vw - 72rem) / 2)) !important; }
+    padding-left: 1.5rem !important; 
+    padding-right: 1.5rem !important; }
+    @media (min-width: 40rem) { h1 { padding-left: 3.5rem !important; padding-right: 3.5rem !important; } } @media (min-width: 48rem) { h1 { padding-left: 6rem !important; padding-right: 6rem !important; } } @media (min-width: 64rem) { h1 { padding-left: 8rem !important; padding-right: 8rem !important; } } @media (min-width: 80rem) { h1 { padding-left: max(8rem, calc((100vw - 80rem) / 2 + 8rem)) !important; padding-right: max(8rem, calc((100vw - 80rem) / 2 + 8rem)) !important; } } 
