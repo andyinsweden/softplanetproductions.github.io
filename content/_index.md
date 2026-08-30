@@ -1,14 +1,18 @@
----
-title: ""
-description: "Piano & synth musician, MIDI specialist, and online course creator"
----
+John & Andy Montgomery | Softplanet Productions
 
-## Learn to Play & Improvise — Without the Sheet Music
+Welcome to Softplanet. We are John and Andy Montgomery—brothers, professional musicians, and creators of original musical theater, original audio CDs, and practical music education.
 
-Ever wish you could just sit down at the piano and play whatever's in your head — no sheet music, no memorized routine, just you and the keys? That's exactly what the **Piano Improvisation Course 2026** teaches.
+Original Musicals: Complete production packages—scripts, lead sheets, backing tracks, and performance licenses—for schools and theater groups.
 
-Created together with my brother John, this course breaks improvisation down into clear, practical steps — so instead of feeling stuck staring at a blank keyboard, you'll build the confidence to explore chords, melodies, and your own musical ideas freely.
+Piano & Improvisation Course: An intuitive, play-along approach to mastering the piano through rhythm, ear training, and immediate performance.
 
-Whether you're a complete beginner or already play but feel boxed in by written music, this course meets you where you are and gives you a real path to musical freedom at the piano.
+Original Audio CDs: Original CD albums created and produced by John Montgomery.
 
-**[Enroll in the Piano Improvisation Course →](https://www.udemy.com/course/modern-piano-improvisation-2026/?referralCode=E278D68B938351D04AD6)**
+Sibelius Site Licenses & Support: Official site licensing, multi-seat arrangements, and tailored educational discounts for schools and colleges.
+
+Contact & Licensing
+Have questions about stage rights, Sibelius licensing, or CD orders? Reach out directly.
+
+Phone: 01334 461244
+
+Shipping: Worldwide delivery for CDs, script packages, and educational media.
