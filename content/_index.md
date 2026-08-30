@@ -1,3 +1,8 @@
+---
+title: "Softplanet Productions | Musicals, Piano Course & CDs"
+description: "Original musicals, a piano improvisation course, audio CDs, and Sibelius site licensing from brothers John & Andy Montgomery at Softplanet Productions."
+---
+
 John & Andy Montgomery | Softplanet Productions
 
 Welcome to Softplanet. We are John and Andy Montgomery—brothers, professional musicians, and creators of original musical theater, original audio CDs, and practical music education.
