@@ -3,7 +3,7 @@ title: "Piano Improvisation Course 2026"
 description: "Learn to play and improvise on piano without sheet music" 
 ---
 
-## Learn to Play & Improvise — Without the Sheet Music
+## Learn to Play & Improvise — Without Sheet Music
 
 Ever wish you could just sit down at the piano and play whatever's in your head — no sheet music, no memorized routine, just you and the keys? That's exactly what the **Piano Improvisation Course 2026** teaches.
 
