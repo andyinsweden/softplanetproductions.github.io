@@ -19,6 +19,6 @@
   weight = 45 
 
 [[main]]
-  name = "Tutorials"
-  pageRef = "posts"
-  weight = 50
+  name = "Tutorials" 
+  pageRef = "tutorials"
+   weight = 50 
