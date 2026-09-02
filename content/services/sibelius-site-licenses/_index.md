@@ -6,7 +6,7 @@ description: "Official Sibelius site licensing, multi-seat arrangements, and tai
 ## UK Sibelius Site Licenses & Educational Support
 
 Sibelius is the industry-standard music notation software used in schools, colleges, and universities across the UK — and getting the right licensing in place shouldn't be complicated. Softplanet Productions provides official Sibelius site licenses, multi-seat arrangements, and dedicated educational support, tailored specifically to the needs of UK schools and colleges.
-![Sibelius site licensing for UK schools and colleges](sibelius-site-licenses-uk.avif)
+![Sibelius site licensing for UK schools and colleges](sibelius-site-licenses-uk.jpg)
 
 ### Why choose a site license?
 

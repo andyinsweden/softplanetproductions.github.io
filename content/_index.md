@@ -4,7 +4,7 @@ description: "Original musicals, a piano improvisation course, audio CDs, and Si
 ---
 <div class="home-narrow">
 
-John & Andy Montgomery | Softplanet Productions
+John & Andy Montgomery | SOFTPLANET Productions
 
 Welcome to Softplanet. We are John and Andy Montgomery—brothers, professional musicians, and creators of original musical theater, original audio CDs, and practical music education.
 
