@@ -55,3 +55,13 @@ header svg {
   max-width: 100%;
   width: 100%;
 }
+/* Full-bleed hero background, keeping its inner content aligned like the rest of the page */
+.hero,
+section.hero,
+div.hero {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: 1.5rem;   /* matches body's px-6 so text/content still lines up */
+  padding-right: 1.5rem;
+}
