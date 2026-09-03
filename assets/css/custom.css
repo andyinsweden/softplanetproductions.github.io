@@ -34,31 +34,3 @@ h2 {
 }
 
 :root,
-:root[data-scheme="light"] {
-  --color-neutral-50: 245 245 243; /* F5F5F3 in RGB, space-separated for Tailwind opacity support */
-}
-
-body {
-  background-color: #F5F5F3 !important;
-}
-
-header {
-  background-color: #000000;
-  border-bottom: none;
-}
-
-header,
-header a,
-header .site-title,
-header nav a {
-  color: #ffffff;
-}
-
-header nav a:hover {
-  color: #cccccc;
-}
-
-header svg {
-  fill: #ffffff;
-  stroke: #ffffff;
-}
