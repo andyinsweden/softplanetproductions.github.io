@@ -1,24 +1,70 @@
 [[main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[main]]
+  name = "Courses"
+  identifier = "courses"
+  weight = 20
+
+[[main]]
   name = "MIDI Course"
   pageRef = "courses/midi-home-studio"
-  weight = 20
+  parent = "courses"
+  weight = 21
 
 [[main]]
   name = "Piano Improvisation Course"
   pageRef = "courses/piano-improvisation"
-  weight = 30
-
-[[main]] 
-  name = "Sibelius Site Licenses" 
-  pageRef = "services/sibelius-site-licenses" 
-  weight = 40
-
- [[main]]
-  name = "Piano Scores" 
-  pageRef = "piano-scores" 
-  weight = 45 
+  parent = "courses"
+  weight = 22
 
 [[main]]
-  name = "Tutorials" 
+  name = "Services"
+  identifier = "services"
+  weight = 30
+
+[[main]]
+  name = "Sibelius Site Licenses"
+  pageRef = "services/sibelius-site-licenses"
+  parent = "services"
+  weight = 31
+
+[[main]]
+  name = "Scores"
+  identifier = "piano-scores"
+  weight = 40
+
+[[main]]
+  name = "Cornfield Chase"
+  pageRef = "piano-scores/cornfield-chase"
+  parent = "piano-scores"
+  weight = 41
+
+[[main]]
+  name = "Paint By Numbers"
+  pageRef = "piano-scores/paint-by-numbers"
+  parent = "scores"
+  weight = 42
+
+[[main]]
+  name = "Bohemian Rhapsody Finale"
+  pageRef = "piano-scores/bohemian-rhapsody-finale"
+  parent = "scores"
+  weight = 43
+
+[[main]]
+  name = "Tutorials"
   pageRef = "tutorials"
-   weight = 50 
+  weight = 50
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 60
+
+[[main]]
+  name = "Contact"
+  pageRef = "contact"
+  weight = 70
