@@ -34,3 +34,44 @@ h2 {
 }
 
 :root,
+:root[data-scheme="light"] {
+  --color-neutral-50: 245 245 243; /* F5F5F3 in RGB, space-separated for Tailwind opacity support */
+}
+
+body {
+  background-color: #F5F5F3 !important;
+}
+
+header {
+  background-color: #000000;
+  border-bottom: none;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 40rem) { header { padding-left: 3.5rem; padding-right: 3.5rem; } }
+@media (min-width: 48rem) { header { padding-left: 6rem; padding-right: 6rem; } }
+@media (min-width: 64rem) { header { padding-left: 8rem; padding-right: 8rem; } }
+@media (min-width: 80rem) { header { padding-left: max(8rem, calc((100vw - 80rem) / 2 + 8rem)); padding-right: max(8rem, calc((100vw - 80rem) / 2 + 8rem)); } }
+
+header,
+header a,
+header .site-title,
+header nav a {
+  color: #ffffff;
+}
+
+header nav a:hover {
+  color: #cccccc;
+}
+
+header svg {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
