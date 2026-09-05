@@ -45,13 +45,13 @@
 [[main]]
   name = "Paint By Numbers"
   pageRef = "piano-scores/paint-by-numbers"
-  parent = "scores"
+  parent = "piano-scores"
   weight = 42
 
 [[main]]
   name = "Bohemian Rhapsody Finale"
   pageRef = "piano-scores/bohemian-rhapsody-finale"
-  parent = "scores"
+  parent = "piano-scores"
   weight = 43
 
 [[main]]
