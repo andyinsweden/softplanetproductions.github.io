@@ -27,5 +27,3 @@ summaryLength = 0
   [services.x]
     disableInlineCSS = true
 
-[params.header]
-  layout = "basic"
