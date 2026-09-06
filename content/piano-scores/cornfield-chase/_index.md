@@ -24,6 +24,8 @@ This **Cornfield Chase piano score** captures the distinctive arpeggios, evolvin
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2ZRkATeF4cE?si=KB6IVQrJLYet-rT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{{< button href="https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx?affiliate=67607" target="_blank" >}} Buy Cornfield Chase Sheet Music → {{< /button >}}
+
 Whether you are searching for **Cornfield Chase sheet music**, an **Interstellar piano score**, or a challenging new piece for your piano repertoire, this arrangement provides a rewarding performance experience.
 
 ## Cornfield Chase Piano Arrangement
@@ -75,4 +77,4 @@ It is suitable for pianists looking for:
 - Intermediate piano repertoire
 - Film soundtrack piano arrangements
 
-**Also available through ArrangeMe on Sheet Music Plus.**
+{{< button href="https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx?affiliate=67607" target="_blank" >}} Buy Cornfield Chase Sheet Music → {{< /button >}}
