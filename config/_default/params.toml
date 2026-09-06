@@ -22,7 +22,7 @@ fingerprintAlgorithm = "sha256"
   layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
   logo = "logos/softplanet-logo.png"
   logoDark = "logos/softplanet-logo.png"
-  showTitle = true
+  showTitle = false
 
 [footer]
   showCopyright = true
