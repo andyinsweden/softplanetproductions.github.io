@@ -19,8 +19,6 @@ keywords:
 
 ---
 
-# Cornfield Chase Piano Sheet Music – Solo Piano Arrangement
-
 **Cornfield Chase from *Interstellar*** is one of Hans Zimmer's most recognisable cinematic themes. This **solo piano arrangement by John Montgomery** brings the atmospheric sound and emotional intensity of Zimmer's original soundtrack to the piano, arranged specifically for **intermediate pianists**.
 
 This **Cornfield Chase piano score** captures the distinctive arpeggios, evolving harmonies and gradual build that make the original theme so memorable. The arrangement has been carefully adapted for solo piano, allowing one pianist to recreate the powerful, expansive character of the music while retaining the simplicity and emotional impact of the original composition.
@@ -76,46 +74,4 @@ It is suitable for pianists looking for:
 * Intermediate piano repertoire
 * Film soundtrack piano arrangements
 
-## **Also available through ArrangeMe on Sheet Music Plus.**
-
-## SEO recommendations for the page
-
-I would make **three further changes outside the Markdown content**.
-
-### 1. Use this image filename
-
-If you have an image of the score:
-
-`cornfield-chase-piano-sheet-music-interstellar.jpg`
-
-And use this alt text:
-
-`Cornfield Chase piano sheet music from Interstellar – solo piano arrangement by John Montgomery`
-
-### 2. Don't add another H1
-
-The Markdown above already creates:
-
-**Cornfield Chase Piano Sheet Music – Solo Piano Arrangement**
-
-Your Hugo theme is already generating the page title as an H1, according to the live page.
-
-**Important:** if your theme automatically outputs the frontmatter `title` as the H1, I would actually remove the Markdown H1 (`# Cornfield Chase...`) to avoid having two H1s.
-
-In that case, the page should start immediately with:
-
-`**Cornfield Chase from *Interstellar***...`
-
-This is the version I would use with your current theme.
-
-### 3. Your current author/date needs attention
-
-The live page currently shows:
-
-> 1 January 0001 · 1 min
-
-and then an example author called **Congo**.
-
-That's something I would fix **site-wide**, not just on this page. It makes the page look unfinished and isn't ideal for a professional sheet-music site.
-
-If you give me the **current `cornfield-chase.md` file**, I can also modify it precisely around your existing Hugo structure rather than making assumptions about how your theme handles the frontmatter.
+**Also available through ArrangeMe on Sheet Music Plus.**
