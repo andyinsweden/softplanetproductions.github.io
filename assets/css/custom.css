@@ -76,7 +76,35 @@ header svg {
   stroke: #ffffff;
 }
 
-/* Make mobile hamburger menu icon white */
+/* ================================
+   MOBILE HAMBURGER MENU
+   ================================ */
+
+/* White hamburger */
 #menu-button {
     color: #fff !important;
+}
+
+#menu-button svg {
+    color: #fff !important;
+    stroke: #fff !important;
+    width: 28px !important;
+    height: 28px !important;
+}
+
+/* Black opened menu */
+#mobile-menu {
+    background-color: #000 !important;
+}
+
+/* Left-align menu and submenus */
+#mobile-menu,
+#mobile-menu ul,
+#mobile-menu li {
+    text-align: left !important;
+}
+
+#mobile-menu a {
+    justify-content: flex-start !important;
+    text-align: left !important;
 }
