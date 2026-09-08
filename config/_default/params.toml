@@ -20,8 +20,8 @@ fingerprintAlgorithm = "sha256"
 
 [header]
   layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
-  logo = "logos/softplanet-logo.webp"
-  logoDark = "logos/softplanet-logo.webp"
+  logo = "logos/softplanet-logo.png"
+  logoDark = "logos/softplanet-logo.png"
   showTitle = true
 
 [footer]
