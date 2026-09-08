@@ -22,17 +22,17 @@
         {{ partial "icon.html" "bars" }}
       </button>
 
-      {{/* Mobile Overlay Nav Wrapper - Set to Pure Black */}}
+      {{/* Mobile Overlay Nav Wrapper */}}
       <div 
         id="menu-wrapper"
         class="invisible fixed inset-0 z-30 h-full w-full overflow-auto bg-black opacity-0 transition-opacity dark:bg-black sm:hidden"
       >
-        <ul class="mx-auto flex w-full max-w-7xl list-none flex-col px-6 py-6 text-end sm:px-14 sm:py-10 md:px-24 lg:px-32">
+        <ul class="mx-auto flex w-full max-w-7xl list-none flex-col px-6 py-6 text-end text-white sm:px-14 sm:py-10 md:px-24 lg:px-32">
           <li class="mb-1">
             <button 
               type="button" 
               aria-label="Close menu"
-              class="cursor-pointer text-white/70 hover:text-primary-600 dark:hover:text-primary-400"
+              class="cursor-pointer text-white/70 hover:text-primary-400"
               onclick="toggleMenu()"
             >
               {{ partial "icon.html" "xmark" }}
@@ -45,20 +45,22 @@
             {{ end }}
             <li class="group mb-1">
               {{ if .HasChildren }}
-                <a href="{{ .URL }}" title="{{ .Title }}" onclick="toggleMenu()" class="block text-white/70">
+                <a href="{{ .URL }}" title="{{ .Title }}" onclick="toggleMenu()" class="block text-white/80 hover:text-white">
                   {{ .Name | markdownify | emojify }}
                 </a>
                 <ul class="ms-4 mt-1 list-none text-start">
                   {{ range .Children }}
                     <li class="mb-1">
-                      <a href="{{ .URL }}" title="{{ .Title }}" onclick="toggleMenu()">
+                      <a href="{{ .URL }}" title="{{ .Title }}" onclick="toggleMenu()" class="text-white/70 hover:text-white">
                         {{ .Name | markdownify | emojify }}
                       </a>
                     </li>
                   {{ end }}
                 </ul>
               {{ else }}
-                {{ partial "nav-item-actions.html" (dict "item" . "context" $) }}
+                <div onclick="toggleMenu()" class="text-white/80 hover:text-white">
+                  {{ partial "nav-item-actions.html" (dict "item" . "context" $) }}
+                </div>
               {{ end }}
             </li>
           {{ end }}
@@ -66,7 +68,7 @@
           {{ if and ($.Site.Params.enableSearch | default false) (eq ($.Scratch.Get "searchCount") 0) }}
             <li class="group mb-1">
               <button id="search-button-m0" title="{{ i18n "search.open_button_title" }}">
-                <span class="transition-colors group-hover:text-primary-600 group-dark:hover:text-primary-400">
+                <span class="transition-colors text-white/80 group-hover:text-primary-400">
                   {{ partial "icon.html" "search" }}
                 </span>
               </button>
