@@ -21,10 +21,10 @@
         {{ partial "icon.html" "bars" }}
       </button>
 
-      {{/* Mobile Overlay Nav Wrapper */}}
+      {{/* Mobile Overlay Nav Wrapper - Solid Black */}}
       <div 
         id="menu-wrapper"
-        class="invisible fixed inset-0 z-30 h-full w-full overflow-auto bg-black opacity-0 transition-opacity dark:bg-black sm:hidden"
+        class="invisible fixed inset-0 z-50 h-full w-full overflow-auto bg-black opacity-0 transition-opacity dark:bg-black sm:hidden"
       >
         <ul class="mx-auto flex w-full max-w-7xl list-none flex-col px-6 py-6 text-end text-white sm:px-14 sm:py-10 md:px-24 lg:px-32">
           <li class="mb-1">
@@ -44,20 +44,20 @@
             {{ end }}
             <li class="group mb-1">
               {{ if .HasChildren }}
-                <a href="{{ .URL }}" title="{{ .Title }}" class="block text-white/80 hover:text-white">
+                <a href="{{ .URL }}" title="{{ .Title }}" class="block text-white/80 hover:text-white mobile-link">
                   {{ .Name | markdownify | emojify }}
                 </a>
                 <ul class="ms-4 mt-1 list-none text-start">
                   {{ range .Children }}
                     <li class="mb-1">
-                      <a href="{{ .URL }}" title="{{ .Title }}" class="text-white/70 hover:text-white">
+                      <a href="{{ .URL }}" title="{{ .Title }}" class="text-white/70 hover:text-white mobile-link">
                         {{ .Name | markdownify | emojify }}
                       </a>
                     </li>
                   {{ end }}
                 </ul>
               {{ else }}
-                <div class="text-white/80 hover:text-white">
+                <div class="text-white/80 hover:text-white mobile-link">
                   {{ partial "nav-item-actions.html" (dict "item" . "context" $) }}
                 </div>
               {{ end }}
@@ -124,4 +124,46 @@
 
     {{ end }}
   </nav>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.getElementById("menu-toggle");
+      const closeBtn = document.getElementById("menu-close");
+      const wrapper = document.getElementById("menu-wrapper");
+
+      function openMenu() {
+        if (!wrapper) return;
+        wrapper.classList.remove("invisible", "opacity-0");
+        if (toggleBtn) toggleBtn.setAttribute("aria-expanded", "true");
+      }
+
+      function closeMenu() {
+        if (!wrapper) return;
+        wrapper.classList.add("invisible", "opacity-0");
+        if (toggleBtn) toggleBtn.setAttribute("aria-expanded", "false");
+      }
+
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function(e) {
+          e.preventDefault();
+          if (wrapper.classList.contains("invisible")) {
+            openMenu();
+          } else {
+            closeMenu();
+          }
+        });
+      }
+
+      if (closeBtn) {
+        closeBtn.addEventListener("click", function(e) {
+          e.preventDefault();
+          closeMenu();
+        });
+      }
+
+      document.querySelectorAll("#menu-wrapper a").forEach(function(link) {
+        link.addEventListener("click", closeMenu);
+      });
+    });
+  </script>
 </header>
