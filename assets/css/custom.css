@@ -75,3 +75,8 @@ header svg {
   fill: #ffffff;
   stroke: #ffffff;
 }
+
+/* Make mobile hamburger menu icon white */
+#menu-button {
+    color: #fff !important;
+}
