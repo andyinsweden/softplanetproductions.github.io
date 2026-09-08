@@ -16,10 +16,12 @@
         aria-expanded="false" 
         aria-controls="menu-wrapper"
         aria-label="Toggle navigation menu"
-        class="block cursor-pointer hover:text-primary-600 dark:hover:text-primary-400 sm:hidden"
+        class="block cursor-pointer text-neutral-700 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400 sm:hidden"
         onclick="toggleMenu()"
       >
-        {{ partial "icon.html" "bars" }}
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"/>
+        </svg>
       </button>
 
       {{/* Mobile Overlay Nav Wrapper */}}
@@ -35,7 +37,9 @@
               class="cursor-pointer text-white/70 hover:text-primary-600 dark:hover:text-primary-400"
               onclick="toggleMenu()"
             >
-              {{ partial "icon.html" "xmark" }}
+              <svg class="h-6 w-6 fill-current inline-block" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.293 5.293a1 1 0 011.414 1.414L13.414 12l6.293 6.293a1 1 0 01-1.414 1.414L12 13.414l-6.293 6.293a1 1 0 01-1.414-1.414L10.586 12 4.293 5.707a1 1 0 011.414-1.414L12 10.586l6.293-6.293z"/>
+              </svg>
             </button>
           </li>
 
@@ -45,13 +49,13 @@
             {{ end }}
             <li class="group mb-1">
               {{ if .HasChildren }}
-                <a href="{{ .URL }}" title="{{ .Title }}" onclick="close_menu()" class="block text-white/70">
+                <a href="{{ .URL }}" title="{{ .Title }}" onclick="toggleMenu()" class="block text-white/70">
                   {{ .Name | markdownify | emojify }}
                 </a>
                 <ul class="ms-4 mt-1 list-none text-start">
                   {{ range .Children }}
                     <li class="mb-1">
-                      <a href="{{ .URL }}" title="{{ .Title }}" onclick="close_menu()">
+                      <a href="{{ .URL }}" title="{{ .Title }}" onclick="toggleMenu()">
                         {{ .Name | markdownify | emojify }}
                       </a>
                     </li>
@@ -63,7 +67,6 @@
             </li>
           {{ end }}
 
-          {{/* Fallback search icon if search action is not explicitly present in menu */}}
           {{ if and ($.Site.Params.enableSearch | default false) (eq ($.Scratch.Get "searchCount") 0) }}
             <li class="group mb-1">
               <button id="search-button-m0" title="{{ i18n "search.open_button_title" }}">
