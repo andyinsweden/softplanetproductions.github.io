@@ -1,5 +1,5 @@
 <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
-  <nav class="flex items-start justify-between sm:items-center" aria-label="Main Navigation">
+  <nav class="flex items-center justify-between" aria-label="Main Navigation">
     {{ $page := . }}
     
     {{/* Site Logo / Title */}}
@@ -9,24 +9,24 @@
 
     {{ if or .Site.Menus.main (.Site.Params.enableSearch | default false) }}
       
-      {{/* Mobile Menu Toggle Button - Explicit Large Direct SVG */}}
+      {{/* Mobile Menu Toggle Button - Reduced to 36px & Vertically Centered */}}
       <button 
         id="menu-toggle" 
         type="button" 
         aria-expanded="false" 
         aria-controls="menu-wrapper"
         aria-label="Toggle navigation menu"
-        class="block cursor-pointer p-1 sm:hidden focus:outline-none"
+        class="flex items-center justify-center cursor-pointer p-1 sm:hidden focus:outline-none"
       >
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
           viewBox="0 0 24 24" 
           fill="none" 
           stroke="#ffffff" 
-          stroke-width="3" 
+          stroke-width="2.5" 
           stroke-linecap="round" 
           stroke-linejoin="round"
-          style="width: 48px !important; height: 48px !important; display: block !important;"
+          style="width: 36px !important; height: 36px !important; display: block !important;"
         >
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -53,10 +53,10 @@
                 viewBox="0 0 24 24" 
                 fill="none" 
                 stroke="#ffffff" 
-                stroke-width="3" 
+                stroke-width="2.5" 
                 stroke-linecap="round" 
                 stroke-linejoin="round"
-                style="width: 48px !important; height: 48px !important; display: block !important;"
+                style="width: 36px !important; height: 36px !important; display: block !important;"
               >
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
