@@ -16,33 +16,26 @@
         aria-expanded="false" 
         aria-controls="menu-wrapper"
         aria-label="Toggle navigation menu"
-        class="block cursor-pointer sm:hidden p-2"
-        onclick="if (typeof toggleMenu === 'function') { toggleMenu(); } else { document.getElementById('menu-wrapper').classList.toggle('invisible'); document.getElementById('menu-wrapper').classList.toggle('opacity-0'); }"
+        class="block cursor-pointer hover:text-primary-600 dark:hover:text-primary-400 sm:hidden"
+        onclick="toggleMenu()"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block dark:text-white text-black">
-          <line x1="4" x2="20" y1="12" y2="12"></line>
-          <line x1="4" x2="20" y1="6" y2="6"></line>
-          <line x1="4" x2="20" y1="18" y2="18"></line>
-        </svg>
+        {{ partial "icon.html" "bars" }}
       </button>
 
-      {{/* Mobile Overlay Nav Wrapper */}}
+      {{/* Mobile Overlay Nav Wrapper - Set to Pure Black */}}
       <div 
         id="menu-wrapper"
-        class="invisible fixed inset-0 z-50 h-full w-full overflow-auto bg-black opacity-0 transition-opacity sm:hidden"
+        class="invisible fixed inset-0 z-30 h-full w-full overflow-auto bg-black opacity-0 transition-opacity dark:bg-black sm:hidden"
       >
         <ul class="mx-auto flex w-full max-w-7xl list-none flex-col px-6 py-6 text-end sm:px-14 sm:py-10 md:px-24 lg:px-32">
           <li class="mb-1">
             <button 
               type="button" 
               aria-label="Close menu"
-              class="cursor-pointer text-white hover:text-primary-400 p-2"
-              onclick="if (typeof toggleMenu === 'function') { toggleMenu(); } else { document.getElementById('menu-wrapper').classList.add('invisible', 'opacity-0'); }"
+              class="cursor-pointer text-white/70 hover:text-primary-600 dark:hover:text-primary-400"
+              onclick="toggleMenu()"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
+              {{ partial "icon.html" "xmark" }}
             </button>
           </li>
 
@@ -50,15 +43,15 @@
             {{ if and (eq .Params.action "locale") (or (not page.IsTranslated) (not hugo.IsMultilingual)) }}
               {{ continue }}
             {{ end }}
-            <li class="group mb-2">
+            <li class="group mb-1">
               {{ if .HasChildren }}
-                <a href="{{ .URL }}" title="{{ .Title }}" class="block text-white">
+                <a href="{{ .URL }}" title="{{ .Title }}" onclick="toggleMenu()" class="block text-white/70">
                   {{ .Name | markdownify | emojify }}
                 </a>
                 <ul class="ms-4 mt-1 list-none text-start">
                   {{ range .Children }}
                     <li class="mb-1">
-                      <a href="{{ .URL }}" title="{{ .Title }}" class="text-neutral-300 hover:text-white">
+                      <a href="{{ .URL }}" title="{{ .Title }}" onclick="toggleMenu()">
                         {{ .Name | markdownify | emojify }}
                       </a>
                     </li>
@@ -67,6 +60,16 @@
               {{ else }}
                 {{ partial "nav-item-actions.html" (dict "item" . "context" $) }}
               {{ end }}
+            </li>
+          {{ end }}
+
+          {{ if and ($.Site.Params.enableSearch | default false) (eq ($.Scratch.Get "searchCount") 0) }}
+            <li class="group mb-1">
+              <button id="search-button-m0" title="{{ i18n "search.open_button_title" }}">
+                <span class="transition-colors group-hover:text-primary-600 group-dark:hover:text-primary-400">
+                  {{ partial "icon.html" "search" }}
+                </span>
+              </button>
             </li>
           {{ end }}
         </ul>
@@ -104,6 +107,16 @@
             {{ else }}
               {{ partial "nav-item-actions.html" (dict "item" . "context" $) }}
             {{ end }}
+          </li>
+        {{ end }}
+
+        {{ if and ($.Site.Params.enableSearch | default false) (eq ($.Scratch.Get "searchCount") 0) }}
+          <li class="group mb-0 me-7 last:me-0">
+            <button id="search-button-m1" title="{{ i18n "search.open_button_title" }}">
+              <span class="transition-colors group-hover:text-primary-600 group-dark:hover:text-primary-400">
+                {{ partial "icon.html" "search" }}
+              </span>
+            </button>
           </li>
         {{ end }}
       </ul>
