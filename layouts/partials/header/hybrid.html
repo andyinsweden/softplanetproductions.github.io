@@ -9,7 +9,7 @@
 
     {{ if or .Site.Menus.main (.Site.Params.enableSearch | default false) }}
       
-      {{/* Mobile Menu Toggle Button - Reduced to 36px & Vertically Centered */}}
+      {{/* Mobile Menu Toggle Button */}}
       <button 
         id="menu-toggle" 
         type="button" 
@@ -92,28 +92,30 @@
         </ul>
       </div>
 
-      {{/* Desktop Menu */}}
-      <ul class="hidden list-none flex-row text-end sm:flex">
+      {{/* Desktop Menu - Spaced out with black hover backgrounds */}}
+      <ul class="hidden list-none items-center gap-6 sm:flex">
         {{ range .Site.Menus.main }}
           {{ if and (eq .Params.action "locale") (or (not page.IsTranslated) (not hugo.IsMultilingual)) }}
             {{ continue }}
           {{ end }}
-          <li class="group relative mb-0 me-7 last:me-0">
+          <li class="group relative">
             {{ if .HasChildren }}
-              <a href="{{ .URL }}" title="{{ .Title }}" class="inline-flex items-center gap-1 group-hover:text-primary-600 dark:group-hover:text-primary-400">
+              <a href="{{ .URL }}" title="{{ .Title }}" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-md text-white transition-colors hover:bg-black hover:text-white">
                 {{ .Name | markdownify | emojify }}<span class="text-[0.6em]">&#9662;</span>
               </a>
-              <ul class="invisible absolute start-0 top-full z-40 mt-2 min-w-[12rem] list-none rounded-md bg-black py-2 text-start opacity-0 shadow-lg transition-all duration-150 group-hover:visible group-hover:opacity-100">
+              <ul class="invisible absolute start-0 top-full z-40 mt-1 min-w-[12rem] list-none rounded-md bg-black py-2 text-start opacity-0 shadow-lg transition-all duration-150 group-hover:visible group-hover:opacity-100">
                 {{ range .Children }}
                   <li>
-                    <a href="{{ .URL }}" title="{{ .Title }}" class="block whitespace-nowrap px-4 py-2 text-white hover:text-primary-400">
+                    <a href="{{ .URL }}" title="{{ .Title }}" class="block whitespace-nowrap px-4 py-2 text-white hover:bg-neutral-800">
                       {{ .Name | markdownify | emojify }}
                     </a>
                   </li>
                 {{ end }}
               </ul>
             {{ else }}
-              {{ partial "nav-item-actions.html" (dict "item" . "context" $) }}
+              <div class="inline-block px-3 py-2 rounded-md transition-colors hover:bg-black">
+                {{ partial "nav-item-actions.html" (dict "item" . "context" $) }}
+              </div>
             {{ end }}
           </li>
         {{ end }}
