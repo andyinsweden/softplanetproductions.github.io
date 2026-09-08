@@ -1,22 +1,28 @@
 <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
   <nav class="flex items-start justify-between sm:items-center" aria-label="Main Navigation">
+    {{ $page := . }}
     
+    {{/* Site Logo / Title */}}
     <div class="z-40 flex flex-row items-center">
       {{ partial "logo.html" . }}
     </div>
 
     {{ if or .Site.Menus.main (.Site.Params.enableSearch | default false) }}
       
-      {{/* Mobile Menu Toggle Button */}}
+      {{/* Mobile Menu Toggle Button - Forced White via Style Override */}}
       <button 
         id="menu-toggle" 
         type="button" 
         aria-expanded="false" 
         aria-controls="menu-wrapper"
         aria-label="Toggle navigation menu"
-        class="block cursor-pointer text-white hover:text-primary-400 focus:outline-none sm:hidden"
+        class="block cursor-pointer sm:hidden focus:outline-none"
+        style="color: #ffffff !important;"
       >
-        <span class="block h-8 w-8 text-white [&>svg]:h-full [&>svg]:w-full [&>svg]:fill-current">
+        <span 
+          class="block h-9 w-9 [&>svg]:h-full [&>svg]:w-full" 
+          style="color: #ffffff !important; stroke: #ffffff !important; fill: #ffffff !important;"
+        >
           {{ partial "icon.html" "bars" }}
         </span>
       </button>
@@ -32,9 +38,13 @@
               id="menu-close"
               type="button" 
               aria-label="Close menu"
-              class="cursor-pointer text-white hover:text-primary-400 focus:outline-none"
+              class="cursor-pointer text-white focus:outline-none"
+              style="color: #ffffff !important;"
             >
-              <span class="block h-8 w-8 text-white [&>svg]:h-full [&>svg]:w-full [&>svg]:fill-current">
+              <span 
+                class="block h-9 w-9 [&>svg]:h-full [&>svg]:w-full" 
+                style="color: #ffffff !important; stroke: #ffffff !important; fill: #ffffff !important;"
+              >
                 {{ partial "icon.html" "xmark" }}
               </span>
             </button>
@@ -46,20 +56,20 @@
             {{ end }}
             <li class="group mb-3">
               {{ if .HasChildren }}
-                <a href="{{ .URL }}" title="{{ .Title }}" class="block text-white/80 hover:text-white">
+                <a href="{{ .URL }}" title="{{ .Title }}" class="block text-white hover:text-primary-400">
                   {{ .Name | markdownify | emojify }}
                 </a>
                 <ul class="ms-4 mt-1 list-none text-start">
                   {{ range .Children }}
                     <li class="mb-2">
-                      <a href="{{ .URL }}" title="{{ .Title }}" class="text-white/70 hover:text-white">
+                      <a href="{{ .URL }}" title="{{ .Title }}" class="text-white/80 hover:text-white">
                         {{ .Name | markdownify | emojify }}
                       </a>
                     </li>
                   {{ end }}
                 </ul>
               {{ else }}
-                <div class="text-white/80 hover:text-white">
+                <div class="text-white hover:text-primary-400">
                   {{ partial "nav-item-actions.html" (dict "item" . "context" $) }}
                 </div>
               {{ end }}
@@ -97,4 +107,42 @@
 
     {{ end }}
   </nav>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.getElementById("menu-toggle");
+      const closeBtn = document.getElementById("menu-close");
+      const wrapper = document.getElementById("menu-wrapper");
+
+      function openMenu() {
+        if (!wrapper) return;
+        wrapper.classList.remove("invisible", "opacity-0");
+        if (toggleBtn) toggleBtn.setAttribute("aria-expanded", "true");
+      }
+
+      function closeMenu() {
+        if (!wrapper) return;
+        wrapper.classList.add("invisible", "opacity-0");
+        if (toggleBtn) toggleBtn.setAttribute("aria-expanded", "false");
+      }
+
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function(e) {
+          e.preventDefault();
+          if (wrapper.classList.contains("invisible")) {
+            openMenu();
+          } else {
+            closeMenu();
+          }
+        });
+      }
+
+      if (closeBtn) {
+        closeBtn.addEventListener("click", function(e) {
+          e.preventDefault();
+          closeMenu();
+        });
+      }
+    });
+  </script>
 </header>
