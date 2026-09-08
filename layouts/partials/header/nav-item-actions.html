@@ -1,0 +1,64 @@
+{{ $item := .item }}
+{{ $ctx := .context }}
+
+{{ if eq $item.Params.action "search" }}
+  {{ $ctx.Scratch.Add "searchCount" 1 }}
+  {{ if $ctx.Site.Params.enableSearch | default false }}
+    <button
+      id="search-button-{{ $ctx.Scratch.Get "searchCount" }}"
+      title="{{ $item.Title | default (i18n "search.open_button_title") }}"
+    >
+      {{ with $item.Params.icon | default "search" }}
+        <span class="transition-colors group-hover:text-primary-600 group-dark:hover:text-primary-400">
+          {{- partial "icon.html" . -}}
+        </span>
+      {{- end -}}
+      {{- if $item.Params.showName | default true -}}
+        <span class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2">
+          {{ $item.Name | markdownify | emojify }}
+        </span>
+      {{- end -}}
+    </button>
+  {{ end }}
+
+{{ else if eq $item.Params.action "appearance" }}
+  {{ $ctx.Scratch.Add "switchCount" 1 }}
+  <button
+    id="appearance-switcher-{{ $ctx.Scratch.Get "switchCount" }}"
+    type="button"
+    aria-label="appearance switcher"
+  >
+    <span class="inline transition-colors group-hover:text-primary-600 dark:hidden group-dark:hover:text-primary-400" title="{{ i18n "footer.dark_appearance" }}">
+      {{ with $item.Params.icon | default "moon" }}{{- partial "icon.html" . -}}{{ end }}
+      {{ if $item.Params.showName | default true }}<span class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2">{{ $item.Name | markdownify | emojify }}</span>{{ end }}
+    </span>
+    <span class="hidden transition-colors group-hover:text-primary-600 dark:inline group-dark:hover:text-primary-400" title="{{ i18n "footer.light_appearance" }}">
+      {{ with $item.Params.icon | default "sun" }}{{- partial "icon.html" . -}}{{ end }}
+      {{ if $item.Params.showName | default true }}<span class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2">{{ $item.Name | markdownify | emojify }}</span>{{ end }}
+    </span>
+  </button>
+
+{{ else if eq $item.Params.action "locale" }}
+  {{ $ctx.Scratch.Add "localeCount" 1 }}
+  {{ partial "translations.html" $ctx }}
+
+{{ else }}
+  <a
+    href="{{ $item.URL }}"
+    title="{{ $item.Title }}"
+    {{ with $item.Params.rel }}rel="{{ . }}"{{ end }}
+    {{ with $item.Params.target }}target="{{ . }}"{{ end }}
+    class="{{ if $ctx.HasMenuCurrent "main" $item }}text-primary-400 underline underline-offset-8{{ end }}"
+  >
+    {{ with $item.Params.icon }}
+      <span class="transition-colors group-hover:text-primary-600 group-dark:hover:text-primary-400">
+        {{- partial "icon.html" . -}}
+      </span>
+    {{ end }}
+    {{- if $item.Params.showName | default true -}}
+      <span class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2">
+        {{ $item.Name | markdownify | emojify }}
+      </span>
+    {{- end -}}
+  </a>
+{{ end }}
