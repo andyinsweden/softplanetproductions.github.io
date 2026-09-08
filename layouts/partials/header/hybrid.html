@@ -92,7 +92,7 @@
         </ul>
       </div>
 
-      {{/* Desktop Menu - Spaced out with black hover backgrounds */}}
+      {{/* Desktop Menu */}}
       <ul class="hidden list-none items-center gap-6 sm:flex">
         {{ range .Site.Menus.main }}
           {{ if and (eq .Params.action "locale") (or (not page.IsTranslated) (not hugo.IsMultilingual)) }}
@@ -103,10 +103,14 @@
               <a href="{{ .URL }}" title="{{ .Title }}" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-md text-white transition-colors hover:bg-black hover:text-white">
                 {{ .Name | markdownify | emojify }}<span class="text-[0.6em]">&#9662;</span>
               </a>
-              <ul class="invisible absolute start-0 top-full z-40 mt-1 min-w-[12rem] list-none rounded-md bg-black py-2 text-start opacity-0 shadow-lg transition-all duration-150 group-hover:visible group-hover:opacity-100">
+              {{/* Solid Black Dropdown Submenu */}}
+              <ul 
+                class="invisible absolute start-0 top-full z-50 mt-1 min-w-[12rem] list-none rounded-md py-2 text-start opacity-0 shadow-xl transition-all duration-150 group-hover:visible group-hover:opacity-100"
+                style="background-color: #000000 !important;"
+              >
                 {{ range .Children }}
                   <li>
-                    <a href="{{ .URL }}" title="{{ .Title }}" class="block whitespace-nowrap px-4 py-2 text-white hover:bg-neutral-800">
+                    <a href="{{ .URL }}" title="{{ .Title }}" class="block whitespace-nowrap px-4 py-2 text-white hover:bg-neutral-800 transition-colors">
                       {{ .Name | markdownify | emojify }}
                     </a>
                   </li>
