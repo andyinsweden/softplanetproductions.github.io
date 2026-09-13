@@ -1,0 +1,5 @@
+{{ define "main" }}
+  <div class="sibelius-page" style="--sibelius-hero-image: url('{{ .Params.heroImage | default "/courses-hero.jpg" }}');">
+    {{ .Content | emojify }}
+  </div>
+{{ end }}
