@@ -9,7 +9,7 @@ showTableOfContents: false
 
 <section class="sibelius-hero">
   <p class="sibelius-eyebrow">Sibelius for UK schools &amp; colleges</p>
-  <h2>Twenty years of getting notation software right, in classrooms across the UK</h2>
+  <h2>20 Years of Getting Notation Software Right Into Classrooms Across the UK</h2>
   <p class="sibelius-lead">Softplanet Productions - known for two decades as Softplanet Ltd - supplies and installs Sibelius for music departments, from a single standalone licence to a fully networked suite.</p>
   <div class="sibelius-actions">
     <a class="sibelius-button sibelius-button--primary" href="#sibelius-contact">Request a Sibelius quote</a>
