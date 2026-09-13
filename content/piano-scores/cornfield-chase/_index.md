@@ -26,9 +26,7 @@ This **Cornfield Chase piano score** captures the distinctive arpeggios, evolvin
 
 Whether you are searching for **Cornfield Chase sheet music**, an **Interstellar piano score**, or a challenging new piece for your piano repertoire, this arrangement provides a rewarding performance experience.
 
-## Cornfield Chase Animated Piano Arrangement
-
-{{< noteflight src="https://www.noteflight.com/pub_embed/22555a353da18f5117dd51f6ae7626d3?token=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InB1Ymxpc2hlZF9zY29yZV9pZCI6IjIyNTU1YTM1M2RhMThmNTExN2RkNTFmNmFlNzYyNmQzIiwicHJldmlldyI6ZmFsc2UsInBlcnNvbmFsaXphdGlvbiI6bnVsbCwiZGlzYWJsZVByaW50aW5nIjpmYWxzZX0sImV4cCI6MTc4OTMyMzYyM30.rF7DxvMX3nYB0bIjheJ8CwhjxPoxetumBUy65DlhbeY&scale=1&displayMode=paginated" >}}
+## Cornfield Chase Piano Arrangement
 
 The arrangement combines flowing accompaniment patterns with clearly defined melodic and harmonic movement, creating a rich cinematic sound using a single instrument.
 
