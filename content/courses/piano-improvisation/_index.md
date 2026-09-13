@@ -1,7 +1,7 @@
 ---
 title: "Piano Improvisation Course 2026"
 description: "Learn to play and improvise on piano without sheet music"
-heroImage: "/piano-improvisation-hero.jpg"
+heroImage: "/courses-hero.jpg"
 heroEyebrow: "PIANO IMPROVISATION COURSE"
 heroTitle: "Play freely at the piano"
 heroIntro: "Learn to improvise without sheet music and turn your musical ideas into confident performances."
