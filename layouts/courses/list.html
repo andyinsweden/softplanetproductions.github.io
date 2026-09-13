@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <div class="courses-page">
+    <section class="courses-hero" style="--courses-hero-image: url('{{ .Params.heroImage | default "/courses-hero.jpg" }}');" aria-labelledby="courses-hero-title">
+      <div class="courses-hero__content">
+        <p class="courses-hero__eyebrow">{{ .Params.heroEyebrow }}</p>
+        <h1 id="courses-hero-title">{{ .Params.heroTitle | default .Title }}</h1>
+        <p class="courses-hero__intro">{{ .Params.heroIntro }}</p>
+      </div>
+    </section>
+
+    <section class="courses-content">
+      <div class="courses-content__intro">
+        {{ .Content | emojify }}
+      </div>
+
+      {{ if .Data.Pages }}
+        <div class="courses-list">
+          {{ range (.Paginate .Pages).Pages }}
+            {{ partial "article-link.html" . }}
+          {{ end }}
+        </div>
+        {{ partial "pagination.html" . }}
+      {{ else }}
+        <p class="courses-empty"><em>{{ i18n "list.no_articles" | emojify }}</em></p>
+      {{ end }}
+    </section>
+  </div>
+{{ end }}

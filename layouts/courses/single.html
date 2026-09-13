@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <div class="courses-page">
+    <section class="courses-hero courses-hero--detail" style="--courses-hero-image: url('{{ .Params.heroImage | default "/courses-hero.jpg" }}');" aria-labelledby="courses-hero-title">
+      <div class="courses-hero__content">
+        {{ with .Params.heroEyebrow }}
+          <p class="courses-hero__eyebrow">{{ . }}</p>
+        {{ end }}
+        <h1 id="courses-hero-title">{{ .Params.heroTitle | default .Title }}</h1>
+        {{ with .Params.heroIntro }}
+          <p class="courses-hero__intro">{{ . }}</p>
+        {{ end }}
+      </div>
+    </section>
+
+    <article class="courses-content courses-detail">
+      <div class="courses-detail__body prose dark:prose-invert">
+        {{ .Content | emojify }}
+      </div>
+    </article>
+  </div>
+{{ end }}

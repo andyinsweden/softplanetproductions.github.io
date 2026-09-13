@@ -1,23 +1,37 @@
 ---
-title: "Softplanet Productions | Musicals, Piano Course & CDs"
-description: "Original musicals, a piano improvisation course, audio CDs, and Sibelius site licensing from brothers John & Andy Montgomery at Softplanet Productions."  
+title: "Softplanet Productions | Music Education, Piano Improvisation & Scores"
+description: "Softplanet Productions provides music education, piano improvisation courses, original musicals, sheet music, and Sibelius licensing for schools, creatives, and musicians."
+keywords:
+  - "Softplanet Productions"
+  - "music education"
+  - "piano improvisation"
+  - "Sibelius"
+  - "musical theatre"
+  - "sheet music"
+  - "original musicals"
 ---
 <div class="home-narrow">
 
-John & Andy Montgomery | SOFTPLANET Productions
+<h2>John & Andy Montgomery | Softplanet Productions</h2>
 
-Welcome to Softplanet. We are John and Andy Montgomery—brothers, professional musicians, and creators of original musical theater, original audio CDs, and practical music education.
+Welcome to Softplanet Productions — a creative home for original musical theatre, practical music learning, and quality performance materials.
 
-Original Musicals: Complete production packages—scripts, lead sheets, backing tracks, and performance licenses—for schools and theater groups.
+John and Andy Montgomery are brothers, professional musicians, and creators of musical works and educational resources designed for schools, theatre groups, and music enthusiasts.
 
-Piano & Improvisation Course: An intuitive, play-along approach to mastering the piano through rhythm, ear training, and immediate performance.
+### Original Musicals
+Complete production packages featuring scripts, lead sheets, backing tracks, and performance licenses for schools and community theatre groups.
 
-Original Audio CDs: Original CD albums created and produced by John Montgomery.
+### Piano & Improvisation Course
+A flexible, play-along approach to learning the piano through rhythm, ear training, and immediate musical expression.
 
-Sibelius Site Licenses & Support: Official site licensing, multi-seat arrangements, and tailored educational discounts for schools and colleges.
+### Original Audio CDs
+Distinctive original recordings created and produced by John Montgomery, made for performers, teachers, and listeners alike.
 
-Contact & Licensing
-Have questions about stage rights, Sibelius licensing, or CD orders? Reach out directly.
+### Sibelius Site Licenses & Support
+Official site licensing, multi-seat arrangements, and tailored educational support for schools and colleges.
+
+### Contact & Licensing
+Have questions about stage rights, Sibelius licensing, or CD orders? Get in touch directly.
 
 Phone: 01334 461244
 

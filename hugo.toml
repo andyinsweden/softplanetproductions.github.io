@@ -1,3 +1,27 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://softplanetproductions.github.io/'
+locale = 'en-gb'
+title = 'Softplanet Productions | Music Education, Piano Improvisation & Scores'
+
+[params]
+  description = 'Softplanet Productions helps musicians, educators, and schools with music education, piano improvisation courses, original musicals, sheet music, and Sibelius licensing.'
+  keywords = ['Softplanet Productions', 'music education', 'piano improvisation', 'Sibelius', 'musical theatre', 'sheet music']
+  author = 'John & Andy Montgomery'
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_']
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+
+[enableRobotsTXT]
+  enable = true

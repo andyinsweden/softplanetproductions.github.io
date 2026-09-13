@@ -3,11 +3,13 @@
 # https://jpanther.github.io/congo/docs/getting-started/
 
 theme = "congo"
-title = "SOFTPLANET Productions"
+title = "Softplanet Productions | Music Education, Piano Improvisation & Scores"
 defaultContentLanguage = "en"
-
 enableRobotsTXT = true
 summaryLength = 0
+
+[params]
+  description = "Softplanet Productions provides music education, piano improvisation courses, original musicals, sheet music, and Sibelius licensing for schools, creatives, and musicians."
 
 [pagination]
   pagerSize = 15

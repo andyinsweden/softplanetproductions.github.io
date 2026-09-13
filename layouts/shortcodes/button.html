@@ -1,0 +1,5 @@
+{{ $href := .Get "href" | default "#" }}
+{{ $target := .Get "target" | default "_self" }}
+<a href="{{ $href }}" target="{{ $target }}" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-md bg-sky-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
+  {{ .Inner | markdownify }}
+</a>
