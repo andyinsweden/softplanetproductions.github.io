@@ -2,4 +2,4 @@
 title: "Contact"
 ---
 
-Content coming soon.
+(https://forms.gle/k7WZxeBxt2HZckEq8)
