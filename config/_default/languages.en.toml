@@ -14,7 +14,6 @@ copyright = "&copy; 2026 Softplanet Productions"
 
 [params.author]
   name = "John & Andy Montgomery"
-  image = "img/author.jpg"
   headline = "Musical creativity, education and performance resources"
   bio = "Softplanet Productions creates original musicals, educational music resources, and practical tools for schools, musicians and performing groups."
   links = [

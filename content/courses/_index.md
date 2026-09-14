@@ -1,6 +1,6 @@
 ---
 title: "Courses"
-heroImage: "/courses-hero.jpg"
+heroImage: "/courses-hero.webp"
 heroEyebrow: "LEARN. PLAY. PRODUCE."
 heroTitle: "Music courses for your next creative step"
 heroIntro: "Practical, hands-on courses for piano players, home studio producers, and anyone ready to make more music."

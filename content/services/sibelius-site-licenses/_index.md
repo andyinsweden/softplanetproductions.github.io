@@ -1,7 +1,7 @@
 ---
 title: "Sibelius Site Licences for Schools & Colleges in the UK"
 description: "Sibelius site licences for schools and colleges in the UK. Softplanet Productions supplies and installs Sibelius licences, additional seats and full school network setups across the UK."
-heroImage: "/sibelius-site-licenses-hero.jpeg"
+heroImage: "/sibelius-site-licenses-hero.webp"
 showDate: false
 showReadingTime: false
 showTableOfContents: false

@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="courses-page">
-    <section class="courses-hero courses-hero--detail" style="--courses-hero-image: url('{{ .Params.heroImage | default "/courses-hero.jpg" }}');" aria-labelledby="courses-hero-title">
+    <section class="courses-hero courses-hero--detail" style="--courses-hero-image: url('{{ .Params.heroImage | default "/courses-hero.webp" }}');" aria-labelledby="courses-hero-title">
       <div class="courses-hero__content">
         {{ with .Params.heroEyebrow }}
           <p class="courses-hero__eyebrow">{{ . }}</p>
