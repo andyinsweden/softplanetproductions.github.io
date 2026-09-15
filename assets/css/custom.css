@@ -477,15 +477,15 @@ header nav > ul a:focus-visible {
 }
 
 .image-one {
-  background: linear-gradient(135deg, rgba(17,15,12,0.18), rgba(0,0,0,0.48)), url('/courses-hero.webp') center/cover;
+  background: linear-gradient(135deg, rgba(17,15,12,0.18), rgba(0,0,0,0.48)), url('/courses-card.webp') center/cover;
 }
 
 .image-two {
-  background: linear-gradient(135deg, rgba(17,15,12,0.18), rgba(0,0,0,0.48)), url('/sibelius-notation-software.webp') center/cover;
+  background: linear-gradient(135deg, rgba(17,15,12,0.18), rgba(0,0,0,0.48)), url('/sibelius-card.webp') center/cover;
 }
 
 .image-three {
-  background: linear-gradient(135deg, rgba(17,15,12,0.18), rgba(0,0,0,0.48)), url('/midi-home-studio-hero.webp') center/cover;
+  background: linear-gradient(135deg, rgba(17,15,12,0.18), rgba(0,0,0,0.48)), url('/midi-home-studio-card.webp') center/cover;
 }
 
 .image-four {
