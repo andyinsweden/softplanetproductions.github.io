@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ $isEditorialCourse := eq .RelPermalink "/courses/piano-improvisation/" }}
+
   <div class="courses-page">
     <section class="courses-hero" style="--courses-hero-image: url('{{ .Params.heroImage | default "/courses-hero.webp" }}');" aria-labelledby="courses-hero-title">
       <div class="courses-hero__content">
@@ -8,21 +10,113 @@
       </div>
     </section>
 
-    <section class="courses-content">
-      <div class="courses-content__intro">
-        {{ .Content | emojify }}
-      </div>
+    {{ if $isEditorialCourse }}
+      <article class="courses-content courses-detail">
+        <div class="courses-detail__body">
+          <div class="course-editorial">
+            <div class="course-editorial__masthead">
+              {{ with .Params.kicker }}
+                <p class="course-editorial__kicker">{{ . }}</p>
+              {{ end }}
+              {{ with .Params.headline }}
+                <h2>{{ . }}</h2>
+              {{ end }}
+            </div>
 
-      {{ if .Data.Pages }}
-        <div class="courses-list">
-          {{ range (.Paginate .Pages).Pages }}
-            {{ partial "article-link.html" . }}
-          {{ end }}
+            <div class="course-editorial__layout">
+              <div class="course-editorial__main">
+                {{ with .Params.lede }}
+                  <p class="course-editorial__lede">{{ . }}</p>
+                {{ end }}
+
+                {{ with .Params.intro }}
+                  <p>{{ . }}</p>
+                {{ end }}
+
+                <figure class="course-editorial__video">
+                  <div class="course-editorial__video-frame course-editorial__video-frame--image">
+                    <img src="/piano-improvisation-udemy.webp" alt="Piano improvisation lesson overview" loading="eager" />
+                  </div>
+                  <figcaption>Interactive keyboard lesson with overhead view, notation, and real-time musical response.</figcaption>
+                </figure>
+              </div>
+
+              <aside class="course-editorial__sidebar">
+                <div class="course-editorial__feature-card">
+                  {{ with .Params.featureTitle }}
+                    <p class="course-editorial__feature-label">{{ . }}</p>
+                  {{ end }}
+                  <ul>
+                    {{ range .Params.features }}
+                      <li>{{ . }}</li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </aside>
+            </div>
+
+            <section class="course-editorial__teaching">
+              <div class="course-editorial__section-heading">
+                {{ with .Params.sectionKicker }}
+                  <p class="course-editorial__section-kicker">{{ . }}</p>
+                {{ end }}
+                {{ with .Params.sectionTitle }}
+                  <h3>{{ . }}</h3>
+                {{ end }}
+              </div>
+
+              <div class="course-editorial__cards">
+                {{ range .Params.teachingCards }}
+                  <article class="course-editorial__card">
+                    <div class="course-editorial__card-media {{ .mediaClass }}">
+                      <span>{{ .mediaLabel }}</span>
+                    </div>
+                    <h4>{{ .title }}</h4>
+                    <p>{{ .description }}</p>
+                  </article>
+                {{ end }}
+              </div>
+            </section>
+
+            <section class="course-editorial__bio-wrap">
+              <div class="course-editorial__bio">
+                <div class="course-editorial__portrait">
+                  <span>JM</span>
+                </div>
+                <div class="course-editorial__bio-copy">
+                  {{ with .Params.bioKicker }}
+                    <p class="course-editorial__section-kicker">{{ . }}</p>
+                  {{ end }}
+                  {{ with .Params.bioTitle }}
+                    <h3>{{ . }}</h3>
+                  {{ end }}
+                  {{ with .Params.bioText }}
+                    <p>{{ . }}</p>
+                  {{ end }}
+                  <a class="course-editorial__cta" href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener">{{ .Params.ctaText | default "Enroll in the course on Udemy" }}</a>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-        {{ partial "pagination.html" . }}
-      {{ else }}
-        <p class="courses-empty"><em>{{ i18n "list.no_articles" | emojify }}</em></p>
-      {{ end }}
-    </section>
+      </article>
+    {{ else }}
+      <section class="courses-content">
+        <div class="courses-content__intro">
+          {{ .Content | emojify }}
+        </div>
+
+        {{ if .Data.Pages }}
+          <div class="courses-list">
+            {{ range (.Paginate .Pages).Pages }}
+              {{ partial "article-link.html" . }}
+            {{ end }}
+          </div>
+          {{ partial "pagination.html" . }}
+        {{ else }}
+          <p class="courses-empty"><em>{{ i18n "list.no_articles" | emojify }}</em></p>
+        {{ end }}
+      </section>
+    {{ end }}
   </div>
 {{ end }}

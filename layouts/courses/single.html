@@ -14,7 +14,96 @@
 
     <article class="courses-content courses-detail">
       <div class="courses-detail__body prose dark:prose-invert">
-        {{ .Content | emojify }}
+        <div class="course-editorial">
+          <div class="course-editorial__masthead">
+            {{ with .Params.kicker }}
+              <p class="course-editorial__kicker">{{ . }}</p>
+            {{ end }}
+            {{ with .Params.headline }}
+              <h2>{{ . }}</h2>
+            {{ end }}
+          </div>
+
+          <div class="course-editorial__layout">
+            <div class="course-editorial__main">
+              {{ with .Params.lede }}
+                <p class="course-editorial__lede">{{ . }}</p>
+              {{ end }}
+
+              {{ with .Params.intro }}
+                <p>{{ . }}</p>
+              {{ end }}
+
+              <figure class="course-editorial__video">
+                <div class="course-editorial__video-frame">
+                  <div class="course-editorial__video-placeholder">
+                    <span>Lesson Preview</span>
+                  </div>
+                </div>
+                <figcaption>Interactive keyboard lesson with overhead view, notation, and real-time musical response.</figcaption>
+              </figure>
+            </div>
+
+            <aside class="course-editorial__sidebar">
+              <div class="course-editorial__feature-card">
+                {{ with .Params.featureTitle }}
+                  <p class="course-editorial__feature-label">{{ . }}</p>
+                {{ end }}
+
+                <ul>
+                  {{ range .Params.features }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              </div>
+            </aside>
+          </div>
+
+          <section class="course-editorial__teaching">
+            <div class="course-editorial__section-heading">
+              {{ with .Params.sectionKicker }}
+                <p class="course-editorial__section-kicker">{{ . }}</p>
+              {{ end }}
+              {{ with .Params.sectionTitle }}
+                <h3>{{ . }}</h3>
+              {{ end }}
+            </div>
+
+            <div class="course-editorial__cards">
+              {{ range .Params.teachingCards }}
+                <article class="course-editorial__card">
+                  <div class="course-editorial__card-media {{ .mediaClass }}">
+                    <span>{{ .mediaLabel }}</span>
+                  </div>
+                  <h4>{{ .title }}</h4>
+                  <p>{{ .description }}</p>
+                </article>
+              {{ end }}
+            </div>
+          </section>
+
+          <section class="course-editorial__bio-wrap">
+            <div class="course-editorial__bio">
+              <div class="course-editorial__portrait">
+                <span>JM</span>
+              </div>
+              <div class="course-editorial__bio-copy">
+                {{ with .Params.bioKicker }}
+                  <p class="course-editorial__section-kicker">{{ . }}</p>
+                {{ end }}
+                {{ with .Params.bioTitle }}
+                  <h3>{{ . }}</h3>
+                {{ end }}
+                {{ with .Params.bioText }}
+                  <p>{{ . }}</p>
+                {{ end }}
+                {{ with .Params.ctaUrl }}
+                  <a class="course-editorial__cta" href="{{ $.Params.ctaUrl }}" target="_blank" rel="noopener">{{ $.Params.ctaText | default "Enroll in the course on Udemy" }}</a>
+                {{ end }}
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </article>
   </div>
