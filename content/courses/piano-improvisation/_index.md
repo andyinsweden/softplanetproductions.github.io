@@ -20,7 +20,7 @@ sectionKicker: "How lessons are taught"
 sectionTitle: "Three ways to make the music feel real."
 teachingCards:
   - title: "Overhead hand-sync footage"
-   
+    heroImage: "/courses-hero.webp"
     description: "You can see exactly where every finger lands — not just hear it. This makes it much easier to connect what your hands are doing with what your ears are hearing."
   - title: "Animated scores"
     
