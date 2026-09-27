@@ -68,9 +68,19 @@
               <div class="course-editorial__cards">
                 {{ range .Params.teachingCards }}
                   <article class="course-editorial__card">
-                    <div class="course-editorial__card-media {{ .mediaClass }}">
-                      <span>{{ .mediaLabel }}</span>
-                    </div>
+                    {{ if eq .title "Overhead hand-sync footage" }}
+                      <div class="course-editorial__card-media course-editorial__card-media--image">
+                        <img src="/overhead-hand-sync-card.webp" alt="Overhead hand-sync footage" loading="lazy" />
+                      </div>
+                    {{ else if eq .title "Animated scores" }}
+                      <div class="course-editorial__card-media course-editorial__card-media--image">
+                        <img src="/animated-score-card.webp" alt="Animated score" loading="lazy" />
+                      </div>
+                    {{ else }}
+                      <div class="course-editorial__card-media {{ .mediaClass }}">
+                        <span>{{ .mediaLabel }}</span>
+                      </div>
+                    {{ end }}
                     <h4>{{ .title }}</h4>
                     <p>{{ .description }}</p>
                   </article>

@@ -32,5 +32,5 @@ bioKicker: "Taught by John Montgomery"
 bioTitle: "Piano & Improvisation is taught by John Montgomery of Softplanet Productions."
 bioText: "He's spent thirty years playing, writing and arranging music, and this course is built from lessons he's taught and refined over that time. It's the same teaching, built for anyone practising at home."
 ctaText: "Enroll in the course on Udemy"
-ctaUrl: "https://www.udemy.com/course/modern-piano-improvisation-2026/?referralCode=E278D68B938351D04AD6"
+ctaUrl: "https://www.udemy.com/course/modern-piano-improvisation-2026/?couponCode=EA491FA384AEEFC03B22"
 ---
