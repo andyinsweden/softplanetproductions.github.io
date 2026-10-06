@@ -31,6 +31,12 @@
   weight = 31
 
 [[main]]
+  name = "Sibelius Troubleshooting"
+  pageRef = "tutorials/sibelius-troubleshooting"
+  parent = "services"
+  weight = 32
+
+[[main]]
   name = "Scores"
     pageRef = "piano-scores"
   identifier = "piano-scores"
