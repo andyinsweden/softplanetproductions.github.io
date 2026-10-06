@@ -33,7 +33,7 @@ Official site licensing, multi-seat arrangements, and tailored educational suppo
 ### Contact & Licensing
 Have questions about stage rights, Sibelius licensing, or CD orders? Get in touch directly.
 
-Phone: 01334 461244
+Phone: 07800 754428
 
 Shipping: Worldwide delivery for CDs, script packages, and educational media.
 </div>

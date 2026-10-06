@@ -58,7 +58,7 @@ showTableOfContents: false
 
 <section class="sibelius-contact" id="sibelius-contact">
   <div><h2>Need a Sibelius site licence for your school or college?</h2><p>Tell us how many computers or seats you need, what you are currently running and whether you need a new installation or an upgrade. We will advise on the best setup for your department.</p></div>
-  <div class="sibelius-contact-card"><a href="tel:01334461244">01334 461244</a><p>Call to talk through Sibelius licensing, school installs, network setups or additional seats.</p><a class="sibelius-button sibelius-button--primary" href="tel:01334461244">Call now</a></div>
+  <div class="sibelius-contact-card"><a href="tel:07800754428">07800 754428</a><p>Call to talk through Sibelius licensing, school installs, network setups or additional seats.</p><a class="sibelius-button sibelius-button--primary" href="tel:07800754428">Call now</a></div>
 </section>
 
 <section class="sibelius-section sibelius-faq">
