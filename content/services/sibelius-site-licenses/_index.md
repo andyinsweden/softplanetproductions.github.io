@@ -66,7 +66,7 @@ showTableOfContents: false
   <article><h3>Can you provide a Sibelius site licence for a whole school?</h3><p>Yes. We can advise on the appropriate licence and help install Sibelius across the computers used by your music department, classrooms or practice rooms.</p></article>
   <article><h3>Can you add seats to an existing Sibelius setup?</h3><p>Yes. We can help schools and colleges expand an existing Sibelius installation with additional seats as departments, rooms or teaching requirements grow.</p></article>
   <article><h3>Do you support Sibelius network installations?</h3><p>Yes. We can discuss your network, licensing and installation requirements and help plan a practical setup for your school or college.</p></article>
-  <article><h3>Where can I find help troubleshooting Sibelius?</h3><p>See our <a href="/tutorials/sibelius-troubleshooting/">Sibelius troubleshooting guide</a> for solutions to common problems.</p></article>
+  <article><h3>Where can I find help troubleshooting Sibelius?</h3><p>See our <a class="sibelius-faq__troubleshooting-link" href="/tutorials/sibelius-troubleshooting/">Sibelius troubleshooting guide</a> for solutions to common problems.</p></article>
 </section>
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet80y3qktK3Kx-vdTzeHHoMSnD7-uHmNCg_EKTvHphk7t1Bg/viewform?embedded=true" width="640" height="1279" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

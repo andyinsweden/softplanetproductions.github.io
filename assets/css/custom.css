@@ -461,6 +461,19 @@ body {
   color: rgba(243, 239, 232, 0.72);
 }
 
+.sibelius-faq__troubleshooting-link {
+  color: #c084fc;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #a855f7;
+  text-underline-offset: 0.2em;
+}
+
+.sibelius-faq__troubleshooting-link:hover,
+.sibelius-faq__troubleshooting-link:focus-visible {
+  color: #e9d5ff;
+}
+
 .sibelius-hero,
 .sibelius-section,
 .sibelius-showcase,
