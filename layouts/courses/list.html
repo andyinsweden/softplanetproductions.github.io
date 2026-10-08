@@ -70,11 +70,19 @@
                   <article class="course-editorial__card">
                     {{ if eq .title "Overhead hand-sync footage" }}
                       <div class="course-editorial__card-media course-editorial__card-media--image">
-                        <img src="/overhead-hand-sync-card.webp" alt="Overhead hand-sync footage" loading="lazy" />
+                        <img src="/piano-improvisation-overhead.webp" alt="Overhead hand-sync footage" loading="lazy" />
                       </div>
                     {{ else if eq .title "Animated scores" }}
                       <div class="course-editorial__card-media course-editorial__card-media--image">
                         <img src="/animated-score-card.webp" alt="Animated score" loading="lazy" />
+                      </div>
+                    {{ else if eq .title "Studio-recorded backing tracks" }}
+                      <div class="course-editorial__card-media course-editorial__card-media--image media-3">
+                        <img src="/midi-home-studio-card.webp" alt="Studio-recorded backing tracks" loading="lazy" />
+                      </div>
+                    {{ else if .heroImage }}
+                      <div class="course-editorial__card-media course-editorial__card-media--image {{ .mediaClass }}">
+                        <img src="{{ .heroImage }}" alt="{{ .title }}" loading="lazy" />
                       </div>
                     {{ else }}
                       <div class="course-editorial__card-media {{ .mediaClass }}">
