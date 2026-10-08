@@ -29,7 +29,7 @@ teachingCards:
     mediaClass: "media-2"
     description: "Follow notation that moves with the music in real time. Build your understanding of written music and connect the notes on the page with what you hear and play."
   - title: "Studio-recorded backing tracks"
-    heroImage: "/midi-home-studio-card.webp"
+    heroImage: "/studio-recordings.jpg"
     mediaClass: "media-3"
     description: "Practise piano improvisation with studio-recorded backing tracks. Explore rhythm and melody alongside a full-band sound and put your musical ideas into practice."
 bioKicker: "Meet your piano improvisation teacher"

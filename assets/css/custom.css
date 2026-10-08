@@ -855,7 +855,7 @@ header nav > ul a:focus-visible {
 }
 
 .image-three {
-  background: linear-gradient(135deg, rgba(17,15,12,0.18), rgba(0,0,0,0.48)), url('/midi-home-studio-card.webp') center/cover;
+  background: linear-gradient(135deg, rgba(17,15,12,0.18), rgba(0,0,0,0.48)), url('/studio-recordings.jpg') center/cover;
 }
 
 .image-four {
