@@ -72,9 +72,15 @@
             <div class="course-editorial__cards">
               {{ range .Params.teachingCards }}
                 <article class="course-editorial__card">
-                  <div class="course-editorial__card-media {{ .mediaClass }}">
-                    <span>{{ .mediaLabel }}</span>
-                  </div>
+                  {{ if .heroImage }}
+                    <div class="course-editorial__card-media course-editorial__card-media--image {{ .mediaClass }}">
+                      <img src="{{ .heroImage }}" alt="{{ .title }}" loading="lazy">
+                    </div>
+                  {{ else }}
+                    <div class="course-editorial__card-media {{ .mediaClass }}">
+                      <span>{{ .mediaLabel }}</span>
+                    </div>
+                  {{ end }}
                   <h4>{{ .title }}</h4>
                   <p>{{ .description }}</p>
                 </article>
