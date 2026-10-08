@@ -20,10 +20,10 @@ features:
 sectionKicker: "Watch, listen and play along"
 sectionTitle: "Learn Piano Improvisation Through Practical Video Lessons."
 teachingCards:
-  - title: "Overhead piano demonstrations"
+  - title: "Overhead hand-sync footage"
     heroImage: "/courses-hero.webp"
     description: "See exactly where each finger lands with overhead hand-sync footage. Follow the piano demonstrations and connect what your hands are doing with the music you hear."
-  - title: "Animated music scores"
+  - title: "Animated scores"
     description: "Follow notation that moves with the music in real time. Build your understanding of written music and connect the notes on the page with what you hear and play."
   - title: "Studio-recorded backing tracks"
     description: "Practise piano improvisation with studio-recorded backing tracks. Explore rhythm and melody alongside a full-band sound and put your musical ideas into practice."
