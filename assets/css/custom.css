@@ -1009,6 +1009,26 @@ header nav > ul a:focus-visible {
 }
 
 @media (min-width: 1025px) {
+  html {
+    background-color: #000;
+    container-type: inline-size;
+  }
+
+  body {
+    overflow-x: visible;
+  }
+
+  .courses-page,
+  .sibelius-page,
+  .softplanet-landing,
+  .softplanet-resources,
+  .softplanet-benefits {
+    width: 100cqw;
+    max-width: 100cqw;
+    margin-left: calc(50% - 50cqw);
+    margin-right: calc(50% - 50cqw);
+  }
+
   .courses-hero,
   .sibelius-hero {
     min-height: max(560px, 56.25vw);
