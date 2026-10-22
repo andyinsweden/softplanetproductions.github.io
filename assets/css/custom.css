@@ -1031,12 +1031,12 @@ header nav > ul a:focus-visible {
 
   .courses-hero,
   .sibelius-hero {
-    min-height: max(560px, 56.25vw);
+    min-height: max(560px, 56.25cqw);
     background-size: auto, 100% 100%;
   }
 
   .softplanet-hero {
-    min-height: max(820px, 66.7vw);
+    min-height: max(820px, 66.7cqw);
     background-size: auto, 100% 100%;
   }
 
