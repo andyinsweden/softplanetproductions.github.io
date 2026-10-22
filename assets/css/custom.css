@@ -1008,6 +1008,31 @@ header nav > ul a:focus-visible {
   }
 }
 
+@media (min-width: 1025px) {
+  .courses-hero,
+  .sibelius-hero {
+    min-height: max(560px, 56.25vw);
+    background-size: auto, 100% 100%;
+  }
+
+  .softplanet-hero {
+    min-height: max(820px, 66.7vw);
+    background-size: auto, 100% 100%;
+  }
+
+  .feature-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .feature-item {
+    min-width: 0;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+  }
+}
+
 .sibelius-search[hidden] {
   display: none;
 }
