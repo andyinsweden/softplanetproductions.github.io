@@ -37,6 +37,7 @@
       {{/* Mobile Overlay Nav Wrapper */}}
       <div 
         id="menu-wrapper"
+        aria-hidden="true"
         class="invisible fixed inset-0 z-50 h-full w-full overflow-auto opacity-0 transition-opacity sm:hidden"
         style="background-color: #000000 !important;"
       >
@@ -137,13 +138,19 @@
       function openMenu() {
         if (!wrapper) return;
         wrapper.classList.remove("invisible", "opacity-0");
+        wrapper.setAttribute("aria-hidden", "false");
         if (toggleBtn) toggleBtn.setAttribute("aria-expanded", "true");
+        if (closeBtn) closeBtn.focus();
       }
 
       function closeMenu() {
         if (!wrapper) return;
         wrapper.classList.add("invisible", "opacity-0");
-        if (toggleBtn) toggleBtn.setAttribute("aria-expanded", "false");
+        wrapper.setAttribute("aria-hidden", "true");
+        if (toggleBtn) {
+          toggleBtn.setAttribute("aria-expanded", "false");
+          toggleBtn.focus();
+        }
       }
 
       if (toggleBtn) {
@@ -163,6 +170,13 @@
           closeMenu();
         });
       }
+
+      document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape" && wrapper && !wrapper.classList.contains("invisible")) {
+          e.preventDefault();
+          closeMenu();
+        }
+      });
     });
   </script>
 </header>

@@ -2,6 +2,7 @@
 title: "Sibelius Troubleshooting: 50 Common Problems and Solutions"
 description: "Solve common Sibelius problems with playback, MIDI keyboards, note input, notation, score layout, parts, PDF export and file recovery."
 draft: false
+showTableOfContents: false
 ---
 
 Find practical solutions to 50 common Sibelius problems, from missing playback sound to awkward score spacing and PDF export issues.
@@ -18,6 +19,8 @@ Before making major changes, save a separate copy of your score.
 - [Score Layout and Spacing](#score-layout-and-spacing)
 - [Parts, Printing and Exporting](#parts-printing-and-exporting)
 - [Saving, Recovery and Performance](#saving-recovery-and-performance)
+
+{{< sibelius-troubleshooting-search >}}
 
 ## Sound and Playback
 

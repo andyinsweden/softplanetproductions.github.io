@@ -69,4 +69,4 @@ showTableOfContents: false
   <article><h3>Where can I find help troubleshooting Sibelius?</h3><p>See our <a class="sibelius-faq__troubleshooting-link" href="/tutorials/sibelius-troubleshooting/">Sibelius troubleshooting guide</a> for solutions to common problems.</p></article>
 </section>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet80y3qktK3Kx-vdTzeHHoMSnD7-uHmNCg_EKTvHphk7t1Bg/viewform?embedded=true" width="640" height="1279" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet80y3qktK3Kx-vdTzeHHoMSnD7-uHmNCg_EKTvHphk7t1Bg/viewform?embedded=true" title="Sibelius site licence enquiry form" width="640" height="1279" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

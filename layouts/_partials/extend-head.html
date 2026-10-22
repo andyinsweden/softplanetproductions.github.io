@@ -1,0 +1,9 @@
+{{ if eq .RelPermalink "/tutorials/sibelius-troubleshooting/" }}
+  {{ $script := resources.Get "js/sibelius-troubleshooting.js" | minify | fingerprint }}
+  <script
+    defer
+    src="{{ $script.RelPermalink }}"
+    integrity="{{ $script.Data.Integrity }}"
+    crossorigin="anonymous"
+  ></script>
+{{ end }}

@@ -14,8 +14,6 @@ author: "John Montgomery"
 
 **Bohemian Rhapsody Finale** is a dramatic, theatrical solo piano arrangement inspired by the climactic section of Queen's iconic anthem. This version is designed to capture the emotional rise, tension and sense of scale of the original while adapting it into a rewarding and expressive piano performance.
 
-<iframe allow="autoplay" allowfullscreen width="525" height="800" src="https://www.noteflight.com/pub_embed/7883cb78ddf38f2b0293e1eedd56ead0%3Ftoken=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InB1Ymxpc2hlZF9zY29yZV9pZCI6Ijc4ODNjYjc4ZGRmMzhmMmIwMjkzZTFlZWRkNTZlYWQwIiwicHJldmlldyI6ZmFsc2UsInBlcnNvbmFsaXphdGlvbiI6bnVsbCwiZGlzYWJsZVByaW50aW5nIjpmYWxzZX0sImV4cCI6MTc4OTMxMjc3MH0.pIF-Tv_ZRm12P9ZmQHyV0RrA2YC4dlQ-peuTzNe4oAc?scale=1&displayMode=paginated"></iframe>
-
 The arrangement focuses on bold voicing, dynamic contrast and rhythmic control, giving a single pianist the opportunity to recreate the dramatic energy and grandeur of the final section of the song.
 
 ## Bohemian Rhapsody Finale Piano Arrangement

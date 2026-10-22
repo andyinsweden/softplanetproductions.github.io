@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://softplanetproductions.github.io/sitemap.xml
+Sitemap: https://softplanetproductions.com/sitemap.xml

@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+  overflow-x: clip;
+  overflow-y: auto;
+}
+
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .home-narrow {
@@ -1003,6 +1008,72 @@ header nav > ul a:focus-visible {
   }
 }
 
+.sibelius-search[hidden] {
+  display: none;
+}
+
+.sibelius-search {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid rgba(228, 179, 90, 0.45);
+  border-radius: 0.75rem;
+  background: #151515;
+}
+
+.sibelius-search__field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.sibelius-search label {
+  color: #f3efe8;
+  font-weight: 700;
+}
+
+.sibelius-search input,
+.sibelius-search select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #777;
+  border-radius: 0.35rem;
+  background: #fff;
+  color: #171717;
+  font: inherit;
+}
+
+.sibelius-search input:focus-visible,
+.sibelius-search select:focus-visible {
+  outline: 3px solid #e4b35a;
+  outline-offset: 2px;
+}
+
+.sibelius-search__status {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #f3efe8;
+}
+
+.sibelius-question {
+  padding-block: 0.75rem;
+  border-bottom: 1px solid rgba(243, 239, 232, 0.16);
+}
+
+.sibelius-question[hidden] {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .sibelius-search {
+    grid-template-columns: minmax(0, 1fr);
+    margin-block: 1.5rem;
+  }
+}
+
 /* ================================
    MOBILE HAMBURGER MENU
    ================================ */
@@ -1034,4 +1105,84 @@ header nav > ul a:focus-visible {
 #mobile-menu a {
     justify-content: flex-start !important;
     text-align: left !important;
+}
+
+main > section.prose,
+main > article > section.prose {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
+main > article > header.max-w-prose,
+main > article > footer.max-w-prose {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
+main > article > header h1 {
+  max-width: 32ch;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+main .prose :where(h2, h3, h4) {
+  line-height: 1.25;
+  text-wrap: balance;
+  scroll-margin-top: 6rem;
+}
+
+main .prose :where(p, li) {
+  line-height: 1.75;
+}
+
+main > article > section.prose > .max-w-prose {
+  max-width: 72ch;
+}
+
+main iframe {
+  display: block;
+  max-width: 100%;
+  margin-inline: auto;
+  border: 0;
+}
+
+main iframe[src*="docs.google.com/forms"] {
+  width: 100%;
+  max-width: 40rem;
+  margin-block: 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 18%);
+}
+
+main iframe[src*="youtube.com/embed"],
+main iframe[src*="youtube-nocookie.com/embed"] {
+  width: 100%;
+  max-width: 60rem;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 640px) {
+  main > section.prose,
+  main > article > section.prose,
+  main > article > header.max-w-prose,
+  main > article > footer.max-w-prose {
+    padding-inline: 1rem;
+  }
+
+  main > article > header h1 {
+    font-size: clamp(2rem, 8vw, 2.75rem);
+  }
+
+  main iframe[src*="docs.google.com/forms"] {
+    margin-block: 1.5rem;
+    border-radius: 0.25rem;
+  }
 }
