@@ -1029,6 +1029,11 @@ header nav > ul a:focus-visible {
     margin-right: calc(50% - 50cqw);
   }
 
+  .courses-content:not(.courses-detail) {
+    padding-right: clamp(1.25rem, 6vw, 6rem);
+    padding-left: clamp(1.25rem, 6vw, 6rem);
+  }
+
   .courses-hero,
   .sibelius-hero {
     min-height: max(560px, 56.25cqw);
