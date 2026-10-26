@@ -61,6 +61,18 @@
   weight = 43
 
 [[main]]
+  name = "Free Music Tools"
+  pageRef = "tools"
+  identifier = "tools"
+  weight = 45
+
+[[main]]
+  name = "Daily Piano Challenge"
+  pageRef = "tools/daily-piano-improvisation"
+  parent = "tools"
+  weight = 46
+
+[[main]]
   name = "Tutorials"
   pageRef = "tutorials"
   identifier = "tutorials"
