@@ -1,17 +1,20 @@
 ---
-title: "Piano Improvisation Course 2026: Learn to Play & Improvise"
-description: "Learn piano improvisation online in 2026 with John Montgomery. Explore lessons in playing by ear, piano chords, scales, rhythm, blues, arpeggios and two-hand coordination."
+title: "Piano Improvisation Course | Play by Ear & Create Music"
+description: "Piano improvisation course for beginners and pianists. Learn to play by ear, build chords and create melodies with John Montgomery’s video lessons and backing tracks."
+
+images:
+  - "/piano-improvisation-udemy.webp"
 
 heroImage: "/courses-hero.webp"
 heroEyebrow: "ONLINE PIANO IMPROVISATION COURSE"
-heroTitle: "Learn Piano Improvisation. Play Music That’s Yours."
-heroIntro: "Learn piano improvisation from your very first notes. Play by ear, master practical chords and build expressive melodies with John Montgomery."
+heroTitle: "Piano Improvisation Course: Learn to Play by Ear"
+heroIntro: "An online piano improvisation course with John Montgomery. Discover practical chords, melodies, rhythms and backing-track exercises — even if you cannot read sheet music."
 
 kicker: "From your first musical ideas to confident improvisation"
-headline: "Piano Improvisation Course 2026: Learn to Play & Improvise"
-lede: "What if you could sit at a piano without sheet music and know how to begin? Our play-first online course takes you from your earliest improvisations to expressive chords, grooves and original musical ideas."
+headline: "From Your First Notes to Confident Piano Improvisation"
+lede: "Imagine sitting down at the piano and making music without following a score. This self-paced piano improvisation course helps beginners and experienced players learn to play by ear, build expressive chord progressions and turn simple ideas into their own melodies."
 
-intro: "Learn piano improvisation through practical video lessons designed to develop your creativity, confidence and musical understanding. John Montgomery guides you through essential piano techniques, chords, rhythm, melody and playing by ear. Whether you are a beginner or already have some piano experience, discover how to develop musical ideas and improvise with greater freedom. Explore the keyboard from your first lesson and build the skills to create music of your own."
+intro: "Rather than asking you to memorise one piece after another, John Montgomery teaches you the building blocks of musical freedom. Start with just three notes, develop rhythm and melody, explore scales and piano chords, then practise improvisation over studio-recorded backing tracks. The lessons feature overhead keyboard demonstrations and animated scores, helping you connect what you see and hear with what your hands play. If you are new to the piano, begin at the beginning; if you already play, use the practical modules to become more confident playing by ear and creating original musical ideas."
 
 featureTitle: "What You'll Learn in This Piano Improvisation Course"
 features:
