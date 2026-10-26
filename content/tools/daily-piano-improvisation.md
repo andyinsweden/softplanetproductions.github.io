@@ -5,8 +5,6 @@ images:
   - "/piano-improvisation-overhead.webp"
 ---
 
-# Daily Piano Improvisation Challenge
-
 **Your five-minute creative piano habit.** A new musical idea every day, with a chord progression you can hear, a manageable exercise and space to experiment. There is no account to create and nothing to download.
 
 <div class="sp-lab" id="sp-daily-improv" aria-label="Interactive daily piano improvisation practice tool">
