@@ -22,7 +22,7 @@ John and Andy Montgomery are brothers, professional musicians, and creators of m
 Complete production packages featuring scripts, lead sheets, backing tracks, and performance licenses for schools and community theatre groups.
 
 ### Piano & Improvisation Course
-A flexible, play-along approach to learning the piano through rhythm, ear training, and immediate musical expression.
+A flexible, play-along approach to learning the piano through rhythm, ear training, and immediate musical expression. Try our [free daily piano improvisation challenge](/tools/daily-piano-improvisation/) for a new musical exercise every day, or explore the [full piano improvisation course](/courses/piano-improvisation/).
 
 ### Original Audio CDs
 Distinctive original recordings created and produced by John Montgomery, made for performers, teachers, and listeners alike.
