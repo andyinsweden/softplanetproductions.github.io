@@ -57,9 +57,12 @@
 
                 <figure class="course-editorial__video">
                   <div class="course-editorial__video-frame course-editorial__video-frame--image">
-                    <img src="/piano-improvisation-udemy.webp" alt="Piano improvisation lesson overview" loading="eager" />
+                    <a class="piano-preview-link" href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener" aria-label="Open the free piano course preview on Udemy">
+                      <img src="/piano-improvisation-udemy.webp" alt="Preview of John Montgomery's piano improvisation lessons showing an overhead keyboard view and notation" loading="eager" />
+                      <span class="piano-preview-play" aria-hidden="true">▶</span>
+                    </a>
                   </div>
-                  <figcaption>Interactive keyboard lesson with overhead view, notation, and real-time musical response.</figcaption>
+                  <figcaption>See the hands, hear the notes and follow the notation. <a href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener">Watch the free course preview on Udemy</a>.</figcaption>
                 </figure>
               </div>
 
