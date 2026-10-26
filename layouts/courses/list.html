@@ -96,6 +96,33 @@
               </div>
             </section>
 
+            {{ with .Params.curriculum }}
+              <section class="course-editorial__teaching" id="piano-improvisation-curriculum" aria-labelledby="curriculum-title">
+                <div class="course-editorial__section-heading">
+                  <p class="course-editorial__section-kicker">Step-by-step video lessons</p>
+                  <h2 id="curriculum-title">Piano Improvisation Course Curriculum</h2>
+                  {{ with $.Params.courseOutlineIntro }}<p>{{ . }}</p>{{ end }}
+                </div>
+                <div class="course-curriculum" style="display:grid;gap:1rem;">
+                  {{ range $index, $module := . }}
+                    <details class="course-curriculum__module" style="border:1px solid currentColor;border-radius:12px;padding:1rem 1.25rem;" {{ if eq $index 0 }}open{{ end }}>
+                      <summary style="cursor:pointer;font-weight:700;font-size:1.08rem;">{{ printf "%02d" (add $index 1) }} · {{ $module.title }}</summary>
+                      <p>{{ $module.summary }}</p>
+                      <ul>{{ range $module.topics }}<li>{{ . }}</li>{{ end }}</ul>
+                    </details>
+                  {{ end }}
+                </div>
+                <p style="margin-top:1.5rem;">Explore all current lessons and enrol in <a href="{{ $.Params.ctaUrl }}" rel="noopener" target="_blank">Modern Piano Improvisation 2026 on Udemy</a>.</p>
+              </section>
+              <section class="course-editorial__teaching" aria-labelledby="course-audience-title">
+                <div class="course-editorial__section-heading">
+                  <h2 id="course-audience-title">Who Is This Piano Improvisation Course For?</h2>
+                  <p>No previous piano experience is required. You will need a piano or keyboard and speakers or headphones to follow along with the lessons and backing tracks.</p>
+                </div>
+                <ul>{{ range $.Params.audience }}<li>{{ . }}</li>{{ end }}</ul>
+              </section>
+            {{ end }}
+
             <section class="course-editorial__bio-wrap">
               <div class="course-editorial__bio">
                 <div class="course-editorial__portrait">
