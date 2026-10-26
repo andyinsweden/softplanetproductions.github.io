@@ -1,12 +1,24 @@
 {{ define "main" }}
   {{ $isEditorialCourse := eq .RelPermalink "/courses/piano-improvisation/" }}
 
-  <div class="courses-page">
+  {{ if $isEditorialCourse }}
+    <link rel="stylesheet" href="/css/piano-course-landing.css" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Course","name":"Piano Improvisation Course 2026: Learn to Play & Improvise","description":"Self-paced online piano improvisation with practical video lessons, playing by ear, chords, rhythms, melodies, blues and backing tracks.","provider":{"@type":"Organization","name":"Softplanet Productions","url":"https://softplanetproductions.com/"},"url":"https://softplanetproductions.com/courses/piano-improvisation/","educationalLevel":"Beginner and intermediate","teaches":["Piano improvisation","Playing piano by ear","Piano chords and chord progressions","Rhythm and piano melodies","Two-hand independence"]}
+    </script>
+  {{ end }}
+  <div class="courses-page{{ if $isEditorialCourse }} piano-landing{{ end }}">
     <section class="courses-hero" style="--courses-hero-image: url('{{ .Params.heroImage | default "/courses-hero.webp" }}');" aria-labelledby="courses-hero-title">
       <div class="courses-hero__content">
         <p class="courses-hero__eyebrow">{{ .Params.heroEyebrow }}</p>
         <h1 id="courses-hero-title">{{ .Params.heroTitle | default .Title }}</h1>
         <p class="courses-hero__intro">{{ .Params.heroIntro }}</p>
+        {{ if $isEditorialCourse }}
+          <div class="piano-hero-actions">
+            <a class="piano-btn piano-btn--primary" href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener">Explore &amp; Enrol on Udemy</a>
+            <a class="piano-btn piano-btn--secondary" href="#piano-improvisation-curriculum">Explore the Course Lessons</a>
+          </div>
+        {{ end }}
       </div>
     </section>
 
@@ -22,6 +34,17 @@
                 <h2>{{ . }}</h2>
               {{ end }}
             </div>
+
+            {{ with .Params.courseStats }}
+              <div class="piano-course-stats" aria-label="Course at a glance">
+                {{ range . }}
+                  <div class="piano-course-stat"><strong>{{ .value }}</strong><span>{{ .label }}</span></div>
+                {{ end }}
+              </div>
+            {{ end }}
+            {{ with .Params.coursePromise }}
+              <div class="piano-course-promise">{{ . }}</div>
+            {{ end }}
 
             <div class="course-editorial__layout">
               <div class="course-editorial__main">
@@ -55,6 +78,30 @@
               </aside>
             </div>
 
+
+            {{ with .Params.courseBenefits }}
+              <section class="piano-selling-section" id="why-this-piano-course">
+                <p class="piano-section-kicker">Learn to create, not just repeat</p>
+                <h2>Why This Piano Improvisation Course Is Different</h2>
+                <p>There is a difference between learning a piece and knowing what to play when the score disappears. John's lessons combine simple, practical demonstrations with just enough music theory to help you make your own choices on the keyboard.</p>
+                <div class="piano-benefit-grid">
+                  {{ range . }}
+                    <div class="piano-benefit-card"><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
+                  {{ end }}
+                </div>
+              </section>
+            {{ end }}
+            {{ with .Params.studentJourney }}
+              <section class="piano-selling-section" aria-labelledby="journey-title">
+                <p class="piano-section-kicker">A clear path from your first note</p>
+                <h2 id="journey-title">What Will You Be Able to Play?</h2>
+                <div class="piano-journey">
+                  {{ range . }}
+                    <div class="piano-journey__step"><b>{{ .stage }}</b><h3>{{ .headline }}</h3><p>{{ .text }}</p></div>
+                  {{ end }}
+                </div>
+              </section>
+            {{ end }}
             <section class="course-editorial__teaching">
               <div class="course-editorial__section-heading">
                 {{ with .Params.sectionKicker }}
@@ -96,30 +143,60 @@
               </div>
             </section>
 
-            {{ with .Params.curriculum }}
-              <section class="course-editorial__teaching" id="piano-improvisation-curriculum" aria-labelledby="curriculum-title">
-                <div class="course-editorial__section-heading">
-                  <p class="course-editorial__section-kicker">Step-by-step video lessons</p>
-                  <h2 id="curriculum-title">Piano Improvisation Course Curriculum</h2>
-                  {{ with $.Params.courseOutlineIntro }}<p>{{ . }}</p>{{ end }}
-                </div>
-                <div class="course-curriculum" style="display:grid;gap:1rem;">
+
+            {{ with .Params.sectionsDetailed }}
+              <section class="piano-selling-section" id="piano-improvisation-curriculum" aria-labelledby="curriculum-title">
+                <p class="piano-section-kicker">A substantial, practical learning programme</p>
+                <h2 id="curriculum-title">Explore the Piano Improvisation Course Curriculum</h2>
+                <p>With 15 sections and 110 lectures on Udemy, there is plenty to discover. Open the sections below to see specific lesson subjects, exercises and the musical skills they develop.</p>
+                <div class="piano-course-curriculum">
                   {{ range $index, $module := . }}
-                    <details class="course-curriculum__module" style="border:1px solid currentColor;border-radius:12px;padding:1rem 1.25rem;" {{ if eq $index 0 }}open{{ end }}>
-                      <summary style="cursor:pointer;font-weight:700;font-size:1.08rem;">{{ printf "%02d" (add $index 1) }} · {{ $module.title }}</summary>
-                      <p>{{ $module.summary }}</p>
-                      <ul>{{ range $module.topics }}<li>{{ . }}</li>{{ end }}</ul>
+                    <details class="piano-curriculum-entry" {{ if eq $index 0 }}open{{ end }}>
+                      <summary>
+                        <span class="piano-curriculum-index">{{ printf "%02d" (add $index 1) }}</span>
+                        <span class="piano-curriculum-name">{{ $module.title }}<span class="piano-curriculum-meta">{{ $module.count }} lectures · {{ $module.time }}</span></span>
+                      </summary>
+                      <div class="piano-curriculum-body">
+                        <p>{{ $module.summary }}</p>
+                        <p class="piano-curriculum-outcome"><strong>Your goal:</strong> {{ $module.result }}</p>
+                        <h4>Skills covered</h4>
+                        <ul>{{ range $module.topics }}<li>{{ . }}</li>{{ end }}</ul>
+                        <h4>Lesson programme</h4>
+                        <ol>{{ range $module.lessons }}<li>{{ . }}</li>{{ end }}</ol>
+                      </div>
                     </details>
                   {{ end }}
                 </div>
-                <p style="margin-top:1.5rem;">Explore all current lessons and enrol in <a href="{{ $.Params.ctaUrl }}" rel="noopener" target="_blank">Modern Piano Improvisation 2026 on Udemy</a>.</p>
+                {{ with $.Params.curriculumCaveat }}<p class="piano-curriculum-note">{{ . }}</p>{{ end }}
+                <p><a href="{{ $.Params.ctaUrl }}" target="_blank" rel="noopener">View the current full syllabus, preview videos and enrolment options on Udemy</a>.</p>
               </section>
-              <section class="course-editorial__teaching" aria-labelledby="course-audience-title">
-                <div class="course-editorial__section-heading">
-                  <h2 id="course-audience-title">Who Is This Piano Improvisation Course For?</h2>
-                  <p>No previous piano experience is required. You will need a piano or keyboard and speakers or headphones to follow along with the lessons and backing tracks.</p>
+            {{ end }}
+            <section class="piano-inline-cta" aria-label="Join the piano improvisation course">
+              <div><h3>Ready to make music of your own?</h3><p>Find your own way around the keyboard with a practical video course taught by John Montgomery.</p></div>
+              <a class="piano-btn piano-btn--primary" href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener">See the Course on Udemy</a>
+            </section>
+            {{ with .Params.courseExtras }}
+              <section class="piano-selling-section" aria-labelledby="included-title">
+                <p class="piano-section-kicker">Everything works together</p>
+                <h2 id="included-title">What Is Included in the Course?</h2>
+                <ul class="piano-extras">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+              </section>
+            {{ end }}
+            {{ with .Params.audience }}
+              <section class="piano-selling-section" aria-labelledby="audience-title">
+                <p class="piano-section-kicker">Learn at your own pace</p>
+                <h2 id="audience-title">Who Is This Piano Course For?</h2>
+                <p>Whether you are taking your first steps on the piano or can already play pieces by reading music, this course is designed to develop your ability to improvise.</p>
+                <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+              </section>
+            {{ end }}
+            {{ with .Params.courseFAQ }}
+              <section class="piano-selling-section" aria-labelledby="faq-title">
+                <p class="piano-section-kicker">Good to know before you enrol</p>
+                <h2 id="faq-title">Piano Improvisation Course: Frequently Asked Questions</h2>
+                <div class="piano-faq">
+                  {{ range . }}<details><summary>{{ .question }}</summary><p>{{ .answer }}</p></details>{{ end }}
                 </div>
-                <ul>{{ range $.Params.audience }}<li>{{ . }}</li>{{ end }}</ul>
               </section>
             {{ end }}
 
