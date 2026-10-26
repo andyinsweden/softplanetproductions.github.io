@@ -81,12 +81,14 @@
 [[main]]
   name = "Sibelius Quick Tips"
   pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-tutorial"
   parent = "tutorials"
   weight = 53
 
 [[main]]
   name = "Sibelius Quick Tips"
   pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-service"
   parent = "services"
   weight = 33
 

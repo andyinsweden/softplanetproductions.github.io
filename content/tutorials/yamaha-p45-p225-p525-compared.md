@@ -5,6 +5,7 @@ description: "Compare Yamaha P-45, P-225 and P-525 digital pianos: key feel, sou
 summary: "Three Yamaha digital pianos, three different strengths. Find the one that fits your playing, space and musical ambitions."
 author: "John Montgomery"
 showAuthor: false
+showPagination: false
 draft: false
 tags: ["Piano", "Digital pianos", "Yamaha"]
 ---
