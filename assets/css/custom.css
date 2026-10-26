@@ -1294,3 +1294,8 @@ main iframe[src*="youtube-nocookie.com/embed"] {
 @media(max-width:800px){.piano-landing .piano-course-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.piano-landing .piano-journey{grid-template-columns:1fr}.piano-landing .piano-inline-cta{padding:1.4rem}}
 @media(max-width:560px){.piano-landing .piano-benefit-grid,.piano-landing .piano-extras{grid-template-columns:1fr}.piano-landing .piano-curriculum-entry summary{gap:.65rem;padding:.95rem}.piano-landing .piano-curriculum-name{font-size:.97rem}.piano-landing .piano-inline-cta .piano-btn{width:100%}}
 @media(prefers-reduced-motion:reduce){.piano-landing .piano-btn{transition:none}.piano-landing .piano-btn:hover{transform:none}}
+
+.piano-landing .piano-preview-link{display:block;position:relative;overflow:hidden;border-radius:12px}
+.piano-landing .piano-preview-link img{display:block;width:100%;height:auto}
+.piano-landing .piano-preview-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;background:rgba(26,31,41,.86);color:#ffdaa1;border:2px solid rgba(255,255,255,.9);display:flex;justify-content:center;align-items:center;font-size:1.7rem;box-shadow:0 6px 25px rgba(0,0,0,.4)}
+.piano-landing .piano-preview-link:focus-visible{outline:3px solid #e3ae60;outline-offset:3px}
