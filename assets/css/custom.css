@@ -1236,3 +1236,61 @@ main iframe[src*="youtube-nocookie.com/embed"] {
     border-radius: 0.25rem;
   }
 }
+
+/* Piano course conversion elements; scoped to this landing page. */
+.piano-landing .piano-hero-actions{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:1.6rem;align-items:center}
+.piano-landing .piano-btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;border-radius:999px;padding:.85rem 1.4rem;text-decoration:none;font-weight:750;line-height:1.3;transition:transform .2s ease,background .2s ease,border-color .2s ease}
+.piano-landing .piano-btn:hover{transform:translateY(-2px)}
+.piano-landing .piano-btn:focus-visible{outline:3px solid #eab768;outline-offset:3px}
+.piano-landing .piano-btn--primary{background:#f1c57e;color:#25202a;border:1px solid #f1c57e;box-shadow:0 6px 22px rgba(0,0,0,.18)}
+.piano-landing .piano-btn--primary:hover{background:#ffe0a5;color:#171717}
+.piano-landing .piano-btn--secondary{background:rgba(26,29,42,.70);color:#fff;border:1px solid rgba(255,255,255,.6)}
+.piano-landing .piano-btn--secondary:hover{background:rgba(30,36,55,.95);color:#fff}
+.piano-landing .piano-course-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem;margin:1.6rem 0 2rem}
+.piano-landing .piano-course-stat{padding:1.1rem;border-radius:16px;background:#1c2934;color:#f5f2e9;border:1px solid #485260;box-shadow:0 10px 24px rgba(0,0,0,.10)}
+.piano-landing .piano-course-stat strong{display:block;font-size:clamp(1.14rem,2vw,1.7rem);color:#f5ca86;line-height:1.2;margin-bottom:.4rem}
+.piano-landing .piano-course-stat span{font-size:.84rem;line-height:1.45;display:block}
+.piano-landing .piano-course-promise{border-left:4px solid #b97f47;padding:1rem 1.35rem;margin:1.5rem 0 2.1rem;background:rgba(167,118,70,.10);border-radius:0 14px 14px 0;font-size:clamp(1.1rem,2vw,1.35rem);font-weight:600;line-height:1.55}
+.piano-landing .piano-selling-section{margin-top:clamp(2.5rem,5vw,5rem);margin-bottom:clamp(2rem,5vw,4rem)}
+.piano-landing .piano-section-kicker{letter-spacing:.13em;text-transform:uppercase;font-size:.74rem;font-weight:750;color:#a56f41;margin-bottom:.55rem}
+.piano-landing .piano-selling-section h2{font-size:clamp(1.6rem,3vw,2.25rem);line-height:1.2;margin:.3rem 0 1rem}
+.piano-landing .piano-benefit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.piano-landing .piano-benefit-card{padding:1.45rem;border-radius:18px;background:#212c39;color:#f6f4ed;border:1px solid #495462;box-shadow:0 16px 32px rgba(0,0,0,.10)}
+.piano-landing .piano-benefit-card:nth-child(even){background:#342f3d}
+.piano-landing .piano-benefit-card h3{margin:0 0 .65rem;font-size:1.15rem;color:#f5c984}
+.piano-landing .piano-benefit-card p{margin:0;font-size:.99rem;line-height:1.6;color:#f3f0eb}
+.piano-landing .piano-journey{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem}
+.piano-landing .piano-journey__step{padding:1.3rem;border-top:3px solid #c89761;background:rgba(151,117,85,.09);border-radius:0 0 16px 16px}
+.piano-landing .piano-journey__step b{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:#a26a3a}
+.piano-landing .piano-journey__step h3{font-size:1.1rem;line-height:1.35;margin:.55rem 0}
+.piano-landing .piano-journey__step p{margin:0;line-height:1.55}
+.piano-landing .piano-extras{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem 1.5rem;padding-left:1.3rem;line-height:1.6}
+.piano-landing .piano-inline-cta{border-radius:20px;padding:1.65rem 2rem;background:linear-gradient(120deg,#17232d,#393246);color:#f8f5ed;margin:2rem 0;display:flex;gap:1.5rem;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.piano-landing .piano-inline-cta h3{color:#f5ca86;margin:0 0 .45rem;font-size:clamp(1.2rem,2vw,1.55rem)}
+.piano-landing .piano-inline-cta p{color:#f2eee8;margin:0;max-width:58ch}
+.piano-landing .piano-inline-cta .piano-btn{flex-shrink:0}
+.piano-landing .piano-course-curriculum{display:grid;gap:.8rem;margin-top:1.5rem}
+.piano-landing .piano-curriculum-entry{border:1px solid #88818a;border-radius:15px;background:rgba(127,110,102,.08);overflow:hidden}
+.piano-landing .piano-curriculum-entry[open]{border-color:#b38b5f}
+.piano-landing .piano-curriculum-entry summary{display:flex;align-items:center;gap:1rem;padding:1.15rem;cursor:pointer;list-style:none}
+.piano-landing .piano-curriculum-entry summary::-webkit-details-marker{display:none}
+.piano-landing .piano-curriculum-entry summary:focus-visible{outline:3px solid #d7a35c;outline-offset:-3px}
+.piano-landing .piano-curriculum-index{background:#263140;color:#f6cf93;display:flex;align-items:center;justify-content:center;min-width:2.7rem;height:2.7rem;border-radius:10px;font-weight:800}
+.piano-landing .piano-curriculum-name{display:block;font-size:1.06rem;line-height:1.38;font-weight:750;flex:1}
+.piano-landing .piano-curriculum-meta{display:block;font-size:.78rem;opacity:.75;margin-top:.2rem}
+.piano-landing .piano-curriculum-entry summary:after{content:'+';font-size:1.4rem;font-weight:700;margin-left:auto;opacity:.7}
+.piano-landing .piano-curriculum-entry[open] summary:after{content:'−'}
+.piano-landing .piano-curriculum-body{border-top:1px solid rgba(151,139,128,.45);padding:1rem 1.3rem 1.4rem}
+.piano-landing .piano-curriculum-body h4{font-size:1rem;margin:1rem 0 .5rem}
+.piano-landing .piano-curriculum-body p{line-height:1.6}
+.piano-landing .piano-curriculum-body li{margin-bottom:.35rem}
+.piano-landing .piano-curriculum-outcome{border-left:3px solid #bd884e;padding-left:.85rem;font-weight:650}
+.piano-landing .piano-curriculum-note{font-size:.88rem;opacity:.9;line-height:1.6;margin-top:1.2rem}
+.piano-landing .piano-faq{display:grid;gap:.75rem}
+.piano-landing .piano-faq details{border-bottom:1px solid #96919a;padding:.85rem .25rem}
+.piano-landing .piano-faq summary{cursor:pointer;font-weight:720;line-height:1.45}
+.piano-landing .piano-faq summary:focus-visible{outline:3px solid #d7a35c}
+.piano-landing .piano-faq p{margin:.65rem 0 .25rem;line-height:1.65}
+@media(max-width:800px){.piano-landing .piano-course-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.piano-landing .piano-journey{grid-template-columns:1fr}.piano-landing .piano-inline-cta{padding:1.4rem}}
+@media(max-width:560px){.piano-landing .piano-benefit-grid,.piano-landing .piano-extras{grid-template-columns:1fr}.piano-landing .piano-curriculum-entry summary{gap:.65rem;padding:.95rem}.piano-landing .piano-curriculum-name{font-size:.97rem}.piano-landing .piano-inline-cta .piano-btn{width:100%}}
+@media(prefers-reduced-motion:reduce){.piano-landing .piano-btn{transition:none}.piano-landing .piano-btn:hover{transform:none}}
