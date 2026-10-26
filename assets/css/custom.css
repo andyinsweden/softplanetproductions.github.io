@@ -1299,3 +1299,38 @@ main iframe[src*="youtube-nocookie.com/embed"] {
 .piano-landing .piano-preview-link img{display:block;width:100%;height:auto}
 .piano-landing .piano-preview-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;background:rgba(26,31,41,.86);color:#ffdaa1;border:2px solid rgba(255,255,255,.9);display:flex;justify-content:center;align-items:center;font-size:1.7rem;box-shadow:0 6px 25px rgba(0,0,0,.4)}
 .piano-landing .piano-preview-link:focus-visible{outline:3px solid #e3ae60;outline-offset:3px}
+
+
+/* Softplanet Music Lab — daily improvisation, scoped to the tool widget. */
+.sp-lab{color:#f6f0e8;background:linear-gradient(145deg,#182b35,#2d283a 75%,#443247);border:1px solid #5c5560;border-radius:22px;padding:clamp(1rem,3.3vw,2rem);margin:2rem 0;box-shadow:0 20px 48px rgba(0,0,0,.16);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.sp-lab *{box-sizing:border-box}
+.sp-lab__head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.sp-lab__head h2{font-size:clamp(1.35rem,2.8vw,2rem);line-height:1.2;color:#fdf7eb;margin:.4rem 0!important}
+.sp-lab__head p{margin:.4rem 0 0;color:#ede6dc}
+.sp-lab__eyebrow{font-size:.72rem;font-weight:750;letter-spacing:.14em;color:#f3c98c}
+.sp-lab__streak{border:1px solid #8e8175;border-radius:14px;background:rgba(255,255,255,.08);padding:.6rem 1.1rem;min-width:120px;text-align:center}
+.sp-lab__streak strong{display:block;color:#ffd69c;font-size:1.8rem;line-height:1.2}
+.sp-lab__streak span{font-size:.72rem;color:#f6ece0}
+.sp-lab__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin:1.5rem 0}
+.sp-lab__field label{display:flex;justify-content:space-between;gap:.3rem;color:#fff;font-size:.9rem;font-weight:680;margin-bottom:.45rem}
+.sp-lab__field select{display:block;width:100%;padding:.68rem .8rem;border-radius:10px;background:#fcf9f3;color:#1c2430;border:1px solid #c7bdaf;font-size:1rem}
+.sp-lab__field input[type=range]{width:100%;accent-color:#f5be75;min-height:35px}
+.sp-lab__challenge{background:#fffaf2;color:#232536;border-radius:16px;padding:clamp(1rem,3vw,1.55rem);margin:1rem 0}
+.sp-lab__challenge-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.77rem;letter-spacing:.07em;font-weight:760;color:#5b4b42}
+.sp-lab__challenge h3{font-size:clamp(1.08rem,2vw,1.4rem);color:#212734;margin:1.2rem 0 .65rem}
+.sp-lab__chords{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.55rem;margin:.8rem 0 1.2rem}
+.sp-lab__chords span{display:flex;min-height:64px;align-items:center;justify-content:center;border-radius:12px;background:#253b49;color:#fff2db;font-size:clamp(1rem,2.9vw,1.65rem);font-weight:760;transition:background .15s,border-color .15s;border:2px solid transparent}
+.sp-lab__chords span[aria-current=true]{background:#8c572f;color:white;border-color:#f9d18c}
+.sp-lab__prompt{margin:.65rem 0;font-size:1.07rem;line-height:1.6}
+.sp-lab__notes{color:#394252;font-size:.9rem;margin:1rem 0 0}
+.sp-lab__controls{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.2rem 0}
+.sp-lab__button{appearance:none;cursor:pointer;padding:.8rem 1.05rem;border:1px solid #c8bda9;border-radius:10px;background:#f3ede2;color:#1b2530;font:inherit;font-size:.92rem;font-weight:730;line-height:1.35;min-height:44px;transition:filter .15s}
+.sp-lab__button:hover:not(:disabled){filter:brightness(1.07)}
+.sp-lab__button:focus-visible,.sp-lab select:focus-visible,.sp-lab input:focus-visible{outline:3px solid #f8c782;outline-offset:3px}
+.sp-lab__button--primary{background:#e6aa5a;color:#17232c;border-color:#e6aa5a}
+.sp-lab__button--done{border-color:#81c3aa;background:#203f41;color:#fff}
+.sp-lab__button:disabled{opacity:.75;cursor:default}
+.sp-lab__status{min-height:2.7rem;border-top:1px solid #817482;margin:1rem 0 .5rem;padding-top:.85rem;color:#fff1de;font-size:.94rem}
+.sp-lab__footer{border-top:1px solid rgba(255,255,255,.22);padding-top:.9rem;display:flex;justify-content:space-between;gap:.8rem;flex-wrap:wrap;font-size:.78rem;color:#f0e8e0}
+@media(max-width:650px){.sp-lab__grid{grid-template-columns:1fr}.sp-lab__controls{flex-direction:column}.sp-lab__button{width:100%}.sp-lab__head{align-items:center}.sp-lab__chords{gap:.35rem}.sp-lab__chords span{min-height:55px}}
+@media(prefers-reduced-motion:reduce){.sp-lab__button,.sp-lab__chords span{transition:none}}
