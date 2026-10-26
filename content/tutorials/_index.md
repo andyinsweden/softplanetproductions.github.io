@@ -17,4 +17,4 @@ Make your next musical step a little easier. Explore practical advice on instrum
 
 ## Develop your playing and studio skills
 
-Explore our [Piano Improvisation course](/courses/piano-improvisation/) or find out about the [MIDI for Home Studios course in development](/courses/midi-home-studio/).
+Start a five-minute creative routine with the [free Daily Piano Improvisation Challenge](/tools/daily-piano-improvisation/). You can also explore our [Piano Improvisation course](/courses/piano-improvisation/) or find out about the [MIDI for Home Studios course in development](/courses/midi-home-studio/).
