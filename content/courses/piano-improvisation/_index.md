@@ -4,7 +4,7 @@ description: "Learn piano improvisation online in 2026 with John Montgomery. Exp
 
 heroImage: "/courses-hero.webp"
 heroEyebrow: "ONLINE PIANO IMPROVISATION COURSE"
-heroTitle: "Stop Copying Piano Pieces. Start Creating Your Own."
+heroTitle: "Learn Piano Improvisation. Play Music That’s Yours."
 heroIntro: "Learn piano improvisation from your very first notes. Play by ear, master practical chords and build expressive melodies with John Montgomery."
 
 kicker: "From your first musical ideas to confident improvisation"
@@ -84,7 +84,7 @@ audience:
   - "Self-taught players who want to understand chords and play by ear."
   - "Readers of sheet music who would like to improvise more freely."
   - "Keyboardists, composers and music producers building original musical ideas."
-coursePromise: "Stop asking what to play next. Learn to turn simple notes, chords and rhythms into music of your own."
+coursePromise: "Stop asking what to play next. Join hundreds of learners discovering how simple notes, chords and rhythms can become music of their own."
 courseBenefits:
   - title: "Play instead of memorising"
     text: "Start creating melodies from the very first lessons, then gradually develop the technique to make them more interesting."
