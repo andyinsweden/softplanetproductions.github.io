@@ -1,6 +1,6 @@
 ---
 title: "Piano Improvisation Course | Play by Ear & Create Music"
-description: "Piano improvisation course for beginners and pianists. Learn to play by ear, build chords and create melodies with John Montgomery’s video lessons and backing tracks."
+description: "Piano improvisation course for beginners. Learn to play by ear, build chords and create melodies with John Montgomery’s video lessons and backing tracks."
 
 images:
   - "/piano-improvisation-udemy.webp"
