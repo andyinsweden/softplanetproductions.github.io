@@ -1,0 +1,26 @@
+{
+  "description": "Publication mapping for John's submissions. Check the live URL before republishing; preserve the Google Drive source drafts.",
+  "articles": [
+    {
+      "source_document_id": "1JNNYkGQacvFHfQVK8sVr7JUCRw2WMo06y9DqME4_SPQ",
+      "source_modified_at": "2026-10-25T15:38:28.351Z",
+      "publication_date": "2026-10-26",
+      "path": "content/tutorials/yamaha-p45-p225-p525-compared.md",
+      "url": "https://softplanetproductions.com/tutorials/yamaha-p45-p225-p525-compared/"
+    },
+    {
+      "source_document_id": "1BdHVFCK3pRkVa9ANGA7R3pQVzrPn1qWDB2TDcZK1ndU",
+      "source_modified_at": "2026-10-25T15:43:48.805Z",
+      "publication_date": "2026-10-26",
+      "path": "content/tutorials/stage-fright-musicians-performers.md",
+      "url": "https://softplanetproductions.com/tutorials/stage-fright-musicians-performers/"
+    },
+    {
+      "source_document_id": "1vu6xsm1Jl__wPtMnF1nfUC5Vmh_DUuBWLzv2939zLHw",
+      "source_modified_at": "2026-10-25T15:58:56.470Z",
+      "publication_date": "2026-10-26",
+      "path": "content/tutorials/sibelius-quick-tips.md",
+      "url": "https://softplanetproductions.com/tutorials/sibelius-quick-tips/"
+    }
+  ]
+}

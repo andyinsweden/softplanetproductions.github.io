@@ -63,7 +63,32 @@
 [[main]]
   name = "Tutorials"
   pageRef = "tutorials"
+  identifier = "tutorials"
   weight = 50
+
+[[main]]
+  name = "Yamaha Piano Guide"
+  pageRef = "tutorials/yamaha-p45-p225-p525-compared"
+  parent = "tutorials"
+  weight = 51
+
+[[main]]
+  name = "Stage Fright & Performance"
+  pageRef = "tutorials/stage-fright-musicians-performers"
+  parent = "tutorials"
+  weight = 52
+
+[[main]]
+  name = "Sibelius Quick Tips"
+  pageRef = "tutorials/sibelius-quick-tips"
+  parent = "tutorials"
+  weight = 53
+
+[[main]]
+  name = "Sibelius Quick Tips"
+  pageRef = "tutorials/sibelius-quick-tips"
+  parent = "services"
+  weight = 33
 
 [[main]]
   name = "About"

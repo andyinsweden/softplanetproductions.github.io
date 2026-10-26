@@ -45,7 +45,7 @@
     "url" : "{{ .Permalink }}",
     "author" : {
       "@type": "Person",
-      "name": "{{ .Site.Language.Params.Author.name | safeJS }}"
+      "name": "{{ (.Params.author | default .Site.Language.Params.Author.name) | safeJS }}"
     },
     {{ if not .PublishDate.IsZero }}"copyrightYear": "{{ .PublishDate.Format "2006" }}",{{ end }}
     {{ if not .Date.IsZero }}"dateCreated": "{{ .Date.Format $iso8601 }}",{{ end }}

@@ -1,6 +1,20 @@
 ---
-title: "Tutorials | Softplanet Productions" 
-description: "MIDI and piano tutorials from Softplanet Productions."
+title: "Tutorials & Music Guides"
+description: "Friendly guides from John Montgomery on choosing a digital piano, enjoying performance and getting more from Sibelius notation software."
 ---
 
- ## MIDI for Home Studios
+Make your next musical step a little easier. Explore practical advice on instruments, performance and notation, written with musicians and educators in mind.
+
+## Piano and performance
+
+- [Yamaha P-45, P-225 or P-525: Find Your Piano Match](/tutorials/yamaha-p45-p225-p525-compared/) — compare touch, sound and portability before choosing.
+- [Stage Fright: Find Your Feet and Enjoy the Music](/tutorials/stage-fright-musicians-performers/) — build a reassuring routine for rehearsals and performances.
+
+## Sibelius and score preparation
+
+- [Sibelius Quick Tips: Less Clicking, More Composing](/tutorials/sibelius-quick-tips/) — a friendly refresher for everyday notation tasks.
+- [Sibelius Troubleshooting](/tutorials/sibelius-troubleshooting/) — find help with more specific software problems.
+
+## Develop your playing and studio skills
+
+Explore our [Piano Improvisation course](/courses/piano-improvisation/) or find out about the [MIDI for Home Studios course in development](/courses/midi-home-studio/).
