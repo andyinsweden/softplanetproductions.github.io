@@ -1334,3 +1334,112 @@ main iframe[src*="youtube-nocookie.com/embed"] {
 .sp-lab__footer{border-top:1px solid rgba(255,255,255,.22);padding-top:.9rem;display:flex;justify-content:space-between;gap:.8rem;flex-wrap:wrap;font-size:.78rem;color:#f0e8e0}
 @media(max-width:650px){.sp-lab__grid{grid-template-columns:1fr}.sp-lab__controls{flex-direction:column}.sp-lab__button{width:100%}.sp-lab__head{align-items:center}.sp-lab__chords{gap:.35rem}.sp-lab__chords span{min-height:55px}}
 @media(prefers-reduced-motion:reduce){.sp-lab__button,.sp-lab__chords span{transition:none}}
+
+
+/* Yamaha P-45 / P-225 / P-525 editorial product photography.
+   Scoped to the figure component; no effects on other tutorial pages. */
+.yamaha-model-showcase{
+  display:grid;
+  grid-template-columns:minmax(0,1.6fr) minmax(0,0.85fr);
+  align-items:stretch;
+  width:100%;
+  margin:1.5rem 0 2.4rem!important;
+  overflow:hidden;
+  border:1px solid #d8d0c4;
+  border-radius:12px;
+  background:#f3efe8;
+  color:#272625;
+  box-shadow:0 16px 45px rgba(28,25,23,.075);
+}
+.yamaha-model-showcase__photo{
+  display:grid;
+  place-items:center;
+  min-width:0;
+  padding:clamp(.45rem,1.3vw,1rem);
+  background:linear-gradient(155deg,#ffffff 0%,#fcfbf9 100%);
+}
+.yamaha-model-showcase__photo img,
+.prose .yamaha-model-showcase__photo img{
+  display:block;
+  width:100%;
+  max-width:550px;
+  height:auto;
+  aspect-ratio:1/1;
+  object-fit:contain;
+  border:0;
+  border-radius:0;
+  margin:0 auto;
+  box-shadow:none;
+  background:#fff;
+}
+.yamaha-model-showcase__caption,
+.prose .yamaha-model-showcase figcaption{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  gap:.7rem;
+  padding:clamp(1.35rem,3vw,2.5rem);
+  margin:0;
+  border-left:1px solid #d8d0c4;
+  text-align:left;
+  background:linear-gradient(160deg,#f6f2e9 0%,#ede6da 100%);
+  color:#272625;
+}
+.yamaha-model-showcase__eyebrow{
+  font-size:.67rem;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.19em;
+  color:#8a653c;
+  font-weight:750;
+  line-height:1.5;
+}
+.yamaha-model-showcase__name{
+  display:block;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.5rem,3vw,2.15rem);
+  line-height:1.12;
+  letter-spacing:-.025em;
+  color:#252420;
+  font-weight:500;
+}
+.yamaha-model-showcase__detail{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(.98rem,1.65vw,1.15rem);
+  font-style:italic;
+  font-weight:400;
+  line-height:1.55;
+  color:#625b51;
+}
+.yamaha-model-showcase__photo-credit,
+.prose .yamaha-model-showcase__photo-credit{
+  display:inline-block;
+  margin-top:1rem;
+  padding-top:.65rem;
+  border-top:1px solid #d5caba;
+  font-size:.72rem;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  letter-spacing:.025em;
+  line-height:1.45;
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+  color:#615344;
+}
+.yamaha-model-showcase__photo-credit:hover,
+.prose .yamaha-model-showcase__photo-credit:hover{color:#302b24}
+.yamaha-model-showcase__photo-credit:focus-visible{outline:2px solid #a57d43;outline-offset:4px}
+@media(max-width:720px){
+  .yamaha-model-showcase{grid-template-columns:1fr;margin:1.2rem 0 2rem!important}
+  .yamaha-model-showcase__photo{padding:.75rem 1rem}
+  .yamaha-model-showcase__photo img{max-width:460px}
+  .yamaha-model-showcase__caption,
+  .prose .yamaha-model-showcase figcaption{
+    border-left:0;
+    border-top:1px solid #d8d0c4;
+    gap:.4rem;
+    padding:1.25rem 1.4rem;
+  }
+  .yamaha-model-showcase__photo-credit{margin-top:.6rem}
+}
