@@ -32,6 +32,18 @@ Polyphony is the number of notes an instrument can sound simultaneously. Sustain
 
 ## P-45: keep the focus on playing
 
+<figure class="yamaha-model-showcase yamaha-model-showcase--p45">
+  <div class="yamaha-model-showcase__photo">
+    <img src="https://giggear.2dimg.com/1/1547734744_9874.jpg" alt="Yamaha P-45 digital piano in black, shown at a diagonal angle with its full weighted keyboard visible" loading="lazy" decoding="async" width="1000" height="1000">
+  </div>
+  <figcaption class="yamaha-model-showcase__caption">
+    <span class="yamaha-model-showcase__eyebrow">01 / THE ESSENTIAL</span>
+    <span class="yamaha-model-showcase__name">Yamaha P-45</span>
+    <span class="yamaha-model-showcase__detail">A beautifully uncomplicated place to begin.</span>
+    <a class="yamaha-model-showcase__photo-credit" href="https://www.giggear.co.uk/back-to-school/yamaha-p45-digital-piano-black.htm" target="_blank" rel="noopener noreferrer">Photograph source</a>
+  </figcaption>
+</figure>
+
 There is something appealing about an instrument that gets out of your way. The P-45 offers ten voices and a GHS action, with heavier weighting towards the bass and lighter weighting towards the treble.
 
 For someone working on chords, coordination and a reliable practice habit, that straightforward setup can be a strength. You can spend your session making music without first exploring a long list of settings.
@@ -40,6 +52,18 @@ For someone working on chords, coordination and a reliable practice habit, that 
 
 ## P-225: a compact musical companion
 
+<figure class="yamaha-model-showcase yamaha-model-showcase--p225">
+  <div class="yamaha-model-showcase__photo">
+    <img src="https://media.musicarts.com/is/image/MMGS7/M04892000001000-06-2000x2000.jpg" alt="Yamaha P-225 compact digital piano in black, pictured diagonally to show its 88 weighted keys and control panel" loading="lazy" decoding="async" width="1000" height="1000">
+  </div>
+  <figcaption class="yamaha-model-showcase__caption">
+    <span class="yamaha-model-showcase__eyebrow">02 / THE VERSATILE</span>
+    <span class="yamaha-model-showcase__name">Yamaha P-225</span>
+    <span class="yamaha-model-showcase__detail">A refined balance of portability and musical freedom.</span>
+    <a class="yamaha-model-showcase__photo-credit" href="https://www.musicarts.com/yamaha-p-225-88-key-digital-piano-main0526234" target="_blank" rel="noopener noreferrer">Photograph source</a>
+  </figcaption>
+</figure>
+
 The P-225 pairs Yamaha’s CFX piano sound with the GHC action. It has 24 voices, split and layer functions, and VRM Lite resonance modelling. That gives you more scope to move between solo piano, a layered texture and a keyboard part for a rehearsal.
 
 At 11.5 kg, it weighs the same as the P-45, while its cabinet is shallower. If your piano shares a room with everyday life—or travels to rehearsals—that is a practical benefit.
@@ -47,6 +71,18 @@ At 11.5 kg, it weighs the same as the P-45, while its cabinet is shallower. If y
 **Our take:** a promising middle option for players who want more flexibility in a compact instrument. Try the action yourself: its compact design does not tell you whether it will suit your hands better than another keyboard.
 
 ## P-525: put touch and expression first
+
+<figure class="yamaha-model-showcase yamaha-model-showcase--p525">
+  <div class="yamaha-model-showcase__photo">
+    <img src="https://www.yamaha.com/yamahavgn/PIM/Images/P-525BK_a_0103_bccf27994bdd0a52a0c50f8be0b279ac.jpg" alt="Yamaha P-525 digital piano in black, official angled product photo showing the GrandTouch-S keyboard and control panel" loading="lazy" decoding="async" width="1000" height="1000">
+  </div>
+  <figcaption class="yamaha-model-showcase__caption">
+    <span class="yamaha-model-showcase__eyebrow">03 / THE EXPRESSIVE</span>
+    <span class="yamaha-model-showcase__name">Yamaha P-525</span>
+    <span class="yamaha-model-showcase__detail">A richer, more nuanced playing experience.</span>
+    <a class="yamaha-model-showcase__photo-credit" href="https://europe.yamaha.com/en/musical-instruments/pianos/products/p-series/p-525/" target="_blank" rel="noopener noreferrer">Photograph source</a>
+  </figcaption>
+</figure>
 
 The P-525 offers GrandTouch-S action with wooden white keys, synthetic ebony and ivory key surfaces, and escapement. Its piano voices include Yamaha CFX and Bösendorfer Imperial, with additional resonance and expression modelling features.
 
