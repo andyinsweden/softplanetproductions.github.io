@@ -21,28 +21,28 @@ images:
     <h3>Try this chord progression</h3>
     <div class="sp-lab__chords" id="sp-daily-chords"><span>C</span><span>G</span><span>Am</span><span>F</span></div>
     <p class="sp-lab__prompt" id="sp-daily-prompt">Play a short melody over these chords, then change one thing and try again.</p>
-    <p class="sp-lab__notes">Good notes to start with: <strong id="sp-daily-notes">C · D · E · G · A</strong> (major pentatonic).</p>
+    <p class="sp-lab__notes">Major pentatonic scale notes: <strong id="sp-daily-notes">C · D · E · G · A</strong>.</p>
   </div>
   <div class="sp-lab__controls">
     <button type="button" id="sp-daily-play" class="sp-lab__button sp-lab__button--primary">▶ Play accompaniment</button>
     <button type="button" id="sp-daily-new" class="sp-lab__button">Another idea</button>
     <button type="button" id="sp-daily-done" class="sp-lab__button sp-lab__button--done">✓ Mark today's practice done</button>
   </div>
-  <p id="sp-daily-status" class="sp-lab__status" role="status" aria-live="polite">Choose Play to hear a simple, four-bar repeating accompaniment.</p>
+  <p id="sp-daily-status" class="sp-lab__status" role="status" aria-live="polite">Choose Play to hear a four-bar piano loop with bass drum, snare and closed hi-hat.</p>
   <div class="sp-lab__footer"><span>Completed practice days: <strong id="sp-daily-total">0</strong></span><span>Your streak and preferred level are saved only on this device.</span></div>
   <noscript>Enable JavaScript to use the daily challenge, chord playback and progress tracker.</noscript>
 </div>
-<script src="/js/daily-piano-improvisation.js" defer></script>
+<script src="/js/daily-piano-improvisation.js?v=20261030" defer></script>
 
 ## How to use this free improvisation tool
 
 Choose your experience level and press **Play accompaniment**. Listen to the four-bar chord loop before you begin. Start with a few of the suggested notes, leave space between phrases and use repetition to make your melody sound intentional. You can slow the music down, try a different exercise or come back tomorrow for a fresh challenge.
 
-The accompaniment is generated directly in your browser. It is a deliberately simple practice guide, not a substitute for John's studio-recorded backing tracks. Sound starts only after you press Play.
+The accompaniment combines piano chords with a steady 4/4 drum groove: bass drum on beats 1 and 3, snare on beats 2 and 4, and closed hi-hat on eighth notes. All parts follow your chosen tempo. The sound is generated directly in your browser. It is a deliberately simple practice guide, not a substitute for John's studio-recorded backing tracks. Sound starts only after you press Play.
 
 ## How to improvise on piano as a beginner
 
-A great first exercise uses only three notes. In C major, play C, D and E over a simple C major chord. Try a small melody, pause, and answer it with the same notes in another order. When you feel comfortable, introduce G and A to make a five-note pentatonic palette. Focus on *rhythm and listening*, not how fast you can play.
+A great first exercise uses only three notes. In C major, play C, D and E over a simple C major chord. Try a small melody, pause, and answer it with the same notes in another order. When you feel comfortable, introduce G and A to make the C major pentatonic scale: **C, D, E, G and A**. Focus on *rhythm and listening*, not how fast you can play.
 
 As you develop, practise changing melodic direction, adding syncopation, landing on a chord tone and playing with both hands. Even five focused minutes can give you a useful creative starting point.
 
