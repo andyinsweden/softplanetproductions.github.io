@@ -53,6 +53,7 @@
   let variation = 0;
   let challenge;
   let audioCtx = null;
+  let drumNoise = null;
   let timer = null;
   let nextBeatTime = 0;
   let beatCounter = 0;
@@ -129,7 +130,7 @@
     elements.date.textContent = new Intl.DateTimeFormat("en-GB", { weekday: "long", day: "numeric", month: "long" }).format(new Date(day + "T12:00:00"));
     elements.key.textContent = challenge.key.name + " major";
     elements.variation.textContent = challenge.label;
-    elements.prompt.textContent = challenge.prompt;
+    elements.prompt.textContent = challenge.prompt + " Use the " + challenge.key.name + " major pentatonic scale: " + challenge.notes + ".";
     elements.notes.textContent = challenge.notes;
     elements.chords.replaceChildren();
     challenge.chords.forEach(function (name, index) {
@@ -163,11 +164,56 @@
     const degree = challenge.degrees[bar];
     const root = 48 + challenge.key.root + SCALE[degree];
     const third = MINOR_DEGREES.includes(degree) ? 3 : 4;
-    // Four modestly voiced tones per bar. The oscillator levels intentionally remain low.
-    makeTone(root - 12, when, beatLength * 1.9, 0.055, "sine");
-    makeTone(root, when, beatLength * 3.65, 0.018, "triangle");
-    makeTone(root + third, when, beatLength * 3.65, 0.014, "triangle");
-    makeTone(root + 7, when, beatLength * 3.65, 0.014, "triangle");
+    // Double the original piano gain, keeping headroom for the quiet drum groove.
+    makeTone(root - 12, when, beatLength * 1.9, 0.110, "sine");
+    makeTone(root, when, beatLength * 3.65, 0.036, "triangle");
+    makeTone(root + third, when, beatLength * 3.65, 0.028, "triangle");
+    makeTone(root + 7, when, beatLength * 3.65, 0.028, "triangle");
+  }
+  function trackDrum(source, envelope, filter, when, duration) {
+    source.connect(filter || envelope);
+    if (filter) filter.connect(envelope);
+    envelope.connect(audioCtx.destination);
+    source.start(when);
+    source.stop(when + duration);
+    source.addEventListener("ended", function () {
+      source.disconnect();
+      if (filter) filter.disconnect();
+      envelope.disconnect();
+      sounding = sounding.filter((item) => item !== source);
+    }, { once: true });
+    sounding.push(source);
+  }
+  function kick(when) {
+    const source = audioCtx.createOscillator();
+    const envelope = audioCtx.createGain();
+    source.frequency.setValueAtTime(140, when);
+    source.frequency.exponentialRampToValueAtTime(48, when + 0.12);
+    envelope.gain.setValueAtTime(0.16, when);
+    envelope.gain.exponentialRampToValueAtTime(0.0001, when + 0.24);
+    trackDrum(source, envelope, null, when, 0.26);
+  }
+  function noiseHit(when, duration, gain, frequency, type) {
+    const source = audioCtx.createBufferSource();
+    const envelope = audioCtx.createGain();
+    const filter = audioCtx.createBiquadFilter();
+    source.buffer = drumNoise;
+    filter.type = type;
+    filter.frequency.setValueAtTime(frequency, when);
+    filter.Q.setValueAtTime(0.7, when);
+    envelope.gain.setValueAtTime(gain, when);
+    envelope.gain.exponentialRampToValueAtTime(0.0001, when + duration);
+    trackDrum(source, envelope, filter, when, duration + 0.01);
+  }
+  function drumsAt(beat, when, beatLength) {
+    if (beat === 0 || beat === 2) kick(when);
+    else {
+      noiseHit(when, 0.16, 0.075, 1800, "bandpass");
+      // A short low tone gives the snare body beneath its noise snap.
+      makeTone(50, when, 0.09, 0.025, "triangle");
+    }
+    noiseHit(when, 0.045, 0.035, 7000, "highpass");
+    noiseHit(when + beatLength / 2, 0.045, 0.025, 7000, "highpass");
   }
   function tick() {
     if (!playing || !audioCtx) return;
@@ -175,10 +221,11 @@
     while (nextBeatTime < audioCtx.currentTime + 0.16) {
       const beat = beatCounter % 4;
       const bar = Math.floor(beatCounter / 4) % 4;
+      drumsAt(beat, nextBeatTime, beatLength);
       if (beat === 0) chordAt(bar, nextBeatTime, beatLength);
       if (beat === 2) {
         const degree = challenge.degrees[bar];
-        makeTone(48 + challenge.key.root + SCALE[degree] - 12, nextBeatTime, beatLength * 0.8, 0.034, "sine");
+        makeTone(48 + challenge.key.root + SCALE[degree] - 12, nextBeatTime, beatLength * 0.8, 0.068, "sine");
       }
       const visualDelay = Math.max(0, (nextBeatTime - audioCtx.currentTime) * 1000);
       // Keep animation best-effort; the actual musical timing is scheduled in AudioContext.
@@ -205,13 +252,18 @@
     const AudioContextClass = window.AudioContext || window.webkitAudioContext;
     if (!AudioContextClass) { setStatus("Audio playback is not supported in this browser. You can still use the chord and melody prompts."); return; }
     try {
-      if (!audioCtx) audioCtx = new AudioContextClass();
+      if (!audioCtx) {
+        audioCtx = new AudioContextClass();
+        drumNoise = audioCtx.createBuffer(1, Math.ceil(audioCtx.sampleRate * 0.2), audioCtx.sampleRate);
+        const samples = drumNoise.getChannelData(0);
+        for (let i = 0; i < samples.length; i++) samples[i] = Math.random() * 2 - 1;
+      }
       if (audioCtx.state !== "running") await audioCtx.resume();
       playing = true; beatCounter = 0; nextBeatTime = audioCtx.currentTime + 0.06;
       timer = setInterval(tick, 65);
       tick();
       elements.play.textContent = "■ Stop accompaniment";
-      setStatus("Playing a four-bar accompaniment at " + elements.bpm.value + " BPM. Your highlighted chord is the current bar.");
+      setStatus("Playing piano with bass drum, snare and closed hi-hat at " + elements.bpm.value + " BPM. Your highlighted chord is the current bar.");
     } catch (_) { stopAudio(); setStatus("Could not start audio. Please check browser audio permissions and try again."); }
   }
   elements.level.value = data.level;
