@@ -1,6 +1,6 @@
 ---
-title: "Cornfield Chase Piano Sheet Music | Interstellar Piano Score"
-description: "Cornfield Chase piano sheet music from Interstellar, arranged by John Montgomery for intermediate solo piano. A cinematic Hans Zimmer piano arrangement for performance."
+title: "Cornfield Chase Piano Arrangement | Interstellar Sheet Music"
+description: "Cornfield Chase piano arrangement from Interstellar by Hans Zimmer. Explore John Montgomery’s intermediate solo piano score and buy the sheet music."
 slug: "cornfield-chase"
 keywords:
   - "Cornfield Chase piano"
@@ -16,7 +16,7 @@ keywords:
 author: "John Montgomery"
 ---
 
-**Cornfield Chase from *Interstellar*** is one of Hans Zimmer's most recognisable cinematic themes. This **solo piano arrangement by John Montgomery** brings the atmospheric sound and emotional intensity of Zimmer's original soundtrack to the piano, arranged specifically for **intermediate pianists**.
+This **Cornfield Chase piano arrangement** by John Montgomery brings Hans Zimmer's cinematic theme from *Interstellar* to solo piano. Written for **intermediate pianists**, the score captures the atmosphere, flowing arpeggios and emotional build of the original soundtrack.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2ZRkATeF4cE?si=KB6IVQrJLYet-rT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
