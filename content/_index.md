@@ -27,8 +27,8 @@ A flexible, play-along approach to learning the piano through rhythm, ear traini
 ### Original Audio CDs
 Distinctive original recordings created and produced by John Montgomery, made for performers, teachers, and listeners alike.
 
-### Sibelius Site Licenses & Support
-Official site licensing, multi-seat arrangements, and tailored educational support for schools and colleges.
+### Sibelius Site Licences & Support
+For 25 years we have helped UK schools and colleges with Sibelius licensing, music classroom installations and additional seats. [Explore Sibelius site licences and request a school quotation](/services/sibelius-site-licenses/).
 
 ### Contact & Licensing
 Have questions about stage rights, Sibelius licensing, or CD orders? Get in touch directly.

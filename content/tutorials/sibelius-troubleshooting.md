@@ -744,3 +744,10 @@ For instructions specific to your version and edition, consult the **Sibelius Re
 - [Avid Sibelius Release Information](https://www.avid.com/resource-center/whats-new-in-sibelius)
 
 When requesting help, include your Sibelius version, operating system, playback device, the exact error message and whether the problem affects one score or all scores.
+
+
+---
+
+## Sibelius site licensing and installation help for schools
+
+Managing Sibelius across a school or college rather than troubleshooting one workstation? Softplanet Productions has 25 years of experience supporting UK music departments. [Compare Sibelius site licence options and request a quotation](/services/sibelius-site-licenses/) for new installations, additional seats or network deployment.
