@@ -18,10 +18,10 @@ showTableOfContents: false
 </section>
 
 <section class="sibelius-band" id="sibelius-history">
-  <h2>Trusted Sibelius suppliers for UK schools and colleges for 20 years</h2>
-  <p>From Softplanet Ltd to Softplanet Productions, we have supplied Sibelius licences, installations and support to music departments across the UK for two decades.</p>
+  <h2>Trusted Sibelius suppliers for UK schools and colleges for 25 years</h2>
+  <p>From Softplanet Ltd to Softplanet Productions, we have supplied Sibelius licences, installations and support to music departments across the UK for 25 years.</p>
   <div class="sibelius-timeline">
-    <div><strong>20 years ago</strong><p>Softplanet began supporting education music departments with Sibelius software, licensing and practical installation support.</p></div>
+    <div><strong>25 years ago</strong><p>Softplanet began supporting education music departments with Sibelius software, licensing and practical installation support.</p></div>
     <div><strong>Since</strong><p>We have delivered Sibelius site licences, standalone installs, extra seats and network deployments for schools and colleges of all sizes.</p></div>
     <div><strong>Today</strong><p>Softplanet Productions continues to help schools and colleges get the right Sibelius setup for their music department and IT environment.</p></div>
   </div>
