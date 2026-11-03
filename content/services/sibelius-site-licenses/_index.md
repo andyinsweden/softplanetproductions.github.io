@@ -78,7 +78,7 @@ showTableOfContents: false
 
 <section class="sibelius-trust">
   <h2>School and college Sibelius support built around practical installation</h2>
-  <p>We work with schools and colleges to provide Sibelius licences and installation support that fit the real-world setup of their music department, IT systems and teaching timetable.</p>
+  <p>We work with schools and colleges to provide Sibelius licences and installation support that fit the real-world setup of their music department, IT systems and teaching timetable. Read more <a href="/about/">about Softplanet Productions and our 25 years supporting UK music departments</a>.</p>
 </section>
 
 <section class="sibelius-contact" id="sibelius-contact">
@@ -100,7 +100,7 @@ showTableOfContents: false
 
 <section class="sibelius-section" id="sibelius-enquiry">
   <h2>Request a Sibelius site licence quotation</h2>
-  <p>Use the enquiry form below to describe your school, number of seats and installation requirements. We will review your request and discuss suitable licensing and setup options. You can also call us using the number above.</p>
+  <p>Use the enquiry form below to describe your school, number of seats and installation requirements. We will review your request and discuss suitable licensing and setup options. You can also call us using the number above. If the embedded form does not load, <a href="https://docs.google.com/forms/d/e/1FAIpQLSet80y3qktK3Kx-vdTzeHHoMSnD7-uHmNCg_EKTvHphk7t1Bg/viewform" target="_blank" rel="noopener noreferrer">open the Sibelius enquiry form directly</a>.</p>
 </section>
 
-<iframe loading="lazy" style="max-width:100%;border:0" src="https://docs.google.com/forms/d/e/1FAIpQLSet80y3qktK3Kx-vdTzeHHoMSnD7-uHmNCg_EKTvHphk7t1Bg/viewform?embedded=true" title="Sibelius site licence enquiry form" width="640" height="1279" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe loading="lazy" style="display:block;max-width:100%;border:0" src="https://docs.google.com/forms/d/e/1FAIpQLSet80y3qktK3Kx-vdTzeHHoMSnD7-uHmNCg_EKTvHphk7t1Bg/viewform?embedded=true" title="Sibelius site licence enquiry form" width="640" height="1279" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
