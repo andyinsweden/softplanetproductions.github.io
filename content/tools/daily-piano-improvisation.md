@@ -46,6 +46,8 @@ A great first exercise uses only three notes. In C major, play C, D and E over a
 
 As you develop, practise changing melodic direction, adding syncopation, landing on a chord tone and playing with both hands. Even five focused minutes can give you a useful creative starting point.
 
+For a clearer explanation of the notes above, read our [pentatonic piano improvisation guide](/tutorials/pentatonic-piano-improvisation/). To build a left-hand part beneath your melody, try [improvising with both hands](/tutorials/piano-improvisation-with-both-hands/).
+
 ## Why come back each day?
 
 Regular, short sessions make piano improvisation easier to fit around work and other commitments. Each day's key, chord progression and musical task change, while your completed practice days are remembered in your browser. Try repeating a challenge in another tempo, then return tomorrow to see what comes next.

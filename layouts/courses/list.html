@@ -104,6 +104,19 @@
               </div>
               <p>That is the starting point of piano improvisation: listen, experiment and develop a musical idea. In the full course, John Montgomery demonstrates how to expand this approach using chords, different time signatures, two-hand patterns and backing tracks.</p>
             </section>
+            <section class="piano-selling-section" aria-labelledby="piano-free-lesson-title">
+              <p class="piano-section-kicker">Free lessons to try before you enrol</p>
+              <h2 id="piano-free-lesson-title">Practise Piano Improvisation with These Beginner Guides</h2>
+              <p>Start with a short lesson that answers the question you have today, then return to the course curriculum for a structured path through chords, rhythm, melodies and hand independence.</p>
+              <ul class="piano-extras">
+                <li><a href="/tutorials/how-to-learn-piano-improvisation/">How to start improvising on piano</a> — five manageable exercises for your first melodies.</li>
+                <li><a href="/tutorials/piano-chord-progressions-for-beginners/">Piano chord progressions for beginners</a> — play four useful harmonic loops.</li>
+                <li><a href="/tutorials/piano-improvisation-with-both-hands/">How to improvise with both hands</a> — coordinate a steady bass with a simple melody.</li>
+                <li><a href="/tutorials/pentatonic-piano-improvisation/">Pentatonic scale improvisation</a> — make music with five notes.</li>
+                <li><a href="/tutorials/playing-piano-by-ear-after-classical-training/">Playing piano by ear after classical training</a> — use your reading skills as a foundation for creative playing.</li>
+                <li><a href="/tools/daily-piano-improvisation/">Free daily piano improvisation challenge</a> — practise with a browser-based chord loop and drum rhythm.</li>
+              </ul>
+            </section>
             {{ with .Params.studentJourney }}
               <section class="piano-selling-section" aria-labelledby="journey-title">
                 <p class="piano-section-kicker">A clear path from your first note</p>
@@ -173,7 +186,7 @@
                     <details class="piano-curriculum-entry" {{ if eq $index 0 }}open{{ end }}>
                       <summary>
                         <span class="piano-curriculum-index">{{ printf "%02d" (add $index 1) }}</span>
-                        <span class="piano-curriculum-name">{{ $module.title }}<span class="piano-curriculum-meta">{{ $module.count }} lectures · {{ $module.time }}</span></span>
+                        <span class="piano-curriculum-name">{{ $module.title }}<span class="piano-curriculum-meta">{{ $module.count }} {{ if eq $module.count 1 }}lecture{{ else }}lectures{{ end }} · {{ $module.time }}</span></span>
                       </summary>
                       <div class="piano-curriculum-body">
                         <p>{{ $module.summary }}</p>
