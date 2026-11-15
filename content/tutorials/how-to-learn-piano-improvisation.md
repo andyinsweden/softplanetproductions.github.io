@@ -48,6 +48,8 @@ Consistency beats an occasional exhausting session. Here's a manageable ten-minu
 
 For a regular creative prompt, use our [free Daily Piano Improvisation Challenge](/tools/daily-piano-improvisation/).
 
+If the chord loop is the hardest part, start with our [piano chord progressions for beginners](/tutorials/piano-chord-progressions-for-beginners/). To add a steadier accompaniment, follow the [two-hand improvisation exercise](/tutorials/piano-improvisation-with-both-hands/). For another melodic palette, try [pentatonic piano improvisation](/tutorials/pentatonic-piano-improvisation/).
+
 ## What should you learn next?
 
 Once you can improvise freely over four chords, explore inversions, richer harmonies, different accompaniment patterns and playing in new keys. Our [Modern Piano Improvisation course](/courses/piano-improvisation/) offers a structured next step, with practical material to help turn experiments into confident musical playing.

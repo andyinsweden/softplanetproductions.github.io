@@ -9,6 +9,9 @@ Make your next musical step a little easier. Explore practical advice on instrum
 
 - [How to Learn Piano Improvisation](/tutorials/how-to-learn-piano-improvisation/) — a practical first step in creating your own music.
 - [Play Piano by Ear After Classical Training](/tutorials/playing-piano-by-ear-after-classical-training/) — develop listening and chord skills alongside your reading.
+- [Piano Chord Progressions for Beginners](/tutorials/piano-chord-progressions-for-beginners/) — four chord loops with hands-on exercises.
+- [Piano Improvisation with Both Hands](/tutorials/piano-improvisation-with-both-hands/) — coordinate bass notes and a right-hand melody.
+- [Pentatonic Scale Piano Improvisation](/tutorials/pentatonic-piano-improvisation/) — create melodies with five notes.
 
 
 - [Yamaha P-45, P-225 or P-525: Find Your Piano Match](/tutorials/yamaha-p45-p225-p525-compared/) — compare touch, sound and portability before choosing.

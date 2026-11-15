@@ -52,6 +52,8 @@ A note outside the chord doesn't automatically ruin a phrase. Hold it, listen, t
 
 **Ten-minute challenge:** Spend three minutes finding a melody, three identifying its bass movement and four adding simple harmony. Make a short recording and compare it with tomorrow's attempt.
 
+To practise the harmony in step 2, try our [piano chord progressions for beginners](/tutorials/piano-chord-progressions-for-beginners/). If you want to create spontaneous melodies without relying on a score, the [pentatonic improvisation guide](/tutorials/pentatonic-piano-improvisation/) is a useful next exercise.
+
 ## From the score to your own ideas
 
 Playing by ear won't replace score reading; it expands what you can do at the piano. Practise little and often, and resist judging an exploratory session by concert-performance standards.
