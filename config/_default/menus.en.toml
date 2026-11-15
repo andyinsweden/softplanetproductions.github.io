@@ -79,23 +79,41 @@
   weight = 50
 
 [[main]]
+  name = "Beginner Piano Chords"
+  pageRef = "tutorials/piano-chord-progressions-for-beginners"
+  parent = "tutorials"
+  weight = 51
+
+[[main]]
+  name = "Improvise with Both Hands"
+  pageRef = "tutorials/piano-improvisation-with-both-hands"
+  parent = "tutorials"
+  weight = 52
+
+[[main]]
+  name = "Pentatonic Improvisation"
+  pageRef = "tutorials/pentatonic-piano-improvisation"
+  parent = "tutorials"
+  weight = 53
+
+[[main]]
   name = "Yamaha Piano Guide"
   pageRef = "tutorials/yamaha-p45-p225-p525-compared"
   parent = "tutorials"
-  weight = 51
+  weight = 54
 
 [[main]]
   name = "Stage Fright & Performance"
   pageRef = "tutorials/stage-fright-musicians-performers"
   parent = "tutorials"
-  weight = 52
+  weight = 55
 
 [[main]]
   name = "Sibelius Quick Tips"
   pageRef = "tutorials/sibelius-quick-tips"
   identifier = "sibelius-quick-tips-tutorial"
   parent = "tutorials"
-  weight = 53
+  weight = 56
 
 [[main]]
   name = "Sibelius Quick Tips"
