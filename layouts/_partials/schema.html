@@ -31,6 +31,21 @@
   }
   </script>
 {{ else if .IsPage }}
+  {{- if .Params.webApplication }}
+    {{- $app := dict
+      "@context" "https://schema.org"
+      "@type" "WebApplication"
+      "name" .Title
+      "description" .Description
+      "url" .Permalink
+      "inLanguage" .Site.Language.Locale
+      "applicationCategory" "EducationalApplication"
+      "operatingSystem" "Any"
+      "isAccessibleForFree" true
+      "offers" (dict "@type" "Offer" "price" 0)
+    -}}
+    <script type="application/ld+json">{{ $app | jsonify | safeJS }}</script>
+  {{- else }}
   {{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
   <script type="application/ld+json">
   {
@@ -60,7 +75,8 @@
     "mainEntityOfPage": "true",
     "wordCount": "{{ .WordCount }}"
   }
-  </script> {{- /* Source: https://bullaki.com/projects/web-design/seo-with-hugo-5-breadcrumbs/ */}}
+  </script>
+  {{- end }} {{- /* Source: https://bullaki.com/projects/web-design/seo-with-hugo-5-breadcrumbs/ */}}
   {{- $scratch := newScratch -}}
   {{- $scratch.Set "count" 1 -}}
   {{ partial "inline/breadcrumbData" (dict "scratch" $scratch "parent" .Parent) }}

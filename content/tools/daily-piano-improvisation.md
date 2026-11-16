@@ -36,7 +36,7 @@ images:
 
 ## How to use this free improvisation tool
 
-Choose your experience level and press **Play accompaniment**. Listen to the four-bar chord loop before you begin. Start with a few of the suggested notes, leave space between phrases and use repetition to make your melody sound intentional. You can slow the music down, try a different exercise or come back tomorrow for a fresh challenge.
+Choose your experience level and press **Play accompaniment**. Listen to the four-bar chord loop before you begin. If a chord symbol is unfamiliar, enter it in the [piano chord finder](/tools/chord-finder/) to see which keys to play. Start with a few of the suggested notes, leave space between phrases and use repetition to make your melody sound intentional. You can slow the music down, try a different exercise or come back tomorrow for a fresh challenge.
 
 The accompaniment combines piano chords with a steady 4/4 drum groove: bass drum on beats 1 and 3, snare on beats 2 and 4, and closed hi-hat on eighth notes. All parts follow your chosen tempo. The sound is generated directly in your browser. It is a deliberately simple practice guide, not a substitute for John's studio-recorded backing tracks. Sound starts only after you press Play.
 

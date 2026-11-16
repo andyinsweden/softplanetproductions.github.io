@@ -57,7 +57,7 @@ For the first loop, experiment with these right-hand shapes:
 - **Am:** C–E–A
 - **F:** C–F–A
 
-All four are still the same harmonies as before. Play each shape slowly and look for notes you can keep under the same finger. Add the left-hand root notes only when the chord changes feel easy.
+Use the [piano chord finder](/tools/chord-finder/) to hear these inversions or identify a new shape from its notes. All four are still the same harmonies as before. Play each shape slowly and look for notes you can keep under the same finger. Add the left-hand root notes only when the chord changes feel easy.
 
 ## A ten-minute piano improvisation practice
 

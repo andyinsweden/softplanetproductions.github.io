@@ -1,0 +1,5 @@
+{{- if not .IsZero -}}
+  <time datetime="{{ .Format "2006-01-02" }}">
+    {{- i18n "article.date" (dict "Date" (partial "functions/date.html" .)) | emojify -}}
+  </time>
+{{- end -}}
