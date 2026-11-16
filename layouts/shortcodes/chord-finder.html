@@ -1,0 +1,74 @@
+{{- $style := resources.Get "css/chord-finder.css" | minify | fingerprint -}}
+{{- $script := resources.Get "js/chord-finder.js" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+<div class="sp-chord" id="sp-chord-finder" aria-label="Interactive piano chord finder">
+  <div class="sp-chord__modes" role="group" aria-label="Chord finder mode">
+    <button type="button" data-mode="identify" aria-pressed="true">Identify a chord</button>
+    <button type="button" data-mode="lookup" aria-pressed="false">Find keys</button>
+  </div>
+
+  <div data-panel="lookup" hidden>
+    <form class="sp-chord__form" data-chord-form>
+      <label for="sp-chord-symbol">Chord name</label>
+      <div class="sp-chord__row">
+        <input id="sp-chord-symbol" type="text" value="Cmaj7" maxlength="40" spellcheck="false" autocomplete="off" autocapitalize="none" placeholder="Cmaj7, B♭m9, or C/E">
+        <button type="submit">Show keys</button>
+      </div>
+    </form>
+    <div class="sp-chord__row sp-chord__inversion">
+      <label for="sp-chord-inversion">Inversion</label>
+      <select id="sp-chord-inversion"></select>
+    </div>
+  </div>
+
+  <div class="sp-chord__keyboard" role="group" aria-label="Piano keyboard" data-piano data-depth="true"></div>
+  <div class="sp-chord__settings">
+    <div class="sp-chord__row" role="group" aria-label="Keyboard octave">
+      <button data-octave="-1" type="button" aria-label="Down an octave">‹</button>
+      <span data-range></span>
+      <button data-octave="1" type="button" aria-label="Up an octave">›</button>
+    </div>
+    <div class="sp-chord__row" role="group" aria-label="Keyboard appearance">
+      <button type="button" data-depth-button="false" aria-pressed="false">2D</button>
+      <button type="button" data-depth-button="true" aria-pressed="true">3D</button>
+    </div>
+  </div>
+
+  <div class="sp-chord__result" role="status" aria-live="polite" aria-atomic="true">
+    <strong data-result>Tap the piano keys to choose notes.</strong>
+    <span data-notes></span>
+    <small data-alternatives></small>
+  </div>
+  <div class="sp-chord__row sp-chord__actions">
+    <button type="button" data-play disabled>▶ Play chord</button>
+    <button type="button" data-arpeggio disabled>Play notes in order</button>
+    <button type="button" data-clear data-panel="identify">Clear</button>
+  </div>
+  <p data-audio-status role="status" hidden></p>
+
+  <div data-panel="identify">
+    <div class="sp-chord__row sp-chord__examples" aria-label="Example chords">
+      <button type="button" data-example="C3 E3 G3">C–E–G</button>
+      <button type="button" data-example="E3 G3 C4">E–G–C</button>
+      <button type="button" data-example="C3 Eb3 G3 Bb3">C–E♭–G–B♭</button>
+    </div>
+    <form class="sp-chord__form" data-note-form>
+      <label for="sp-chord-notes">Type notes</label>
+      <div class="sp-chord__row">
+        <input id="sp-chord-notes" type="text" maxlength="160" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="C E G, C4 E4 G4, or 60 64 67">
+        <button type="submit">Identify</button>
+      </div>
+    </form>
+    <details class="sp-chord__inputs">
+      <summary>Computer keyboard and MIDI</summary>
+      <div class="sp-chord__row">
+        <button type="button" data-computer aria-pressed="false">Computer keys</button>
+        <button type="button" data-midi>Connect MIDI</button>
+      </div>
+      <p data-computer-help hidden>Use Z S X D C V G B H N J M for the lower octave and Q 2 W 3 E R 5 T 6 Y 7 U for the upper octave.</p>
+      <p data-midi-status role="status" hidden></p>
+    </details>
+  </div>
+  <noscript>Enable JavaScript to use the interactive piano and chord finder.</noscript>
+</div>
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous" defer></script>

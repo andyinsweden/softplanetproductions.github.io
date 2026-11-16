@@ -1,6 +1,6 @@
 ---
 title: "Free Music Tools for Piano Players | Softplanet Music Lab"
-description: "Free interactive piano practice tools from Softplanet Productions. Try a daily improvisation challenge with chord progressions, backing audio and practice tracking."
+description: "Free interactive piano practice tools from Softplanet Productions. Identify piano chords by their notes, look up chord voicings on the keyboard, or try a daily improvisation challenge."
 ---
 
 Welcome to **Softplanet Music Lab** — practical, browser-based tools to help you make music more often. Everything here works on your phone, tablet or computer, without a download or account.
@@ -14,6 +14,12 @@ Get a fresh musical exercise each day. See an easy-to-follow chord progression i
 This is a good place to start if you are learning to improvise, can already play written music but want to create your own, or simply want a short creative warm-up before a longer practice session.
 
 **[Open today's free piano challenge](/tools/daily-piano-improvisation/)**
+
+### [Piano Chord Finder](/tools/chord-finder/)
+
+Play a chord on the interactive keyboard to identify it, or enter a chord name to see and hear its notes. Try different inversions, type notes, or connect a MIDI keyboard in a supported browser.
+
+**[Open the free piano chord finder](/tools/chord-finder/)**
 
 Want to go deeper? Explore [John Montgomery's structured piano improvisation course](/courses/piano-improvisation/) for overhead demonstrations, animated scores and studio-recorded backing tracks.
 

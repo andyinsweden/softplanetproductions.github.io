@@ -1,0 +1,113 @@
+.sp-chord {
+  --panel: #f1f5f9;
+  --line: #a4afc2;
+  --ink: #19243a;
+  --accent: #3057bb;
+  --active: #b9d2ff;
+  max-width: 48rem;
+  margin: 1.5rem 0 2rem;
+  padding: clamp(.65rem, 3vw, 1.25rem);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--panel);
+  color: var(--ink);
+  line-height: 1.45;
+}
+.dark .sp-chord {
+  --panel: #182336;
+  --line: #677791;
+  --ink: #eef4ff;
+  --accent: #284eb2;
+  --active: #a6c6ff;
+}
+.sp-chord [hidden] { display: none !important; }
+.sp-chord button, .sp-chord input, .sp-chord select {
+  font: inherit;
+  color: inherit;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: .5rem;
+  background: var(--panel);
+}
+.sp-chord button { padding: .45rem .75rem; cursor: pointer; font-weight: 650; }
+.sp-chord button:disabled { opacity: .55; cursor: default; }
+.sp-chord button:focus-visible, .sp-chord input:focus-visible, .sp-chord select:focus-visible, .sp-chord summary:focus-visible {
+  outline: 3px solid #5b82e5;
+  outline-offset: 2px;
+}
+.sp-chord button[aria-pressed="true"], .sp-chord [data-play] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+.sp-chord__modes { display: flex; gap: .4rem; margin-bottom: .9rem; }
+.sp-chord__modes button { flex: 1; }
+.sp-chord__row { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; }
+.sp-chord__form label { display: block; font-weight: 650; margin-bottom: .3rem; }
+.sp-chord__form input { flex: 1 1 13rem; min-width: 0; padding: .45rem .65rem; }
+.sp-chord__form input::placeholder { color: inherit; opacity: .68; }
+.sp-chord__inversion { margin: .55rem 0 .8rem; }
+.sp-chord select { max-width: 100%; padding: .35rem .55rem; }
+
+.sp-chord__keyboard {
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  background: #141b2b;
+  border: 1px solid #141b2b;
+  border-radius: .4rem;
+  touch-action: manipulation;
+}
+.sp-chord__keyboard .sp-chord__key {
+  padding: 0;
+  color: #1b2740;
+  border: 1px solid #535e72;
+  border-radius: 0 0 .25rem .25rem;
+  font-size: clamp(.57rem, 1.8vw, .77rem);
+  font-weight: 700;
+}
+.sp-chord__keyboard .sp-chord__key--white {
+  flex: 1 1 0;
+  min-width: 0;
+  height: clamp(105px, 20vw, 166px);
+  background: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: .55rem;
+}
+.sp-chord__keyboard .sp-chord__key--black {
+  position: absolute;
+  top: 0;
+  left: var(--key-left);
+  width: var(--black-key-width);
+  height: 61%;
+  transform: translateX(-50%);
+  background: #253046;
+  color: white;
+  z-index: 1;
+}
+.sp-chord__keyboard[data-depth="true"] .sp-chord__key--white { box-shadow: inset 0 -5px 0 #d3daea; }
+.sp-chord__keyboard[data-depth="true"] .sp-chord__key--black { box-shadow: inset 0 -6px 0 #0c1220; }
+.sp-chord__keyboard .sp-chord__key.is-selected { background: var(--active); color: #14274e; }
+.sp-chord__keyboard .sp-chord__key.is-bass { background: #84aff9; }
+.sp-chord__keyboard .sp-chord__key:focus-visible { outline-offset: -4px; z-index: 2; }
+.sp-chord__settings { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .35rem; margin-top: .55rem; }
+.sp-chord__settings button { min-width: 44px; padding: .2rem .4rem; }
+.sp-chord__settings [data-range] { min-width: 4.6em; text-align: center; }
+.sp-chord__result {
+  display: grid;
+  gap: .12rem;
+  min-height: 5.1rem;
+  margin: .65rem 0;
+  padding: .65rem .8rem;
+  border-left: 3px solid #6a93f0;
+  background: rgb(108 145 218 / 14%);
+  overflow-wrap: anywhere;
+}
+.sp-chord__result strong { font-size: 1.1rem; color: inherit; }
+.sp-chord__result :empty { display: none; }
+.sp-chord__examples { margin: .85rem 0 .5rem; }
+.sp-chord__inputs { margin-top: .8rem; }
+.sp-chord__inputs summary { cursor: pointer; font-weight: 650; margin-bottom: .45rem; }
+.sp-chord .sp-chord__inputs p, .sp-chord [data-audio-status] { margin: .4rem 0; }

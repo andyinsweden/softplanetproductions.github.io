@@ -1,0 +1,511 @@
+(() => {
+  'use strict';
+
+  const tool = document.querySelector('#sp-chord-finder');
+  if (!tool) return;
+
+  const find = selector => tool.querySelector(selector);
+  const piano = find('[data-piano]');
+  const noteInput = find('#sp-chord-notes');
+  const chordInput = find('#sp-chord-symbol');
+  const inversionSelect = find('#sp-chord-inversion');
+  const natural = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 };
+  const letters = Object.keys(natural);
+  const pitchNames = ['C', 'D♭', 'D', 'E♭', 'E', 'F', 'F♯', 'G', 'A♭', 'A', 'B♭', 'B'];
+  const black = new Set([1, 3, 6, 8, 10]);
+  const intervals = {
+    1: 0, '♭2': 1, 2: 2, '♭3': 3, 3: 4, 4: 5, '♯4': 6,
+    '♭5': 6, 5: 7, '♯5': 8, 6: 9, '♭♭7': 9, '♭7': 10, 7: 11,
+    '♭9': 13, 9: 14, '♯9': 15, 11: 17, '♯11': 18, '♭13': 20, 13: 21,
+  };
+  const pc = number => ((number % 12) + 12) % 12;
+  const normalize = text => text.replaceAll('♭', 'b').replaceAll('♯', '#')
+    .replaceAll('𝄪', '##').replaceAll('𝄫', 'bb').replaceAll('−', '-');
+  const display = text => text.replaceAll('b', '♭').replaceAll('#', '♯');
+  const pitchOf = spelling => {
+    const [letter, ...accidentals] = normalize(spelling);
+    return natural[letter] + accidentals.reduce((total, accidental) => total + (accidental === '#' ? 1 : -1), 0);
+  };
+  const standardNote = midi => pitchNames[pc(midi)] + (Math.floor(midi / 12) - 1);
+  const templates = [
+    ['', '1 3 5', 'maj M major'],
+    ['m', '1 ♭3 5', 'min minor -'],
+    ['dim', '1 ♭3 ♭5', '° o'],
+    ['aug', '1 3 ♯5', '+'],
+    ['sus2', '1 2 5'],
+    ['sus4', '1 4 5', 'sus'],
+    ['5', '1 5'],
+    ['6', '1 3 5 6', 'maj6'],
+    ['m6', '1 ♭3 5 6', 'min6'],
+    ['6/9', '1 3 5 6 9', '69'],
+    ['m6/9', '1 ♭3 5 6 9', 'm69'],
+    ['add9', '1 3 5 9', 'add2'],
+    ['madd9', '1 ♭3 5 9', 'madd2'],
+    ['add11', '1 3 5 11', 'add4'],
+    ['madd11', '1 ♭3 5 11', 'madd4'],
+    ['7', '1 3 5 ♭7', 'dom7'],
+    ['maj7', '1 3 5 7', 'M7 Δ Δ7'],
+    ['m7', '1 ♭3 5 ♭7', 'min7 -7'],
+    ['m(maj7)', '1 ♭3 5 7', 'mMaj7 mmaj7 mM7'],
+    ['m7♭5', '1 ♭3 ♭5 ♭7', 'ø ø7 halfdim7'],
+    ['dim7', '1 ♭3 ♭5 ♭♭7', '°7 o7'],
+    ['7sus4', '1 4 5 ♭7', '7sus'],
+    ['7sus2', '1 2 5 ♭7'],
+    ['maj7sus4', '1 4 5 7', 'M7sus4'],
+    ['7♭5', '1 3 ♭5 ♭7'],
+    ['7♯5', '1 3 ♯5 ♭7', 'aug7 7+5'],
+    ['maj7♯5', '1 3 ♯5 7', 'M7#5 maj7+5'],
+    ['maj7♭5', '1 3 ♭5 7', 'M7b5'],
+    ['9', '1 3 5 ♭7 9', 'dom9'],
+    ['maj9', '1 3 5 7 9', 'M9 Δ9'],
+    ['m9', '1 ♭3 5 ♭7 9', 'min9'],
+    ['m(maj9)', '1 ♭3 5 7 9', 'mMaj9 mmaj9 mM9'],
+    ['9sus4', '1 4 5 ♭7 9', '9sus'],
+    ['9♭5', '1 3 ♭5 ♭7 9'],
+    ['9♯5', '1 3 ♯5 ♭7 9', '9+5'],
+    ['7♭9', '1 3 5 ♭7 ♭9'],
+    ['7♯9', '1 3 5 ♭7 ♯9'],
+    ['7♯11', '1 3 5 ♭7 ♯11'],
+    ['maj7♯11', '1 3 5 7 ♯11', 'M7#11'],
+    ['maj9♯11', '1 3 5 7 9 ♯11', 'M9#11'],
+    ['9♯11', '1 3 5 ♭7 9 ♯11'],
+    ['7♭13', '1 3 5 ♭7 ♭13'],
+    ['7♭5♭9', '1 3 ♭5 ♭7 ♭9'],
+    ['7♭5♯9', '1 3 ♭5 ♭7 ♯9'],
+    ['7♯5♭9', '1 3 ♯5 ♭7 ♭9', '7+5b9'],
+    ['7♯5♯9', '1 3 ♯5 ♭7 ♯9', '7+5#9'],
+    ['11', '1 3 5 ♭7 9 11', 'dom11'],
+    ['m11', '1 ♭3 5 ♭7 9 11', 'min11'],
+    ['maj11', '1 3 5 7 9 11', 'M11'],
+    ['13', '1 3 5 ♭7 9 11 13', 'dom13'],
+    ['m13', '1 ♭3 5 ♭7 9 11 13', 'min13'],
+    ['maj13', '1 3 5 7 9 11 13', 'M13'],
+    ['13sus4', '1 4 5 ♭7 9 13', '13sus'],
+    ['13♭9', '1 3 5 ♭7 ♭9 13'],
+    ['13♯11', '1 3 5 ♭7 9 ♯11 13'],
+    ['maj13♯11', '1 3 5 7 9 ♯11 13', 'M13#11'],
+    ['7♭9♭13', '1 3 5 ♭7 ♭9 ♭13'],
+  ].map(([suffix, degrees, aliases = '']) => {
+    const tones = degrees.split(' ').map(degree => ({
+      step: (Number(degree.replace(/\D/g, '')) - 1) % 7,
+      semitones: intervals[degree],
+    }));
+    return { suffix, tones, aliases: [normalize(suffix), ...aliases.split(' ').filter(Boolean)] };
+  });
+
+  function spellTone(root, tone) {
+    const letter = letters[(letters.indexOf(root[0]) + tone.step) % 7];
+    const difference = pc(pitchOf(root) + tone.semitones - natural[letter] + 6) - 6;
+    return letter + (difference < 0 ? '♭'.repeat(-difference) : '♯'.repeat(difference));
+  }
+
+  function parseNote(text) {
+    if (/^\d+$/.test(text) && Number(text) < 128) return { midi: Number(text) };
+    const match = text.match(/^([A-G])([#b]{0,2})(-?\d{1,2})?$/i);
+    if (!match) throw new Error('Use note names such as C E♭ G, octaves such as C4, or MIDI numbers 0–127.');
+    const spelling = display(match[1].toUpperCase() + match[2].replaceAll('B', 'b'));
+    const pitch = pitchOf(spelling);
+    if (match[3] === undefined) return { pitch, spelling };
+    const midi = (Number(match[3]) + 1) * 12 + pitch;
+    if (midi < 0 || midi > 127) throw new Error('One of those notes is outside the MIDI range (0–127).');
+    return { midi, spelling };
+  }
+
+  function parseNotes(text) {
+    let previous = 47;
+    return normalize(text.trim()).split(/[\s,;–—]+|(?<=[A-Ga-g0-9#b])-(?=[A-Ga-g])/).filter(Boolean).map(token => {
+      const note = parseNote(token);
+      const midi = note.midi ?? previous + (pc(note.pitch - previous) || 12);
+      if (midi > 127) throw new Error('Use octaves to keep the notes within the MIDI range (0–127).');
+      previous = midi;
+      return { midi, spelling: note.spelling };
+    });
+  }
+
+  function identify(notes) {
+    const pitches = [...new Set(notes.map(pc))];
+    return pitches.flatMap(root => {
+      const spelling = spellings.get(root) ?? pitchNames[root];
+      return templates.filter(template => template.tones.length === pitches.length &&
+        template.tones.every(tone => pitches.includes(pc(root + tone.semitones))))
+        .map(template => {
+          const names = new Map(template.tones.map(tone => [pc(root + tone.semitones), spellTone(spelling, tone)]));
+          const bass = pc(notes[0]);
+          return { symbol: spelling + template.suffix + (root === bass ? '' : '/' + names.get(bass)), names };
+        });
+    });
+  }
+
+  function parseChord(text) {
+    const match = normalize(text.trim()).match(/^([A-Ga-g])([#b]{0,2})(.*?)(?:\/([A-Ga-g][#b]{0,2}))?$/);
+    if (!match) throw new Error('Enter a chord such as Cmaj7, B♭m9 or C/E.');
+    const root = display(match[1].toUpperCase() + match[2]);
+    const quality = match[3].replace(/\s+/g, '');
+    const compact = quality.replace(/[()]/g, '');
+    const template = templates.find(type => type.aliases.includes(quality)) ??
+      templates.find(type => type.aliases.includes(compact)) ??
+      templates.find(type => type.aliases.includes(compact.toLowerCase()));
+    if (!template) throw new Error('Chord type not found. Try a symbol such as Fmaj7, G7♭9 or Dsus4.');
+    const slash = match[4];
+    const bass = slash ? display(slash[0].toUpperCase() + slash.slice(1)) : root;
+    const toneIndex = template.tones.findIndex(tone => pc(pitchOf(root) + tone.semitones) === pc(pitchOf(bass)));
+    return { root, template, bass, inversion: toneIndex };
+  }
+
+  let mode = 'identify';
+  let keyboardStart = 48;
+  let keyboardSpan = 24;
+  let selected = new Set();
+  let spellings = new Map();
+  let voicing = [];
+  let chord;
+  let audio;
+  let midiAccess;
+  const midiListeners = new Map();
+  const midiNotes = new Map();
+  let keyButtons = new Map();
+
+  function useNotes(notes, shift = true) {
+    selected = new Set(notes.map(note => note.midi));
+    spellings = new Map(notes.filter(note => note.spelling).map(note => [pc(note.midi), note.spelling]));
+    clearError(noteInput);
+    if (shift) fitKeyboard([...selected]);
+    render();
+  }
+
+  function fitKeyboard(notes) {
+    if (!notes.length) return;
+    const lowest = Math.min(...notes);
+    const highest = Math.max(...notes);
+    const start = lowest >= keyboardStart && highest <= keyboardStart + 24 ?
+      keyboardStart : Math.min(108, Math.floor(lowest / 12) * 12);
+    const span = highest > start + 24 && highest <= start + 36 ? 36 : 24;
+    if (start !== keyboardStart || span !== keyboardSpan) {
+      keyboardStart = start;
+      keyboardSpan = span;
+      buildKeyboard();
+    }
+  }
+
+  function buildKeyboard() {
+    const last = Math.min(127, keyboardStart + keyboardSpan);
+    const whiteCount = Array.from({ length: last - keyboardStart + 1 }, (_, i) => keyboardStart + i)
+      .filter(midi => !black.has(pc(midi))).length;
+    piano.style.setProperty('--black-key-width', (64 / whiteCount) + '%');
+    keyButtons = new Map();
+    const fragment = document.createDocumentFragment();
+    let whiteIndex = 0;
+    for (let midi = keyboardStart; midi <= last; midi++) {
+      const button = document.createElement('button');
+      const isBlack = black.has(pc(midi));
+      button.type = 'button';
+      button.className = 'sp-chord__key sp-chord__key--' + (isBlack ? 'black' : 'white');
+      button.setAttribute('aria-label', standardNote(midi));
+      if (isBlack) {
+        button.style.setProperty('--key-left', (whiteIndex / whiteCount * 100) + '%');
+      } else {
+        whiteIndex++;
+        button.textContent = pc(midi) === 0 ? standardNote(midi) : pitchNames[pc(midi)];
+      }
+      button.addEventListener('click', () => pressKey(midi));
+      keyButtons.set(midi, button);
+      fragment.append(button);
+    }
+    piano.replaceChildren(fragment);
+    find('[data-range]').textContent = standardNote(keyboardStart) + '–' + standardNote(last);
+    find('[data-octave="-1"]').disabled = keyboardStart === 0;
+    find('[data-octave="1"]').disabled = keyboardStart === 108;
+  }
+
+  function pressKey(midi) {
+    if (mode === 'identify') {
+      if (selected.has(midi)) {
+        selected.delete(midi);
+        if (![...selected].some(note => pc(note) === pc(midi))) spellings.delete(pc(midi));
+      } else {
+        selected.add(midi);
+        play([midi]);
+      }
+      noteInput.value = '';
+      clearError(noteInput);
+      render();
+    } else {
+      play([midi]);
+    }
+  }
+
+  function setResult(title, notes = '', alternatives = '') {
+    for (const [selector, value] of [['[data-result]', title], ['[data-notes]', notes], ['[data-alternatives]', alternatives]]) {
+      const element = find(selector);
+      if (element.textContent !== value) element.textContent = value;
+    }
+  }
+
+  function setError(input, message) {
+    input.setAttribute('aria-invalid', 'true');
+    setResult(message);
+  }
+
+  function clearError(input) {
+    input.removeAttribute('aria-invalid');
+  }
+
+  function render() {
+    const lookup = mode === 'lookup';
+    const input = lookup ? chordInput : noteInput;
+    const notes = lookup ? voicing : [...selected].sort((a, b) => a - b);
+    for (const [midi, button] of keyButtons) {
+      const active = notes.includes(midi);
+      button.classList.toggle('is-selected', active);
+      button.classList.toggle('is-bass', active && midi === notes[0]);
+      if (lookup) button.removeAttribute('aria-pressed');
+      else button.setAttribute('aria-pressed', String(active));
+    }
+    find('[data-play]').disabled = !notes.length;
+    find('[data-arpeggio]').disabled = !notes.length;
+    if (input.hasAttribute('aria-invalid')) return;
+    if (!notes.length) {
+      setResult('Tap the piano keys to choose notes.');
+      return;
+    }
+    const matches = lookup ? [describeVoicing()] : identify(notes);
+    const best = matches[0];
+    const labels = notes.map(midi => {
+      const name = best?.names.get(pc(midi)) ?? spellings.get(pc(midi)) ?? pitchNames[pc(midi)];
+      return name + ((midi - pitchOf(name)) / 12 - 1);
+    });
+    const pitchCount = new Set(notes.map(pc)).size;
+    const fallback = pitchCount === 1 ? 'Choose more notes to find a chord.' :
+      pitchCount === 2 ? 'Two distinct notes. Add a third to check for a chord.' : 'No matching chord for these notes.';
+    setResult(best?.symbol ?? fallback, labels.join(' · '),
+      matches.length > 1 ? 'Also fits: ' + matches.slice(1).map(match => match.symbol).join(', ') : '');
+  }
+
+  function describeVoicing() {
+    const { root, template, bass, inversion } = chord;
+    const names = new Map(template.tones.map(tone => [pc(pitchOf(root) + tone.semitones), spellTone(root, tone)]));
+    const bassName = inversion === 0 ? root : bass;
+    names.set(pc(pitchOf(bassName)), bassName);
+    return { symbol: root + template.suffix + (inversion === 0 ? '' : '/' + bassName), names };
+  }
+
+  function showVoicing() {
+    const { root, template, bass, inversion } = chord;
+    const rootMidi = 48 + pc(pitchOf(root));
+    const tones = template.tones.map(tone => rootMidi + tone.semitones);
+    if (inversion === 0) {
+      voicing = tones;
+    } else if (inversion < 0) {
+      const bassMidi = rootMidi - (pc(rootMidi - pitchOf(bass)) || 12);
+      voicing = [bassMidi, ...tones];
+    } else {
+      const bassMidi = 48 + pc(pitchOf(bass));
+      const pitch = pc(bassMidi);
+      voicing = tones.map(tone => bassMidi + pc(tone - pitch)).sort((a, b) => a - b);
+    }
+    fitKeyboard(voicing);
+    render();
+  }
+
+  function lookupChord() {
+    try {
+      chord = parseChord(chordInput.value);
+      clearError(chordInput);
+      const options = chord.template.tones.map((tone, index) => new Option(
+        index === 0 ? 'Root position' : 'Inversion ' + index + ' (' + spellTone(chord.root, tone) + ' in bass)',
+        String(index),
+      ));
+      if (chord.inversion < 0) options.unshift(new Option(chord.bass + ' in bass (slash chord)', '-1'));
+      inversionSelect.replaceChildren(...options);
+      inversionSelect.value = String(chord.inversion);
+      inversionSelect.disabled = false;
+      showVoicing();
+    } catch (error) {
+      voicing = [];
+      inversionSelect.replaceChildren();
+      inversionSelect.disabled = true;
+      setError(chordInput, error.message);
+      render();
+    }
+  }
+
+  function status(selector, message) {
+    const element = find(selector);
+    element.textContent = message;
+    element.hidden = !message;
+  }
+
+  async function play(notes, step = 0) {
+    try {
+      const Audio = window.AudioContext || window.webkitAudioContext;
+      if (!Audio) throw new Error('Audio playback is unavailable in this browser.');
+      audio ??= new Audio();
+      if (audio.state !== 'running') await audio.resume();
+      status('[data-audio-status]', '');
+      const start = audio.currentTime + .015;
+      const volume = .19 / Math.sqrt(step ? 1 : notes.length);
+      notes.forEach((midi, index) => {
+        const time = start + index * step;
+        const frequency = 440 * 2 ** ((midi - 69) / 12);
+        for (const [harmonic, strength, decay] of [[1, 1, .85], [2, .32, .46], [3, .13, .24]]) {
+          if (frequency * harmonic >= audio.sampleRate / 2) continue;
+          const oscillator = audio.createOscillator();
+          const envelope = audio.createGain();
+          oscillator.frequency.value = frequency * harmonic;
+          envelope.gain.setValueAtTime(.0001, time);
+          envelope.gain.exponentialRampToValueAtTime(volume * strength, time + .009);
+          envelope.gain.exponentialRampToValueAtTime(.0001, time + decay);
+          oscillator.connect(envelope).connect(audio.destination);
+          oscillator.start(time);
+          oscillator.stop(time + decay + .01);
+        }
+      });
+    } catch {
+      status('[data-audio-status]', 'Audio could not start. Check your browser’s audio settings and try again.');
+    }
+  }
+
+  function receiveMIDI(event, notes) {
+    if (mode !== 'identify') return;
+    const [statusByte, midi, velocity] = event.data;
+    const command = statusByte & 0xf0;
+    const channel = statusByte & 0x0f;
+    const key = channel * 128 + midi;
+    if (command === 0x90 && velocity > 0) {
+      notes.set(key, midi);
+      const held = [...midiNotes.values()].flatMap(port => [...port.values()]);
+      noteInput.value = '';
+      useNotes(held.map(pitch => ({ midi: pitch })));
+    } else if (command === 0x80 || command === 0x90) {
+      notes.delete(key);
+    } else if (command === 0xb0 && (midi === 120 || midi === 123)) {
+      for (const key of notes.keys()) {
+        if (Math.floor(key / 128) === channel) notes.delete(key);
+      }
+    }
+  }
+
+  function connectInputs() {
+    const inputs = new Map([...midiAccess.inputs.values()].filter(port => port.state === 'connected')
+      .map(port => [port.id, port]));
+    for (const [id, { port, listener }] of midiListeners) {
+      if (inputs.has(id)) continue;
+      port.removeEventListener('midimessage', listener);
+      midiListeners.delete(id);
+      midiNotes.delete(id);
+    }
+    for (const [id, port] of inputs) {
+      if (midiListeners.has(id)) continue;
+      const notes = new Map();
+      const listener = event => receiveMIDI(event, notes);
+      port.addEventListener('midimessage', listener);
+      midiNotes.set(id, notes);
+      midiListeners.set(id, { port, listener });
+    }
+    status('[data-midi-status]', inputs.size ? 'MIDI connected. Play a chord on your keyboard.' :
+      'No MIDI input found. Connect a keyboard and check again.');
+  }
+
+  const pressedNotes = () => mode === 'lookup' ? voicing : [...selected].sort((a, b) => a - b);
+  for (const button of tool.querySelectorAll('[data-mode]')) button.addEventListener('click', () => {
+    mode = button.dataset.mode;
+    for (const pressed of tool.querySelectorAll('[data-mode]')) pressed.setAttribute('aria-pressed', String(pressed === button));
+    for (const panel of tool.querySelectorAll('[data-panel]')) panel.hidden = panel.dataset.panel !== mode;
+    for (const notes of midiNotes.values()) notes.clear();
+    if (mode === 'lookup') lookupChord();
+    else {
+      fitKeyboard([...selected]);
+      if (noteInput.hasAttribute('aria-invalid')) readNoteInput();
+      else render();
+    }
+  });
+
+  for (const button of tool.querySelectorAll('[data-octave]')) button.addEventListener('click', () => {
+    keyboardStart += Number(button.dataset.octave) * 12;
+    buildKeyboard();
+    render();
+  });
+  for (const button of tool.querySelectorAll('[data-depth-button]')) button.addEventListener('click', () => {
+    piano.dataset.depth = button.dataset.depthButton;
+    for (const pressed of tool.querySelectorAll('[data-depth-button]')) pressed.setAttribute('aria-pressed', String(pressed === button));
+  });
+  for (const button of tool.querySelectorAll('[data-example]')) button.addEventListener('click', () => {
+    noteInput.value = button.dataset.example;
+    useNotes(parseNotes(noteInput.value));
+  });
+
+  function readNoteInput() {
+    try {
+      useNotes(parseNotes(noteInput.value));
+    } catch (error) {
+      useNotes([]);
+      setError(noteInput, error.message);
+    }
+  }
+
+  find('[data-note-form]').addEventListener('submit', event => {
+    event.preventDefault();
+    readNoteInput();
+  });
+  noteInput.addEventListener('input', readNoteInput);
+  find('[data-chord-form]').addEventListener('submit', event => {
+    event.preventDefault();
+    lookupChord();
+  });
+  inversionSelect.addEventListener('change', () => {
+    const inversion = Number(inversionSelect.value);
+    if (inversion === chord.inversion) return;
+    chord.inversion = inversion;
+    chord.bass = spellTone(chord.root, chord.template.tones[inversion]);
+    if (inversionSelect.options[0].value === '-1') inversionSelect.remove(0);
+    chordInput.value = describeVoicing().symbol;
+    showVoicing();
+  });
+  find('[data-clear]').addEventListener('click', () => {
+    noteInput.value = '';
+    for (const notes of midiNotes.values()) notes.clear();
+    useNotes([]);
+  });
+  find('[data-play]').addEventListener('click', () => play(pressedNotes()));
+  find('[data-arpeggio]').addEventListener('click', () => play(pressedNotes(), .22));
+
+  const computer = find('[data-computer]');
+  computer.addEventListener('click', () => {
+    const active = computer.getAttribute('aria-pressed') !== 'true';
+    computer.setAttribute('aria-pressed', String(active));
+    find('[data-computer-help]').hidden = !active;
+  });
+  document.addEventListener('keydown', event => {
+    if (mode !== 'identify' || computer.getAttribute('aria-pressed') !== 'true' ||
+      event.defaultPrevented || event.repeat || event.altKey || event.ctrlKey || event.metaKey ||
+      event.target.closest('input, textarea, select, [contenteditable]')) return;
+    const code = 'zsxdcvgbhnjmq2w3er5t6y7u'.indexOf(event.key.toLowerCase());
+    if (event.key.length === 1 && code >= 0 && keyButtons.has(keyboardStart + code)) {
+      event.preventDefault();
+      pressKey(keyboardStart + code);
+    }
+  });
+
+  find('[data-midi]').addEventListener('click', async event => {
+    const button = event.currentTarget;
+    button.disabled = true;
+    try {
+      if (!navigator.requestMIDIAccess) {
+        status('[data-midi-status]', 'Web MIDI is unavailable in this browser. Try Chrome or Edge with a connected MIDI keyboard.');
+        return;
+      }
+      if (!midiAccess) {
+        midiAccess = await navigator.requestMIDIAccess({ sysex: false });
+        midiAccess.addEventListener('statechange', connectInputs);
+      }
+      connectInputs();
+    } catch {
+      status('[data-midi-status]', 'MIDI access was denied or is unavailable. Check your browser’s site permissions.');
+    } finally {
+      button.disabled = false;
+    }
+  });
+
+  buildKeyboard();
+  render();
+})();

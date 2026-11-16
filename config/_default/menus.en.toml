@@ -73,6 +73,12 @@
   weight = 46
 
 [[main]]
+  name = "Piano Chord Finder"
+  pageRef = "tools/chord-finder"
+  parent = "tools"
+  weight = 47
+
+[[main]]
   name = "Tutorials"
   pageRef = "tutorials"
   identifier = "tutorials"
