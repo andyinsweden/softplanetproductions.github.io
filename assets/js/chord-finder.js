@@ -160,6 +160,16 @@
   let voicing = [];
   let chord;
   let audio;
+  // Salamander Grand Piano V3 (Alexander Holm), CC BY 3.0.
+  // Samples are requested only after the first playback interaction.
+  const pianoSampleBase = 'https://tonejs.github.io/audio/salamander/';
+  const pianoSampleNotes = [
+    [24, 'C1'], [36, 'C2'], [42, 'Fs2'], [48, 'C3'],
+    [54, 'Fs3'], [60, 'C4'], [66, 'Fs4'], [72, 'C5'],
+    [78, 'Fs5'], [84, 'C6'], [96, 'C7'],
+  ];
+  const pianoSamples = new Map();
+  let pianoLoadPromise;
   let midiAccess;
   const midiListeners = new Map();
   const midiNotes = new Map();
@@ -335,33 +345,79 @@
     element.hidden = !message;
   }
 
+  async function loadPianoSamples() {
+    if (pianoLoadPromise) return pianoLoadPromise;
+    pianoLoadPromise = (async () => {
+      status('[data-audio-status]', 'Loading acoustic grand piano samples…');
+      const results = await Promise.allSettled(pianoSampleNotes.map(async ([midi, name]) => {
+        const response = await fetch(pianoSampleBase + name + '.mp3');
+        if (!response.ok) throw new Error('Piano sample unavailable');
+        const buffer = await response.arrayBuffer();
+        pianoSamples.set(midi, await audio.decodeAudioData(buffer));
+      }));
+      const loaded = results.filter(result => result.status === 'fulfilled').length;
+      status('[data-audio-status]', loaded ?
+        (loaded === pianoSampleNotes.length ? '' : 'Some piano samples unavailable; using nearest available recordings.') :
+        'Piano samples unavailable; using synthesized audio instead.');
+    })();
+    return pianoLoadPromise;
+  }
+
+  function playSynth(notes, step) {
+    const start = audio.currentTime + .015;
+    const volume = .19 / Math.sqrt(step ? 1 : notes.length);
+    notes.forEach((midi, index) => {
+      const time = start + index * step;
+      const frequency = 440 * 2 ** ((midi - 69) / 12);
+      for (const [harmonic, strength, decay] of [[1, 1, .85], [2, .32, .46], [3, .13, .24]]) {
+        if (frequency * harmonic >= audio.sampleRate / 2) continue;
+        const oscillator = audio.createOscillator();
+        const envelope = audio.createGain();
+        oscillator.frequency.value = frequency * harmonic;
+        envelope.gain.setValueAtTime(.0001, time);
+        envelope.gain.exponentialRampToValueAtTime(volume * strength, time + .009);
+        envelope.gain.exponentialRampToValueAtTime(.0001, time + decay);
+        oscillator.connect(envelope).connect(audio.destination);
+        oscillator.start(time);
+        oscillator.stop(time + decay + .01);
+      }
+    });
+  }
+
   async function play(notes, step = 0) {
+    if (!notes.length) return;
     try {
       const Audio = window.AudioContext || window.webkitAudioContext;
       if (!Audio) throw new Error('Audio playback is unavailable in this browser.');
       audio ??= new Audio();
       if (audio.state !== 'running') await audio.resume();
-      status('[data-audio-status]', '');
+      await loadPianoSamples();
+      if (!pianoSamples.size) {
+        playSynth(notes, step);
+        return;
+      }
       const start = audio.currentTime + .015;
-      const volume = .19 / Math.sqrt(step ? 1 : notes.length);
+      const volume = .56 / Math.sqrt(step ? 1 : notes.length);
       notes.forEach((midi, index) => {
+        const nearest = [...pianoSamples.keys()].sort((a, b) => Math.abs(a - midi) - Math.abs(b - midi))[0];
+        const source = audio.createBufferSource();
+        source.buffer = pianoSamples.get(nearest);
+        source.playbackRate.value = 2 ** ((midi - nearest) / 12);
+        const envelope = audio.createGain();
         const time = start + index * step;
-        const frequency = 440 * 2 ** ((midi - 69) / 12);
-        for (const [harmonic, strength, decay] of [[1, 1, .85], [2, .32, .46], [3, .13, .24]]) {
-          if (frequency * harmonic >= audio.sampleRate / 2) continue;
-          const oscillator = audio.createOscillator();
-          const envelope = audio.createGain();
-          oscillator.frequency.value = frequency * harmonic;
-          envelope.gain.setValueAtTime(.0001, time);
-          envelope.gain.exponentialRampToValueAtTime(volume * strength, time + .009);
-          envelope.gain.exponentialRampToValueAtTime(.0001, time + decay);
-          oscillator.connect(envelope).connect(audio.destination);
-          oscillator.start(time);
-          oscillator.stop(time + decay + .01);
-        }
+        const duration = Math.min(source.buffer.duration / source.playbackRate.value, 4);
+        const end = time + Math.max(.05, duration);
+        envelope.gain.setValueAtTime(.0001, time);
+        envelope.gain.exponentialRampToValueAtTime(volume, time + .012);
+        envelope.gain.setValueAtTime(volume, Math.max(time + .013, end - .2));
+        envelope.gain.exponentialRampToValueAtTime(.0001, end);
+        source.connect(envelope).connect(audio.destination);
+        source.start(time);
+        source.stop(end + .01);
       });
     } catch {
-      status('[data-audio-status]', 'Audio could not start. Check your browser’s audio settings and try again.');
+      if (audio?.state === 'running') playSynth(notes, step);
+      status('[data-audio-status]', 'Sample playback unavailable. Using synthesized audio instead.');
     }
   }
 
