@@ -153,8 +153,8 @@
   }
 
   let mode = 'identify';
-  let keyboardStart = 48;
-  let keyboardSpan = 24;
+  let keyboardStart = 36;
+  let keyboardSpan = 36;
   let selected = new Set();
   let spellings = new Map();
   let voicing = [];
@@ -177,9 +177,9 @@
     if (!notes.length) return;
     const lowest = Math.min(...notes);
     const highest = Math.max(...notes);
-    const start = lowest >= keyboardStart && highest <= keyboardStart + 24 ?
+    const start = lowest >= keyboardStart && highest <= keyboardStart + keyboardSpan ?
       keyboardStart : Math.min(108, Math.floor(lowest / 12) * 12);
-    const span = highest > start + 24 && highest <= start + 36 ? 36 : 24;
+    const span = highest > start + 36 ? 48 : 36;
     if (start !== keyboardStart || span !== keyboardSpan) {
       keyboardStart = start;
       keyboardSpan = span;
