@@ -1,4 +1,5 @@
 {{ define "main" }}
+  {{ $couponURL := "https://www.udemy.com/course/modern-piano-improvisation-2026/?couponCode=3D93BC4843A58A5BAA43" }}
   {{ $isEditorialCourse := eq .RelPermalink "/courses/piano-improvisation/" }}
 
   {{ if $isEditorialCourse }}
@@ -14,7 +15,7 @@
         <p class="courses-hero__intro">{{ .Params.heroIntro }}</p>
         {{ if $isEditorialCourse }}
           <div class="piano-hero-actions">
-            <a class="piano-btn piano-btn--primary" href="https://www.udemy.com/course/modern-piano-improvisation-2026/?couponCode=3D93BC4843A58A5BAA43" target="_blank" rel="noopener" style="background: #fbbf24; color: #211500;">Get €10 off this course on Udemy</a>
+            <a class="piano-btn piano-btn--primary" href="{{ $couponURL }}" target="_blank" rel="noopener" style="background: #fbbf24; color: #211500;">Get €10 off this course on Udemy</a>
             <a class="piano-btn piano-btn--secondary" href="#piano-improvisation-curriculum">Explore the Course Lessons</a>
           </div>
         {{ end }}
@@ -22,6 +23,10 @@
     </section>
 
     {{ if $isEditorialCourse }}
+      <aside aria-label="Udemy course offer" style="background: #fbbf24; color: #211500; padding: clamp(1.25rem, 4vw, 2rem) 1rem; text-align: center;">
+        <p style="margin: 0 0 0.85rem; font-size: clamp(1.35rem, 4vw, 1.8rem); font-weight: 800; line-height: 1.25;">Save €10 on the Piano Improvisation Course</p>
+        <a class="piano-btn piano-btn--primary" href="{{ $couponURL }}" target="_blank" rel="noopener" style="background: #211500; color: #fff; font-size: 1rem; white-space: normal;">Get €10 off this course on Udemy</a>
+      </aside>
       <article class="courses-content courses-detail">
         <div class="courses-detail__body">
           <div class="course-editorial">
