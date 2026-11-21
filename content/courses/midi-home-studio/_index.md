@@ -1,9 +1,11 @@
 ---
-title: "MIDI for Home Studios | Softplanet Productions"
-description: "A beginner-to-intermediate course on setting up and using MIDI in a home recording studio, covering fundamentals through CC automation and hardware sync. Launching 2027."
+title: "MIDI for Home Studios Course"
+description: "Preview the MIDI for Home Studios course, planned for 2027. Learn about MIDI routing, controller setup, CC automation and syncing hardware with a DAW."
 heroImage: "/midi-home-studio-hero.webp"
-heroEyebrow: "MIDI FOR HOME STUDIOS"
-heroTitle: "Build a better home studio"
+heroEyebrow: "PLANNED FOR 2027"
+images:
+  - "/midi-home-studio-hero.webp"
+heroTitle: "MIDI for Home Studios Course"
 heroIntro: "Learn MIDI from the fundamentals to confident hardware and DAW workflows. Easy to follow course!"
 ---
  ## MIDI for Home Studios — Coming 2027 
@@ -12,4 +14,4 @@ heroIntro: "Learn MIDI from the fundamentals to confident hardware and DAW workf
  
  This course cuts through the confusion. Designed for beginners through to intermediate home recording hobbyists, it takes you from MIDI fundamentals all the way to advanced topics most other courses skip entirely — including CC automation and hardware sync, the two areas home studio owners get stuck on most. Whether you're connecting your first MIDI keyboard or trying to get multiple hardware sequencers running in perfect sync, this course is built to solve the real problems home studio musicians actually face. 
  
- **Launching 2027 — sign up to be notified when it's released.**
+ **Planned for 2027.** [Contact us about the MIDI course](/contact/) to ask about release updates.

@@ -196,9 +196,9 @@
                       <div class="piano-curriculum-body">
                         <p>{{ $module.summary }}</p>
                         <p class="piano-curriculum-outcome"><strong>Your goal:</strong> {{ $module.result }}</p>
-                        <h4>Skills covered</h4>
+                        <h3>Skills covered</h3>
                         <ul>{{ range $module.topics }}<li>{{ . }}</li>{{ end }}</ul>
-                        <h4>Lesson programme</h4>
+                        <h3>Lesson programme</h3>
                         <ol>{{ range $module.lessons }}<li>{{ . }}</li>{{ end }}</ol>
                       </div>
                     </details>
@@ -266,14 +266,13 @@
         </div>
 
         {{ if .Data.Pages }}
+          <h2>Browse music courses</h2>
           <div class="courses-list">
             {{ range (.Paginate .Pages).Pages }}
               {{ partial "article-link.html" . }}
             {{ end }}
           </div>
           {{ partial "pagination.html" . }}
-        {{ else }}
-          <p class="courses-empty"><em>{{ i18n "list.no_articles" | emojify }}</em></p>
         {{ end }}
       </section>
     {{ end }}

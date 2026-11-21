@@ -27,6 +27,6 @@ Intermediate pianists can use this score to practise keeping the repeating arpeg
 
 ## Where to Buy the Cornfield Chase Piano Score
 
-The digital score is available from **Sheet Music Direct**. Browse the [piano sheet music collection](/piano-scores/) for more solo arrangements by John Montgomery.
+The digital score is available from **Sheet Music Direct** and [Sheet Music Plus](https://www.sheetmusicplus.com/en/product/cornfield-chase-23761032.html). Browse the [piano sheet music collection](/piano-scores/) for more solo arrangements by John Montgomery.
 
 {{< button href="https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx?affiliate=67607" target="_blank" color="orange" sponsored="true" >}}Buy Cornfield Chase Sheet Music{{< /button >}}

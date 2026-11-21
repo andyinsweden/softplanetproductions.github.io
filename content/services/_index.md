@@ -1,6 +1,6 @@
 ---
-title: "Services"
-description: "Sibelius site licensing, original musical production packages, and audio CD production from Softplanet Productions."
+title: "Music Education & Production Services"
+description: "Explore Sibelius licensing for UK schools, original musical theatre packages and audio production from Softplanet Productions."
 ---
 
 Softplanet Productions offers a range of services for schools, theater groups, and independent musicians.

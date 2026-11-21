@@ -1,6 +1,6 @@
 ---
-title: "Free Music Tools for Piano Players | Softplanet Music Lab"
-description: "Free interactive piano practice tools from Softplanet Productions. Identify piano chords by their notes, look up chord voicings on the keyboard, or try a daily improvisation challenge."
+title: "Free Online Piano Tools"
+description: "Identify piano chords by note, hear keyboard voicings or practise with a daily improvisation challenge. Free interactive tools from Softplanet Productions."
 ---
 
 Welcome to **Softplanet Music Lab** — practical, browser-based tools to help you make music more often. Everything here works on your phone, tablet or computer, without a download or account.

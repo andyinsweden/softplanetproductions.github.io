@@ -1,6 +1,6 @@
 ---
-title: "Paint by Numbers Piano Sheet Music | Solo Piano Arrangement"
-description: "Paint by Numbers piano sheet music arranged for solo piano. A contemporary, expressive arrangement for pianists seeking a modern, characterful score."
+title: "Paint By Numbers Piano Sheet Music | Harry Styles"
+description: "Play Paint By Numbers by Harry Styles with John Montgomery’s intermediate solo piano arrangement in F major. Preview and buy the digital sheet music."
 slug: "paint-by-numbers"
 keywords:
   - "Paint by Numbers piano"
@@ -12,7 +12,9 @@ keywords:
 author: "John Montgomery"
 ---
 
-**Paint by Numbers** is a contemporary solo piano arrangement designed to capture a distinctive, modern feel while remaining accessible and musically engaging for performers. This version focuses on clarity, atmosphere and expressive phrasing, creating a polished arrangement that works beautifully at the piano.
+**Paint By Numbers** by Harry Styles is arranged here for intermediate solo piano by John Montgomery. The F major arrangement brings the vocal melody to the keyboard with a flowing accompaniment.
+
+{{< button href="https://www.sheetmusicplus.com/en/product/paint-by-numbers-23773971.html" target="_blank" color="orange" >}}Buy Paint By Numbers Sheet Music{{< /button >}}
 
 The piece is ideal for pianists looking for an original-sounding score with a memorable melodic identity and a contemporary character.
 
@@ -47,4 +49,4 @@ A strong choice for recital, personal study, online performance and repertoire d
 
 If you are looking for a modern piano arrangement with character, atmosphere and musical immediacy, this piece offers a satisfying and engaging solo piano experience.
 
-**Arranged by John Montgomery.**
+The digital score is available from [Sheet Music Plus](https://www.sheetmusicplus.com/en/product/paint-by-numbers-23773971.html) and [Sheet Music Direct](https://www.sheetmusicdirect.com/se/ID_No/2038609/Product.aspx). Browse the full [piano sheet music collection](/piano-scores/) for more arrangements.

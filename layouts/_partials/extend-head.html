@@ -1,3 +1,12 @@
+{{ if in (slice "taxonomy" "term" "404") .Kind }}
+  <meta name="robots" content="noindex" />
+{{ end }}
+{{ if .IsHome }}
+  <link rel="preload" as="image" href="{{ "/home-hero.webp" | relURL }}" fetchpriority="high" />
+{{ else if and .IsSection .Params.heroImage }}
+  <link rel="preload" as="image" href="{{ .Params.heroImage | relURL }}" fetchpriority="high" />
+{{ end }}
+
 {{ if eq .RelPermalink "/tutorials/sibelius-troubleshooting/" }}
   {{ $script := resources.Get "js/sibelius-troubleshooting.js" | minify | fingerprint }}
   <script

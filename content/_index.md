@@ -1,6 +1,8 @@
 ---
 title: "Softplanet Productions | Music Education, Piano Improvisation & Scores"
-description: "Softplanet Productions provides music education, piano improvisation courses, original musicals, sheet music, and Sibelius licensing for schools, creatives, and musicians."
+description: "Explore piano improvisation courses, free piano tools and solo sheet music from Softplanet Productions. Get Sibelius licensing support for UK schools."
+images:
+  - "/home-hero.webp"
 keywords:
   - "Softplanet Productions"
   - "music education"

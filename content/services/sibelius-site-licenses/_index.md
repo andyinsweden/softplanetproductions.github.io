@@ -2,6 +2,8 @@
 title: "Sibelius Site Licences for UK Schools & Colleges"
 description: "Get a quote for Sibelius Ultimate site licences for UK schools and colleges. Compare standalone and network licences, add seats, or get installation support."
 heroImage: "/sibelius-site-licenses-hero.webp"
+images:
+  - "/sibelius-site-licenses-hero.webp"
 showDate: false
 showReadingTime: false
 showTableOfContents: false
@@ -61,7 +63,7 @@ showTableOfContents: false
   <div>
     <h2>Sibelius installation support for school IT teams</h2>
     <p>We help plan the rollout around your music department’s teaching timetable and the way your IT team manages computers. For a network installation, we can discuss where to run the Licence Server and how classroom computers will connect to it.</p>
-    <p class="sibelius-note">If Sibelius is already installed, we can review the version and licence before you expand or upgrade.</p>
+    <p class="sibelius-note">If Sibelius is already installed, we can review the version and licence before you expand or upgrade. For deployment and connection checks, see our <a class="sibelius-text-link" href="/tutorials/sibelius-network-licences-for-schools/">Sibelius network licensing guide for school IT teams</a>.</p>
   </div>
   <div class="sibelius-mockup" aria-label="Illustration of a music notation workspace">
     <div class="sibelius-mockup-bar"><span></span><span></span><span></span></div>

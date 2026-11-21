@@ -80,7 +80,7 @@ For more help, visit our [Sibelius troubleshooting guide](/tutorials/sibelius-tr
 ### Official references
 
 - [Avid Sibelius Reference Guide](https://resources.avid.com/SupportFiles/Sibelius/2023.11/Sibelius_Reference.pdf): instruments and desktop playback setup.
-- [Avid: selecting the audio interface](https://avidtech.my.salesforce-sites.com/pkb/articles/en_US/How_To/select-or-change-interface-or-audio-output).
+- [Avid: selecting the audio interface](https://kb.avid.com/pkb/articles/en_US/How_To/select-or-change-interface-or-audio-output).
 - [Sibelius: creating tuplets](https://www.sibelius.com/helpcenter/article.php?id=227): the established triplet shortcut; older versions are listed on this page.
 - [Avid Sibelius Reference, version 8.6](https://resources.avid.com/SupportFiles/Sibelius/8.6/reference.pdf): Make Into System and formatting cautions.
-- [Avid: activating Sibelius in Avid Link](https://avidtech.my.salesforce-sites.com/pkb/articles/en_US/faq/How-to-Activate-Sibelius-in-Avid-Link).
+- [Avid: activating Sibelius in Avid Link](https://kb.avid.com/pkb/articles/en_US/faq/How-to-Activate-Sibelius-in-Avid-Link).

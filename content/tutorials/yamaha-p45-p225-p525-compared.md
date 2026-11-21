@@ -1,5 +1,5 @@
 ---
-title: "Yamaha P-45, P-225 or P-525: Find Your Piano Match"
+title: "Yamaha P-45 vs P-225 vs P-525: Digital Piano Comparison"
 date: 2026-10-26
 description: "Compare Yamaha P-45, P-225 and P-525 digital pianos: key feel, sound, portability and practical buying tips for your next musical step."
 summary: "Three Yamaha digital pianos, three different strengths. Find the one that fits your playing, space and musical ambitions."
@@ -40,7 +40,7 @@ Polyphony is the number of notes an instrument can sound simultaneously. Sustain
     <span class="yamaha-model-showcase__eyebrow">01 / THE ESSENTIAL</span>
     <span class="yamaha-model-showcase__name">Yamaha P-45</span>
     <span class="yamaha-model-showcase__detail">A beautifully uncomplicated place to begin.</span>
-    <a class="yamaha-model-showcase__photo-credit" href="https://www.giggear.co.uk/back-to-school/yamaha-p45-digital-piano-black.htm" target="_blank" rel="noopener noreferrer">Photograph source</a>
+    <a class="yamaha-model-showcase__photo-credit" href="https://giggear.2dimg.com/1/1547734744_9874.jpg" target="_blank" rel="noopener noreferrer">Photograph: GigGear</a>
   </figcaption>
 </figure>
 

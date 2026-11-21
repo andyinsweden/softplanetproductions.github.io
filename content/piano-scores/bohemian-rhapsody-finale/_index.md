@@ -1,6 +1,6 @@
 ---
 title: "Bohemian Rhapsody Finale Piano Sheet Music | Queen"
-description: "Bohemian Rhapsody Finale piano sheet music arranged for solo piano. A dramatic, expressive Queen-inspired arrangement for intermediate to advanced pianists."
+description: "Play the finale of Queen’s Bohemian Rhapsody with John Montgomery’s digital sheet music for intermediate to advanced solo piano."
 slug: "bohemian-rhapsody-finale"
 keywords:
   - "Bohemian Rhapsody Finale piano"
@@ -12,7 +12,9 @@ keywords:
 author: "John Montgomery"
 ---
 
-**Bohemian Rhapsody Finale** is a dramatic, theatrical solo piano arrangement inspired by the climactic section of Queen's iconic anthem. This version is designed to capture the emotional rise, tension and sense of scale of the original while adapting it into a rewarding and expressive piano performance.
+**Bohemian Rhapsody Finale** is John Montgomery’s arrangement of the closing section of Queen’s song for intermediate to advanced solo piano. It uses bold voicing and contrasting dynamics to bring the finale’s dramatic build to one keyboard.
+
+{{< button href="https://www.sheetmusicdirect.com/se/ID_No/2035593/Product.aspx" target="_blank" color="orange" >}}Buy Bohemian Rhapsody Finale Sheet Music{{< /button >}}
 
 The arrangement focuses on bold voicing, dynamic contrast and rhythmic control, giving a single pianist the opportunity to recreate the dramatic energy and grandeur of the final section of the song.
 
@@ -47,4 +49,4 @@ This arrangement is suited to recitals, concert performance, online performances
 
 If you are looking for a powerful and expressive addition to your repertoire, this arrangement brings the grandeur of one of the world's most famous songs into a piano setting.
 
-**Arranged by John Montgomery.**
+Find more of John Montgomery’s solo arrangements in the [piano sheet music collection](/piano-scores/).

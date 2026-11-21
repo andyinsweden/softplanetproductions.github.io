@@ -47,7 +47,7 @@
 .piano-landing .piano-curriculum-entry summary:after{content:'+';font-size:1.4rem;font-weight:700;margin-left:auto;opacity:.7}
 .piano-landing .piano-curriculum-entry[open] summary:after{content:'−'}
 .piano-landing .piano-curriculum-body{border-top:1px solid rgba(151,139,128,.45);padding:1rem 1.3rem 1.4rem}
-.piano-landing .piano-curriculum-body h4{font-size:1rem;margin:1rem 0 .5rem}
+.piano-landing .piano-curriculum-body h3{font-size:1rem;margin:1rem 0 .5rem}
 .piano-landing .piano-curriculum-body p{line-height:1.6}
 .piano-landing .piano-curriculum-body li{margin-bottom:.35rem}
 .piano-landing .piano-curriculum-outcome{border-left:3px solid #bd884e;padding-left:.85rem;font-weight:650}

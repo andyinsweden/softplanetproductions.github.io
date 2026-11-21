@@ -1,22 +1,19 @@
 ---
-title: "Piano Scores & Sheet Music Arrangements | Softplanet Productions"
+title: "Piano Sheet Music & Solo Arrangements"
 description: "Piano solo sheet music arrangements by John Montgomery, including Cornfield Chase, Paint By Numbers, and Bohemian Rhapsody Finale."
 ---
 
-## Piano Scores arranged by John Montgomery, available as digital downloads.
+Browse digital piano sheet music arranged by John Montgomery. Each score page describes the arrangement and links to the retailer.
 
-### Cornfield Chase by Hans Zimmer (arr. John Montgomery) — Piano Solo
-[View score page →](/piano-scores/cornfield-chase/)  
-[View & Purchase →](https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx)
-
----
-
-### Paint By Numbers by Harry Styles (arr. John Montgomery) — Piano Solo
-[View score page →](/piano-scores/paint-by-numbers/)  
-[View & Purchase →](https://www.sheetmusicdirect.com/se/ID_No/2038609/Product.aspx)
+## [Cornfield Chase piano sheet music](/piano-scores/cornfield-chase/)
+Hans Zimmer’s theme from *Interstellar*, arranged for intermediate solo piano.
 
 ---
 
-### Bohemian Rhapsody Finale by Queen (arr. John Montgomery) — Piano Solo
-[View score page →](/piano-scores/bohemian-rhapsody-finale/)  
-[View & Purchase →](https://www.sheetmusicdirect.com/se/ID_No/2035593/Product.aspx)
+## [Paint By Numbers piano sheet music](/piano-scores/paint-by-numbers/)
+Harry Styles’ song arranged for intermediate solo piano in F major.
+
+---
+
+## [Bohemian Rhapsody Finale piano sheet music](/piano-scores/bohemian-rhapsody-finale/)
+The closing section of Queen’s song, arranged for intermediate to advanced solo piano.

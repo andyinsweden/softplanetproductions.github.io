@@ -1,109 +1,86 @@
-{{- define "partials/inline/breadcrumbData" -}}
-  {{- $scratchCtx := .scratch -}}
-  {{- with .parent }}
-    {{ partial "inline/breadcrumbData" (dict "scratch" $scratchCtx "parent" .Parent) }}
-    {{- $scratchCtx.Add "listItem" (slice (dict
-      "@type" "ListItem"
-      "position" ($scratchCtx.Get "count")
-      "name" (.Title | humanize | title)
-      "item" .Permalink
-      ))
-    -}}
-    {{- $scratchCtx.Add "count" 1 -}}
-  {{- end }}
-{{- end -}}
-
-{{ if .IsHome -}}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "{{ (site.GetPage "/").Permalink | safeURL }}",
-    "name": "{{ .Site.Title | safeJS }}",
-    {{ with .Site.Params.description }}"description": "{{ . | safeJS }}",{{ end }}
-    {{ with .Site.Language.Locale }}"inLanguage": "{{ . }}",{{ end }}
-    "url": "{{ (site.GetPage "/").Permalink | safeURL }}",
-    {{ with .Site.Params.keywords }}"keywords": {{ . }},{{ end }}
-    "publisher" : {
-      "@type": "Person",
-      "name": "{{ .Site.Language.Params.Author.name | safeJS }}"
-    }
-  }
-  </script>
-{{ else if .IsPage }}
-  {{- if .Params.webApplication }}
+{{- $home := site.Home -}}
+{{- $publisher := dict
+  "@type" "Organization"
+  "name" site.Title
+  "url" $home.Permalink
+-}}
+{{- if .IsHome -}}
+  {{- $website := dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "@id" $home.Permalink
+    "name" site.Title
+    "url" $home.Permalink
+    "description" .Description
+    "inLanguage" .Language.Locale
+    "publisher" $publisher
+  -}}
+  <script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+{{- else if or .IsPage .IsSection -}}
+  {{- if .Params.webApplication -}}
     {{- $app := dict
       "@context" "https://schema.org"
       "@type" "WebApplication"
       "name" .Title
       "description" .Description
       "url" .Permalink
-      "inLanguage" .Site.Language.Locale
+      "inLanguage" .Language.Locale
       "applicationCategory" "EducationalApplication"
       "operatingSystem" "Any"
       "isAccessibleForFree" true
       "offers" (dict "@type" "Offer" "price" 0)
+      "publisher" $publisher
     -}}
     <script type="application/ld+json">{{ $app | jsonify | safeJS }}</script>
-  {{- else }}
-  {{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "articleSection": "{{ (site.GetPage .Section).Title | safeJS }}",
-    "name": "{{ .Title | safeJS }}",
-    "headline": "{{ .Title | safeJS }}",
-    {{ with .Description }}"description": "{{ . | safeJS }}",{{ end }}
-    {{ with .Summary }}"abstract": "{{ . | safeJS }}",{{ end }}
-    {{ with .Site.Language.Locale }}"inLanguage": "{{ . }}",{{ end }}
-    "url" : "{{ .Permalink }}",
-    "author" : {
-      "@type": "Person",
-      "name": "{{ (.Params.author | default .Site.Language.Params.Author.name) | safeJS }}"
-    },
-    {{ if not .PublishDate.IsZero }}"copyrightYear": "{{ .PublishDate.Format "2006" }}",{{ end }}
-    {{ if not .Date.IsZero }}"dateCreated": "{{ .Date.Format $iso8601 }}",{{ end }}
-    {{ if not .PublishDate.IsZero }}"datePublished": "{{ .PublishDate.Format $iso8601 }}",{{ end }}
-    {{ with .ExpiryDate }}"expires": "{{ .Format $iso8601 }}",{{ end }}
-    {{ if not .Lastmod.IsZero }}"dateModified": "{{ .Lastmod.Format $iso8601 }}",{{ end }}
-    {{ if .Keywords }}
-    {{ with .Keywords }}"keywords": {{ . }},{{ end }}
-    {{ else }}
-    {{ with .Params.tags }}"keywords": {{ . }},{{ end }}
-    {{ end }}
-    "mainEntityOfPage": "true",
-    "wordCount": "{{ .WordCount }}"
-  }
-  </script>
-  {{- end }} {{- /* Source: https://bullaki.com/projects/web-design/seo-with-hugo-5-breadcrumbs/ */}}
-  {{- $scratch := newScratch -}}
-  {{- $scratch.Set "count" 1 -}}
-  {{ partial "inline/breadcrumbData" (dict "scratch" $scratch "parent" .Parent) }}
-
-  {{- with index (.GetTerms "categories") 0 -}}
-    {{- $scratch.Add "listItem" (slice (dict
-      "@type" "ListItem"
-      "position" ($scratch.Get "count")
-      "name" .LinkTitle
-      "item" .Permalink
-      ))
+  {{- else if .IsPage -}}
+    {{- $authors := slice
+      (dict "@type" "Person" "name" "John Montgomery")
+      (dict "@type" "Person" "name" "Andy Montgomery")
     -}}
-    {{- $scratch.Add "count" 1 -}}
-  {{- end }}
+    {{- with .Params.author -}}
+      {{- $authors = slice (dict "@type" "Person" "name" .) -}}
+    {{- end -}}
+    {{- $article := dict
+      "@context" "https://schema.org"
+      "@type" "Article"
+      "headline" .Title
+      "description" .Description
+      "inLanguage" .Language.Locale
+      "url" .Permalink
+      "author" $authors
+      "publisher" $publisher
+      "mainEntityOfPage" .Permalink
+      "wordCount" .WordCount
+    -}}
+    {{- with .CurrentSection -}}
+      {{- $article = merge $article (dict "articleSection" .Title) -}}
+    {{- end -}}
+    {{- if not .PublishDate.IsZero -}}
+      {{- $article = merge $article (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) -}}
+    {{- end -}}
+    {{- if not .Lastmod.IsZero -}}
+      {{- $article = merge $article (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}
+    {{- end -}}
+    <script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>
+  {{- end -}}
 
-  {{- $scratch.Add "listItem" (slice (dict
+  {{- $items := slice -}}
+  {{- range .Ancestors.Reverse -}}
+    {{- $name := .LinkTitle -}}
+    {{- if .IsHome -}}{{- $name = site.Title -}}{{- end -}}
+    {{- $items = $items | append (dict
+      "@type" "ListItem"
+      "position" (add (len $items) 1)
+      "name" $name
+      "item" .Permalink
+    ) -}}
+  {{- end -}}
+  {{- $items = $items | append (dict
     "@type" "ListItem"
-    "position" ($scratch.Get "count")
-    "name" (.Title | humanize | title)
-    ))
-  -}}
-
-  {{- $scratch.SetInMap "breadcrumb" "@context" "https://schema.org" -}}
-  {{- $scratch.SetInMap "breadcrumb" "@type" "BreadcrumbList" -}}
-  {{- $scratch.SetInMap "breadcrumb" "itemListElement" ($scratch.Get "listItem") -}}
-
-  <script type="application/ld+json">
-    {{ $scratch.Get "breadcrumb" | jsonify (dict "prefix" " " "indent" "  ") | safeJS }}
-  </script>
-{{- end }}
+    "position" (add (len $items) 1)
+    "name" .LinkTitle
+    "item" .Permalink
+  ) -}}
+  {{- $breadcrumbs := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items -}}
+  <script type="application/ld+json">{{ $breadcrumbs | jsonify | safeJS }}</script>
+{{- end -}}

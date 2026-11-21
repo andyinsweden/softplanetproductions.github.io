@@ -1,6 +1,6 @@
 ---
-title: "Tutorials & Music Guides"
-description: "Friendly guides from John Montgomery on choosing a digital piano, enjoying performance and getting more from Sibelius notation software."
+title: "Piano Tutorials & Sibelius Guides"
+description: "Learn piano improvisation and chord progressions, compare Yamaha digital pianos, and find practical Sibelius tips for musicians and school IT teams."
 ---
 
 Make your next musical step a little easier. Explore practical advice on instruments, performance and notation, written with musicians and educators in mind.

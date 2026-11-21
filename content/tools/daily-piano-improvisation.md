@@ -1,6 +1,7 @@
 ---
 title: "Daily Piano Improvisation Challenge | Free Practice Tool"
 description: "Try a free daily piano improvisation challenge. Generate musical ideas, play along with chord progressions, change the tempo and track practice in your browser."
+webApplication: true
 images:
   - "/piano-improvisation-overhead.webp"
 ---

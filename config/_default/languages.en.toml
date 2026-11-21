@@ -18,6 +18,5 @@ copyright = "&copy; 2026 Softplanet Productions"
   bio = "Softplanet Productions creates original musicals, educational music resources, and practical tools for schools, musicians and performing groups."
   links = [
     { email = "mailto:info@softplanetproductions.co.uk" },
-    { linkedin = "https://www.linkedin.com/" },
-    { website = "https://softplanetproductions.github.io/" },
+    { website = "https://softplanetproductions.com/" },
   ]

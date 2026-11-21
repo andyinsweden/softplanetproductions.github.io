@@ -1,5 +1,5 @@
 ---
-title: "Stage Fright: Find Your Feet and Enjoy the Music"
+title: "Stage Fright Tips for Musicians and Performers"
 date: 2026-10-26
 description: "Practical stage-fright tips for musicians and musical theatre performers: prepare your opening, rehearse recovery and build a calm pre-show routine."
 summary: "Turn pre-show jitters into a manageable part of performing with a friendly routine for the stage, rehearsal room or orchestra pit."

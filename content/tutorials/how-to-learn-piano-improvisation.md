@@ -1,5 +1,5 @@
 ---
-title: "How to Learn Piano Improvisation: Start Making Music Today"
+title: "How to Learn Piano Improvisation: Five Beginner Exercises"
 date: 2026-10-28
 description: "Learn piano improvisation with five practical exercises for chords, rhythm, melody and confident playing — no complicated theory required."
 summary: "A practical route from playing written notes to creating your own music at the piano."
