@@ -1,0 +1,41 @@
+Daily Piano Improvisation sample credits
+
+Electric piano
+Fluid (R3) SoundFont, Electric Piano 1, by Frank Wen and contributors.
+Copyright (c) 2000-2002, 2008 Frank Wen. MIT license below.
+SoundFont license: https://sources.debian.org/src/fluid-soundfont/3.1-6/COPYING/
+MP3 renders from gleitz/midi-js-soundfonts, distributed under CC BY 3.0:
+https://github.com/gleitz/midi-js-soundfonts/blob/044fab8e1456bfafc5776e86dfd6bb8697149aef/README.md
+https://creativecommons.org/licenses/by/3.0/
+Ten note files were extracted from the pre-rendered Electric Piano 1 bank.
+The player transposes nearby samples and shortens their release as needed.
+
+Drums
+Virtuosity Drums by Versilian Studios and Karoryfer Samples, performed by
+Austin McMahon at Virtuosity Musical Instruments in Boston. CC0 1.0.
+https://versilian-studios.com/virtuosity-drums/
+https://github.com/sfzinstruments/virtuosity_drums/tree/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc
+https://creativecommons.org/publicdomain/zero/1.0/
+The kick, centre snare and closed hi-hat were trimmed, level-adjusted
+and converted to mono MP3.
+
+MIT license for Fluid (R3)
+Copyright (c) 2000-2002, 2008 Frank Wen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

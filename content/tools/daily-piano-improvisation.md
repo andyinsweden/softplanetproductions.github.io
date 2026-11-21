@@ -33,13 +33,13 @@ images:
   <div class="sp-lab__footer"><span>Completed practice days: <strong id="sp-daily-total">0</strong></span><span>Your streak and preferred level are saved only on this device.</span></div>
   <noscript>Enable JavaScript to use the daily challenge, chord playback and progress tracker.</noscript>
 </div>
-<script src="/js/daily-piano-improvisation.js?v=20261121.2" defer></script>
+<script src="/js/daily-piano-improvisation.js?v=20261121.3" defer></script>
 
 ## How to use this free improvisation tool
 
 Choose your experience level and press **Play accompaniment**. Listen to the four-bar chord loop before you begin. If a chord symbol is unfamiliar, enter it in the [piano chord finder](/tools/chord-finder/) to see which keys to play. Start with a few of the suggested notes, leave space between phrases and use repetition to make your melody sound intentional. You can slow the music down, try a different exercise or come back tomorrow for a fresh challenge.
 
-The accompaniment combines electric piano chords with a steady 4/4 drum groove: bass drum on beats 1 and 3, snare on beats 2 and 4, and closed hi-hat on eighth notes. All parts follow your chosen tempo. The sound is generated directly in your browser. It is a deliberately simple practice guide, not a substitute for John's studio-recorded backing tracks. Sound starts only after you press Play.
+The accompaniment combines electric piano chords with a steady 4/4 drum groove: bass drum on beats 1 and 3, snare on beats 2 and 4, and closed hi-hat on eighth notes. All parts follow your chosen tempo. The electric piano and drums use audio samples. Your browser loads the samples the first time you press Play. [Sample credits and licences](/audio/daily-piano-improvisation/credits.txt).
 
 ## How to improvise on piano as a beginner
 

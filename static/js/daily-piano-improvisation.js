@@ -10,6 +10,9 @@
     play: $("sp-daily-play"), next: $("sp-daily-new"), done: $("sp-daily-done"),
     status: $("sp-daily-status"), streak: $("sp-daily-streak"), total: $("sp-daily-total")
   };
+  const SAMPLE_DIRECTORY = "/audio/daily-piano-improvisation/";
+  const PIANO_SAMPLE_NOTES = [48, 51, 54, 57, 60, 63, 66, 69, 72, 75];
+  const SAMPLE_NAMES = [...PIANO_SAMPLE_NOTES.map((note) => "ep-" + note), "kick", "snare", "hat"];
   const STORAGE_KEY = "softplanet-daily-piano-v1";
   const KEY_NAMES = [
     { name: "C", root: 0, names: ["C", "D", "E", "F", "G", "A", "B"] },
@@ -53,7 +56,8 @@
   let variation = 0;
   let challenge;
   let audioCtx = null;
-  let drumNoise = null;
+  let samples = null;
+  let sampleLoad = null;
   let timer = null;
   let nextBeatTime = 0;
   let beatCounter = 0;
@@ -143,45 +147,50 @@
     });
     updateProgress();
   }
-  function midiFreq(note) { return 440 * Math.pow(2, (note - 69) / 12); }
-  function electricPianoNote(midi, when, duration, gain, chordOutput) {
-    const frequency = midiFreq(midi);
-    const carrier = audioCtx.createOscillator();
-    const tine = audioCtx.createOscillator();
-    const modulation = audioCtx.createGain();
+  function loadSamples() {
+    if (!sampleLoad) {
+      sampleLoad = Promise.all(SAMPLE_NAMES.map(async (name) => {
+        const response = await fetch(SAMPLE_DIRECTORY + name + ".mp3");
+        if (!response.ok) throw new Error("Sample download failed: " + name);
+        const buffer = await audioCtx.decodeAudioData(await response.arrayBuffer());
+        return [name, buffer];
+      })).then((entries) => Object.fromEntries(entries)).catch((error) => {
+        sampleLoad = null;
+        throw error;
+      });
+    }
+    return sampleLoad;
+  }
+  function playSample(buffer, when, volume, output, rate = 1, duration = Infinity) {
+    const source = audioCtx.createBufferSource();
     const envelope = audioCtx.createGain();
-    const end = when + duration;
-
-    // A short burst of higher harmonics gives the sine body a struck-tine attack.
-    carrier.frequency.setValueAtTime(frequency, when);
-    tine.frequency.setValueAtTime(frequency * 7, when);
-    modulation.gain.setValueAtTime(frequency * 3.5, when);
-    modulation.gain.exponentialRampToValueAtTime(frequency * 0.35, when + 0.16);
-    modulation.gain.exponentialRampToValueAtTime(0.01, end);
-
-    envelope.gain.setValueAtTime(0.0001, when);
-    envelope.gain.exponentialRampToValueAtTime(gain, when + 0.009);
-    envelope.gain.exponentialRampToValueAtTime(gain * 0.52, when + 0.14);
-    envelope.gain.exponentialRampToValueAtTime(gain * 0.14, end - 0.07);
-    envelope.gain.exponentialRampToValueAtTime(0.0001, end);
-
-    tine.connect(modulation);
-    modulation.connect(carrier.frequency);
-    carrier.connect(envelope);
-    envelope.connect(chordOutput);
-    tine.start(when);
-    carrier.start(when);
-    tine.stop(end);
-    carrier.stop(end);
-    carrier.addEventListener("ended", function () {
-      tine.disconnect();
-      modulation.disconnect();
-      carrier.disconnect();
+    const naturalDuration = buffer.duration / rate;
+    source.buffer = buffer;
+    source.playbackRate.setValueAtTime(rate, when);
+    envelope.gain.setValueAtTime(volume, when);
+    if (duration < naturalDuration) {
+      const end = when + duration;
+      envelope.gain.setValueAtTime(volume, end - 0.075);
+      envelope.gain.linearRampToValueAtTime(0, end);
+    }
+    source.connect(envelope);
+    envelope.connect(output);
+    source.addEventListener("ended", function () {
+      source.disconnect();
       envelope.disconnect();
-      sounding = sounding.filter((item) => item !== carrier && item !== tine);
+      sounding = sounding.filter((item) => item !== source);
     }, { once: true });
-    sounding.push(carrier, tine);
-    return carrier;
+    source.start(when);
+    if (duration < naturalDuration) source.stop(when + duration);
+    sounding.push(source);
+    return source;
+  }
+  function electricPianoNote(midi, when, duration, volume, output) {
+    const note = PIANO_SAMPLE_NOTES.reduce((closest, candidate) =>
+      Math.abs(candidate - midi) < Math.abs(closest - midi) ? candidate : closest
+    );
+    const rate = 2 ** ((midi - note) / 12);
+    return playSample(samples["ep-" + note], when, volume, output, rate, duration);
   }
   function chordAt(bar, when, beatLength) {
     const degree = challenge.degrees[bar];
@@ -197,52 +206,21 @@
 
     const output = audioCtx.createGain();
     output.connect(audioCtx.destination);
-    const rootNote = electricPianoNote(root, when, duration, 0.052, output);
-    electricPianoNote(root + third, when, duration, 0.040, output);
-    electricPianoNote(root + 7, when, duration, 0.040, output);
-    rootNote.addEventListener("ended", () => output.disconnect(), { once: true });
+    let notesPlaying = 3;
+    for (const [note, volume] of [[root, 0.42], [root + third, 0.34], [root + 7, 0.34]]) {
+      const source = electricPianoNote(note, when, duration, volume, output);
+      source.addEventListener("ended", () => {
+        if (--notesPlaying === 0) output.disconnect();
+      }, { once: true });
+    }
     activeChord = { output, end: when + duration };
   }
-  function trackDrum(source, envelope, filter, when, duration) {
-    source.connect(filter || envelope);
-    if (filter) filter.connect(envelope);
-    envelope.connect(audioCtx.destination);
-    source.start(when);
-    source.stop(when + duration);
-    source.addEventListener("ended", function () {
-      source.disconnect();
-      if (filter) filter.disconnect();
-      envelope.disconnect();
-      sounding = sounding.filter((item) => item !== source);
-    }, { once: true });
-    sounding.push(source);
-  }
-  function kick(when) {
-    const source = audioCtx.createOscillator();
-    const envelope = audioCtx.createGain();
-    source.frequency.setValueAtTime(140, when);
-    source.frequency.exponentialRampToValueAtTime(48, when + 0.12);
-    envelope.gain.setValueAtTime(0.16, when);
-    envelope.gain.exponentialRampToValueAtTime(0.0001, when + 0.24);
-    trackDrum(source, envelope, null, when, 0.26);
-  }
-  function noiseHit(when, duration, gain, frequency, type) {
-    const source = audioCtx.createBufferSource();
-    const envelope = audioCtx.createGain();
-    const filter = audioCtx.createBiquadFilter();
-    source.buffer = drumNoise;
-    filter.type = type;
-    filter.frequency.setValueAtTime(frequency, when);
-    filter.Q.setValueAtTime(0.7, when);
-    envelope.gain.setValueAtTime(gain, when);
-    envelope.gain.exponentialRampToValueAtTime(0.0001, when + duration);
-    trackDrum(source, envelope, filter, when, duration + 0.01);
-  }
   function drumsAt(beat, when, beatLength) {
-    if (beat === 0 || beat === 2) kick(when);
-    else noiseHit(when, 0.16, 0.075, 1800, "bandpass");
-    noiseHit(when, 0.045, 0.035, 7000, "highpass");
-    noiseHit(when + beatLength / 2, 0.045, 0.025, 7000, "highpass");
+    const output = audioCtx.destination;
+    if (beat === 0 || beat === 2) playSample(samples.kick, when, 0.18, output);
+    else playSample(samples.snare, when, 0.12, output);
+    playSample(samples.hat, when, 0.065, output);
+    playSample(samples.hat, when + beatLength / 2, 0.04, output);
   }
   function tick() {
     if (!playing || !audioCtx) return;
@@ -282,14 +260,14 @@
     const start = {};
     pendingStart = start;
     try {
-      if (!audioCtx) {
-        audioCtx = new AudioContextClass();
-        drumNoise = audioCtx.createBuffer(1, Math.ceil(audioCtx.sampleRate * 0.2), audioCtx.sampleRate);
-        const samples = drumNoise.getChannelData(0);
-        for (let i = 0; i < samples.length; i++) samples[i] = Math.random() * 2 - 1;
-      }
+      if (!audioCtx) audioCtx = new AudioContextClass();
       if (audioCtx.state !== "running") await audioCtx.resume();
       if (pendingStart !== start) return;
+      if (!samples) {
+        setStatus("Loading electric piano and drum sounds…");
+        samples = await loadSamples();
+        if (pendingStart !== start) return;
+      }
       playing = true; beatCounter = 0; nextBeatTime = audioCtx.currentTime + 0.06;
       timer = setInterval(tick, 65);
       tick();
@@ -298,7 +276,7 @@
     } catch (_) {
       if (pendingStart === start) {
         stopAudio();
-        setStatus("Could not start audio. Please check browser audio permissions and try again.");
+        setStatus("Could not start the accompaniment. Press Play to try again.");
       }
     } finally {
       if (pendingStart === start) pendingStart = null;
