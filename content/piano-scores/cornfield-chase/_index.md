@@ -1,78 +1,32 @@
 ---
-title: "Cornfield Chase Piano Arrangement | Interstellar Sheet Music"
-description: "Cornfield Chase piano arrangement from Interstellar by Hans Zimmer. Explore John Montgomery’s intermediate solo piano score and buy the sheet music."
+title: "Cornfield Chase Piano Sheet Music | Interstellar"
+description: "Play Hans Zimmer’s Cornfield Chase from Interstellar with John Montgomery’s intermediate solo piano arrangement. Watch the performance and buy the digital score."
 slug: "cornfield-chase"
-keywords:
-  - "Cornfield Chase piano"
-  - "Cornfield Chase piano sheet music"
-  - "Cornfield Chase sheet music"
-  - "Cornfield Chase piano arrangement"
-  - "Interstellar piano score"
-  - "Interstellar piano sheet music"
-  - "Hans Zimmer piano"
-  - "Hans Zimmer piano sheet music"
-  - "Cornfield Chase solo piano"
-  - "intermediate piano arrangement"
 author: "John Montgomery"
 ---
 
-This **Cornfield Chase piano arrangement** by John Montgomery brings Hans Zimmer's cinematic theme from *Interstellar* to solo piano. Written for **intermediate pianists**, the score captures the atmosphere, flowing arpeggios and emotional build of the original soundtrack.
+Play Hans Zimmer’s **Cornfield Chase** from *Interstellar* with this **intermediate solo piano arrangement** by John Montgomery. The digital sheet music brings the soundtrack’s flowing arpeggios, shifting harmonies and gradual build to one piano.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2ZRkATeF4cE?si=KB6IVQrJLYet-rT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< button href="https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx?affiliate=67607" target="_blank" color="orange" sponsored="true" >}}Buy Cornfield Chase Sheet Music{{< /button >}}
 
-{{< button href="https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx?affiliate=67607" target="_blank" >}} Buy Cornfield Chase Sheet Music → {{< /button >}}
+## Watch Cornfield Chase on Piano
 
-This **Cornfield Chase piano score** captures the distinctive arpeggios, evolving harmonies and gradual build that make the original theme so memorable. The arrangement has been carefully adapted for solo piano, allowing one pianist to recreate the powerful, expansive character of the music while retaining the simplicity and emotional impact of the original composition.
+<iframe class="score-performance-video" width="560" height="315" src="https://www.youtube.com/embed/2ZRkATeF4cE?si=KB6IVQrJLYet-rT0" title="Cornfield Chase from Interstellar – solo piano arrangement by John Montgomery" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Whether you are searching for **Cornfield Chase sheet music**, an **Interstellar piano score**, or a challenging new piece for your piano repertoire, this arrangement provides a rewarding performance experience.
+## About the Solo Piano Arrangement
 
-## Cornfield Chase Piano Arrangement
+- **Composer:** Hans Zimmer
+- **Arranger:** John Montgomery
+- **From:** *Interstellar*
+- **Instrumentation:** Solo piano
+- **Difficulty:** Intermediate
+- **Key:** A minor
+- **Format:** Digital sheet music
 
-The arrangement combines flowing accompaniment patterns with clearly defined melodic and harmonic movement, creating a rich cinematic sound using a single instrument.
+Intermediate pianists can use this score to practise keeping the repeating arpeggios even while bringing out the upper notes. Start slowly with each hand on its own, then put them together and shape the crescendo across several phrases.
 
-It is particularly suited to pianists who enjoy **modern cinematic piano music**, film soundtracks and contemporary arrangements of orchestral themes.
+## Where to Buy the Cornfield Chase Piano Score
 
-### Features of the Arrangement
+The digital score is available from **Sheet Music Direct**. Browse the [piano sheet music collection](/piano-scores/) for more solo arrangements by John Montgomery.
 
-**Faithful Cinematic Arrangement**
-
-The arrangement retains the characteristic harmonic progression, rhythmic momentum and gradual emotional development associated with Hans Zimmer's original *Cornfield Chase*.
-
-**Written for Solo Piano**
-
-Carefully considered voicing and piano-friendly writing allow the music to achieve a full, resonant sound using a single instrument.
-
-**Intermediate Piano Level**
-
-Suitable for intermediate pianists developing arpeggio technique, rhythmic accuracy, dynamic control and expressive performance.
-
-**Professional Sheet Music**
-
-The score has been carefully prepared with clear notation, practical hand movements and attention to articulation and phrasing.
-
-**Ideal for Performance**
-
-A striking addition to a pianist's repertoire for recitals, concerts, auditions, online performances and personal study.
-
-## Play Cornfield Chase from Interstellar on Piano
-
-If you are a fan of *Interstellar*, Hans Zimmer, Christopher Nolan's film scores or contemporary cinematic piano music, this **Cornfield Chase piano arrangement** offers an opportunity to perform one of modern film music's most memorable themes as a solo pianist.
-
-Add this atmospheric **Interstellar piano sheet music** to your repertoire and experience the cinematic character of *Cornfield Chase* at the piano.
-
-**Arranged by John Montgomery.**
-
-### Cornfield Chase Sheet Music
-
-This arrangement is available as professionally engraved **Cornfield Chase piano sheet music** for solo piano.
-
-It is suitable for pianists looking for:
-
-- Cornfield Chase piano sheet music
-- Interstellar piano sheet music
-- Hans Zimmer piano arrangements
-- Cinematic piano music
-- Intermediate piano repertoire
-- Film soundtrack piano arrangements
-
-{{< button href="https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx?affiliate=67607" target="_blank" >}} Buy Cornfield Chase Sheet Music → {{< /button >}}
+{{< button href="https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx?affiliate=67607" target="_blank" color="orange" sponsored="true" >}}Buy Cornfield Chase Sheet Music{{< /button >}}
