@@ -5,9 +5,11 @@ slug: "cornfield-chase"
 author: "John Montgomery"
 ---
 
-Play Hans Zimmer’s **Cornfield Chase** from *Interstellar* with this **intermediate solo piano arrangement** by John Montgomery. The digital sheet music brings the soundtrack’s flowing arpeggios, shifting harmonies and gradual build to one piano.
+Play Hans Zimmer’s **Cornfield Chase** from *Interstellar* with John Montgomery’s solo piano arrangement. Watch John perform it below, or open the sheet music preview to see how the arpeggios and melody sit under the hands.
 
-{{< button href="https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx?affiliate=67607" target="_blank" color="orange" sponsored="true" >}}Buy Cornfield Chase Sheet Music{{< /button >}}
+**Intermediate solo piano · A minor · Printable PDF**
+
+{{< button href="https://www.sheetmusicplus.com/en/product/cornfield-chase-23761032.html" target="_blank" color="orange" >}}Preview & Buy on Sheet Music Plus{{< /button >}}
 
 ## Watch Cornfield Chase on Piano
 
@@ -27,6 +29,8 @@ Intermediate pianists can use this score to practise keeping the repeating arpeg
 
 ## Where to Buy the Cornfield Chase Piano Score
 
-The digital score is available from **Sheet Music Direct** and [Sheet Music Plus](https://www.sheetmusicplus.com/en/product/cornfield-chase-23761032.html). Browse the [piano sheet music collection](/piano-scores/) for more solo arrangements by John Montgomery.
+Sheet Music Plus shows sample pages and offers an interactive download with playback, tempo control and a printable PDF.
 
-{{< button href="https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx?affiliate=67607" target="_blank" color="orange" sponsored="true" >}}Buy Cornfield Chase Sheet Music{{< /button >}}
+{{< button href="https://www.sheetmusicplus.com/en/product/cornfield-chase-23761032.html" target="_blank" color="orange" >}}Preview & Buy on Sheet Music Plus{{< /button >}}
+
+Also available from <a href="https://www.sheetmusicdirect.com/se/ID_No/2030372/Product.aspx?affiliate=67607" rel="sponsored">Sheet Music Direct</a> (affiliate link). Browse the [piano sheet music collection](/piano-scores/) for more solo arrangements by John Montgomery.
