@@ -33,7 +33,7 @@ images:
   <div class="sp-lab__footer"><span>Completed practice days: <strong id="sp-daily-total">0</strong></span><span>Your streak and preferred level are saved only on this device.</span></div>
   <noscript>Enable JavaScript to use the daily challenge, chord playback and progress tracker.</noscript>
 </div>
-<script src="/js/daily-piano-improvisation.js?v=20261121" defer></script>
+<script src="/js/daily-piano-improvisation.js?v=20261121.2" defer></script>
 
 ## How to use this free improvisation tool
 

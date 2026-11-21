@@ -59,6 +59,8 @@
   let beatCounter = 0;
   let sounding = [];
   let playing = false;
+  let pendingStart = null;
+  let activeChord = null;
 
   function todayKey() {
     const d = new Date();
@@ -142,25 +144,7 @@
     updateProgress();
   }
   function midiFreq(note) { return 440 * Math.pow(2, (note - 69) / 12); }
-  function makeTone(midi, when, duration, gain, type) {
-    const osc = audioCtx.createOscillator();
-    const envelope = audioCtx.createGain();
-    osc.type = type || "triangle";
-    osc.frequency.setValueAtTime(midiFreq(midi), when);
-    envelope.gain.setValueAtTime(0.0001, when);
-    envelope.gain.exponentialRampToValueAtTime(gain, when + 0.025);
-    envelope.gain.exponentialRampToValueAtTime(0.0001, when + duration);
-    osc.connect(envelope);
-    envelope.connect(audioCtx.destination);
-    osc.start(when);
-    osc.stop(when + duration + 0.05);
-    osc.addEventListener("ended", function () {
-      osc.disconnect(); envelope.disconnect();
-      sounding = sounding.filter((item) => item !== osc);
-    }, { once: true });
-    sounding.push(osc);
-  }
-  function electricPianoNote(midi, when, duration, gain) {
+  function electricPianoNote(midi, when, duration, gain, chordOutput) {
     const frequency = midiFreq(midi);
     const carrier = audioCtx.createOscillator();
     const tine = audioCtx.createOscillator();
@@ -171,7 +155,7 @@
     // A short burst of higher harmonics gives the sine body a struck-tine attack.
     carrier.frequency.setValueAtTime(frequency, when);
     tine.frequency.setValueAtTime(frequency * 7, when);
-    modulation.gain.setValueAtTime(frequency * 6, when);
+    modulation.gain.setValueAtTime(frequency * 3.5, when);
     modulation.gain.exponentialRampToValueAtTime(frequency * 0.35, when + 0.16);
     modulation.gain.exponentialRampToValueAtTime(0.01, end);
 
@@ -184,7 +168,7 @@
     tine.connect(modulation);
     modulation.connect(carrier.frequency);
     carrier.connect(envelope);
-    envelope.connect(audioCtx.destination);
+    envelope.connect(chordOutput);
     tine.start(when);
     carrier.start(when);
     tine.stop(end);
@@ -197,15 +181,27 @@
       sounding = sounding.filter((item) => item !== carrier && item !== tine);
     }, { once: true });
     sounding.push(carrier, tine);
+    return carrier;
   }
   function chordAt(bar, when, beatLength) {
     const degree = challenge.degrees[bar];
     const root = 48 + challenge.key.root + SCALE[degree];
     const third = MINOR_DEGREES.includes(degree) ? 3 : 4;
-    electricPianoNote(root - 12, when, beatLength * 1.9, 0.110);
-    electricPianoNote(root, when, beatLength * 3.65, 0.036);
-    electricPianoNote(root + third, when, beatLength * 3.65, 0.028);
-    electricPianoNote(root + 7, when, beatLength * 3.65, 0.028);
+    const duration = beatLength * 3.65;
+    // A tempo increase can bring the next bar in before the old chord has decayed.
+    if (activeChord && activeChord.end > when) {
+      const releaseStart = Math.max(audioCtx.currentTime, when - 0.015);
+      activeChord.output.gain.setValueAtTime(1, releaseStart);
+      activeChord.output.gain.linearRampToValueAtTime(0, Math.max(releaseStart, when));
+    }
+
+    const output = audioCtx.createGain();
+    output.connect(audioCtx.destination);
+    const rootNote = electricPianoNote(root, when, duration, 0.052, output);
+    electricPianoNote(root + third, when, duration, 0.040, output);
+    electricPianoNote(root + 7, when, duration, 0.040, output);
+    rootNote.addEventListener("ended", () => output.disconnect(), { once: true });
+    activeChord = { output, end: when + duration };
   }
   function trackDrum(source, envelope, filter, when, duration) {
     source.connect(filter || envelope);
@@ -244,11 +240,7 @@
   }
   function drumsAt(beat, when, beatLength) {
     if (beat === 0 || beat === 2) kick(when);
-    else {
-      noiseHit(when, 0.16, 0.075, 1800, "bandpass");
-      // A short low tone gives the snare body beneath its noise snap.
-      makeTone(50, when, 0.09, 0.025, "triangle");
-    }
+    else noiseHit(when, 0.16, 0.075, 1800, "bandpass");
     noiseHit(when, 0.045, 0.035, 7000, "highpass");
     noiseHit(when + beatLength / 2, 0.045, 0.025, 7000, "highpass");
   }
@@ -260,10 +252,6 @@
       const bar = Math.floor(beatCounter / 4) % 4;
       drumsAt(beat, nextBeatTime, beatLength);
       if (beat === 0) chordAt(bar, nextBeatTime, beatLength);
-      if (beat === 2) {
-        const degree = challenge.degrees[bar];
-        electricPianoNote(48 + challenge.key.root + SCALE[degree] - 12, nextBeatTime, beatLength * 0.8, 0.068);
-      }
       const visualDelay = Math.max(0, (nextBeatTime - audioCtx.currentTime) * 1000);
       // Keep animation best-effort; the actual musical timing is scheduled in AudioContext.
       if (visualDelay < 160) {
@@ -278,6 +266,8 @@
   }
   function stopAudio() {
     playing = false;
+    pendingStart = null;
+    activeChord = null;
     if (timer !== null) { clearInterval(timer); timer = null; }
     sounding.forEach(function (node) { try { node.stop(); } catch (_) {} });
     sounding = [];
@@ -286,8 +276,11 @@
   }
   async function toggleAudio() {
     if (playing) { stopAudio(); setStatus("Playback stopped. Try another melody or choose Play to continue."); return; }
+    if (pendingStart) return;
     const AudioContextClass = window.AudioContext || window.webkitAudioContext;
     if (!AudioContextClass) { setStatus("Audio playback is not supported in this browser. You can still use the chord and melody prompts."); return; }
+    const start = {};
+    pendingStart = start;
     try {
       if (!audioCtx) {
         audioCtx = new AudioContextClass();
@@ -296,12 +289,20 @@
         for (let i = 0; i < samples.length; i++) samples[i] = Math.random() * 2 - 1;
       }
       if (audioCtx.state !== "running") await audioCtx.resume();
+      if (pendingStart !== start) return;
       playing = true; beatCounter = 0; nextBeatTime = audioCtx.currentTime + 0.06;
       timer = setInterval(tick, 65);
       tick();
       elements.play.textContent = "■ Stop accompaniment";
       setStatus("Playing electric piano with bass drum, snare and closed hi-hat at " + elements.bpm.value + " BPM. Your highlighted chord is the current bar.");
-    } catch (_) { stopAudio(); setStatus("Could not start audio. Please check browser audio permissions and try again."); }
+    } catch (_) {
+      if (pendingStart === start) {
+        stopAudio();
+        setStatus("Could not start audio. Please check browser audio permissions and try again.");
+      }
+    } finally {
+      if (pendingStart === start) pendingStart = null;
+    }
   }
   elements.level.value = data.level;
   elements.bpmValue.textContent = elements.bpm.value + " BPM";
