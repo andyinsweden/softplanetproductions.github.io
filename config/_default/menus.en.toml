@@ -25,7 +25,7 @@
   weight = 30
 
 [[main]]
-  name = "Sibelius Site Licenses"
+  name = "Sibelius Site Licences"
   pageRef = "services/sibelius-site-licenses"
   parent = "services"
   weight = 31

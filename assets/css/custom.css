@@ -490,6 +490,7 @@ body {
   color: #f3efe8;
 }
 
+.sibelius-page h1,
 .sibelius-page h2,
 .sibelius-page h3 {
   color: #fff;
@@ -499,7 +500,7 @@ body {
   color: rgba(243, 239, 232, 0.72);
 }
 
-.sibelius-faq__troubleshooting-link {
+.sibelius-text-link {
   color: #c084fc;
   font-weight: 700;
   text-decoration: underline;
@@ -507,8 +508,8 @@ body {
   text-underline-offset: 0.2em;
 }
 
-.sibelius-faq__troubleshooting-link:hover,
-.sibelius-faq__troubleshooting-link:focus-visible {
+.sibelius-text-link:hover,
+.sibelius-text-link:focus-visible {
   color: #e9d5ff;
 }
 
@@ -542,7 +543,7 @@ body {
   text-transform: uppercase;
 }
 
-.sibelius-hero h2 {
+.sibelius-hero h1 {
   max-width: 800px;
   margin: 0 0 1.5rem;
   font-size: clamp(2.4rem, 6vw, 5rem);
@@ -610,10 +611,9 @@ body {
 .sibelius-section-lead { margin-bottom: 2.5rem; }
 
 .sibelius-services { grid-template-columns: repeat(2, 1fr); margin-top: 0; }
-.sibelius-services article { display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; padding-top: 1.5rem; }
+.sibelius-services article { padding-top: 1.5rem; }
 .sibelius-services h3 { margin: 0 0 0.4rem; font-size: 1.2rem; }
 .sibelius-services p { margin: 0; font-size: 0.95rem; }
-.sibelius-icon { color: #e4b35a; font-weight: 700; }
 
 .sibelius-showcase { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; background: #111; }
 .sibelius-note { padding-left: 1rem; border-left: 2px solid #a8763e; }
