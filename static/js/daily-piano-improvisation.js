@@ -160,15 +160,52 @@
     }, { once: true });
     sounding.push(osc);
   }
+  function electricPianoNote(midi, when, duration, gain) {
+    const frequency = midiFreq(midi);
+    const carrier = audioCtx.createOscillator();
+    const tine = audioCtx.createOscillator();
+    const modulation = audioCtx.createGain();
+    const envelope = audioCtx.createGain();
+    const end = when + duration;
+
+    // A short burst of higher harmonics gives the sine body a struck-tine attack.
+    carrier.frequency.setValueAtTime(frequency, when);
+    tine.frequency.setValueAtTime(frequency * 7, when);
+    modulation.gain.setValueAtTime(frequency * 6, when);
+    modulation.gain.exponentialRampToValueAtTime(frequency * 0.35, when + 0.16);
+    modulation.gain.exponentialRampToValueAtTime(0.01, end);
+
+    envelope.gain.setValueAtTime(0.0001, when);
+    envelope.gain.exponentialRampToValueAtTime(gain, when + 0.009);
+    envelope.gain.exponentialRampToValueAtTime(gain * 0.52, when + 0.14);
+    envelope.gain.exponentialRampToValueAtTime(gain * 0.14, end - 0.07);
+    envelope.gain.exponentialRampToValueAtTime(0.0001, end);
+
+    tine.connect(modulation);
+    modulation.connect(carrier.frequency);
+    carrier.connect(envelope);
+    envelope.connect(audioCtx.destination);
+    tine.start(when);
+    carrier.start(when);
+    tine.stop(end);
+    carrier.stop(end);
+    carrier.addEventListener("ended", function () {
+      tine.disconnect();
+      modulation.disconnect();
+      carrier.disconnect();
+      envelope.disconnect();
+      sounding = sounding.filter((item) => item !== carrier && item !== tine);
+    }, { once: true });
+    sounding.push(carrier, tine);
+  }
   function chordAt(bar, when, beatLength) {
     const degree = challenge.degrees[bar];
     const root = 48 + challenge.key.root + SCALE[degree];
     const third = MINOR_DEGREES.includes(degree) ? 3 : 4;
-    // Double the original piano gain, keeping headroom for the quiet drum groove.
-    makeTone(root - 12, when, beatLength * 1.9, 0.110, "sine");
-    makeTone(root, when, beatLength * 3.65, 0.036, "triangle");
-    makeTone(root + third, when, beatLength * 3.65, 0.028, "triangle");
-    makeTone(root + 7, when, beatLength * 3.65, 0.028, "triangle");
+    electricPianoNote(root - 12, when, beatLength * 1.9, 0.110);
+    electricPianoNote(root, when, beatLength * 3.65, 0.036);
+    electricPianoNote(root + third, when, beatLength * 3.65, 0.028);
+    electricPianoNote(root + 7, when, beatLength * 3.65, 0.028);
   }
   function trackDrum(source, envelope, filter, when, duration) {
     source.connect(filter || envelope);
@@ -225,7 +262,7 @@
       if (beat === 0) chordAt(bar, nextBeatTime, beatLength);
       if (beat === 2) {
         const degree = challenge.degrees[bar];
-        makeTone(48 + challenge.key.root + SCALE[degree] - 12, nextBeatTime, beatLength * 0.8, 0.068, "sine");
+        electricPianoNote(48 + challenge.key.root + SCALE[degree] - 12, nextBeatTime, beatLength * 0.8, 0.068);
       }
       const visualDelay = Math.max(0, (nextBeatTime - audioCtx.currentTime) * 1000);
       // Keep animation best-effort; the actual musical timing is scheduled in AudioContext.
@@ -263,7 +300,7 @@
       timer = setInterval(tick, 65);
       tick();
       elements.play.textContent = "■ Stop accompaniment";
-      setStatus("Playing piano with bass drum, snare and closed hi-hat at " + elements.bpm.value + " BPM. Your highlighted chord is the current bar.");
+      setStatus("Playing electric piano with bass drum, snare and closed hi-hat at " + elements.bpm.value + " BPM. Your highlighted chord is the current bar.");
     } catch (_) { stopAudio(); setStatus("Could not start audio. Please check browser audio permissions and try again."); }
   }
   elements.level.value = data.level;
