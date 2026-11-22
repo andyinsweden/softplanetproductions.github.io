@@ -1202,9 +1202,14 @@ main > article > footer.max-w-prose {
   padding-inline: clamp(1rem, 4vw, 2rem);
 }
 
+/* Elegant, lightweight page titles for standard content and music-tool pages. */
 main > article > header h1 {
   max-width: 32ch;
-  line-height: 1.12;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: clamp(2.75rem, 4.6vw, 4.5rem);
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
   text-wrap: balance;
 }
 
@@ -1255,7 +1260,8 @@ main iframe[src*="youtube-nocookie.com/embed"] {
   }
 
   main > article > header h1 {
-    font-size: clamp(2rem, 8vw, 2.75rem);
+    font-size: clamp(2.35rem, 8.5vw, 3.2rem);
+    line-height: 1.1;
   }
 
   main iframe[src*="docs.google.com/forms"] {
