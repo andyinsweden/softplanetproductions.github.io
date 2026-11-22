@@ -29,17 +29,17 @@ images:
     <button type="button" id="sp-daily-new" class="sp-lab__button">Another idea</button>
     <button type="button" id="sp-daily-done" class="sp-lab__button sp-lab__button--done">✓ Mark today's practice done</button>
   </div>
-  <p id="sp-daily-status" class="sp-lab__status" role="status" aria-live="polite">Choose Play to hear a four-bar electric piano loop with bass drum, snare and closed hi-hat.</p>
+  <p id="sp-daily-status" class="sp-lab__status" role="status" aria-live="polite">Choose Play to hear a four-bar electric piano loop with a rhythmic bass line, bass drum, snare and closed hi-hat.</p>
   <div class="sp-lab__footer"><span>Completed practice days: <strong id="sp-daily-total">0</strong></span><span>Your streak and preferred level are saved only on this device.</span></div>
   <noscript>Enable JavaScript to use the daily challenge, chord playback and progress tracker.</noscript>
 </div>
-<script src="/js/daily-piano-improvisation.js?v=20261121.3" defer></script>
+<script src="/js/daily-piano-improvisation.js?v=20261122.1" defer></script>
 
 ## How to use this free improvisation tool
 
 Choose your experience level and press **Play accompaniment**. Listen to the four-bar chord loop before you begin. If a chord symbol is unfamiliar, enter it in the [piano chord finder](/tools/chord-finder/) to see which keys to play. Start with a few of the suggested notes, leave space between phrases and use repetition to make your melody sound intentional. You can slow the music down, try a different exercise or come back tomorrow for a fresh challenge.
 
-The accompaniment combines electric piano chords with a steady 4/4 drum groove: bass drum on beats 1 and 3, snare on beats 2 and 4, and closed hi-hat on eighth notes. All parts follow your chosen tempo. The electric piano and drums use audio samples. Your browser loads the samples the first time you press Play. [Sample credits and licences](/audio/daily-piano-improvisation/credits.txt).
+The accompaniment combines electric piano chords, a warm bass line with root notes, offbeat fifths and short pickups into the next chord, and a steady 4/4 drum groove: bass drum on beats 1 and 3, snare on beats 2 and 4, and closed hi-hat on eighth notes. All parts follow your chosen tempo. The electric piano and drums use audio samples; the bass is synthesized directly in your browser. Your browser loads the samples the first time you press Play. [Sample credits and licences](/audio/daily-piano-improvisation/credits.txt).
 
 ## How to improvise on piano as a beginner
 
