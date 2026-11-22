@@ -215,6 +215,58 @@
     }
     activeChord = { output, end: when + duration };
   }
+  // Soft, plucked electric-style bass, synthesized locally without extra downloads.
+  function bassNote(midi, when, duration, intensity = 1) {
+    const frequency = 440 * 2 ** ((midi - 69) / 12);
+    const end = when + Math.max(0.12, duration);
+    const oscillator = audioCtx.createOscillator();
+    const sub = audioCtx.createOscillator();
+    const subGain = audioCtx.createGain();
+    const filter = audioCtx.createBiquadFilter();
+    const envelope = audioCtx.createGain();
+    oscillator.type = "triangle";
+    oscillator.frequency.setValueAtTime(frequency, when);
+    sub.type = "sine";
+    sub.frequency.setValueAtTime(frequency / 2, when);
+    subGain.gain.value = 0.22;
+    filter.type = "lowpass";
+    filter.frequency.setValueAtTime(580, when);
+    filter.frequency.exponentialRampToValueAtTime(190, Math.min(end, when + 0.22));
+    envelope.gain.setValueAtTime(0.0001, when);
+    envelope.gain.exponentialRampToValueAtTime(0.16 * intensity, when + 0.012);
+    envelope.gain.exponentialRampToValueAtTime(0.0001, end);
+    oscillator.connect(filter);
+    sub.connect(subGain);
+    subGain.connect(filter);
+    filter.connect(envelope);
+    envelope.connect(audioCtx.destination);
+    oscillator.start(when);
+    sub.start(when);
+    oscillator.stop(end + 0.015);
+    sub.stop(end + 0.015);
+    const voice = { stop: () => { try { oscillator.stop(); } catch (_) {} try { sub.stop(); } catch (_) {} } };
+    sounding.push(voice);
+    oscillator.addEventListener("ended", () => {
+      oscillator.disconnect();
+      sub.disconnect();
+      subGain.disconnect();
+      filter.disconnect();
+      envelope.disconnect();
+      sounding = sounding.filter((item) => item !== voice);
+    }, { once: true });
+  }
+  function bassAt(bar, beat, when, beatLength) {
+    const root = 36 + challenge.key.root + SCALE[challenge.degrees[bar]];
+    const followingRoot = 36 + challenge.key.root + SCALE[challenge.degrees[(bar + 1) % 4]];
+    if (beat === 0) bassNote(root, when, beatLength * 0.88, 1);
+    if (beat === 1) bassNote(root + 7, when + beatLength / 2, beatLength * 0.36, 0.62);
+    if (beat === 2) bassNote(root, when, beatLength * 0.72, 0.84);
+    if (beat === 3) {
+      // Quiet eighth-note approach into the next bar, kept in bass register.
+      const pickup = followingRoot > root ? followingRoot - 2 : followingRoot + 2;
+      bassNote(pickup, when + beatLength / 2, beatLength * 0.33, 0.48);
+    }
+  }
   function drumsAt(beat, when, beatLength) {
     const output = audioCtx.destination;
     if (beat === 0 || beat === 2) playSample(samples.kick, when, 0.18, output);
@@ -229,6 +281,7 @@
       const beat = beatCounter % 4;
       const bar = Math.floor(beatCounter / 4) % 4;
       drumsAt(beat, nextBeatTime, beatLength);
+      bassAt(bar, beat, nextBeatTime, beatLength);
       if (beat === 0) chordAt(bar, nextBeatTime, beatLength);
       const visualDelay = Math.max(0, (nextBeatTime - audioCtx.currentTime) * 1000);
       // Keep animation best-effort; the actual musical timing is scheduled in AudioContext.
@@ -272,7 +325,7 @@
       timer = setInterval(tick, 65);
       tick();
       elements.play.textContent = "■ Stop accompaniment";
-      setStatus("Playing electric piano with bass drum, snare and closed hi-hat at " + elements.bpm.value + " BPM. Your highlighted chord is the current bar.");
+      setStatus("Playing electric piano, rhythmic bass guitar-style accompaniment and drums at " + elements.bpm.value + " BPM. Your highlighted chord is the current bar.");
     } catch (_) {
       if (pendingStart === start) {
         stopAudio();
