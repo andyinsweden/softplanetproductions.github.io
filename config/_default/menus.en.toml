@@ -128,6 +128,31 @@
   parent = "services"
   weight = 33
 
+
+[[main]]
+  name = "Learn Piano Improvisation"
+  pageRef = "tutorials/how-to-learn-piano-improvisation"
+  parent = "tutorials"
+  weight = 57
+
+[[main]]
+  name = "Playing Piano by Ear"
+  pageRef = "tutorials/playing-piano-by-ear-after-classical-training"
+  parent = "tutorials"
+  weight = 58
+
+[[main]]
+  name = "Arranging for School Ensembles"
+  pageRef = "tutorials/arranging-music-for-school-ensembles"
+  parent = "tutorials"
+  weight = 59
+
+[[main]]
+  name = "Sibelius Network Licences"
+  pageRef = "tutorials/sibelius-network-licences-for-schools"
+  parent = "tutorials"
+  weight = 60
+
 [[main]]
   name = "About"
   pageRef = "about"
