@@ -255,24 +255,77 @@
       sounding = sounding.filter((item) => item !== voice);
     }, { once: true });
   }
-  function bassAt(bar, beat, when, beatLength) {
+  // Four complementary grooves provide variety without sacrificing the beat
+  // or becoming too busy for improvisation. A new idea chooses a new groove.
+  const GROOVES = ["Laid-back", "Syncopated", "Driving", "Half-time"];
+  function grooveIndex() {
+    return (hash(todayKey() + ":" + elements.level.value) + variation) % GROOVES.length;
+  }
+  function bassAt(bar, beat, when, beatLength, groove, phrase) {
     const root = 36 + challenge.key.root + SCALE[challenge.degrees[bar]];
     const followingRoot = 36 + challenge.key.root + SCALE[challenge.degrees[(bar + 1) % 4]];
-    if (beat === 0) bassNote(root, when, beatLength * 0.88, 1);
-    if (beat === 1) bassNote(root + 7, when + beatLength / 2, beatLength * 0.36, 0.62);
-    if (beat === 2) bassNote(root, when, beatLength * 0.72, 0.84);
-    if (beat === 3) {
-      // Quiet eighth-note approach into the next bar, kept in bass register.
-      const pickup = followingRoot > root ? followingRoot - 2 : followingRoot + 2;
-      bassNote(pickup, when + beatLength / 2, beatLength * 0.33, 0.48);
+    const fifth = root + 7;
+    const pickup = followingRoot > root ? followingRoot - 2 : followingRoot + 2;
+    const add = (note, offset, length, intensity) =>
+      bassNote(note, when + beatLength * offset, beatLength * length, intensity);
+    // Anchor every chord change, then answer it with a small rhythmic phrase.
+    if (beat === 0) add(root, 0, groove === 3 ? 1.4 : 0.78, 0.93);
+    if (groove === 0) {
+      if (beat === 1 && bar % 2 === 0) add(fifth, 0.5, 0.38, 0.54);
+      if (beat === 2) add(root, 0, 0.68, 0.76);
+      if (beat === 3 && bar !== 3) add(pickup, 0.5, 0.32, 0.46);
+    } else if (groove === 1) {
+      if (beat === 0 && bar % 2 === 1) add(fifth, 0.75, 0.22, 0.43);
+      if (beat === 1) add(fifth, 0.5, 0.32, 0.64);
+      if (beat === 2) add(root, 0.75, 0.34, 0.81);
+      if (beat === 3) add(bar === 3 ? fifth : pickup, 0.5, 0.29, 0.54);
+    } else if (groove === 2) {
+      if (beat === 1) add(fifth, 0, 0.42, 0.63);
+      if (beat === 2) add(root, 0, 0.43, 0.85);
+      if (beat === 3) {
+        add(fifth, 0, 0.31, 0.58);
+        if (bar !== 3 || phrase % 2 === 1) add(pickup, 0.5, 0.3, 0.53);
+      }
+    } else {
+      if (beat === 2) add(fifth, 0.5, 0.72, 0.58);
+      if (beat === 3 && bar === 3) add(pickup, 0.5, 0.32, 0.42);
     }
   }
-  function drumsAt(beat, when, beatLength) {
+  function drumsAt(bar, beat, when, beatLength, groove, phrase) {
     const output = audioCtx.destination;
-    if (beat === 0 || beat === 2) playSample(samples.kick, when, 0.18, output);
-    else playSample(samples.snare, when, 0.12, output);
-    playSample(samples.hat, when, 0.065, output);
-    playSample(samples.hat, when + beatLength / 2, 0.04, output);
+    const hit = (name, offset, volume) =>
+      playSample(samples[name], when + beatLength * offset, volume, output);
+    const ending = bar === 3 && beat === 3;
+    if (groove === 0) {
+      if (beat === 0 || beat === 2) hit("kick", 0, 0.18);
+      if (beat === 1 || beat === 3) hit("snare", 0, 0.12);
+      if (beat === 2 && bar % 2 === 1) hit("kick", 0.5, 0.095);
+    } else if (groove === 1) {
+      if (beat === 0 || beat === 2) hit("kick", 0, 0.18);
+      if (beat === 1 || beat === 3) hit("snare", 0, 0.12);
+      if (beat === 1 || (beat === 3 && bar % 2 === 0)) hit("kick", 0.75, 0.115);
+      if (beat === 2 && bar % 2 === 1) hit("snare", 0.75, 0.048);
+    } else if (groove === 2) {
+      hit("kick", 0, beat % 2 === 0 ? 0.18 : 0.135);
+      if (beat === 1 || beat === 3) hit("snare", 0, 0.12);
+      if (beat === 3 && bar % 2 === 1) hit("kick", 0.5, 0.09);
+    } else {
+      if (beat === 0 || beat === 2) hit("kick", 0, 0.18);
+      if (beat === 2) hit("snare", 0, 0.135);
+      if (beat === 3 && bar % 2 === 1) hit("kick", 0.5, 0.085);
+      if (beat === 3 && bar === 1) hit("snare", 0.75, 0.045);
+    }
+    // Lightly accented hats, with rests and small 16th-note turnarounds.
+    hit("hat", 0, beat === 0 || beat === 2 ? 0.064 : 0.048);
+    if (groove !== 3 || beat % 2 === 1) hit("hat", 0.5, 0.036);
+    if (groove === 2 && beat % 2 === 1) hit("hat", 0.75, 0.023);
+    if (ending && phrase % 2 === 1) {
+      hit("snare", 0.5, 0.065);
+      hit("snare", 0.75, 0.082);
+      hit("hat", 0.75, 0.042);
+    } else if (ending) {
+      hit("snare", 0.75, 0.047);
+    }
   }
   function tick() {
     if (!playing || !audioCtx) return;
@@ -280,8 +333,10 @@
     while (nextBeatTime < audioCtx.currentTime + 0.16) {
       const beat = beatCounter % 4;
       const bar = Math.floor(beatCounter / 4) % 4;
-      drumsAt(beat, nextBeatTime, beatLength);
-      bassAt(bar, beat, nextBeatTime, beatLength);
+      const groove = grooveIndex();
+      const phrase = Math.floor(beatCounter / 16);
+      drumsAt(bar, beat, nextBeatTime, beatLength, groove, phrase);
+      bassAt(bar, beat, nextBeatTime, beatLength, groove, phrase);
       if (beat === 0) chordAt(bar, nextBeatTime, beatLength);
       const visualDelay = Math.max(0, (nextBeatTime - audioCtx.currentTime) * 1000);
       // Keep animation best-effort; the actual musical timing is scheduled in AudioContext.
@@ -325,7 +380,7 @@
       timer = setInterval(tick, 65);
       tick();
       elements.play.textContent = "■ Stop accompaniment";
-      setStatus("Playing electric piano, rhythmic bass guitar-style accompaniment and drums at " + elements.bpm.value + " BPM. Your highlighted chord is the current bar.");
+      setStatus("Playing the " + GROOVES[grooveIndex()].toLowerCase() + " groove with electric piano, bass and drums at " + elements.bpm.value + " BPM. Chords highlight each bar.");
     } catch (_) {
       if (pendingStart === start) {
         stopAudio();
