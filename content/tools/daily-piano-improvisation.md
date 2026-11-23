@@ -15,6 +15,7 @@ images:
   </div>
   <div class="sp-lab__grid">
     <div class="sp-lab__field"><label for="sp-daily-level">Your level</label><select id="sp-daily-level"><option value="beginner">Getting started</option><option value="intermediate">Developing confidence</option><option value="expressive">Creative challenge</option></select></div>
+    <div class="sp-lab__field"><label for="sp-daily-meter">Time signature</label><select id="sp-daily-meter"><option value="auto">Surprise me (daily rotation)</option><option value="2/4">2/4 — two-beat</option><option value="3/4">3/4 — waltz</option><option value="4/4">4/4 — common time</option><option value="5/4">5/4 — five-beat groove</option><option value="6/8">6/8 — compound lilt</option></select></div>
     <div class="sp-lab__field"><label for="sp-daily-bpm">Tempo <span id="sp-daily-bpm-value">78 BPM</span></label><input id="sp-daily-bpm" type="range" min="50" max="150" step="2" value="78"></div>
   </div>
   <div class="sp-lab__challenge">
@@ -29,17 +30,17 @@ images:
     <button type="button" id="sp-daily-new" class="sp-lab__button">Another idea</button>
     <button type="button" id="sp-daily-done" class="sp-lab__button sp-lab__button--done">✓ Mark today's practice done</button>
   </div>
-  <p id="sp-daily-status" class="sp-lab__status" role="status" aria-live="polite">Choose Play to hear electric piano, moving bass and varied drum grooves. Select Another idea to change the rhythm.</p>
+  <p id="sp-daily-status" class="sp-lab__status" role="status" aria-live="polite">Choose a time signature or let the tool surprise you. Play along with electric piano, moving bass and varied drum grooves.</p>
   <div class="sp-lab__footer"><span>Completed practice days: <strong id="sp-daily-total">0</strong></span><span>Your streak and preferred level are saved only on this device.</span></div>
   <noscript>Enable JavaScript to use the daily challenge, chord playback and progress tracker.</noscript>
 </div>
-<script src="/js/daily-piano-improvisation.js?v=20261123.1" defer></script>
+<script src="/js/daily-piano-improvisation.js?v=20261123.2" defer></script>
 
 ## How to use this free improvisation tool
 
 Choose your experience level and press **Play accompaniment**. Listen to the four-bar chord loop before you begin. If a chord symbol is unfamiliar, enter it in the [piano chord finder](/tools/chord-finder/) to see which keys to play. Start with a few of the suggested notes, leave space between phrases and use repetition to make your melody sound intentional. You can slow the music down, try a different exercise or come back tomorrow for a fresh challenge.
 
-The accompaniment combines electric piano chords, a warm moving bass line and four contrasting 4/4 grooves: laid-back, syncopated, driving and half-time. Choose **Another idea** to explore a different rhythm as well as a new chord progression. Subtle drum fills, offbeat bass notes, accents and hi-hat variations make longer practice sessions more musical without overwhelming your improvisation. All parts follow your chosen tempo. The electric piano and drums use audio samples; the bass is synthesized directly in your browser. Your browser loads the samples the first time you press Play. [Sample credits and licences](/audio/daily-piano-improvisation/credits.txt).
+The accompaniment combines electric piano chords, a warm moving bass line and five time signatures: **2/4, 3/4, 4/4, 5/4 and 6/8**. Choose a meter manually, or leave **Surprise me** selected so **Another idea** rotates through different meters. Four groove variations add syncopation, subtle fills, offbeat bass notes, and hi-hat accents. In **6/8**, the music flows in two groups of three eighth notes rather than six quarter-note beats. Chords change at each bar boundary, and all parts follow your chosen tempo. The electric piano and drums use audio samples; the bass is synthesized directly in your browser. Your browser loads the samples the first time you press Play. [Sample credits and licences](/audio/daily-piano-improvisation/credits.txt).
 
 ## How to improvise on piano as a beginner
 
