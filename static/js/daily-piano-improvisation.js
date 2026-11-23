@@ -6,7 +6,7 @@
   const elements = {
     date: $("sp-daily-date"), key: $("sp-daily-key"), variation: $("sp-daily-variation"),
     chords: $("sp-daily-chords"), prompt: $("sp-daily-prompt"), notes: $("sp-daily-notes"),
-    level: $("sp-daily-level"), bpm: $("sp-daily-bpm"), bpmValue: $("sp-daily-bpm-value"),
+    level: $("sp-daily-level"), meter: $("sp-daily-meter"), bpm: $("sp-daily-bpm"), bpmValue: $("sp-daily-bpm-value"),
     play: $("sp-daily-play"), next: $("sp-daily-new"), done: $("sp-daily-done"),
     status: $("sp-daily-status"), streak: $("sp-daily-streak"), total: $("sp-daily-total")
   };
@@ -196,7 +196,7 @@
     const degree = challenge.degrees[bar];
     const root = 48 + challenge.key.root + SCALE[degree];
     const third = MINOR_DEGREES.includes(degree) ? 3 : 4;
-    const duration = beatLength * 3.65;
+    const duration = beatLength * 0.92;
     // A tempo increase can bring the next bar in before the old chord has decayed.
     if (activeChord && activeChord.end > when) {
       const releaseStart = Math.max(audioCtx.currentTime, when - 0.015);
@@ -258,6 +258,10 @@
   // Four complementary grooves provide variety without sacrificing the beat
   // or becoming too busy for improvisation. A new idea chooses a new groove.
   const GROOVES = ["Laid-back", "Syncopated", "Driving", "Half-time"];
+  const METERS = ["2/4", "3/4", "4/4", "5/4", "6/8"];
+  function currentMeter() {
+    return elements.meter.value === "auto" ? METERS[(hash(todayKey() + ":" + elements.level.value) + variation) % METERS.length] : elements.meter.value;
+  }
   function grooveIndex() {
     return (hash(todayKey() + ":" + elements.level.value) + variation) % GROOVES.length;
   }
@@ -327,27 +331,89 @@
       hit("snare", 0.75, 0.047);
     }
   }
+  // For compound time, each scheduler step is an eighth note; 6/8 accents 1 and 4.
+  // All other meters schedule quarter-note beats. The chord changes each full bar.
+  function alternateRhythmAt(bar, beat, when, stepLength, meter, groove, phrase) {
+    const root = 36 + challenge.key.root + SCALE[challenge.degrees[bar]];
+    const nextRoot = 36 + challenge.key.root + SCALE[challenge.degrees[(bar + 1) % 4]];
+    const fifth = root + 7;
+    const pickup = nextRoot > root ? nextRoot - 2 : nextRoot + 2;
+    const hit = (name, offset, volume) =>
+      playSample(samples[name], when + stepLength * offset, volume, audioCtx.destination);
+    const bass = (note, offset, length, volume) =>
+      bassNote(note, when + stepLength * offset, stepLength * length, volume);
+    if (meter === "6/8") {
+      if (beat === 0) {
+        hit("kick", 0, 0.18);
+        bass(root, 0, groove === 3 ? 2.65 : 1.9, 0.95);
+      }
+      if (beat === 3) {
+        hit("snare", 0, 0.115);
+        if (groove !== 3) bass(fifth, 0, 1.7, 0.67);
+      }
+      if (beat === 2 && groove === 1) hit("kick", 0, 0.09);
+      if (beat === 4 && groove === 2) bass(root, 0, 0.75, 0.57);
+      if (beat === 5 && (groove === 1 || bar === 3)) {
+        bass(pickup, 0, 0.7, 0.48);
+        if (bar === 3 && phrase % 2) hit("snare", 0, 0.054);
+      }
+      // An eighth-note lilt; sparse hats for the half-time arrangement.
+      if (groove !== 3 || beat % 3 === 0)
+        hit("hat", 0, beat === 0 || beat === 3 ? 0.062 : 0.034);
+      return;
+    }
+    const beatsPerBar = Number(meter.split("/")[0]);
+    const finalBeat = beat === beatsPerBar - 1;
+    if (beat === 0) {
+      hit("kick", 0, 0.18);
+      bass(root, 0, 0.8, 0.95);
+    }
+    if (meter === "2/4") {
+      if (beat === 1) hit("snare", 0, 0.126);
+    } else if (meter === "3/4") {
+      if (beat === 1) hit("snare", 0, 0.09);
+      if (beat === 2 && groove === 2) hit("kick", 0, 0.09);
+    } else if (meter === "5/4") {
+      // 3+2 grouping, rather than a 4/4 bar with an added empty beat.
+      if (beat === 1 || beat === 3) hit("snare", 0, beat === 3 ? 0.125 : 0.085);
+      if (beat === 3) hit("kick", 0, 0.12);
+      if (beat === 2 && groove === 2) hit("kick", 0, 0.08);
+    }
+    if (beat !== 0 && (beat === 2 || (meter === "3/4" && beat === 1)))
+      bass(beat === 2 ? root : fifth, groove === 1 ? 0.5 : 0, 0.55, 0.68);
+    if (finalBeat && groove !== 3) {
+      bass(pickup, 0.5, 0.35, 0.51);
+      if (bar === 3 && phrase % 2) hit("snare", 0.75, 0.057);
+    }
+    hit("hat", 0, beat === 0 || (meter === "5/4" && beat === 3) ? 0.065 : 0.045);
+    if (groove !== 3 || beat % 2 === 1) hit("hat", 0.5, 0.034);
+    if (groove === 2 && finalBeat) hit("hat", 0.75, 0.027);
+  }
   function tick() {
     if (!playing || !audioCtx) return;
-    const beatLength = 60 / Number(elements.bpm.value);
+    const meter = currentMeter();
+    const beatsPerBar = Number(meter.split("/")[0]);
+    const stepLength = 60 / Number(elements.bpm.value) * (meter === "6/8" ? 0.5 : 1);
     while (nextBeatTime < audioCtx.currentTime + 0.16) {
-      const beat = beatCounter % 4;
-      const bar = Math.floor(beatCounter / 4) % 4;
+      const beat = beatCounter % beatsPerBar;
+      const bar = Math.floor(beatCounter / beatsPerBar) % 4;
       const groove = grooveIndex();
-      const phrase = Math.floor(beatCounter / 16);
-      drumsAt(bar, beat, nextBeatTime, beatLength, groove, phrase);
-      bassAt(bar, beat, nextBeatTime, beatLength, groove, phrase);
-      if (beat === 0) chordAt(bar, nextBeatTime, beatLength);
-      const visualDelay = Math.max(0, (nextBeatTime - audioCtx.currentTime) * 1000);
-      // Keep animation best-effort; the actual musical timing is scheduled in AudioContext.
-      if (visualDelay < 160) {
+      const phrase = Math.floor(beatCounter / (beatsPerBar * 4));
+      if (meter === "4/4") {
+        drumsAt(bar, beat, nextBeatTime, stepLength, groove, phrase);
+        bassAt(bar, beat, nextBeatTime, stepLength, groove, phrase);
+      } else {
+        alternateRhythmAt(bar, beat, nextBeatTime, stepLength, meter, groove, phrase);
+      }
+      if (beat === 0) chordAt(bar, nextBeatTime, stepLength * beatsPerBar);
+      if (nextBeatTime - audioCtx.currentTime < 0.16) {
         Array.from(elements.chords.children).forEach((el, index) => {
           if (index === bar) el.setAttribute("aria-current", "true");
           else el.removeAttribute("aria-current");
         });
       }
       beatCounter++;
-      nextBeatTime += beatLength;
+      nextBeatTime += stepLength;
     }
   }
   function stopAudio() {
@@ -380,7 +446,7 @@
       timer = setInterval(tick, 65);
       tick();
       elements.play.textContent = "■ Stop accompaniment";
-      setStatus("Playing the " + GROOVES[grooveIndex()].toLowerCase() + " groove with electric piano, bass and drums at " + elements.bpm.value + " BPM. Chords highlight each bar.");
+      setStatus("Playing " + currentMeter() + " in a " + GROOVES[grooveIndex()].toLowerCase() + " groove with electric piano, bass and drums at " + elements.bpm.value + " BPM. Chords highlight each bar.");
     } catch (_) {
       if (pendingStart === start) {
         stopAudio();
@@ -393,9 +459,13 @@
   elements.level.value = data.level;
   elements.bpmValue.textContent = elements.bpm.value + " BPM";
   elements.play.addEventListener("click", toggleAudio);
+  elements.meter.addEventListener("change", function () {
+    stopAudio();
+    setStatus("Time signature set to " + (elements.meter.value === "auto" ? "automatic (" + currentMeter() + ")" : currentMeter()) + ". Press Play to hear the new rhythm.");
+  });
   elements.next.addEventListener("click", function () {
     stopAudio(); variation++; render();
-    setStatus("New variation ready. Press Play for the new progression.");
+    setStatus("New variation ready in " + currentMeter() + ". Press Play to hear the progression and rhythm.");
   });
   elements.level.addEventListener("change", function () {
     stopAudio(); variation = 0; data.level = elements.level.value; saveData(); render();
