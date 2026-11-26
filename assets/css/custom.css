@@ -1563,7 +1563,8 @@ main iframe[src*="youtube-nocookie.com/embed"] {
 .softplanet-desktop-menu {
   display: none;
   flex: none;
-  gap: clamp(.25rem, 1vw, .875rem);
+  gap: .55rem;
+  font-size: .95rem;
   white-space: nowrap;
 }
 
@@ -1604,4 +1605,26 @@ main iframe[src*="youtube-nocookie.com/embed"] {
   #menu-wrapper {
     display: none;
   }
+}
+
+.softplanet-header nav {
+  column-gap: 1rem;
+}
+
+.softplanet-header .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+
+a.softplanet-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
 }
