@@ -7,6 +7,7 @@
     return;
   }
 
+  const spanish = document.documentElement.lang === "es";
   const search = controls.querySelector("#sibelius-search-query");
   const categoryFilter = controls.querySelector("#sibelius-search-category");
   const status = controls.querySelector(".sibelius-search__status");
@@ -97,14 +98,18 @@
     }
 
     if (visibleCount === 0) {
-      status.textContent = "No questions match your filters.";
+      status.textContent = spanish
+        ? "Ninguna pregunta coincide con los filtros."
+        : "No questions match your filters.";
       return;
     }
 
     const categoryText = selectedCategory
-      ? ` in ${categoryNames.get(selectedCategory)}`
+      ? ` ${spanish ? "en" : "in"} ${categoryNames.get(selectedCategory)}`
       : "";
-    status.textContent = `Showing ${visibleCount} of ${questions.length} questions${categoryText}.`;
+    status.textContent = spanish
+      ? `Se muestran ${visibleCount} de ${questions.length} preguntas${categoryText}.`
+      : `Showing ${visibleCount} of ${questions.length} questions${categoryText}.`;
   }
 
   search.addEventListener("input", updateResults);

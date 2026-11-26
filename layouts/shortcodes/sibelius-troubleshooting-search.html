@@ -1,6 +1,6 @@
 <div class="sibelius-search" data-sibelius-search hidden>
   <div class="sibelius-search__field">
-    <label for="sibelius-search-query">Search questions and answers</label>
+    <label for="sibelius-search-query">{{ i18n "softplanet.search_questions_and_answers" }}</label>
     <input
       id="sibelius-search-query"
       type="search"
@@ -9,18 +9,18 @@
     />
   </div>
   <div class="sibelius-search__field">
-    <label for="sibelius-search-category">Filter by category</label>
+    <label for="sibelius-search-category">{{ i18n "softplanet.filter_by_category" }}</label>
     <select
       id="sibelius-search-category"
       aria-controls="sibelius-troubleshooting-results"
     >
-      <option value="">All categories</option>
-      <option value="sound-and-playback">Sound and Playback</option>
-      <option value="midi-and-note-input">MIDI and Note Input</option>
-      <option value="notation-voices-and-rhythm">Notation, Voices and Rhythm</option>
-      <option value="score-layout-and-spacing">Score Layout and Spacing</option>
-      <option value="parts-printing-and-exporting">Parts, Printing and Exporting</option>
-      <option value="saving-recovery-and-performance">Saving, Recovery and Performance</option>
+      <option value="">{{ i18n "softplanet.all_categories" }}</option>
+      <option value="sound-and-playback">{{ i18n "softplanet.sound_and_playback" }}</option>
+      <option value="midi-and-note-input">{{ i18n "softplanet.midi_and_note_input" }}</option>
+      <option value="notation-voices-and-rhythm">{{ i18n "softplanet.notation_voices_and_rhythm" }}</option>
+      <option value="score-layout-and-spacing">{{ i18n "softplanet.score_layout_and_spacing" }}</option>
+      <option value="parts-printing-and-exporting">{{ i18n "softplanet.parts_printing_and_exporting" }}</option>
+      <option value="saving-recovery-and-performance">{{ i18n "softplanet.saving_recovery_and_performance" }}</option>
     </select>
   </div>
   <p class="sibelius-search__status" role="status" aria-live="polite" aria-atomic="true"></p>
