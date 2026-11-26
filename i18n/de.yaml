@@ -1,6 +1,9 @@
 list:
   no_articles: ''
 softplanet:
+  rss_title: "{{ .Title }} bei {{ .Site }}"
+  rss_summary: "Neue Inhalte bei {{ .Site }}"
+  rss_section_summary: "Neue Inhalte zu {{ .Title }} bei {{ .Site }}"
   home_authors: John und Andy Montgomery
   home_piano_course: KURS ZUR KLAVIERIMPROVISATION
   home_services_label: UNSER ANGEBOT

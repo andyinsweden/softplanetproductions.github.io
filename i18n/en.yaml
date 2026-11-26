@@ -1,6 +1,9 @@
 list:
   no_articles: ''
 softplanet:
+  rss_title: "{{ .Title }} on {{ .Site }}"
+  rss_summary: "Recent content on {{ .Site }}"
+  rss_section_summary: "Recent content in {{ .Title }} on {{ .Site }}"
   home_authors: John and Andy Montgomery
   home_piano_course: PIANO IMPROVISATION COURSE
   home_services_label: WHAT WE DO

@@ -1,0 +1,187 @@
+list:
+  no_articles: ''
+softplanet:
+  rss_title: '{{ .Title }} sur {{ .Site }}'
+  rss_summary: Contenu récent sur {{ .Site }}
+  rss_section_summary: Contenu récent dans {{ .Title }} sur {{ .Site }}
+  home_authors: John et Andy Montgomery
+  home_piano_course: COURS D’IMPROVISATION AU PIANO
+  home_services_label: NOS ACTIVITÉS
+  home_explore_piano_course: DÉCOUVRIR LE COURS DE PIANO
+  music_courses: Cours de musique,
+  piano_scores: partitions de piano
+  amp_sibelius_support: et assistance Sibelius
+  create_piano_lessons_sheet_music_and_tools: créent des cours de piano, des partitions et des outils pour les musiciens,
+    et conseillent les écoles britanniques sur les licences Sibelius.
+  browse_music_courses: Voir les cours de musique
+  expert_training: Formation d'experts
+  creative_inspiration: Inspiration créative
+  professional_solutions: Solutions professionnelles
+  resources_for_musicians_amp_educators: Ressources pour Musiciens et Éducateurs
+  whether_you_re_a_music_creator_educator: Que vous soyez créateur de musique, éducateur ou institution, nous fournissons
+    les outils, la formation et le soutien pour vous aider à réussir.
+  learn_piano_improvisation: Apprendre l'improvisation du piano
+  learn_to_play_piano_by_ear_build: Apprenez à jouer du piano à l'oreille, à construire des progressions d'accords et
+    à créer des mélodies originales avec le cours en ligne auto-rapide de John Montgomery.
+  sibelius_amp_notation: Sibelius & Notation
+  standalone_and_network_licences_extra_seats_and: Licences autonomes et de réseau, sièges supplémentaires et conseils
+    d'installation pour les écoles et collèges britanniques.
+  sibelius_site_licences: Licences de site Sibelius
+  piano_sheet_music: Partition pour piano
+  digital_solo_arrangements_by_john_montgomery_from: Arrangements solo numériques de John Montgomery, de Interstellar
+    à Queen et Harry Styles.
+  browse_piano_sheet_music: Parcourez les partitions de piano
+  trusted_by_educators: Confiance des éducateurs
+  solutions_used_in_schools_and_institutions_worldwide: Solutions utilisées dans les écoles et les institutions du monde
+    entier.
+  quality_you_can_rely_on: La qualité que vous pouvez utiliser
+  professional_tools_and_training_from_industry_experts: Outils professionnels et formation d'experts du secteur.
+  global_community: Communauté mondiale
+  join_a_community_of_creators_and_lifelong: Rejoignez une communauté de créateurs et d'apprenants tout au long de la
+    vie.
+  built_for_creators: Construit pour les créateurs
+  everything_you_need_to_create_and_grow: Tout ce dont vous avez besoin pour créer et grandir.
+  get_10_off_this_course_on_udemy: Obtenez 10 € de réduction sur Udemy
+  explore_the_course_lessons: Explorer les leçons du cours
+  save_10_on_the_piano_improvisation_course: Économisez 10 € sur le cours d'improvisation pour piano
+  see_the_hands_hear_the_notes_and: Voyez les mains, écoutez les notes et suivez la notation.
+  watch_the_free_course_preview_on_udemy: Regardez l'aperçu du cours gratuit sur Udemy
+  learn_to_create_not_just_repeat: Apprendre à créer, pas seulement répéter
+  why_this_piano_improvisation_course_is_different: Pourquoi ce cours d'improvisation du piano est différent
+  there_is_a_difference_between_learning_a: Il y a une différence entre apprendre une pièce et savoir quoi jouer quand
+    la partition disparaît. Les leçons de John combinent des démonstrations simples et pratiques avec juste assez de
+    théorie musicale pour vous aider à faire vos propres choix sur le clavier.
+  try_improvising_right_now: Essayez d'improviser maintenant.
+  how_to_improvise_on_piano_a_simple: 'Comment improviser sur le piano: un exercice débutant simple'
+  you_do_not_need_a_complex_piece: Vous n'avez pas besoin d'un morceau de musique complexe pour commencer. Essayez ce
+    court exercice sur n'importe quel piano ou clavier pour entendre comment de petits choix peuvent devenir une mélodie
+    originale.
+  step_1: Étape 1
+  choose_a_few_notes: Choisissez quelques notes
+  find_middle_c_and_play_c_d: Trouvez le milieu C et jouez C, D, E et G avec votre main droite. Gardez un pouls confortable
+    et régulier.
+  step_2: Étape 2
+  give_it_a_foundation: Donne-lui une base.
+  play_a_lower_c_with_your_left: Jouez un C inférieur avec votre main gauche au début de chaque phrase courte. Laissez
+    la note basse soutenir votre mélodie.
+  step_3: Étape 3
+  change_the_melody: Changez la mélodie
+  rearrange_the_four_right_hand_notes_vary: Réorganiser les quatre notes de droite, varier le rythme et laisser des espaces
+    occasionnels. Répétez une idée préférée, puis répondez avec une nouvelle.
+  that_is_the_starting_point_of_piano: 'C''est le point de départ de l''improvisation du piano : écouter, expérimenter
+    et développer une idée musicale. Dans le cours complet, John Montgomery démontre comment étendre cette approche à
+    l''aide d''accords, de signatures temporelles différentes, de motifs bi-mains et de pistes de support.'
+  free_lessons_to_try_before_you_enrol: Leçons gratuites à essayer avant de vous inscrire
+  practise_piano_improvisation_with_these_beginner_guides: Pratiquez l'improvisation du piano avec ces guides débutants
+  start_with_a_short_lesson_that_answers: Commencez par une courte leçon qui répond à la question que vous avez aujourd'hui,
+    puis retournez au programme de cours pour un parcours structuré à travers les accords, le rythme, les mélodies et
+    l'indépendance des mains.
+  how_to_start_improvising_on_piano: Comment commencer à improviser au piano
+  five_manageable_exercises_for_your_first_melodies: — cinq exercices gérables pour vos premières mélodies.
+  piano_chord_progressions_for_beginners: Progressions de l'accord piano pour les débutants
+  play_four_useful_harmonic_loops: — jouer quatre boucles harmoniques utiles.
+  how_to_improvise_with_both_hands: Comment improviser avec les deux mains
+  coordinate_a_steady_bass_with_a_simple: — coordonner une basse stable avec une simple mélodie.
+  pentatonic_scale_improvisation: Improvisation à l'échelle pentatonique
+  make_music_with_five_notes: — faire de la musique avec cinq notes.
+  playing_piano_by_ear_after_classical_training: Jouer du piano à l'oreille après l'entraînement classique
+  use_your_reading_skills_as_a_foundation: — utilisez vos compétences en lecture comme base pour jouer de façon créative.
+  free_daily_piano_improvisation_challenge: Défi gratuit quotidien d'improvisation du piano
+  practise_with_a_browser_based_chord_loop: — pratiquer avec une boucle d'accords et un rythme de tambour basés sur le
+    navigateur.
+  a_clear_path_from_your_first_note: Un chemin clair à partir de votre première note
+  what_will_you_be_able_to_play: Qu'est - ce que vous serez capable de jouer?
+  discover_your_sound_and_develop_simple_musical: Découvrez votre son et développez des idées musicales simples en improvisation
+    expressive du piano. Sélectionnez l'illustration pour l'afficher en pleine grandeur.
+  a_substantial_practical_learning_programme: Un programme d'apprentissage concret et substantiel
+  explore_the_piano_improvisation_course_curriculum: Explorez le programme du cours d'improvisation du piano
+  with_15_sections_and_110_lectures_on: Avec 15 sections et 110 conférences sur l'Udemy, il y a beaucoup à découvrir.
+    Ouvrez les sections ci-dessous pour voir des sujets de leçon spécifiques, des exercices et les compétences musicales
+    qu'ils développent.
+  your_goal: 'Votre objectif :'
+  skills_covered: Compétences couvertes
+  lesson_programme: Programme de cours
+  view_the_current_full_syllabus_preview_videos: Visualisez le programme complet actuel, prévisualiser les vidéos et
+    les options d'inscription sur Udemy
+  ready_to_make_music_of_your_own: Prêt à faire de la musique ?
+  find_your_own_way_around_the_keyboard: Trouvez votre propre chemin autour du clavier avec un cours de vidéo pratique
+    enseigné par John Montgomery.
+  see_the_course_on_udemy: Voir le cours sur Udemy
+  everything_works_together: Tout fonctionne ensemble.
+  what_is_included_in_the_course: Qu'est-ce qui est inclus dans le cours?
+  learn_at_your_own_pace: Apprenez à votre propre rythme
+  who_is_this_piano_course_for: Pour qui est ce cours de piano ?
+  whether_you_are_taking_your_first_steps: Que vous fassiez vos premiers pas au piano ou que vous puissiez déjà jouer
+    des pièces en lisant de la musique, ce cours est conçu pour développer votre capacité à improviser.
+  good_to_know_before_you_enrol: Bon à savoir avant de vous inscrire
+  piano_improvisation_course_frequently_asked_questions: 'Cours d''improvisation pour piano : Foire aux questions'
+  udemy_course_offer: Offre de cours Udemy
+  course_at_a_glance: Le cours en bref
+  open_the_free_piano_course_preview_on: Ouvrez l'aperçu gratuit du cours de piano sur Udemy
+  preview_of_john_montgomery_s_piano_improvisation: Aperçu des cours d'improvisation pour piano de John Montgomery montrant
+    une vue et une notation du clavier supérieur
+  open_the_piano_improvisation_creative_journey_illustration: Ouvrir l'improvisation piano voyage créatif illustration
+    pleine grandeur
+  colourful_piano_improvisation_journey_discover_your_sound: 'Voyage d''improvisation pour piano coloré : découvrez votre
+    son, commencez par de simples mélodies, explorez les accords et l''harmonie, embrassez la liberté créative et créez
+    spontanément.'
+  overhead_hand_sync_footage: Photos de synthèse manuelles
+  animated_score: Score animé
+  studio_recorded_backing_tracks: Pistes d'appui enregistrées par Studio
+  join_the_piano_improvisation_course: Rejoignez le cours d'improvisation du piano
+  lecture: leçon
+  lectures: leçons
+  the_course_videos_on_udemy_are_taught: Les vidéos du cours sur Udemy sont en anglais.
+  enroll_in_the_course_on_udemy: S’inscrire sur Udemy
+  lesson_preview: Aperçu des leçons
+  interactive_keyboard_lesson_with_overhead_view_notation: Cours interactif de clavier avec vue en hauteur, notation
+    et réponse musicale en temps réel.
+  identify_a_chord: Identifier un accord
+  find_keys: Trouver les touches
+  chord_name: Nom de l’accord
+  show_keys: Afficher les touches
+  inversion: Renversement
+  tap_the_piano_keys_to_choose_notes: Appuyez sur les touches piano pour choisir les notes.
+  play_chord: ▶ Écouter l’accord
+  play_notes_in_order: Jouer les notes dans l'ordre
+  clear: Effacer
+  acoustic_piano: 'Piano acoustique:'
+  by_alexander_holm: par Alexander Holm (
+  selected_recordings_pitch_shifted_for_this_keyboard: ); sélection d'enregistrements décalés pour ce clavier.
+  type_notes: Saisir les notes
+  identify: Identifier
+  computer_keyboard_and_midi: Clavier informatique et MIDI
+  computer_keys: Clés informatiques
+  connect_midi: Connexion MIDI
+  use_z_s_x_d_c_v: Utilisez Z S X D C V G B H N J M pour l'octave inférieure et Q 2 W 3 E R 5 T 6 Y 7 U pour l'octave
+    supérieure.
+  enable_javascript_to_use_the_interactive_piano: Activer JavaScript pour utiliser le dispositif interactif de recherche
+    de piano et d'accords.
+  interactive_piano_chord_finder: Recherche interactive d'accords pour piano
+  chord_finder_mode: Mode de recherche de corbeille
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9 ou C/E
+  piano_keyboard: Clavier piano
+  keyboard_octave: Octave du clavier
+  down_an_octave: Une octave en bas
+  up_an_octave: Haut une octave
+  keyboard_appearance: Aspect du clavier
+  example_chords: Exemple d'accords
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4, ou 60 64 67
+  search_questions_and_answers: Rechercher des questions et des réponses
+  filter_by_category: Filtrer par catégorie
+  all_categories: Toutes les catégories
+  sound_and_playback: Son et lecture
+  midi_and_note_input: Entrée MIDI et note
+  notation_voices_and_rhythm: Notation, voix et rythme
+  score_layout_and_spacing: Structure et espacement des scores
+  parts_printing_and_exporting: Pièces, impression et exportation
+  saving_recovery_and_performance: Enregistrement, récupération et performances
+  main_navigation: Navigation principale
+  toggle_navigation_menu: Ouvrir ou fermer le menu
+  close_menu: Fermer le menu
+  language: Langue
+  home_free_practice: Pratiquez le piano gratuitement
+  home_find_chord: Identifier un accord à partir de ses notes
+  home_daily_practice: improviser avec la piste d'appui quotidienne
+  home_practice_or: ou commencer par
+  home_five_exercises: cinq exercices d'improvisation pour les débutants

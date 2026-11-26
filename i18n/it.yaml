@@ -1,0 +1,181 @@
+list:
+  no_articles: ''
+softplanet:
+  rss_title: '{{ .Title }} su {{ .Site }}'
+  rss_summary: Contenuti recenti su {{ .Site }}
+  rss_section_summary: Contenuti recenti in {{ .Title }} su {{ .Site }}
+  home_authors: John e Andy Montgomery
+  home_piano_course: CORSO DI IMPROVVISAZIONE AL PIANOFORTE
+  home_services_label: COSA FACCIAMO
+  home_explore_piano_course: SCOPRI IL CORSO DI PIANOFORTE
+  music_courses: Corsi di musica,
+  piano_scores: spartiti per pianoforte
+  amp_sibelius_support: e assistenza Sibelius
+  create_piano_lessons_sheet_music_and_tools: creano lezioni di pianoforte, spartiti e strumenti per musicisti, e aiutano
+    le scuole britanniche con le licenze Sibelius.
+  browse_music_courses: Esplora i corsi di musica
+  expert_training: Formazione degli esperti
+  creative_inspiration: Ispirazione creativa
+  professional_solutions: Soluzioni professionali
+  resources_for_musicians_amp_educators: Risorse per Musicisti & Educatori
+  whether_you_re_a_music_creator_educator: Che tu sia un creatore di musica, un educatore o un'istituzione, forniamo
+    gli strumenti, la formazione e il supporto per aiutarti a avere successo.
+  learn_piano_improvisation: Improvvisazione del piano
+  learn_to_play_piano_by_ear_build: Impara a suonare il piano per orecchio, costruisci progressioni di accordi e crea
+    melodie originali con il corso online auto-paciato di John Montgomery.
+  sibelius_amp_notation: Sibelius & Notation
+  standalone_and_network_licences_extra_seats_and: licenze standalone e di rete, seggiolini extra e consulenza di installazione
+    per le scuole e i college britannici.
+  sibelius_site_licences: Sibelius licenze del sito
+  piano_sheet_music: Pianoforte Foglio di musica
+  digital_solo_arrangements_by_john_montgomery_from: Assemblaggio digitale da solista di John Montgomery, da Interstellar
+    a Queen e Harry Styles.
+  browse_piano_sheet_music: Sfoglia la scheda pianoforte
+  trusted_by_educators: Fiducioso da Educatori
+  solutions_used_in_schools_and_institutions_worldwide: Soluzioni utilizzate nelle scuole e nelle istituzioni di tutto
+    il mondo.
+  quality_you_can_rely_on: La qualità è possibile ricaricare
+  professional_tools_and_training_from_industry_experts: Strumenti professionali e formazione da esperti del settore.
+  global_community: Comunità globale
+  join_a_community_of_creators_and_lifelong: Unisciti a una comunità di creatori e studenti per tutta la vita.
+  built_for_creators: Costruito per i Creatori
+  everything_you_need_to_create_and_grow: Tutto quello che ti serve per creare e crescere.
+  get_10_off_this_course_on_udemy: Ottieni 10 € di sconto su Udemy
+  explore_the_course_lessons: Esplora le lezioni di corso
+  save_10_on_the_piano_improvisation_course: Risparmia 10€ sul corso di perfezionamento Pianoforte
+  see_the_hands_hear_the_notes_and: Guarda le mani, ascolta le note e segui la notazione.
+  watch_the_free_course_preview_on_udemy: Guarda l'anteprima del corso gratuito su Udemy
+  learn_to_create_not_just_repeat: Imparare a creare, non solo ripetere
+  why_this_piano_improvisation_course_is_different: Perché questo corso di ottimizzazione del piano è diverso
+  there_is_a_difference_between_learning_a: C'è una differenza tra imparare un pezzo e sapere cosa giocare quando il
+    punteggio scompare. Le lezioni di John combinano dimostrazioni semplici e pratiche con sufficiente teoria musicale
+    per aiutarti a fare le tue scelte sulla tastiera.
+  try_improvising_right_now: Provate a improvvisare in questo momento
+  how_to_improvise_on_piano_a_simple: 'Come Migliorare il Piano: Un semplice Esercizio Principiante'
+  you_do_not_need_a_complex_piece: Non hai bisogno di un pezzo complesso di musica per iniziare. Prova questo breve esercizio
+    su qualsiasi piano o tastiera per sentire come piccole scelte possono diventare una melodia originale.
+  step_1: Passo 1
+  choose_a_few_notes: Scegli qualche nota
+  find_middle_c_and_play_c_d: Trova la C centrale e gioca C, D, E e G con la mano destra. Tenere un polso comodo e costante.
+  step_2: Passo 2
+  give_it_a_foundation: Dare una fondazione
+  play_a_lower_c_with_your_left: Gioca a C inferiore con la mano sinistra all'inizio di ogni frase corta. Lascia che
+    la nota di basso supporti la tua melodia.
+  step_3: Passo 3
+  change_the_melody: Cambia la melodia
+  rearrange_the_four_right_hand_notes_vary: Riordinare le quattro note di destra, variare il ritmo e lasciare spazi occasionali.
+    Ripeti un'idea preferita, poi rispondi con una nuova.
+  that_is_the_starting_point_of_piano: 'Questo è il punto di partenza dell''improvvisazione del pianoforte: ascoltare,
+    sperimentare e sviluppare un''idea musicale. Nel corso completo, John Montgomery dimostra come espandere questo approccio
+    utilizzando accordi, diverse firme di tempo, modelli a due mani e tracce di supporto.'
+  free_lessons_to_try_before_you_enrol: Lezioni gratuite da provare prima di iscriversi
+  practise_piano_improvisation_with_these_beginner_guides: Praticare l'improvvisazione del pianoforte con queste guide
+    di principiante
+  start_with_a_short_lesson_that_answers: Inizia con una breve lezione che risponde alla domanda che hai oggi, poi torna
+    al curriculum del corso per un percorso strutturato attraverso accordi, ritmo, melodie e indipendenza della mano.
+  how_to_start_improvising_on_piano: Come iniziare a improvvisare su piano
+  five_manageable_exercises_for_your_first_melodies: — cinque esercizi gestibili per le prime melodie.
+  piano_chord_progressions_for_beginners: Progressioni di accordi di piano per principianti
+  play_four_useful_harmonic_loops: — giocare quattro utili loop armonici.
+  how_to_improvise_with_both_hands: Come improvvisare con entrambe le mani
+  coordinate_a_steady_bass_with_a_simple: — coordinare un basso stabile con una semplice melodia.
+  pentatonic_scale_improvisation: Improvvisazione della scala patatonica
+  make_music_with_five_notes: — fare musica con cinque note.
+  playing_piano_by_ear_after_classical_training: Suonare pianoforte a orecchio dopo l'allenamento classico
+  use_your_reading_skills_as_a_foundation: — utilizzare le tue capacità di lettura come base per il gioco creativo.
+  free_daily_piano_improvisation_challenge: Sfida di improvvisazione del pianoforte quotidiano gratuita
+  practise_with_a_browser_based_chord_loop: — pratica con un loop di corda basato sul browser e ritmo del tamburo.
+  a_clear_path_from_your_first_note: Un percorso chiaro dalla vostra prima nota
+  what_will_you_be_able_to_play: Che cosa si può essere in grado di giocare?
+  discover_your_sound_and_develop_simple_musical: Scoprite il vostro suono e sviluppate semplici idee musicali nell'improvvisazione
+    del piano espressivo. Selezionare l'illustrazione per visualizzarla in formato completo.
+  a_substantial_practical_learning_programme: Un programma di apprendimento sostanziale e pratico
+  explore_the_piano_improvisation_course_curriculum: Esplora il corso di perfezionamento del pianoforte Curriculum
+  with_15_sections_and_110_lectures_on: Con 15 sezioni e 110 conferenze su Udemy, c'è molto da scoprire. Aprire le sezioni
+    qui sotto per vedere specifici argomenti di lezione, esercizi e le competenze musicali che sviluppano.
+  your_goal: 'Il tuo obiettivo:'
+  skills_covered: Competenze coperte
+  lesson_programme: Programma di lezione
+  view_the_current_full_syllabus_preview_videos: Visualizza l'attuale programma completo, visualizza video di anteprima
+    e le opzioni di iscrizione su Udemy
+  ready_to_make_music_of_your_own: Pronto a fare musica da solo?
+  find_your_own_way_around_the_keyboard: Trova la tua strada intorno alla tastiera con un pratico corso video insegnato
+    da John Montgomery.
+  see_the_course_on_udemy: Vedi il corso su Udemy
+  everything_works_together: Tutto funziona insieme
+  what_is_included_in_the_course: Che cosa è incluso nel corso?
+  learn_at_your_own_pace: Imparare a proprio ritmo
+  who_is_this_piano_course_for: Per chi è questo corso di pianoforte?
+  whether_you_are_taking_your_first_steps: Che tu stia prendendo i tuoi primi passi sul piano o che già possa suonare
+    i pezzi leggendo la musica, questo corso è progettato per sviluppare la tua capacità di improvvisare.
+  good_to_know_before_you_enrol: Buono a sapersi prima di iscriversi
+  piano_improvisation_course_frequently_asked_questions: 'Corso di perfezionamento pianistico: Domande frequenti'
+  udemy_course_offer: Offerta corsi Udemy
+  course_at_a_glance: Il corso in breve
+  open_the_free_piano_course_preview_on: Aprire l'anteprima del corso di pianoforte gratuito su Udemy
+  preview_of_john_montgomery_s_piano_improvisation: Anteprima delle lezioni di improvvisazione pianistica di John Montgomery
+    che mostrano una vista e una notazione della tastiera sopraelevata
+  open_the_piano_improvisation_creative_journey_illustration: Aprire il piano improvvisazione percorso creativo illustrazione
+    full size
+  colourful_piano_improvisation_journey_discover_your_sound: 'Viaggio di improvvisazione piano colorato: scopri il tuo
+    suono, inizia con semplici melodie, esplora accordi e armonia, abbraccia la libertà creativa e crea spontaneamente.'
+  overhead_hand_sync_footage: Sconografia a mano sopraelevata
+  animated_score: Punteggio animato
+  studio_recorded_backing_tracks: Tracce di supporto registrate da studio
+  join_the_piano_improvisation_course: Unisciti al corso di improvvisazione piano
+  lecture: lezione
+  lectures: lezioni
+  the_course_videos_on_udemy_are_taught: Le lezioni video su Udemy sono in inglese.
+  enroll_in_the_course_on_udemy: Iscriviti al corso su Udemy
+  lesson_preview: Anteprima delle lezioni
+  interactive_keyboard_lesson_with_overhead_view_notation: Lezione di tastiera interattiva con vista frontale, notazione
+    e risposta musicale in tempo reale.
+  identify_a_chord: Identifica un accordo
+  find_keys: Trova i tasti
+  chord_name: Nome dell’accordo
+  show_keys: Mostra i tasti
+  inversion: Rivolto
+  tap_the_piano_keys_to_choose_notes: Toccare le chiavi del piano per scegliere le note.
+  play_chord: ▶ Suona l’accordo
+  play_notes_in_order: Giocare a note in ordine
+  clear: Cancellazione
+  acoustic_piano: 'Piano acustico:'
+  by_alexander_holm: di Alexander Holm (
+  selected_recordings_pitch_shifted_for_this_keyboard: ); le registrazioni selezionate sono state modificate per questa
+    tastiera.
+  type_notes: Inserisci le note
+  identify: Identificare
+  computer_keyboard_and_midi: Tastiera computer e MIDI
+  computer_keys: Tasti di computer
+  connect_midi: Collegare MIDI
+  use_z_s_x_d_c_v: Utilizzare Z S X D C V G B H N J M per l'ottava inferiore e Q 2 W 3 E R 5 T 6 Y 7 U per l'ottava superiore.
+  enable_javascript_to_use_the_interactive_piano: Abilita Javascript per usare il piano interattivo e il trovatore di
+    accordi.
+  interactive_piano_chord_finder: Trovatore di accordi interattivo
+  chord_finder_mode: Modalità di ricerca coro
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9, o C/E
+  piano_keyboard: Tastiera per pianoforte
+  keyboard_octave: Ottava della tastiera
+  down_an_octave: '# Down a ottave #'
+  up_an_octave: Su un'ottava
+  keyboard_appearance: aspetto tastiera
+  example_chords: Esempio di accordi
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4, o 60 64 67
+  search_questions_and_answers: Cercare domande e risposte
+  filter_by_category: Filtra per categoria
+  all_categories: Tutte le categorie
+  sound_and_playback: Suono e riproduzione
+  midi_and_note_input: Ingresso MIDI e Note
+  notation_voices_and_rhythm: Notazione, Voci e Ritmo
+  score_layout_and_spacing: Score Layout e Spacing
+  parts_printing_and_exporting: Parti, stampa ed esportazione
+  saving_recovery_and_performance: Salvataggio, recupero e prestazioni
+  main_navigation: Navigazione principale
+  toggle_navigation_menu: Apri o chiudi il menu
+  close_menu: Chiudi il menu
+  language: Lingua
+  home_free_practice: Esercitati al pianoforte gratis
+  home_find_chord: Identificare un accordo dalle sue note
+  home_daily_practice: improvvisare con la pista di supporto quotidiana
+  home_practice_or: o iniziare con
+  home_five_exercises: cinque esercizi di improvvisazione per principianti

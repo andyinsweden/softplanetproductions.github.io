@@ -1,0 +1,224 @@
+list:
+  externalurl_title: Link til ekstern side
+  no_articles: ''
+softplanet:
+  rss_title: '{{ .Title }} på {{ .Site }}'
+  rss_summary: Nyt indhold på {{ .Site }}
+  rss_section_summary: Nyt indhold i {{ .Title }} på {{ .Site }}
+  home_authors: John og Andy Montgomery
+  home_piano_course: KURSUS I KLAVERIMPROVISATION
+  home_services_label: DET TILBYDER VI
+  home_explore_piano_course: SE KLAVERKURSET
+  music_courses: Musikkurser,
+  piano_scores: klavernoder
+  amp_sibelius_support: og Sibelius-rådgivning
+  create_piano_lessons_sheet_music_and_tools: udvikler klaverundervisning, noder og værktøjer til musikere og rådgiver
+    britiske skoler om Sibelius-licenser.
+  browse_music_courses: Se musikkurserne
+  expert_training: Eksperttræning
+  creative_inspiration: Kreativ inspiration
+  professional_solutions: Professionelle løsninger
+  resources_for_musicians_amp_educators: Ressourcer til musikere og undervisere
+  whether_you_re_a_music_creator_educator: Uanset om du er en musikskaber, underviser eller institution, tilbyder vi
+    værktøjer, træning og støtte til at hjælpe dig med at få succes.
+  learn_piano_improvisation: Lær Piano Improvisation
+  learn_to_play_piano_by_ear_build: Lær at spille klaver efter øre, bygge akkord progressioner og skabe originale melodier
+    med John Montgomery 's selvoptagede online kursus.
+  sibelius_amp_notation: Sibelius & Notation
+  standalone_and_network_licences_extra_seats_and: Standalone og netværkslicenser, ekstra pladser og installationsrådgivning
+    til britiske skoler og universiteter.
+  sibelius_site_licences: Sibelius-lokalitetstilladelser
+  piano_sheet_music: Piano ark musik
+  digital_solo_arrangements_by_john_montgomery_from: Digitale soloarrangementer af John Montgomery, fra Interstellar
+    til Queen og Harry Styles.
+  browse_piano_sheet_music: Gennemse klavernoder
+  trusted_by_educators: Trusted af Uddannere
+  solutions_used_in_schools_and_institutions_worldwide: Løsninger, der anvendes i skoler og institutioner over hele verden.
+  quality_you_can_rely_on: Kvalitet Du kan Rely On
+  professional_tools_and_training_from_industry_experts: Professionelle værktøjer og uddannelse fra brancheeksperter.
+  global_community: Det Globale Fællesskab
+  join_a_community_of_creators_and_lifelong: Deltag i et fællesskab af skabere og livslang læring.
+  built_for_creators: Bygget til skabere
+  everything_you_need_to_create_and_grow: Alt hvad du behøver for at skabe og vokse.
+  get_10_off_this_course_on_udemy: Få 10 € i rabat på Udemy
+  explore_the_course_lessons: Udforsk kursustimer
+  save_10_on_the_piano_improvisation_course: Spar €10 på Piano Improvisation Course
+  see_the_hands_hear_the_notes_and: Se hænderne, hør noterne og følg notationen.
+  watch_the_free_course_preview_on_udemy: Se den gratis kursus preview på Udem
+  learn_to_create_not_just_repeat: Lær at oprette, ikke bare gentage
+  why_this_piano_improvisation_course_is_different: Hvorfor denne Piano Improvisation Kursus er anderledes
+  there_is_a_difference_between_learning_a: Der er forskel på at lære et stykke og vide, hvad man skal spille, når score
+    forsvinder. Johns lektioner kombinerer enkle, praktiske demonstrationer med lige nok musik teori til at hjælpe dig
+    med at træffe dine egne valg på tastaturet.
+  try_improvising_right_now: Prøv at improvisere lige nu
+  how_to_improvise_on_piano_a_simple: 'Sådan Improvisere på Piano: En simpel begynderøvelse'
+  you_do_not_need_a_complex_piece: Du behøver ikke et komplekst stykke musik for at komme i gang. Prøv denne korte øvelse
+    på ethvert klaver eller tastatur for at høre, hvordan små valg kan blive en original melodi.
+  step_1: Trin 1
+  choose_a_few_notes: Vælg et par noter
+  find_middle_c_and_play_c_d: Find midten C og spil C, D, E og G med din højre hånd. Hold en behagelig, stabil puls.
+  step_2: Trin 2
+  give_it_a_foundation: Giv det et fundament
+  play_a_lower_c_with_your_left: Spil en lavere C med din venstre hånd i starten af hver kort sætning. Lad bassen støtte
+    din melodi.
+  step_3: Trin 3
+  change_the_melody: Ændr melodien
+  rearrange_the_four_right_hand_notes_vary: Omarrangere de fire højre-hånd noter, ændre rytmen og forlade lejlighedsvis
+    rum. Gentag en favorit idé, og svar så på den med en ny.
+  that_is_the_starting_point_of_piano: 'Det er udgangspunktet for klaverimprovisation: Lyt, eksperimentér og udvikle
+    en musikalsk idé. I det fulde kursus, John Montgomery viser, hvordan man kan udvide denne tilgang ved hjælp af akkorder,
+    forskellige tid signaturer, tohåndsmønstre og baggrunds spor.'
+  free_lessons_to_try_before_you_enrol: Gratis lektioner at prøve, før du tilmelder dig
+  practise_piano_improvisation_with_these_beginner_guides: Practise Piano Improvisation med disse begyndervejledninger
+  start_with_a_short_lesson_that_answers: Start med en kort lektion, der besvarer det spørgsmål, du har i dag, og vend
+    så tilbage til kurset for en struktureret sti gennem akkorder, rytme, melodier og hånd uafhængighed.
+  how_to_start_improvising_on_piano: Hvordan til at begynde at improvisere på klaver
+  five_manageable_exercises_for_your_first_melodies: '- Fem håndterbare øvelser til dine første melodier.'
+  piano_chord_progressions_for_beginners: Klaverakkord progressioner for begyndere
+  play_four_useful_harmonic_loops: '- spille fire nyttige harmoniske løkker.'
+  how_to_improvise_with_both_hands: Hvordan man improviserer med begge hænder
+  coordinate_a_steady_bass_with_a_simple: '- koordinere en stabil bas med en simpel melodi.'
+  pentatonic_scale_improvisation: Pentatonisk skala improvisation
+  make_music_with_five_notes: '- lave musik med fem noder.'
+  playing_piano_by_ear_after_classical_training: Afspilning af klaver efter klassisk træning
+  use_your_reading_skills_as_a_foundation: '- bruge dine læseevner som grundlag for kreativ leg.'
+  free_daily_piano_improvisation_challenge: Gratis daglig klaver improvisation udfordring
+  practise_with_a_browser_based_chord_loop: '- øve sig med en browser- baseret akkord løkke og tromme rytme.'
+  a_clear_path_from_your_first_note: En klar sti fra din første note
+  what_will_you_be_able_to_play: Hvad vil du være i stand til at spille?
+  discover_your_sound_and_develop_simple_musical: Oplev din lyd og udvikle enkle musikalske ideer til udtryksfuld klaver
+    improvisation. Vælg illustrationen for at se den i fuld størrelse.
+  a_substantial_practical_learning_programme: Et omfattende, praktisk læringsprogram
+  explore_the_piano_improvisation_course_curriculum: Udforsk klaverimprovisationskursus
+  with_15_sections_and_110_lectures_on: Med 15 sektioner og 110 foredrag om Udeman, er der masser at opdage. Åbn afsnittene
+    nedenfor for at se specifikke undervisningsemner, øvelser og de musikalske færdigheder, de udvikler.
+  your_goal: 'Dit mål:'
+  skills_covered: Færdigheder dækket
+  lesson_programme: Lektion-program
+  view_the_current_full_syllabus_preview_videos: Se den aktuelle fulde pensum, preview videoer og tilmelding muligheder
+    på Udem
+  ready_to_make_music_of_your_own: Er du klar til at lave din egen musik?
+  find_your_own_way_around_the_keyboard: Find din egen vej rundt om tastaturet med et praktisk video kursus undervist
+    af John Montgomery.
+  see_the_course_on_udemy: Se kurset på Udemy
+  everything_works_together: Alt fungerer sammen
+  what_is_included_in_the_course: Hvad er inkluderet i kurset?
+  learn_at_your_own_pace: Lær i dit eget tempo
+  who_is_this_piano_course_for: Hvem er dette klaverkursus for?
+  whether_you_are_taking_your_first_steps: Uanset om du tager dine første skridt på klaver eller allerede kan spille
+    brikker ved at læse musik, er dette kursus designet til at udvikle din evne til at improvisere.
+  good_to_know_before_you_enrol: Godt at vide, før du tilmelder dig
+  piano_improvisation_course_frequently_asked_questions: 'Klaverimprovisationskursus: Ofte stillede spørgsmål'
+  udemy_course_offer: Udemy kursus tilbud
+  course_at_a_glance: Kort om kurset
+  open_the_free_piano_course_preview_on: Åbn den gratis klaverkursus forhåndsvisning på Udem
+  preview_of_john_montgomery_s_piano_improvisation: Forhåndsvisning af John Montgomery 's klaver improvisation lektioner
+    viser en overhead tastatur visning og notation
+  open_the_piano_improvisation_creative_journey_illustration: Åbn klaver improvisation kreativ rejse illustration fuld
+    størrelse
+  colourful_piano_improvisation_journey_discover_your_sound: 'Farverige klaver improvisation rejse: opdage din lyd, starte
+    med simple melodier, udforske akkorder og harmoni, omfavne kreativ frihed og skabe spontant.'
+  overhead_hand_sync_footage: Håndsynkroniserede billeder over hovedet
+  animated_score: Animeret score
+  studio_recorded_backing_tracks: Studio- indspillede baggrunds spor
+  join_the_piano_improvisation_course: Deltag i klaver improvisation kursus
+  lecture: lektion
+  lectures: lektioner
+  the_course_videos_on_udemy_are_taught: Videolektionerne på Udemy er på engelsk.
+  enroll_in_the_course_on_udemy: Tilmeld dig på Udemy
+  lesson_preview: Lektion Forhåndsvisning
+  interactive_keyboard_lesson_with_overhead_view_notation: Interaktiv tastaturundervisning med overhead visning, notation
+    og realtids musikalsk respons.
+  identify_a_chord: Find akkordnavn
+  find_keys: Find tangenter
+  chord_name: Akkordnavn
+  show_keys: Vis tangenter
+  inversion: Omvending
+  tap_the_piano_keys_to_choose_notes: Tryk på klavertasterne for at vælge noter.
+  play_chord: ▶ Afspil akkord
+  play_notes_in_order: Afspil noter i rækkefølge
+  clear: Ryd
+  acoustic_piano: 'Akustisk klaver:'
+  by_alexander_holm: af Alexander Holm (
+  selected_recordings_pitch_shifted_for_this_keyboard: ); udvalgte optagelser pitch- forskudt for dette tastatur.
+  type_notes: Indtast toner
+  identify: Identificer
+  computer_keyboard_and_midi: Computertastatur og MIDI
+  computer_keys: Computernøgler
+  connect_midi: Forbind MIDI
+  use_z_s_x_d_c_v: Brug Z S X D C V G B H N J M til den nedre oktav og Q 2 W 3 E R 5 T 6 Y 7 U til den øvre oktav.
+  enable_javascript_to_use_the_interactive_piano: Aktivér JavaScript til at bruge den interaktive klaver og akkord finder.
+  interactive_piano_chord_finder: Interaktiv klaverakkordfinder
+  chord_finder_mode: Chord- findertilstand
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9 eller C/E
+  piano_keyboard: Klavertastatur
+  keyboard_octave: Tangenter og oktav
+  down_an_octave: Ned ad en oktav
+  up_an_octave: Op ad en oktav
+  keyboard_appearance: Tastaturens udseende
+  example_chords: Eksempel på akkorder
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4 eller 60 64 67
+  search_questions_and_answers: Søgespørgsmål og svar
+  filter_by_category: Filtrér efter kategori
+  all_categories: Alle kategorier
+  sound_and_playback: Lyd og afspilning
+  midi_and_note_input: MIDI- og note- input
+  notation_voices_and_rhythm: Notering, stemmer og Rytme
+  score_layout_and_spacing: Score layout og mellemrum
+  parts_printing_and_exporting: Dele, tryk- og eksporttryksager
+  saving_recovery_and_performance: Lagring, gendannelse og ydeevne
+  main_navigation: Hovedmenu
+  toggle_navigation_menu: Åbn eller luk menuen
+  close_menu: Luk menuen
+  language: Sprog
+  home_free_practice: Øv gratis på klaver
+  home_find_chord: Identificer en akkord fra sine noter
+  home_daily_practice: improvisere med den daglige baggrunds spor
+  home_practice_or: eller start med
+  home_five_exercises: fem improvisationsøvelser for begyndere
+article:
+  anchor_label: Anker
+  date: '{{ .Date }}'
+  date_updated: 'Opdateret: {{ .Date }}'
+  draft: Kladde
+  edit_title: Rediger indhold
+  reading_time:
+    one: '{{ .Count }} min.'
+    other: '{{ .Count }} min.'
+  reading_time_title: Læsetid
+  table_of_contents: Indholdsfortegnelse
+  word_count:
+    one: '{{ .Count }} ord'
+    other: '{{ .Count }} ord'
+author:
+  byline_title: Forfatter
+code:
+  copy: Kopiér
+  copied: Kopieret
+error:
+  404_title: Siden blev ikke fundet
+  404_error: Fejl 404
+  404_description: Siden, du leder efter, findes ikke.
+footer:
+  dark_appearance: Skift til mørk tilstand
+  light_appearance: Skift til lys tilstand
+  powered_by: Drevet af {{ .Hugo }} og {{ .Congo }}
+nav:
+  scroll_to_top_title: Til toppen
+  skip_to_main: Gå til indholdet
+search:
+  open_button_title: Søg (/)
+  close_button_title: Luk (Esc)
+  input_placeholder: Søg
+sharing:
+  email: Send med e-mail
+  facebook: Del på Facebook
+  linkedin: Del på LinkedIn
+  pinterest: Del på Pinterest
+  reddit: Del på Reddit
+  x-twitter: Del på X
+  telegram: Del på Telegram
+  line: Del på LINE
+  weibo: Del på Weibo
+shortcode:
+  recent_articles: Seneste indlæg

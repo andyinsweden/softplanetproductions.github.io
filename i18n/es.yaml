@@ -1,4 +1,7 @@
 softplanet:
+  rss_title: "{{ .Title }} en {{ .Site }}"
+  rss_summary: "Contenido reciente en {{ .Site }}"
+  rss_section_summary: "Contenido reciente de {{ .Title }} en {{ .Site }}"
   home_free_practice: Practica piano gratis
   home_find_chord: Identifica un acorde por sus notas
   home_daily_practice: improvisa con el acompañamiento del reto diario

@@ -34,7 +34,7 @@ images:
   <div class="sp-lab__footer"><span>Abgeschlossene Übungstage: <strong id="sp-daily-total">0</strong></span><span>Übungstage und Schwierigkeitsstufe werden nur auf diesem Gerät gespeichert.</span></div>
   <noscript>Aktiviere JavaScript, um die Übung, die Wiedergabe und den Übungsverlauf zu nutzen.</noscript>
 </div>
-<script src="/js/daily-piano-improvisation.js?v=20261126.2" defer></script>
+<script src="/js/daily-piano-improvisation.js?v=20261126.3" defer></script>
 
 ## So nutzt du die tägliche Klavierübung
 
