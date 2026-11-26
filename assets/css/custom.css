@@ -1628,3 +1628,18 @@ a.softplanet-nav-link {
   align-items: center;
   gap: .4rem;
 }
+
+@media (max-width: 400px) {
+  .softplanet-header nav {
+    column-gap: .5rem;
+  }
+
+  .softplanet-brand {
+    font-size: .875rem;
+  }
+
+  .softplanet-brand img {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
