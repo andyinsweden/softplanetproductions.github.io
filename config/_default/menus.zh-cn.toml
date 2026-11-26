@@ -1,0 +1,164 @@
+
+
+[[main]]
+  name = "课程"
+  pageRef = "courses"
+  identifier = "courses"
+  weight = 20
+
+[[main]]
+  name = "MIDI 课程"
+  pageRef = "courses/midi-home-studio"
+  parent = "courses"
+  weight = 21
+
+[[main]]
+  name = "钢琴即兴演奏课程"
+  pageRef = "courses/piano-improvisation"
+  parent = "courses"
+  weight = 22
+
+[[main]]
+  name = "服务"
+  pageRef = "services"
+  identifier = "services"
+  weight = 30
+
+[[main]]
+  name = "学校 Sibelius 授权"
+  pageRef = "services/sibelius-site-licenses"
+  parent = "services"
+  weight = 31
+
+[[main]]
+  name = "Sibelius 故障排查"
+  pageRef = "tutorials/sibelius-troubleshooting"
+  parent = "services"
+  weight = 32
+
+[[main]]
+  name = "乐谱"
+    pageRef = "piano-scores"
+  identifier = "piano-scores"
+  weight = 40
+
+[[main]]
+  name = "Cornfield Chase"
+  pageRef = "piano-scores/cornfield-chase"
+  parent = "piano-scores"
+  weight = 41
+
+[[main]]
+  name = "Paint By Numbers"
+  pageRef = "piano-scores/paint-by-numbers"
+  parent = "piano-scores"
+  weight = 42
+
+[[main]]
+  name = "Bohemian Rhapsody Finale"
+  pageRef = "piano-scores/bohemian-rhapsody-finale"
+  parent = "piano-scores"
+  weight = 43
+
+[[main]]
+  name = "免费工具"
+  pageRef = "tools"
+  identifier = "tools"
+  weight = 45
+
+[[main]]
+  name = "每日钢琴练习"
+  pageRef = "tools/daily-piano-improvisation"
+  parent = "tools"
+  weight = 46
+
+[[main]]
+  name = "钢琴和弦查询"
+  pageRef = "tools/chord-finder"
+  parent = "tools"
+  weight = 47
+
+[[main]]
+  name = "教程"
+  pageRef = "tutorials"
+  identifier = "tutorials"
+  weight = 50
+
+[[main]]
+  name = "入门钢琴和弦"
+  pageRef = "tutorials/piano-chord-progressions-for-beginners"
+  parent = "tutorials"
+  weight = 51
+
+[[main]]
+  name = "双手即兴演奏"
+  pageRef = "tutorials/piano-improvisation-with-both-hands"
+  parent = "tutorials"
+  weight = 52
+
+[[main]]
+  name = "五声音阶即兴演奏"
+  pageRef = "tutorials/pentatonic-piano-improvisation"
+  parent = "tutorials"
+  weight = 53
+
+[[main]]
+  name = "雅马哈电钢琴指南"
+  pageRef = "tutorials/yamaha-p45-p225-p525-compared"
+  parent = "tutorials"
+  weight = 54
+
+[[main]]
+  name = "演出紧张与应对"
+  pageRef = "tutorials/stage-fright-musicians-performers"
+  parent = "tutorials"
+  weight = 55
+
+[[main]]
+  name = "Sibelius 快速技巧"
+  pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-tutorial"
+  parent = "tutorials"
+  weight = 56
+
+[[main]]
+  name = "Sibelius 快速技巧"
+  pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-service"
+  parent = "services"
+  weight = 33
+
+
+[[main]]
+  name = "学习钢琴即兴演奏"
+  pageRef = "tutorials/how-to-learn-piano-improvisation"
+  parent = "tutorials"
+  weight = 57
+
+[[main]]
+  name = "听音弹钢琴"
+  pageRef = "tutorials/playing-piano-by-ear-after-classical-training"
+  parent = "tutorials"
+  weight = 58
+
+[[main]]
+  name = "学校乐团编曲"
+  pageRef = "tutorials/arranging-music-for-school-ensembles"
+  parent = "tutorials"
+  weight = 59
+
+[[main]]
+  name = "Sibelius 网络授权"
+  pageRef = "tutorials/sibelius-network-licences-for-schools"
+  parent = "tutorials"
+  weight = 60
+
+[[main]]
+  name = "关于我们"
+  pageRef = "about"
+  weight = 60
+
+[[main]]
+  name = "联系"
+  pageRef = "contact"
+  weight = 70

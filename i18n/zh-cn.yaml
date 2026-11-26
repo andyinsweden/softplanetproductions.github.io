@@ -1,0 +1,203 @@
+article:
+  anchor_label: 锚点
+  date: '{{ .Date }}'
+  date_updated: 更新于 {{ .Date }}
+  draft: 草稿
+  edit_title: 编辑内容
+  reading_time:
+    other: '{{ .Count }} 分钟'
+  reading_time_title: 预计阅读
+  table_of_contents: 目录
+  word_count:
+    one: '{{ .Count }} 字'
+    other: '{{ .Count }} 字'
+author:
+  byline_title: 作者
+code:
+  copy: 复制
+  copied: 已复制
+error:
+  404_title: '找不到网页 :confused:'
+  404_error: 404 错误
+  404_description: 您请求的页面似乎不存在。
+footer:
+  dark_appearance: 切换为深色模式
+  light_appearance: 切换为浅色模式
+  powered_by: 由 {{ .Hugo }} &amp; {{ .Congo }} 强力驱动
+list:
+  externalurl_title: 链接到外部网站
+  no_articles: ''
+nav:
+  scroll_to_top_title: 回到顶部
+  skip_to_main: 跳到主要内容
+search:
+  open_button_title: 搜索 (/)
+  close_button_title: 关闭 (Esc)
+  input_placeholder: 搜索
+sharing:
+  email: 通过电子邮件发送
+  facebook: 分享到 Facebook
+  linkedin: 分享到 LinkedIn
+  mastodon: 嘟嘟到 Mastodon
+  pinterest: 钉到 Pinterest
+  reddit: 提交到 Reddit
+  twitter: 分享到 Twitter
+  telegram: 分享到 Telegram
+  line: 分享到 LINE
+  weibo: 分享到 微博
+shortcode:
+  recent_articles: 最近的文章
+softplanet:
+  rss_title: '{{ .Site }} 的 {{ .Title }}'
+  rss_summary: '{{ .Site }} 的最新内容'
+  rss_section_summary: '{{ .Site }} 中 {{ .Title }} 的最新内容'
+  home_authors: 约翰和安迪·蒙哥马利
+  home_piano_course: 钢琴即兴演奏课程
+  home_services_label: 我们的服务
+  home_explore_piano_course: 了解钢琴课程
+  music_courses: 音乐课程、
+  piano_scores: 钢琴乐谱
+  amp_sibelius_support: 与 Sibelius 支持
+  create_piano_lessons_sheet_music_and_tools: 制作钢琴课程、乐谱和音乐工具，并为英国学校提供 Sibelius 授权咨询。
+  browse_music_courses: 浏览音乐课程
+  expert_training: 专家培训
+  creative_inspiration: 创造性启发
+  professional_solutions: 专业解决方案
+  resources_for_musicians_amp_educators: 音乐家和教育家资源
+  whether_you_re_a_music_creator_educator: 无论你是一个音乐创作者,教育家或机构,我们提供工具,培训和支持来帮助你取得成功.
+  learn_piano_improvisation: 学习钢琴即兴演奏
+  learn_to_play_piano_by_ear_build: 学会用耳朵弹钢琴, 构筑和弦进化, 并创作原声旋律 John Montgomery自我节奏的在线课程。
+  sibelius_amp_notation: Sibelius 注释( N)
+  standalone_and_network_licences_extra_seats_and: 为联合王国的学校和学院提供独立和网络许可证、额外座位和安装咨询。
+  sibelius_site_licences: 西贝利乌斯场地许可证
+  piano_sheet_music: 钢琴板音乐
+  digital_solo_arrangements_by_john_montgomery_from: '数字独奏安排 John Montgomery,从 Interstellar 改为: Queen 财务报告和已审计财务报表 Harry
+    Styles.'
+  browse_piano_sheet_music: 浏览钢琴工作表音乐
+  trusted_by_educators: 由教育工作者信任
+  solutions_used_in_schools_and_institutions_worldwide: 世界各地学校和机构中采用的解决办法。
+  quality_you_can_rely_on: 质量,你可以重温
+  professional_tools_and_training_from_industry_experts: 行业专家的专业工具和培训。
+  global_community: 全球共同体
+  join_a_community_of_creators_and_lifelong: 加入创作者和终身学习者社区.
+  built_for_creators: 为创建者建造
+  everything_you_need_to_create_and_grow: 一切你需要创造和成长。
+  get_10_off_this_course_on_udemy: 在 Udemy 享受 10 欧元优惠
+  explore_the_course_lessons: 探讨课程经验教训
+  save_10_on_the_piano_improvisation_course: 在钢琴即兴演奏课程上省下10欧元
+  see_the_hands_hear_the_notes_and: 见手,听笔记并随注.
+  watch_the_free_course_preview_on_udemy: 在 Udemy 上观看免费课程预览
+  learn_to_create_not_just_repeat: 学会创造,不只是重复
+  why_this_piano_improvisation_course_is_different: 为何这钢琴即兴演奏课程不同
+  there_is_a_difference_between_learning_a: 学习一部作品和知道在分数消失时该玩什么有区别. 约翰的课结合了简单,实用的演示,与仅仅足够的音乐理论,帮助自己在键盘上做出自己的选择.
+  try_improvising_right_now: 试试即兴表演
+  how_to_improvise_on_piano_a_simple: 如何在钢琴上即兴:一个简单的初学者练习
+  you_do_not_need_a_complex_piece: 您不需要复杂的音乐来启动 。 尝试在任何钢琴或键盘上进行这种短的练习,以听到小选择如何成为原声旋律.
+  step_1: 步骤1
+  choose_a_few_notes: 选择几个音符
+  find_middle_c_and_play_c_d: 找到中间C,用右手打C,D,E和G. 保持舒适,稳定的脉搏.
+  step_2: 步骤2
+  give_it_a_foundation: 给它一个基础
+  play_a_lower_c_with_your_left: 在每个短句开头处用左手弹出一个较低的 C 。 让低音符支持你的旋律。
+  step_3: 步骤3
+  change_the_melody: 改变旋律
+  rearrange_the_four_right_hand_notes_vary: 重新排列四个右手音符,改变节奏,偶尔留下空格. 重复一个最喜欢的想法,然后用一个新的想法回答.
+  that_is_the_starting_point_of_piano: 这是钢琴即兴演奏的起点:听、实验和发展音乐思想。 在全程, John Montgomery 演示如何利用和弦,不同时间的签名,双手模式和后背轨道来扩展这种方法.
+  free_lessons_to_try_before_you_enrol: 入学前可以免费上课
+  practise_piano_improvisation_with_these_beginner_guides: 用这些初级指南练习钢琴
+  start_with_a_short_lesson_that_answers: 先是简短的教训,回答你今天的问题,然后回到课程课程中,通过和弦,节奏,旋律和手独立来走一条结构化的道路.
+  how_to_start_improvising_on_piano: 如何在钢琴上开始即兴演奏
+  five_manageable_exercises_for_your_first_melodies: 5个可操作的练习 用于你的第一首旋律。
+  piano_chord_progressions_for_beginners: 初学者的钢琴弦进化
+  play_four_useful_harmonic_loops: ——播放四个有用的口琴循环.
+  how_to_improvise_with_both_hands: 如何用双手即兴演奏
+  coordinate_a_steady_bass_with_a_simple: ——用简单的旋律来协调稳态低音.
+  pentatonic_scale_improvisation: 笔缩表即兴
+  make_music_with_five_notes: ——用5个音符制作音乐.
+  playing_piano_by_ear_after_classical_training: 古典训练后逐耳弹琴
+  use_your_reading_skills_as_a_foundation: ——用你的阅读技能作为创作演奏的基础.
+  free_daily_piano_improvisation_challenge: 每日免费钢琴即兴演奏挑战
+  practise_with_a_browser_based_chord_loop: ——用基于浏览器的和弦循环和鼓节奏进行练习.
+  a_clear_path_from_your_first_note: 从您的第一个音符中清晰的路径
+  what_will_you_be_able_to_play: 你还能玩什么?
+  discover_your_sound_and_develop_simple_musical: 发现你的声音,把简单的音乐思想发展成表现钢琴即兴演奏. 选择可查看其全尺寸的插图。
+  a_substantial_practical_learning_programme: 实质性、实用的学习方案
+  explore_the_piano_improvisation_course_curriculum: 探索钢琴强化课程
+  with_15_sections_and_110_lectures_on: 有15个科和110个关于Udemy的讲座,有很多东西可以发现. 打开下面的章节,看具体的课目,练习以及他们发展出来的音乐技巧.
+  your_goal: '你的目标:'
+  skills_covered: 涵盖的技能
+  lesson_programme: 课程方案
+  view_the_current_full_syllabus_preview_videos: 在 Udemy 上查看当前完整的教学大纲、预览视频和入学选项
+  ready_to_make_music_of_your_own: 准备好自己做音乐了吗?
+  find_your_own_way_around_the_keyboard: 寻找自己绕着键盘走的路,并用一个实用的视频课程教授 John Montgomery.
+  see_the_course_on_udemy: 见Udemy课程
+  everything_works_together: 万事同舟共济
+  what_is_included_in_the_course: 课程中包含什么?
+  learn_at_your_own_pace: 学着自己的步调
+  who_is_this_piano_course_for: 这钢琴课程是给谁的?
+  whether_you_are_taking_your_first_steps: 无论是在钢琴上迈出第一步还是已经能够通过阅读音乐来演奏片段,这个课程旨在培养你即兴演奏的能力.
+  good_to_know_before_you_enrol: 在你报名之前很高兴知道
+  piano_improvisation_course_frequently_asked_questions: 钢琴即兴课程:常问问题
+  udemy_course_offer: 提供Udemy课程
+  course_at_a_glance: 一目了然的课目
+  open_the_free_piano_course_preview_on: 在Udemy上打开免费钢琴课程预览
+  preview_of_john_montgomery_s_piano_improvisation: 预览 John Montgomery钢琴即兴演奏课程,显示高架键盘视图和标记
+  open_the_piano_improvisation_creative_journey_illustration: 打开钢琴即兴创作的旅程插图 全尺寸
+  colourful_piano_improvisation_journey_discover_your_sound: 彩色钢琴即兴旅程:发现你的声音,从简单的旋律开始,探索和弦与和谐,拥抱创作自由,自发创作.
+  overhead_hand_sync_footage: 超前手动同步镜头
+  animated_score: 动画分数
+  studio_recorded_backing_tracks: 工作室录制的后台音轨
+  join_the_piano_improvisation_course: 加入钢琴即兴表演课程
+  lecture: 节课
+  lectures: 节课
+  the_course_videos_on_udemy_are_taught: Udemy 上的视频课程以英语授课。
+  enroll_in_the_course_on_udemy: 进入Udemy课程
+  lesson_preview: 课程预览
+  interactive_keyboard_lesson_with_overhead_view_notation: 交互式键盘课与俯仰视图,注音,以及实时的音乐反应.
+  identify_a_chord: 识别和弦
+  find_keys: 查找琴键
+  chord_name: 和弦名称
+  show_keys: 显示琴键
+  inversion: 转位
+  tap_the_piano_keys_to_choose_notes: 点击钢琴键来选择音符 。
+  play_chord: ▶ 播放和弦
+  play_notes_in_order: 按顺序播放笔记
+  clear: 清除
+  acoustic_piano: '音响钢琴:'
+  by_alexander_holm: '由亚历山大·霍尔姆(英语:Alexander Holm)(英语:'
+  selected_recordings_pitch_shifted_for_this_keyboard: ; 此键盘的选中的音标转换 。
+  type_notes: 输入音名
+  identify: 识别
+  computer_keyboard_and_midi: 计算机键盘和 MIDI
+  computer_keys: 计算机密钥
+  connect_midi: 连接 MIDI
+  use_z_s_x_d_c_v: 对下八面体使用ZS X D C V G B H N J M,对上八面体则使用Q 2 W 3 E 5 R 5 T 6 Y 7 U.
+  enable_javascript_to_use_the_interactive_piano: 启用 JavaScript 可以使用交互钢琴和弦寻音器.
+  interactive_piano_chord_finder: 交互式钢琴弦查找器
+  chord_finder_mode: 查找弦模式
+  cmaj7_b_m9_or_c_e: Cmaj7,B♭m9,或C/E
+  piano_keyboard: 钢琴键盘
+  keyboard_octave: 键盘八进制
+  down_an_octave: 下八进制
+  up_an_octave: 升到八进制
+  keyboard_appearance: 键盘外观
+  example_chords: 示例和弦
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4,或 60 64 67
+  search_questions_and_answers: 搜索问答
+  filter_by_category: 按类别筛选
+  all_categories: 所有职类
+  sound_and_playback: 声音和播放
+  midi_and_note_input: MIDI 和 注输入
+  notation_voices_and_rhythm: 标记、声音和韵律
+  score_layout_and_spacing: 分数布局和间距
+  parts_printing_and_exporting: 部件、打印和导出
+  saving_recovery_and_performance: 储蓄、回收和业绩
+  main_navigation: 主菜单
+  toggle_navigation_menu: 打开或关闭菜单
+  close_menu: 关闭菜单
+  language: 语言
+  home_free_practice: 免费钢琴练习
+  home_find_chord: 从笔记中识别和弦
+  home_daily_practice: 即兴播放每日辅助音轨
+  home_practice_or: 或从
+  home_five_exercises: 5次初学者即兴演练

@@ -1,0 +1,164 @@
+
+
+[[main]]
+  name = "講座"
+  pageRef = "courses"
+  identifier = "courses"
+  weight = 20
+
+[[main]]
+  name = "MIDI講座"
+  pageRef = "courses/midi-home-studio"
+  parent = "courses"
+  weight = 21
+
+[[main]]
+  name = "ピアノ即興演奏講座"
+  pageRef = "courses/piano-improvisation"
+  parent = "courses"
+  weight = 22
+
+[[main]]
+  name = "サービス"
+  pageRef = "services"
+  identifier = "services"
+  weight = 30
+
+[[main]]
+  name = "学校向けSibeliusライセンス"
+  pageRef = "services/sibelius-site-licenses"
+  parent = "services"
+  weight = 31
+
+[[main]]
+  name = "Sibeliusのトラブル解決"
+  pageRef = "tutorials/sibelius-troubleshooting"
+  parent = "services"
+  weight = 32
+
+[[main]]
+  name = "楽譜"
+    pageRef = "piano-scores"
+  identifier = "piano-scores"
+  weight = 40
+
+[[main]]
+  name = "Cornfield Chase"
+  pageRef = "piano-scores/cornfield-chase"
+  parent = "piano-scores"
+  weight = 41
+
+[[main]]
+  name = "Paint By Numbers"
+  pageRef = "piano-scores/paint-by-numbers"
+  parent = "piano-scores"
+  weight = 42
+
+[[main]]
+  name = "Bohemian Rhapsody Finale"
+  pageRef = "piano-scores/bohemian-rhapsody-finale"
+  parent = "piano-scores"
+  weight = 43
+
+[[main]]
+  name = "無料ツール"
+  pageRef = "tools"
+  identifier = "tools"
+  weight = 45
+
+[[main]]
+  name = "今日のピアノ練習"
+  pageRef = "tools/daily-piano-improvisation"
+  parent = "tools"
+  weight = 46
+
+[[main]]
+  name = "ピアノコード検索"
+  pageRef = "tools/chord-finder"
+  parent = "tools"
+  weight = 47
+
+[[main]]
+  name = "ガイド"
+  pageRef = "tutorials"
+  identifier = "tutorials"
+  weight = 50
+
+[[main]]
+  name = "初心者向けピアノコード"
+  pageRef = "tutorials/piano-chord-progressions-for-beginners"
+  parent = "tutorials"
+  weight = 51
+
+[[main]]
+  name = "両手で即興演奏"
+  pageRef = "tutorials/piano-improvisation-with-both-hands"
+  parent = "tutorials"
+  weight = 52
+
+[[main]]
+  name = "ペンタトニックで即興演奏"
+  pageRef = "tutorials/pentatonic-piano-improvisation"
+  parent = "tutorials"
+  weight = 53
+
+[[main]]
+  name = "ヤマハ電子ピアノ比較"
+  pageRef = "tutorials/yamaha-p45-p225-p525-compared"
+  parent = "tutorials"
+  weight = 54
+
+[[main]]
+  name = "本番の緊張と対策"
+  pageRef = "tutorials/stage-fright-musicians-performers"
+  parent = "tutorials"
+  weight = 55
+
+[[main]]
+  name = "Sibeliusの使い方"
+  pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-tutorial"
+  parent = "tutorials"
+  weight = 56
+
+[[main]]
+  name = "Sibeliusの使い方"
+  pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-service"
+  parent = "services"
+  weight = 33
+
+
+[[main]]
+  name = "ピアノ即興演奏を学ぶ"
+  pageRef = "tutorials/how-to-learn-piano-improvisation"
+  parent = "tutorials"
+  weight = 57
+
+[[main]]
+  name = "耳で聴いてピアノを弾く"
+  pageRef = "tutorials/playing-piano-by-ear-after-classical-training"
+  parent = "tutorials"
+  weight = 58
+
+[[main]]
+  name = "学校の合奏向け編曲"
+  pageRef = "tutorials/arranging-music-for-school-ensembles"
+  parent = "tutorials"
+  weight = 59
+
+[[main]]
+  name = "Sibeliusネットワークライセンス"
+  pageRef = "tutorials/sibelius-network-licences-for-schools"
+  parent = "tutorials"
+  weight = 60
+
+[[main]]
+  name = "私たちについて"
+  pageRef = "about"
+  weight = 60
+
+[[main]]
+  name = "お問い合わせ"
+  pageRef = "contact"
+  weight = 70

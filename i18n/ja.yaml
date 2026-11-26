@@ -1,0 +1,204 @@
+article:
+  anchor_label: アンカー
+  date: '{{ .Date }}'
+  date_updated: '更新日: {{ .Date }}'
+  draft: 下書き
+  edit_title: 編集
+  reading_time:
+    one: '{{ .Count }} 分'
+    other: '{{ .Count }} 分'
+  reading_time_title: 読むのに必要な時間
+  table_of_contents: 目次
+  word_count:
+    one: '{{ .Count }} 文字'
+    other: '{{ .Count }} 文字'
+author:
+  byline_title: 著者
+code:
+  copy: コピー
+  copied: コピーしました
+error:
+  404_title: 'ページが見つかりませんでした。 :confused:'
+  404_error: Error 404
+  404_description: ご要望のページは存在しないようです。
+footer:
+  dark_appearance: ダークモードへ切り替え
+  light_appearance: ライトモードへ切り替え
+  powered_by: Powered by {{ .Hugo }} &amp; {{ .Congo }}
+list:
+  externalurl_title: 外部サイトへリンク
+  no_articles: ''
+nav:
+  scroll_to_top_title: TOPへスクロール
+  skip_to_main: メインコンテンツへスキップ
+search:
+  open_button_title: 検索 (/)
+  close_button_title: 閉じる (Esc)
+  input_placeholder: Search
+sharing:
+  email: ' Eメールを送る'
+  facebook: Facebookでシェアする
+  linkedin: LinkedInでシェアする
+  mastodon: Mastodonに投稿する
+  pinterest: Pinterestでピンする
+  reddit: Redditに投稿する
+  twitter: Twitterに投稿する
+  telegram: Telegramでシェアする
+  line: LINEでシェアする
+  weibo: Weiboでシェアする
+shortcode:
+  recent_articles: 最近の記事
+softplanet:
+  rss_title: '{{ .Site }}の{{ .Title }}'
+  rss_summary: '{{ .Site }}の新着記事'
+  rss_section_summary: '{{ .Site }}の{{ .Title }}の新着記事'
+  home_authors: ジョン＆アンディ・モンゴメリー
+  home_piano_course: ピアノ即興演奏講座
+  home_services_label: 主なサービス
+  home_explore_piano_course: ピアノ講座を見る
+  music_courses: 音楽講座、
+  piano_scores: ピアノ楽譜
+  amp_sibelius_support: とSibeliusサポート
+  create_piano_lessons_sheet_music_and_tools: は、ピアノ教材や楽譜、音楽ツールを制作し、英国の学校向けにSibeliusライセンスの相談に応じています。
+  browse_music_courses: 音楽コースをブラウズする
+  expert_training: エキスパートトレーニング
+  creative_inspiration: クリエイティブ・インスパイア
+  professional_solutions: プロフェッショナルソリューション
+  resources_for_musicians_amp_educators: ミュージシャンと教育者のためのリソース
+  whether_you_re_a_music_creator_educator: 音楽制作者、教育機関、教育機関など、成功に役立つツールやトレーニング、サポートを提供致します。
+  learn_piano_improvisation: ピアノの改良を学ぶ
+  learn_to_play_piano_by_ear_build: 耳でピアノを再生し、コード進行をビルドし、John Montgomeryのセルフペースオンラインコースでオリジナルのメロディーを作成してください。
+  sibelius_amp_notation: シベリウス&ノテーション
+  standalone_and_network_licences_extra_seats_and: スタンドアローンとネットワークライセンス、英国学校や大学の追加の座席とインストールアドバイス。
+  sibelius_site_licences: シベリウスサイトライセンス
+  piano_sheet_music: ピアノ楽譜
+  digital_solo_arrangements_by_john_montgomery_from: デジタルによるソロアレンジ John Montgomeryから Interstellar に へ へ Queen とりあえ Harry
+    Styles.
+  browse_piano_sheet_music: ピアノ楽譜の閲覧
+  trusted_by_educators: エデュケーターの信頼
+  solutions_used_in_schools_and_institutions_worldwide: 世界中の学校や機関で使用されるソリューション
+  quality_you_can_rely_on: 質 頼りにできます
+  professional_tools_and_training_from_industry_experts: 業界の専門家によるプロフェッショナルなツールとトレーニング。
+  global_community: グローバルコミュニティ
+  join_a_community_of_creators_and_lifelong: クリエイターや生涯学習者のコミュニティに参加してください。
+  built_for_creators: クリエーターのために造られる
+  everything_you_need_to_create_and_grow: あなたが作成し、成長するために必要なすべてのもの。
+  get_10_off_this_course_on_udemy: Udemyで10ユーロ割引
+  explore_the_course_lessons: コースレッスン
+  save_10_on_the_piano_improvisation_course: ピアノ改良コースで10ユーロを節約
+  see_the_hands_hear_the_notes_and: 手を聞いて、ノートを聞き、記法に従う。
+  watch_the_free_course_preview_on_udemy: Udemyの無料コースプレビューを見る
+  learn_to_create_not_just_repeat: 作成を学ぶ, だけでなく、繰り返します
+  why_this_piano_improvisation_course_is_different: なぜこのピアノ改善コースが異なるのか
+  there_is_a_difference_between_learning_a: スコアが消えるときに何を再生するのかを知ると、作品を学ぶことの違いがあります。 John'sのレッスンは、シンプルで実用的なデモを組み合わせて、十分な音楽理論でキーボードの選択肢を作ることができます。
+  try_improvising_right_now: 今すぐ即興体験をしよう
+  how_to_improvise_on_piano_a_simple: ピアノの改良方法:簡単な初心者練習
+  you_do_not_need_a_complex_piece: 複雑な曲が始まらない。 どのピアノやキーボードでもこの短いエクササイズを試して、小さな選択肢がオリジナルのメロディーになるかを聞きましょう。
+  step_1: ステップ1
+  choose_a_few_notes: いくつかのメモを選択
+  find_middle_c_and_play_c_d: ミドルCを見つけて、右手にC、D、E、Gを再生します。 快適で安定した脈拍を保って下さい。
+  step_2: ステップ2
+  give_it_a_foundation: 基盤をあけば
+  play_a_lower_c_with_your_left: 各ショートフレーズの開始時に左手にCを下回ります。 あなたのメロディーをサポートし、低音に注意しましょう。
+  step_3: ステップ3
+  change_the_melody: メロディーを変更する
+  rearrange_the_four_right_hand_notes_vary: 4つの右手ノートを並べ替え、リズムを変えて時折空間を離れます。 好きなアイデアを繰り返して、新しいアイディアで答えましょう。
+  that_is_the_starting_point_of_piano: ピアノの即興開始点:聴く、実験して音楽的なアイデアを開発する。 フルコースでは、 John Montgomery このアプローチをコード、異なる時間シグネチャ、ふたつのパターンと裏付けトラックを使用して展開する方法を実証します。
+  free_lessons_to_try_before_you_enrol: 入学前に試してみる無料レッスン
+  practise_piano_improvisation_with_these_beginner_guides: これらの初心者ガイドとピアノの改良を実践
+  start_with_a_short_lesson_that_answers: 今日持っている質問に答える短いレッスンから始めて、コード、リズム、メロディー、手独立による構造化されたパスのためにコースカリキュラムに戻ります。
+  how_to_start_improvising_on_piano: ピアノで即興を始める方法
+  five_manageable_exercises_for_your_first_melodies: — 最初のメロディーのための5つの管理可能な演習。
+  piano_chord_progressions_for_beginners: 初心者のためのピアノのコード進行
+  play_four_useful_harmonic_loops: — 4つの有用な調和ループを再生します。
+  how_to_improvise_with_both_hands: 両手で即興する方法
+  coordinate_a_steady_bass_with_a_simple: — シンプルなメロディーで安定した低音を調整します。
+  pentatonic_scale_improvisation: ペンタトニックスケールの即興
+  make_music_with_five_notes: — 5つのメモで音楽を作る。
+  playing_piano_by_ear_after_classical_training: 古典的訓練の後の耳によるピアノを演奏する
+  use_your_reading_skills_as_a_foundation: — 読書のスキルをクリエイティブな遊びの基盤として使用してください。
+  free_daily_piano_improvisation_challenge: 日々のピアノ即興チャレンジ
+  practise_with_a_browser_based_chord_loop: — ブラウザベースのコードループとドラムリズムで練習します。
+  a_clear_path_from_your_first_note: 最初のノートからクリアパス
+  what_will_you_be_able_to_play: プレイできるものは?
+  discover_your_sound_and_develop_simple_musical: 音を聴き、表現力のあるピアノの即興にシンプルな音楽的なアイデアを開発しましょう。 イラストをセレクトして、フルサイズでご覧下さい。
+  a_substantial_practical_learning_programme: 実質的で実践的な学習プログラム
+  explore_the_piano_improvisation_course_curriculum: ピアノ改良コースのカリキュラムをご覧ください
+  with_15_sections_and_110_lectures_on: Udemyの15セクションと110の講義では、たくさんの発見があります。 以下のセクションを開き、特定のレッスンの主題、演習、および彼らが開発する音楽スキルを参照してください。
+  your_goal: 'あなたの目標:'
+  skills_covered: 対象スキル
+  lesson_programme: レッスンプログラム
+  view_the_current_full_syllabus_preview_videos: Udemyの現在のフルシルバウス、プレビュービデオと入学オプションを表示
+  ready_to_make_music_of_your_own: 自分の音楽を作る準備はできましたか?
+  find_your_own_way_around_the_keyboard: John Montgomeryで教えた実用的なビデオコースで、キーボードの周りを自分で見つけてください。
+  see_the_course_on_udemy: Udemyのコースを見る
+  everything_works_together: みんなが一緒に働く
+  what_is_included_in_the_course: コースに含まれるものは何ですか?
+  learn_at_your_own_pace: 自分のペースで学ぶ
+  who_is_this_piano_course_for: このピアノコースは誰ですか?
+  whether_you_are_taking_your_first_steps: ピアノで最初のステップを浴びているか、すでに音楽を読むことで演奏できるかにかかわらず、このコースは即興能力を開発するように設計されています。
+  good_to_know_before_you_enrol: あなたが入学する前に知っておくべき
+  piano_improvisation_course_frequently_asked_questions: ピアノ改良コース:よくある質問
+  udemy_course_offer: Udemyコースオファー
+  course_at_a_glance: コース一覧
+  open_the_free_piano_course_preview_on: Udemyで無料のピアノコースプレビューを開く
+  preview_of_john_montgomery_s_piano_improvisation: John Montgomeryのピアノ即興レッスンをプレビューして、オーバーヘッドキーボードビューと記法を表示
+  open_the_piano_improvisation_creative_journey_illustration: ピアノの即興の創造的な旅行イラストをフルサイズ開けて下さい
+  colourful_piano_improvisation_journey_discover_your_sound: カラフルなピアノの即興の旅:あなたの音を発見し、簡単なメロディーから始めて、コードと調和を探求し、創造的な自由を受け入れ、自発的に作成します。
+  overhead_hand_sync_footage: 頭上手同期映像
+  animated_score: アニメーションスコア
+  studio_recorded_backing_tracks: スタジオ録画バックトラック
+  join_the_piano_improvisation_course: ピアノ即興コースに参加
+  lecture: レッスン
+  lectures: レッスン
+  the_course_videos_on_udemy_are_taught: Udemyの動画レッスンは英語で行われます。
+  enroll_in_the_course_on_udemy: Udemyのコースで入学する
+  lesson_preview: レッスンプレビュー
+  interactive_keyboard_lesson_with_overhead_view_notation: ヘッドビュー、記法、リアルタイムの音楽応答によるインタラクティブなキーボードレッスン。
+  identify_a_chord: コードを判定
+  find_keys: 鍵盤を調べる
+  chord_name: コード名
+  show_keys: 鍵盤を表示
+  inversion: 転回形
+  tap_the_piano_keys_to_choose_notes: ピアノキーをタップしてノートを選択します。
+  play_chord: ▶ コードを再生
+  play_notes_in_order: 注文でメモを再生する
+  clear: クリア
+  acoustic_piano: '音響ピアノ:'
+  by_alexander_holm: アレクサンダー・ホルム(Alexander Holm)
+  selected_recordings_pitch_shifted_for_this_keyboard: ;このキーボードの録音ピッチシフトを選択しました。
+  type_notes: 音名を入力
+  identify: パスワード
+  computer_keyboard_and_midi: コンピュータキーボードとMIDI
+  computer_keys: コンピュータキー
+  connect_midi: MIDI接続
+  use_z_s_x_d_c_v: Z S X D C V G B H N J M を使用して、下部のオクターブと Q 2 W 3 E R 5 T 6 Y 7 U を上部のオクタブに使用します。
+  enable_javascript_to_use_the_interactive_piano: JavaScriptを有効にして、インタラクティブなピアノとコードファインダーを使用します。
+  interactive_piano_chord_finder: インタラクティブピアノコードファインダー
+  chord_finder_mode: 和弦ファインダーモード
+  cmaj7_b_m9_or_c_e: Cmaj7、B♭m9、またはC/E
+  piano_keyboard: ピアノキーボード
+  keyboard_octave: キーボードオクターブ
+  down_an_octave: オクターブダウン
+  up_an_octave: オクターブアップ
+  keyboard_appearance: キーボードの出現
+  example_chords: 例コード
+  c_e_g_c4_e4_g4_or: C E G、C4 E4 G4、または60 64 67
+  search_questions_and_answers: 質問と回答を検索
+  filter_by_category: カテゴリで絞り込む
+  all_categories: すべてのカテゴリ
+  sound_and_playback: サウンドとプレイバック
+  midi_and_note_input: MIDIとノート入力
+  notation_voices_and_rhythm: ノテーション、声とリズム
+  score_layout_and_spacing: スコアのレイアウトおよび間隔
+  parts_printing_and_exporting: 部品、印刷および輸出
+  saving_recovery_and_performance: 保存、回復および性能
+  main_navigation: メインメニュー
+  toggle_navigation_menu: メニューを開閉する
+  close_menu: メニューを閉じる
+  language: 言語
+  home_free_practice: 無料でピアノを練習する
+  home_find_chord: メモからコードを識別する
+  home_daily_practice: 日々のバックトラックに即興
+  home_practice_or: または開始します
+  home_five_exercises: 初心者のための5つの即興演習
