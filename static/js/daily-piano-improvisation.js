@@ -3,7 +3,14 @@
   const root = document.getElementById("sp-daily-improv");
   if (!root) return;
   const language = document.documentElement.lang.split("-")[0];
-  const message = (english, spanish, german) => ({ es: spanish, de: german })[language] ?? english;
+  const translations = JSON.parse(document.getElementById("softplanet-tool-messages")?.textContent || "{}");
+  const messageFor = (key, values, english, spanish, german) => {
+    const localized = translations[key];
+    return localized
+      ? localized.replace(/\{(\w+)\}/g, (token, name) => values[name] ?? token)
+      : message(english, spanish, german);
+  };
+  const message = (english, spanish, german) => translations[english] ?? ({ es: spanish, de: german })[language] ?? english;
   const $ = (id) => document.getElementById(id);
   const elements = {
     date: $("sp-daily-date"), key: $("sp-daily-key"), variation: $("sp-daily-variation"),
@@ -135,10 +142,10 @@
   function render() {
     const day = todayKey();
     challenge = makeChallenge(day, elements.level.value, variation);
-    elements.date.textContent = new Intl.DateTimeFormat(message("en-GB", "es", "de"), { weekday: "long", day: "numeric", month: "long" }).format(new Date(day + "T12:00:00"));
-    elements.key.textContent = challenge.key.name + message(" major", " mayor", "-Dur");
+    elements.date.textContent = new Intl.DateTimeFormat(document.documentElement.lang, { weekday: "long", day: "numeric", month: "long" }).format(new Date(day + "T12:00:00"));
+    elements.key.textContent = messageFor("{key} major", { key: challenge.key.name }, challenge.key.name + " major", challenge.key.name + " mayor", challenge.key.name + "-Dur");
     elements.variation.textContent = challenge.label;
-    elements.prompt.textContent = challenge.prompt + message(
+    elements.prompt.textContent = challenge.prompt + messageFor(" Use the {key} major pentatonic scale: {notes}.", { key: challenge.key.name, notes: challenge.notes },
       ` Use the ${challenge.key.name} major pentatonic scale: ${challenge.notes}.`,
       ` Usa la escala pentatónica mayor de ${challenge.key.name}: ${challenge.notes}.`,
       ` Verwende die ${challenge.key.name}-Dur-Pentatonik: ${challenge.notes}.`
@@ -452,7 +459,7 @@
       timer = setInterval(tick, 65);
       tick();
       elements.play.textContent = message("■ Stop accompaniment", "■ Detener acompañamiento", "■ Begleitung stoppen");
-      setStatus(message(
+      setStatus(messageFor("Playing {meter} in a {groove} groove with electric piano, bass and drums at {bpm} BPM. Chords highlight each bar.", { meter: currentMeter(), groove: (translations[GROOVES[grooveIndex()]] ?? GROOVES[grooveIndex()]).toLowerCase(), bpm: elements.bpm.value },
         `Playing ${currentMeter()} in a ${GROOVES[grooveIndex()].toLowerCase()} groove with electric piano, bass and drums at ${elements.bpm.value} BPM. Chords highlight each bar.`,
         `Reproduciendo en ${currentMeter()} con piano eléctrico, bajo y batería a ${elements.bpm.value} BPM. El acorde activo se resalta en cada compás.`,
         `Wiedergabe im ${currentMeter()}-Takt mit E-Piano, Bass und Schlagzeug bei ${elements.bpm.value} BPM. Der aktuelle Akkord wird hervorgehoben.`
@@ -472,9 +479,9 @@
   elements.meter.addEventListener("change", function () {
     stopAudio();
     const meter = elements.meter.value === "auto"
-      ? message(`automatic (${currentMeter()})`, `automático (${currentMeter()})`, `automatisch (${currentMeter()})`)
+      ? messageFor("automatic ({meter})", { meter: currentMeter() },`automatic (${currentMeter()})`, `automático (${currentMeter()})`, `automatisch (${currentMeter()})`)
       : currentMeter();
-    setStatus(message(
+    setStatus(messageFor("Time signature set to {meter}. Press Play to hear the new rhythm.", { meter },
       `Time signature set to ${meter}. Press Play to hear the new rhythm.`,
       `Compás seleccionado: ${meter}. Pulsa Reproducir para escuchar el nuevo ritmo.`,
       `Taktart gewählt: ${meter}. Starte die Wiedergabe, um den neuen Rhythmus zu hören.`
@@ -482,7 +489,7 @@
   });
   elements.next.addEventListener("click", function () {
     stopAudio(); variation++; render();
-    setStatus(message(
+    setStatus(messageFor("New variation ready in {meter}. Press Play to hear the progression and rhythm.", { meter: currentMeter() },
       `New variation ready in ${currentMeter()}. Press Play to hear the progression and rhythm.`,
       `Nueva variación en ${currentMeter()}. Pulsa Reproducir para escuchar la progresión y el ritmo.`,
       `Neue Variante in ${currentMeter()}. Starte die Wiedergabe, um Akkorde und Rhythmus zu hören.`
@@ -494,7 +501,7 @@
   });
   elements.bpm.addEventListener("input", function () {
     elements.bpmValue.textContent = elements.bpm.value + " BPM";
-    if (playing) setStatus(message(`Tempo adjusted to ${elements.bpm.value} BPM.`, `Tempo ajustado a ${elements.bpm.value} BPM.`, `Tempo: ${elements.bpm.value} BPM.`));
+    if (playing) setStatus(messageFor("Tempo adjusted to {bpm} BPM.", { bpm: elements.bpm.value },`Tempo adjusted to ${elements.bpm.value} BPM.`, `Tempo ajustado a ${elements.bpm.value} BPM.`, `Tempo: ${elements.bpm.value} BPM.`));
   });
   elements.done.addEventListener("click", function () {
     if (data.days.includes(todayKey())) return;

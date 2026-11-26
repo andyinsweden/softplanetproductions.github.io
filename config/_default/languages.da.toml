@@ -1,0 +1,21 @@
+locale = "da"
+label = "Dansk"
+direction = "ltr"
+weight = 7
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Klaverkurser, noder, gratis musikværktøjer og rådgivning om Sibelius-licenser til britiske skoler."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Musikskabelse, undervisning og optræden"
+  bio = "Vi udvikler musicals, undervisningsmateriale og værktøjer til skoler, musikere og ensembler."
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/da/" },
+  ]

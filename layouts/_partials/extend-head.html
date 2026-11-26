@@ -16,3 +16,15 @@
     crossorigin="anonymous"
   ></script>
 {{ end }}
+
+{{ $groups := dict
+  "/tools/chord-finder" "chord"
+  "/tools/daily-piano-improvisation" "daily"
+  "/tutorials/sibelius-troubleshooting" "sibelius"
+}}
+{{ with index $groups .Path }}
+  {{ $group := . }}
+  {{ with index hugo.Data.translations page.Language.Lang }}
+    <script id="softplanet-tool-messages" type="application/json">{{ index . $group | jsonify | safeJS }}</script>
+  {{ end }}
+{{ end }}

@@ -8,7 +8,14 @@
   }
 
   const language = document.documentElement.lang.split("-")[0];
-  const message = (english, spanish, german) => ({ es: spanish, de: german })[language] ?? english;
+  const translations = JSON.parse(document.getElementById("softplanet-tool-messages")?.textContent || "{}");
+  const messageFor = (key, values, english, spanish, german) => {
+    const localized = translations[key];
+    return localized
+      ? localized.replace(/\{(\w+)\}/g, (token, name) => values[name] ?? token)
+      : message(english, spanish, german);
+  };
+  const message = (english, spanish, german) => translations[english] ?? ({ es: spanish, de: german })[language] ?? english;
   const search = controls.querySelector("#sibelius-search-query");
   const categoryFilter = controls.querySelector("#sibelius-search-category");
   const status = controls.querySelector(".sibelius-search__status");
@@ -110,7 +117,7 @@
     const categoryText = selectedCategory
       ? ` ${message("in", "en", "in der Kategorie")} ${categoryNames.get(selectedCategory)}`
       : "";
-    status.textContent = message(
+    status.textContent = messageFor("Showing {visible} of {total} questions{category}.", { visible: visibleCount, total: questions.length, category: categoryText },
       `Showing ${visibleCount} of ${questions.length} questions${categoryText}.`,
       `Se muestran ${visibleCount} de ${questions.length} preguntas${categoryText}.`,
       `${visibleCount} von ${questions.length} Fragen${categoryText}.`

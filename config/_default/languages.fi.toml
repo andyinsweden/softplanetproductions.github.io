@@ -1,0 +1,21 @@
+locale = "fi"
+label = "Suomi"
+direction = "ltr"
+weight = 8
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Pianokursseja, nuotteja ja maksuttomia musiikkityökaluja sekä Sibelius-lisenssien neuvontaa Ison-Britannian oppilaitoksille."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Musiikin tekeminen, opetus ja esittäminen"
+  bio = "Teemme musikaaleja, opetusmateriaaleja ja työkaluja oppilaitoksille, muusikoille ja yhtyeille."
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/fi/" },
+  ]

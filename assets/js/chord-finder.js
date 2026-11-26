@@ -5,7 +5,8 @@
   if (!tool) return;
 
   const language = document.documentElement.lang.split("-")[0];
-  const message = (english, spanish, german) => ({ es: spanish, de: german })[language] ?? english;
+  const translations = JSON.parse(document.getElementById("softplanet-tool-messages")?.textContent || "{}");
+  const message = (english, spanish, german) => translations[english] ?? ({ es: spanish, de: german })[language] ?? english;
   const find = selector => tool.querySelector(selector);
   const piano = find('[data-piano]');
   const noteInput = find('#sp-chord-notes');

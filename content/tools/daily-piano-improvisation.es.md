@@ -34,7 +34,7 @@ images:
   <div class="sp-lab__footer"><span>Días de práctica completados: <strong id="sp-daily-total">0</strong></span><span>Tu racha y tu nivel se guardan solo en este dispositivo.</span></div>
   <noscript>Activa JavaScript para usar el reto diario, escuchar los acordes y registrar tu progreso.</noscript>
 </div>
-<script src="/js/daily-piano-improvisation.js?v=20261126.2" defer></script>
+<script src="/js/daily-piano-improvisation.js?v=20261126.3" defer></script>
 
 
 ## Cómo usar el reto diario
