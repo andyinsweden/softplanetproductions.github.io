@@ -2,9 +2,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="{{ .Site.Params.defaultThemeColor | default "#ffffff" }}" />
-  {{/* Congo head with page-specific Spanish titles and the site name used for branding. */}}
+  {{/* Congo head with page-specific localized titles and the site name used for branding. */}}
   {{- $title := .Site.Title -}}
-  {{- if and (eq .Language.Lang "es") (or .IsHome .IsPage .IsSection) -}}
+  {{- if and (ne .Language.Lang "en") (or .IsHome .IsPage .IsSection) -}}
     {{- $title = .Title -}}
   {{- else if not .IsHome -}}
     {{- $title = printf "%s · %s" .Title .Site.Title -}}

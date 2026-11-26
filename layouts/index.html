@@ -72,13 +72,13 @@
 </section>
 
 
-{{ if eq .Language.Lang "es" }}
+{{ if ne .Language.Lang "en" }}
   <section class="softplanet-resources" aria-labelledby="home-practice-title">
-    <h2 id="home-practice-title">Practica piano gratis</h2>
+    <h2 id="home-practice-title">{{ i18n "softplanet.home_free_practice" }}</h2>
     <p>
-      <a class="underline" href="{{ "tools/chord-finder/" | relLangURL }}">Identifica un acorde por sus notas</a>,
-      <a class="underline" href="{{ "tools/daily-piano-improvisation/" | relLangURL }}">improvisa con el acompañamiento del reto diario</a>
-      o empieza con los <a class="underline" href="{{ "tutorials/how-to-learn-piano-improvisation/" | relLangURL }}">cinco ejercicios de improvisación para principiantes</a>.
+      <a class="underline" href="{{ "tools/chord-finder/" | relLangURL }}">{{ i18n "softplanet.home_find_chord" }}</a>,
+      <a class="underline" href="{{ "tools/daily-piano-improvisation/" | relLangURL }}">{{ i18n "softplanet.home_daily_practice" }}</a>
+      {{ i18n "softplanet.home_practice_or" }} <a class="underline" href="{{ "tutorials/how-to-learn-piano-improvisation/" | relLangURL }}">{{ i18n "softplanet.home_five_exercises" }}</a>.
     </p>
   </section>
 {{ end }}

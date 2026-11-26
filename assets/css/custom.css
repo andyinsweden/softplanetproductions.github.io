@@ -1550,3 +1550,8 @@ main iframe[src*="youtube-nocookie.com/embed"] {
     gap: .15rem;
   }
 }
+
+html[lang="de"] header nav > ul {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}

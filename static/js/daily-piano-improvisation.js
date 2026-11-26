@@ -2,8 +2,8 @@
   "use strict";
   const root = document.getElementById("sp-daily-improv");
   if (!root) return;
-  const spanish = document.documentElement.lang === "es";
-  const message = (english, español) => spanish ? español : english;
+  const language = document.documentElement.lang.split("-")[0];
+  const message = (english, spanish, german) => ({ es: spanish, de: german })[language] ?? english;
   const $ = (id) => document.getElementById(id);
   const elements = {
     date: $("sp-daily-date"), key: $("sp-daily-key"), variation: $("sp-daily-variation"),
@@ -34,22 +34,22 @@
   };
   const PROMPTS = {
     beginner: [
-      message("Choose three notes from the suggested scale. Play a musical question, leave a pause, and answer it.", "Elige tres notas de la escala propuesta. Toca una pregunta musical, deja una pausa y contéstala."),
-      message("Make a short two-beat melody. Repeat it over the next chord, changing only the last note.", "Crea una melodía breve de dos tiempos. Repítela sobre el siguiente acorde y cambia solo la última nota."),
-      message("Play one note per beat. Add a little space, then try the same notes in a new order.", "Toca una nota por tiempo. Deja algún silencio y luego prueba las mismas notas en otro orden."),
-      message("Start on the first note of the key. Change your rhythm before changing any notes.", "Empieza en la tónica. Varía el ritmo antes de cambiar las notas.")
+      message("Choose three notes from the suggested scale. Play a musical question, leave a pause, and answer it.", "Elige tres notas de la escala propuesta. Toca una pregunta musical, deja una pausa y contéstala.", "Wähle drei Töne aus der vorgeschlagenen Tonleiter. Spiele eine musikalische Frage, lasse eine Pause und antworte darauf."),
+      message("Make a short two-beat melody. Repeat it over the next chord, changing only the last note.", "Crea una melodía breve de dos tiempos. Repítela sobre el siguiente acorde y cambia solo la última nota.", "Erfinde eine kurze Melodie über zwei Schläge. Wiederhole sie über dem nächsten Akkord und ändere nur den letzten Ton."),
+      message("Play one note per beat. Add a little space, then try the same notes in a new order.", "Toca una nota por tiempo. Deja algún silencio y luego prueba las mismas notas en otro orden.", "Spiele einen Ton pro Schlag. Lasse eine kleine Pause und probiere dieselben Töne in anderer Reihenfolge."),
+      message("Start on the first note of the key. Change your rhythm before changing any notes.", "Empieza en la tónica. Varía el ritmo antes de cambiar las notas.", "Beginne auf dem Grundton der Tonart. Verändere erst den Rhythmus und danach die Tonfolge.")
     ],
     intermediate: [
-      message("Find the nearest chord tone when the harmony changes. Let your melody move smoothly between chords.", "Cuando cambie la armonía, busca la nota más cercana del nuevo acorde. Deja que la melodía enlace los acordes con suavidad."),
-      message("Create a two-bar motif, then answer it in bars three and four using rhythmic variation.", "Crea un motivo de dos compases. Contéstalo en los compases tres y cuatro con una variación rítmica."),
-      message("Keep a left-hand root note on beat one while improvising a syncopated right-hand phrase.", "Toca la fundamental en el primer tiempo con la mano izquierda e improvisa una frase sincopada con la derecha."),
-      message("Improvise with five notes. Try a longer phrase followed by a short, contrasting response.", "Improvisa con cinco notas. Prueba una frase larga seguida de una respuesta breve que contraste con ella.")
+      message("Find the nearest chord tone when the harmony changes. Let your melody move smoothly between chords.", "Cuando cambie la armonía, busca la nota más cercana del nuevo acorde. Deja que la melodía enlace los acordes con suavidad.", "Suche beim Akkordwechsel den nächstgelegenen Akkordton. Führe deine Melodie fließend von einem Akkord zum nächsten."),
+      message("Create a two-bar motif, then answer it in bars three and four using rhythmic variation.", "Crea un motivo de dos compases. Contéstalo en los compases tres y cuatro con una variación rítmica.", "Erfinde ein Motiv über zwei Takte und beantworte es im dritten und vierten Takt mit einer rhythmischen Variation."),
+      message("Keep a left-hand root note on beat one while improvising a syncopated right-hand phrase.", "Toca la fundamental en el primer tiempo con la mano izquierda e improvisa una frase sincopada con la derecha.", "Spiele auf Zählzeit eins den Grundton mit links und improvisiere rechts eine Phrase mit Synkopen."),
+      message("Improvise with five notes. Try a longer phrase followed by a short, contrasting response.", "Improvisa con cinco notas. Prueba una frase larga seguida de una respuesta breve que contraste con ella.", "Improvisiere mit fünf Tönen. Auf eine längere Phrase folgt eine kurze Antwort, die sich deutlich von ihr abhebt.")
     ],
     expressive: [
-      message("Create a reflective opening. Gradually widen your melodic intervals, then return to a quiet ending.", "Empieza con un motivo tranquilo. Amplía poco a poco los intervalos de la melodía y termina con suavidad."),
-      message("Use the chord tones on the strong beats. Add passing notes between them and create tension and release.", "Usa las notas del acorde en los tiempos fuertes. Añade notas de paso para crear y resolver tensión."),
-      message("Try a rolling broken-chord accompaniment with your left hand and a lyrical melody above it.", "Prueba un acompañamiento fluido de acordes desglosados con la mano izquierda y una melodía cantable por encima."),
-      message("Build a musical arc across four bars: question, answer, surprise, resolution.", "Construye un arco musical de cuatro compases: pregunta, respuesta, sorpresa y resolución.")
+      message("Create a reflective opening. Gradually widen your melodic intervals, then return to a quiet ending.", "Empieza con un motivo tranquilo. Amplía poco a poco los intervalos de la melodía y termina con suavidad.", "Beginne ruhig. Vergrößere nach und nach die Intervalle deiner Melodie und finde zu einem leisen Schluss zurück."),
+      message("Use the chord tones on the strong beats. Add passing notes between them and create tension and release.", "Usa las notas del acorde en los tiempos fuertes. Añade notas de paso para crear y resolver tensión.", "Spiele Akkordtöne auf den betonten Zählzeiten. Füge Durchgangstöne ein, um Spannung aufzubauen und aufzulösen."),
+      message("Try a rolling broken-chord accompaniment with your left hand and a lyrical melody above it.", "Prueba un acompañamiento fluido de acordes desglosados con la mano izquierda y una melodía cantable por encima.", "Spiele links gebrochene Akkorde als fließende Begleitung und rechts eine gesangliche Melodie."),
+      message("Build a musical arc across four bars: question, answer, surprise, resolution.", "Construye un arco musical de cuatro compases: pregunta, respuesta, sorpresa y resolución.", "Gestalte einen musikalischen Bogen über vier Takte: Frage, Antwort, Überraschung und Auflösung.")
     ]
   };
   const LEVELS = ["beginner", "intermediate", "expressive"];
@@ -108,7 +108,7 @@
     return {
       key: k, degrees: p, prompt: prompt, notes: keyNotes(k),
       chords: p.map((degree) => k.names[degree] + (MINOR_DEGREES.includes(degree) ? "m" : degree === 6 ? "dim" : "")),
-      label: offset === 0 ? message("Today's exercise", "Ejercicio de hoy") : message("Extra idea ", "Idea adicional ") + offset
+      label: offset === 0 ? message("Today's exercise", "Ejercicio de hoy", "Übung des Tages") : message("Extra idea ", "Idea adicional ", "Weitere Idee ") + offset
     };
   }
   function currentStreak() {
@@ -130,17 +130,18 @@
     elements.streak.textContent = currentStreak();
     elements.total.textContent = data.days.length;
     elements.done.disabled = done;
-    elements.done.textContent = done ? message("✓ Today's practice completed", "✓ Práctica de hoy completada") : message("✓ Mark today's practice done", "✓ Marcar la práctica de hoy como completada");
+    elements.done.textContent = done ? message("✓ Today's practice completed", "✓ Práctica de hoy completada", "✓ Übung für heute abgeschlossen") : message("✓ Mark today's practice done", "✓ Marcar la práctica de hoy como completada", "✓ Heutige Übung als erledigt markieren");
   }
   function render() {
     const day = todayKey();
     challenge = makeChallenge(day, elements.level.value, variation);
-    elements.date.textContent = new Intl.DateTimeFormat(spanish ? "es" : "en-GB", { weekday: "long", day: "numeric", month: "long" }).format(new Date(day + "T12:00:00"));
-    elements.key.textContent = challenge.key.name + message(" major", " mayor");
+    elements.date.textContent = new Intl.DateTimeFormat(message("en-GB", "es", "de"), { weekday: "long", day: "numeric", month: "long" }).format(new Date(day + "T12:00:00"));
+    elements.key.textContent = challenge.key.name + message(" major", " mayor", "-Dur");
     elements.variation.textContent = challenge.label;
     elements.prompt.textContent = challenge.prompt + message(
       ` Use the ${challenge.key.name} major pentatonic scale: ${challenge.notes}.`,
-      ` Usa la escala pentatónica mayor de ${challenge.key.name}: ${challenge.notes}.`
+      ` Usa la escala pentatónica mayor de ${challenge.key.name}: ${challenge.notes}.`,
+      ` Verwende die ${challenge.key.name}-Dur-Pentatonik: ${challenge.notes}.`
     );
     elements.notes.textContent = challenge.notes;
     elements.chords.replaceChildren();
@@ -429,13 +430,13 @@
     sounding.forEach(function (node) { try { node.stop(); } catch (_) {} });
     sounding = [];
     Array.from(elements.chords.children).forEach((el) => el.removeAttribute("aria-current"));
-    elements.play.textContent = message("▶ Play accompaniment", "▶ Reproducir acompañamiento");
+    elements.play.textContent = message("▶ Play accompaniment", "▶ Reproducir acompañamiento", "▶ Begleitung abspielen");
   }
   async function toggleAudio() {
-    if (playing) { stopAudio(); setStatus(message("Playback stopped. Try another melody or choose Play to continue.", "Reproducción detenida. Prueba otra melodía o pulsa Reproducir para continuar.")); return; }
+    if (playing) { stopAudio(); setStatus(message("Playback stopped. Try another melody or choose Play to continue.", "Reproducción detenida. Prueba otra melodía o pulsa Reproducir para continuar.", "Wiedergabe gestoppt. Probiere eine andere Melodie oder starte die Wiedergabe erneut.")); return; }
     if (pendingStart) return;
     const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-    if (!AudioContextClass) { setStatus(message("Audio playback is not supported in this browser. You can still use the chord and melody prompts.", "Este navegador no admite la reproducción de audio. Aun así, puedes usar los ejercicios de acordes y melodía.")); return; }
+    if (!AudioContextClass) { setStatus(message("Audio playback is not supported in this browser. You can still use the chord and melody prompts.", "Este navegador no admite la reproducción de audio. Aun así, puedes usar los ejercicios de acordes y melodía.", "Dein Browser unterstützt keine Audiowiedergabe. Du kannst die Akkorde und Melodieideen trotzdem verwenden.")); return; }
     const start = {};
     pendingStart = start;
     try {
@@ -443,22 +444,23 @@
       if (audioCtx.state !== "running") await audioCtx.resume();
       if (pendingStart !== start) return;
       if (!samples) {
-        setStatus(message("Loading electric piano and drum sounds…", "Cargando los sonidos de piano eléctrico y batería…"));
+        setStatus(message("Loading electric piano and drum sounds…", "Cargando los sonidos de piano eléctrico y batería…", "E-Piano- und Schlagzeugklänge werden geladen …"));
         samples = await loadSamples();
         if (pendingStart !== start) return;
       }
       playing = true; beatCounter = 0; nextBeatTime = audioCtx.currentTime + 0.06;
       timer = setInterval(tick, 65);
       tick();
-      elements.play.textContent = message("■ Stop accompaniment", "■ Detener acompañamiento");
+      elements.play.textContent = message("■ Stop accompaniment", "■ Detener acompañamiento", "■ Begleitung stoppen");
       setStatus(message(
         `Playing ${currentMeter()} in a ${GROOVES[grooveIndex()].toLowerCase()} groove with electric piano, bass and drums at ${elements.bpm.value} BPM. Chords highlight each bar.`,
-        `Reproduciendo en ${currentMeter()} con piano eléctrico, bajo y batería a ${elements.bpm.value} BPM. El acorde activo se resalta en cada compás.`
+        `Reproduciendo en ${currentMeter()} con piano eléctrico, bajo y batería a ${elements.bpm.value} BPM. El acorde activo se resalta en cada compás.`,
+        `Wiedergabe im ${currentMeter()}-Takt mit E-Piano, Bass und Schlagzeug bei ${elements.bpm.value} BPM. Der aktuelle Akkord wird hervorgehoben.`
       ));
     } catch (_) {
       if (pendingStart === start) {
         stopAudio();
-        setStatus(message("Could not start the accompaniment. Press Play to try again.", "No se pudo iniciar el acompañamiento. Pulsa Reproducir para volver a intentarlo."));
+        setStatus(message("Could not start the accompaniment. Press Play to try again.", "No se pudo iniciar el acompañamiento. Pulsa Reproducir para volver a intentarlo.", "Die Begleitung konnte nicht gestartet werden. Starte die Wiedergabe erneut."));
       }
     } finally {
       if (pendingStart === start) pendingStart = null;
@@ -470,32 +472,34 @@
   elements.meter.addEventListener("change", function () {
     stopAudio();
     const meter = elements.meter.value === "auto"
-      ? message(`automatic (${currentMeter()})`, `automático (${currentMeter()})`)
+      ? message(`automatic (${currentMeter()})`, `automático (${currentMeter()})`, `automatisch (${currentMeter()})`)
       : currentMeter();
     setStatus(message(
       `Time signature set to ${meter}. Press Play to hear the new rhythm.`,
-      `Compás seleccionado: ${meter}. Pulsa Reproducir para escuchar el nuevo ritmo.`
+      `Compás seleccionado: ${meter}. Pulsa Reproducir para escuchar el nuevo ritmo.`,
+      `Taktart gewählt: ${meter}. Starte die Wiedergabe, um den neuen Rhythmus zu hören.`
     ));
   });
   elements.next.addEventListener("click", function () {
     stopAudio(); variation++; render();
     setStatus(message(
       `New variation ready in ${currentMeter()}. Press Play to hear the progression and rhythm.`,
-      `Nueva variación en ${currentMeter()}. Pulsa Reproducir para escuchar la progresión y el ritmo.`
+      `Nueva variación en ${currentMeter()}. Pulsa Reproducir para escuchar la progresión y el ritmo.`,
+      `Neue Variante in ${currentMeter()}. Starte die Wiedergabe, um Akkorde und Rhythmus zu hören.`
     ));
   });
   elements.level.addEventListener("change", function () {
     stopAudio(); variation = 0; data.level = elements.level.value; saveData(); render();
-    setStatus(message("Practice level changed. Today's exercise has been updated.", "Se actualizó el ejercicio de hoy con el nuevo nivel."));
+    setStatus(message("Practice level changed. Today's exercise has been updated.", "Se actualizó el ejercicio de hoy con el nuevo nivel.", "Die heutige Übung wurde an die gewählte Stufe angepasst."));
   });
   elements.bpm.addEventListener("input", function () {
     elements.bpmValue.textContent = elements.bpm.value + " BPM";
-    if (playing) setStatus(message(`Tempo adjusted to ${elements.bpm.value} BPM.`, `Tempo ajustado a ${elements.bpm.value} BPM.`));
+    if (playing) setStatus(message(`Tempo adjusted to ${elements.bpm.value} BPM.`, `Tempo ajustado a ${elements.bpm.value} BPM.`, `Tempo: ${elements.bpm.value} BPM.`));
   });
   elements.done.addEventListener("click", function () {
     if (data.days.includes(todayKey())) return;
     data.days.push(todayKey()); data.days.sort(); saveData(); updateProgress();
-    setStatus(message("Well played! Today's session is recorded on this device. Come back tomorrow for a fresh challenge.", "¡Bien hecho! La sesión de hoy se guardó en este dispositivo. Vuelve mañana para probar un reto nuevo."));
+    setStatus(message("Well played! Today's session is recorded on this device. Come back tomorrow for a fresh challenge.", "¡Bien hecho! La sesión de hoy se guardó en este dispositivo. Vuelve mañana para probar un reto nuevo.", "Gut gespielt! Die heutige Übung ist auf diesem Gerät gespeichert. Morgen wartet eine neue Aufgabe auf dich."));
   });
   document.addEventListener("visibilitychange", function () { if (document.hidden) stopAudio(); });
   window.addEventListener("pagehide", stopAudio);
