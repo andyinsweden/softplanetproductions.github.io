@@ -1,0 +1,21 @@
+locale = "zh-CN"
+label = "简体中文"
+direction = "ltr"
+weight = 17
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "钢琴课程、乐谱、免费音乐工具，以及面向英国学校的 Sibelius 授权咨询。"
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "音乐创作、教学与演奏"
+  bio = "我们为学校、音乐人和乐团制作音乐剧、教学资源和实用工具。"
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/zh-cn/" },
+  ]
