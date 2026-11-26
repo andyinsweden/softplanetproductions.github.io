@@ -1,6 +1,6 @@
 ---
-title: Partitura de piano Paint By Numbers | Harry Styles
-description: "Toca Paint By Numbers de Harry Styles con el arreglo de John Montgomery en fa mayor para piano solo de nivel intermedio. Consulta y compra la partitura digital."
+title: "Paint By Numbers de Harry Styles: partitura para piano"
+description: "Consulta el arreglo de Paint By Numbers de Harry Styles en fa mayor. Partitura digital para piano solo de nivel intermedio de John Montgomery."
 slug: paint-by-numbers
 keywords:
 - Paint By Numbers para piano

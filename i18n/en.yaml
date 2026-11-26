@@ -1,6 +1,10 @@
 list:
   no_articles: ''
 softplanet:
+  home_authors: John and Andy Montgomery
+  home_piano_course: PIANO IMPROVISATION COURSE
+  home_services_label: WHAT WE DO
+  home_explore_piano_course: EXPLORE THE PIANO COURSE
   music_courses: Music Courses,
   piano_scores: Piano Scores
   amp_sibelius_support: '& Sibelius Support'

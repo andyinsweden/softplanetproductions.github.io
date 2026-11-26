@@ -1,6 +1,6 @@
 ---
-title: "Reto diario de improvisación al piano | Práctica gratuita"
-description: "Un ejercicio gratuito de improvisación al piano cada día. Crea melodías sobre progresiones de acordes, ajusta el tempo y sigue tu práctica desde el navegador."
+title: "Reto diario de improvisación al piano gratis"
+description: "Improvisa con un ejercicio nuevo cada día. Toca sobre acordes con piano eléctrico, bajo y batería. Elige el compás y ajusta el tempo."
 webApplication: true
 images:
   - "/piano-improvisation-overhead.webp"

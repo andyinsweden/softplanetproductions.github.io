@@ -1,7 +1,6 @@
 ---
 title: "Cursos de piano y producción musical"
-description: Explora las lecciones de improvisación al piano con John Montgomery y previsualiza nuestro próximo curso
-  MIDI para estudios caseros, que cubre enrutamiento, controladores y sincronización.
+description: "Aprende a improvisar al piano y a tocar de oído con John Montgomery. Conoce también el próximo curso de MIDI para estudios en casa."
 images:
 - /courses-hero.webp
 heroImage: /courses-hero.webp

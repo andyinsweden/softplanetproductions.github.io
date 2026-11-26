@@ -1,8 +1,7 @@
 ---
-title: 'Licencias de red de Sibelius para escuelas: planificación y solución de problemas'
+title: "Licencias de red de Sibelius: guía para centros educativos"
 date: 2026-10-28
-description: 'Una guía práctica de TI para la escuela sobre licencias de red de Sibelius: asientos, implementación, problemas
-  de conexión y preguntas que hacer antes de cambiar los sistemas.'
+description: "Planifica una instalación de Sibelius en red. Calcula puestos, prepara el despliegue y resuelve problemas de conexión antes de cambiar de sistema."
 summary: Comprenda los modelos de licencias de la escuela Sibelius y planifique una implementación confiable en el aula.
 tags:
 - Sibelius

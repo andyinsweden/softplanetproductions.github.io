@@ -1,7 +1,6 @@
 ---
-title: "Softplanet Productions | Educación musical, improvisación al piano y partituras"
-description: Explora cursos de improvisación para piano, herramientas de piano gratuitas y partituras individuales de
-  Softplanet Productions. Obtén soporte de licencias de Sibelius para escuelas del Reino Unido.
+title: "Cursos de piano y partituras | Softplanet Productions"
+description: "Aprende a improvisar al piano, identifica acordes con herramientas gratis y explora partituras de John Montgomery. Asesoramiento sobre Sibelius."
 images:
 - /home-hero.webp
 keywords:

@@ -1,9 +1,8 @@
 ---
-title: 'Yamaha P-45 vs P-225 vs P-525: ¿Qué piano es el mejor?'
+title: "Yamaha P-45 vs P-225 vs P-525: comparativa de pianos"
 date: 2026-10-26
 lastmod: 2026-11-23
-description: 'Yamaha P-45 vs P-225 vs P-525: compara teclas ponderadas, sonido de piano, polifonía y portabilidad. Encuentra
-  el mejor piano digital para tu nivel y presupuesto.'
+description: "Compara teclado, sonido, polifonía y peso de los Yamaha P-45, P-225 y P-525. Descubre cuál encaja con tu nivel y presupuesto."
 summary: ¿Qué piano digital Yamaha debería elegir? Compare el P-45, P-225 y P-525 para principiantes, práctica en casa
   y juego avanzado.
 author: John Montgomery

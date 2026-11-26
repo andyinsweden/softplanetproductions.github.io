@@ -1,9 +1,8 @@
 ---
-title: "Improvisación al piano con la escala pentatónica: empieza con cinco notas"
+title: "Escala pentatónica en piano: notas y ejercicios"
 date: 2026-11-15
-description: Aprende a improvisar piano pentatónico usando C, D, E, G y A. Prueba melodías cortas, bucles de acordes
-  y un simple ejercicio mayor contra menor.
-summary: Crea tus primeras frases improvisadas con la escala pentatónica principal C de cinco notas.
+description: "Aprende las notas de las escalas pentatónicas mayor y menor de do. Improvisa con tres ejercicios y una progresión de cuatro acordes."
+summary: Crea tus primeras frases improvisadas con la escala pentatónica mayor de do.
 tags:
 - escala pentatónica
 - improvisación al piano
@@ -12,19 +11,11 @@ tags:
 draft: false
 ---
 
-Si eres nuevo en la improvisación, usar menos notas puede hacer que la música se sienta más creativa, no menos. La **escala pentatónica** contiene cinco notas. Eso te da una paleta manejable para experimentar con el ritmo, la repetición y la expresión sin pensar constantemente en qué tecla presionar.
+La **escala pentatónica mayor de do** tiene cinco notas: **do, re, mi, sol y la (C, D, E, G y A)**. Puedes tocarlas todas en teclas blancas. Empieza con tres de ellas para inventar una melodía y añade las dos restantes cuando mantengas el pulso con soltura.
 
-Aquí hay un simple ejercicio pentatónico importante que puedes tocar hoy, incluso si no lees partituras.
+## ¿Qué notas tiene la escala pentatónica mayor de do?
 
-## ¿Cuáles son las notas de la escala pentatónica principal C?
-
-Toca estas cinco notas blancas con la mano derecha:
-
-**C – D – E – G – A**
-
-Puedes reconocer las notas de C major, pero sin F y B. Intenta tocarlas lentamente hacia arriba y hacia abajo, luego deja de pensar en ellas como una escala. Son ingredientes para tu propia melodía, no un ejercicio que siempre debes tocar en orden.
-
-La escala pentatónica principal C es diferente de una escala pentatónica C **menor**, que probaremos más adelante.
+Toca **C–D–E–G–A** con la mano derecha. Son las notas de la escala de do mayor sin fa ni si. Tócalas primero en orden ascendente y descendente. Después repite alguna nota, cambia el orden o deja un silencio para formar una frase.
 
 ## Ejercicio 1: Haz una melodía a partir de tres notas
 
@@ -35,7 +26,7 @@ Comience con solo **C, D y E**. Dé a cada nota un ritmo, luego descanse un poco
 
 Ahora invente una respuesta diferente. Mantenga una nota más larga, repita otra o deje un latido extra de silencio. El cambio en el ritmo es a menudo más notable que el cambio en las notas.
 
-## Ejercicio 2: Añadir G y A
+## Ejercicio 2: añade sol y la
 
 Amplíe sus opciones de la mano derecha a **C, D, E, G y A**. Pruebe una frase de cuatro tiempos como:
 
@@ -45,13 +36,13 @@ Contesta con:
 
 **G – E – D – C**
 
-Juega lentamente, luego cambia un detalle. Puede comenzar la respuesta más tarde, repetir G, o usar un C final más largo. Este es el comienzo de la redacción musical.
+Toca despacio, luego cambia un detalle. Puede comenzar la respuesta más tarde, repetir G, o usar un C final más largo. Este es el comienzo de la redacción musical.
 
-## Ejercicio 3: Improvisar sobre una progresión de acordes
+## Ejercicio 3: improvisa sobre cuatro acordes
 
-Dele a la mano izquierda una nota baja más baja al comienzo de cada barra:
+Toca una nota grave con la izquierda al comienzo de cada compás.
 
-| Bar | Acordes | Bajo a la izquierda |
+| Compás | Acorde | Bajo de la mano izquierda |
 | --- | --- | --- |
 | 1 | C mayor | C |
 | 2 | G mayor | G |
@@ -66,21 +57,21 @@ Para ver las formas completas de los acordes y los cambios más suaves, vea [pro
 
 ## ¿En qué se diferencia la escala pentatónica menor?
 
-Para un sonido contrastante, prueba **C pentatónico menor**:
+Para un sonido contrastante, prueba la **escala pentatónica menor de do**:
 
 **C – E♭ – F – G – B♭**
 
-Estas notas hacen una paleta musical diferente de la pentatónica principal C. Pruebe un acorde lento **C menor** o una nota de bajo C repetida con esta escala. Compare su sonido con su ejercicio principal C anterior. No se preocupe por tocar ambas escalas con fluidez en una sesión: escuche primero.
+Son do, mi bemol, fa, sol y si bemol. Tócalas sobre un acorde de **do menor** o sobre un do grave repetido y compara el sonido con el ejercicio en do mayor.
 
 ## Una rutina de práctica pentatónica de cinco minutos
 
-1. **Un minuto:** Toca las cinco notas pentatónicas principales de C lentamente.
-2. **Un minuto:** Inventa preguntas de dos barras usando solo tres notas.
+1. **Un minuto:** Toca las cinco notas de la pentatónica mayor de do lentamente.
+2. **Un minuto:** Inventa preguntas de dos compases usando solo tres notas.
 3. **Dos minutos:** Usa las cinco notas sobre C–G–Am–F, cambiando un ritmo cada vez.
 4. **Un minuto:** Graba una frase corta y elige tu idea musical favorita.
 
 El objetivo no es llenar cada latido. Una pausa puede hacer que la siguiente nota sea mucho más expresiva.
 
-Puedes practicar este material con el [Desafío diario de improvisación al piano](/es/tools/daily-piano-improvisation/). Para coordinar la melodía con una parte de bajo constante, sigue [Cómo improvisar con ambas manos](/es/tutorials/piano-improvisation-with-both-hands/).
+Puedes practicar este material con el [reto diario de improvisación al piano](/es/tools/daily-piano-improvisation/). Para coordinar la melodía con una parte de bajo constante, sigue [Cómo improvisar con ambas manos](/es/tutorials/piano-improvisation-with-both-hands/).
 
 Para demostraciones de video guiadas, frases melódicas y más formas de combinar acordes con una interpretación creativa, explora el [Curso de improvisación al piano](/es/courses/piano-improvisation/) enseñado por John Montgomery.

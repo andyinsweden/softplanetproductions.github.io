@@ -1,6 +1,6 @@
 ---
-title: "Herramientas de piano gratuitas en línea"
-description: "Identifica acordes, escucha sus inversiones y practica con un reto diario de improvisación al piano. Herramientas gratuitas de Softplanet Productions."
+title: "Herramientas gratuitas de piano en línea"
+description: "Identifica acordes de piano por sus notas y escucha sus inversiones. Practica a tu ritmo con un reto de improvisación nuevo cada día."
 ---
 
 Practica y crea música con estas herramientas interactivas de Softplanet Productions. Funcionan en el navegador del móvil, la tableta o el ordenador sin instalar aplicaciones ni crear una cuenta.

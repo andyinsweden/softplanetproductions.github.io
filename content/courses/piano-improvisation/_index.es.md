@@ -1,7 +1,6 @@
 ---
-title: Curso de improvisación al piano | Toca de oído y crea música
-description: Curso en línea de improvisación al piano para principiantes. Aprende a tocar de oído, construir acordes
-  y crear melodías con John Montgomery.
+title: "Curso de improvisación al piano para principiantes"
+description: "Aprende a tocar el piano de oído, improvisar melodías y practicar progresiones con acompañamiento. Clases en inglés en Udemy con John Montgomery."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp

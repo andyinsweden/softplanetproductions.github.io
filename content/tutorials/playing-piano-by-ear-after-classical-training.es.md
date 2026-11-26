@@ -1,8 +1,7 @@
 ---
-title: "Cómo tocar el piano de oído después de una formación clásica"
+title: "Cómo tocar el piano de oído si ya lees partituras"
 date: 2026-10-28
-description: Una guía de cinco pasos para pianistas de formación clásica que quieren tocar de oído, reconocer acordes
-  e improvisar con confianza sin partituras.
+description: "Si tienes formación clásica, practica cómo reconocer melodías y acordes de oído. Cinco pasos para incorporar la improvisación a tu repertorio."
 summary: Convierta sus habilidades de lectura en la libertad de descubrir melodías y armonías de oído.
 tags:
 - jugar de oído

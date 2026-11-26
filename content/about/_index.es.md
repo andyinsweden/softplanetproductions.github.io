@@ -1,6 +1,6 @@
 ---
-title: "Quiénes somos: John y Andy Montgomery"
-description: "Conoce a los músicos que crearon Softplanet Productions, sus cursos de piano, arreglos y servicios de Sibelius para centros educativos del Reino Unido."
+title: "John y Andy Montgomery | Softplanet Productions"
+description: "Conoce a John y Andy Montgomery, músicos y arreglistas detrás de los cursos de piano, partituras y servicios de Sibelius de Softplanet Productions."
 ---
 
 Los hermanos John y Andy Montgomery llevan haciendo música juntos desde mucho antes de fundar Softplanet Productions.

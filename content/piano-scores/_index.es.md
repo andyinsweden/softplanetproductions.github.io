@@ -1,6 +1,6 @@
 ---
 title: "Partituras y arreglos para piano solo"
-description: "Partituras para piano solo de John Montgomery, entre ellas Cornfield Chase, Paint By Numbers y Bohemian Rhapsody Finale."
+description: "Explora arreglos para piano solo de John Montgomery, como Cornfield Chase, Paint By Numbers y el final de Bohemian Rhapsody."
 ---
 
 Explora los arreglos digitales para piano de John Montgomery. En cada página encontrarás una descripción del arreglo y un enlace a la tienda.

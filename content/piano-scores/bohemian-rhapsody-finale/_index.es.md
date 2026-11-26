@@ -1,7 +1,6 @@
 ---
-title: Partitura de piano Bohemian Rhapsody Finale | Queen
-description: Toca el final de Bohemian Rhapsody de Queen con las partituras digitales de John Montgomery para piano
-  solo intermedio a avanzado.
+title: "Bohemian Rhapsody Finale: partitura para piano"
+description: "Toca el final de Bohemian Rhapsody de Queen. Consulta el arreglo de John Montgomery para piano solo de nivel intermedio a avanzado."
 slug: bohemian-rhapsody-finale
 keywords:
 - Piano Bohemian Rhapsody Finale

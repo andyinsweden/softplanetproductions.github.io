@@ -1,6 +1,6 @@
 ---
 title: "Tutoriales de piano y guías de Sibelius"
-description: "Aprende a improvisar al piano y tocar progresiones de acordes, compara pianos digitales Yamaha y consulta guías prácticas de Sibelius para músicos y centros educativos."
+description: "Practica improvisación y acordes de piano, compara los modelos Yamaha P-45, P-225 y P-525, y encuentra soluciones a problemas de Sibelius."
 ---
 
 Consulta guías sobre instrumentos, interpretación y notación musical para músicos y docentes.
