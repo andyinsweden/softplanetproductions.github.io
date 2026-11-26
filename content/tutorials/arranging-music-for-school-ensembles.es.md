@@ -1,8 +1,7 @@
 ---
-title: "Cómo hacer arreglos para conjuntos escolares: cinco pasos prácticos"
+title: "Cómo hacer arreglos para conjuntos escolares"
 date: 2026-10-28
-description: Aprende a organizar la música para una banda escolar o coro desigual, crea partes flexibles y haz que cada
-  alumno suene lo mejor posible.
+description: "Aprende a adaptar melodías, acompañamientos y partes para conjuntos escolares con distintos instrumentos y niveles de experiencia."
 summary: Un flujo de trabajo de arreglos prácticos para conjuntos escolares reales con instrumentos y habilidades mixtas.
 tags:
 - arreglos musicales

@@ -1,6 +1,6 @@
 ---
-title: "Contacto"
-description: "Ponte en contacto con Softplanet Productions para consultar sobre licencias de Sibelius, cursos de piano, partituras o derechos de representación de musicales."
+title: "Contacto | Softplanet Productions"
+description: "Escríbenos sobre cursos de piano, partituras o derechos de representación. Para licencias de Sibelius, consulta el formulario para centros educativos."
 ---
 
 Usa este formulario para hacer consultas sobre [cursos de piano](/es/courses/), [partituras](/es/piano-scores/) o derechos de representación de musicales. Para consultar sobre una licencia o instalación en un centro educativo, usa el [formulario de presupuesto de Sibelius](/es/services/sibelius-site-licenses/#sibelius-enquiry).

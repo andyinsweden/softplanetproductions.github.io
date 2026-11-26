@@ -1,8 +1,7 @@
 ---
-title: "Cómo manejar el miedo escénico: consejos para músicos e intérpretes"
+title: "Cómo manejar el miedo escénico al tocar música"
 date: 2026-10-26
-description: 'Consejos prácticos para músicos y artistas de teatro musical: prepara tu apertura, ensaya la recuperación
-  y construye una rutina tranquila antes del espectáculo.'
+description: "Prepara el comienzo de la actuación, ensaya cómo recuperarte de un error y crea una rutina para afrontar los nervios antes de tocar."
 summary: Convierta los nervios previos al espectáculo en una parte manejable de la actuación con una rutina amigable
   para el escenario, la sala de ensayo o el foso de la orquesta.
 author: John Montgomery

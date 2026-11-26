@@ -1,6 +1,6 @@
 ---
-title: "Buscador de acordes de piano: identifica acordes por sus notas"
-description: "Identifica un acorde de piano a partir de sus notas o búscalo por nombre para ver y escuchar sus teclas. Herramienta gratuita con inversiones, acordes con bajo indicado y MIDI por USB."
+title: "Buscador de acordes de piano por notas"
+description: "Identifica un acorde tocando sus notas o búscalo por nombre. Escucha 57 tipos de acordes de piano, prueba inversiones y conecta tu teclado MIDI."
 summary: "Pulsa o escribe las notas para identificar un acorde, o búscalo por su nombre para ver y escuchar las teclas."
 showTableOfContents: false
 showReadingTime: false

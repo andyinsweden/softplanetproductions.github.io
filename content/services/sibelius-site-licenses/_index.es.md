@@ -1,7 +1,6 @@
 ---
 title: "Licencias de Sibelius para centros educativos del Reino Unido"
-description: Obtenga un presupuesto para las licencias de Sibelius Ultimate para escuelas y colegios del Reino Unido.
-  Compare licencias independientes y de red, agregue asientos u obtenga soporte de instalación.
+description: "Compara licencias individuales y de red de Sibelius para centros del Reino Unido. Solicita presupuesto, puestos adicionales o ayuda de instalación."
 heroImage: /sibelius-site-licenses-hero.webp
 images:
 - /sibelius-site-licenses-hero.webp

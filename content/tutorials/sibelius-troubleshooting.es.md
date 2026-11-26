@@ -1,7 +1,6 @@
 ---
-title: "Sibelius: 50 problemas frecuentes y cómo resolverlos"
-description: Resolver problemas comunes de Sibelius con reproducción, teclados MIDI, entrada de notas, notación, diseño
-  de partituras, piezas, exportación de PDF y recuperación de archivos.
+title: "Sibelius: 50 problemas frecuentes y sus soluciones"
+description: "Resuelve problemas de sonido, MIDI, notación, maquetación o exportación a PDF en Sibelius. Busca por tema entre 50 preguntas y respuestas."
 draft: false
 showTableOfContents: false
 ---

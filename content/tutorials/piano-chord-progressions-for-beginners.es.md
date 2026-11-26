@@ -1,7 +1,7 @@
 ---
-title: "Cuatro progresiones de acordes de piano para principiantes"
+title: "4 progresiones de acordes de piano para principiantes"
 date: 2026-11-15
-description: "Aprende cuatro progresiones de acordes de piano para principiantes, entre ellas C–G–Am–F. Practica con ejercicios sencillos para la mano izquierda y la derecha."
+description: "Aprende C–G–Am–F y otras tres progresiones de acordes de piano. Practica el bajo, las inversiones y tu primera melodía improvisada."
 summary: "Toca cuatro progresiones, mantén un pulso constante y añade tu primera melodía improvisada."
 tags: ["acordes de piano", "improvisación al piano", "piano para principiantes", "progresiones de acordes"]
 draft: false

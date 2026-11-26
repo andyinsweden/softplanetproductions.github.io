@@ -4,11 +4,11 @@
     <div class="hero-copy">
       <h1>{{ i18n "softplanet.music_courses" }} <span>{{ i18n "softplanet.piano_scores" }}</span> {{ i18n "softplanet.amp_sibelius_support" }}</h1>
       <p class="description">
-        <a href="{{ "about/" | relLangURL }}">John and Andy Montgomery</a> {{ i18n "softplanet.create_piano_lessons_sheet_music_and_tools" }}
+        <a href="{{ "about/" | relLangURL }}">{{ i18n "softplanet.home_authors" }}</a> {{ i18n "softplanet.create_piano_lessons_sheet_music_and_tools" }}
       </p>
 
       <div class="cta-row">
-        <a href="{{ "courses/piano-improvisation/" | relLangURL }}" class="primary">PIANO IMPROVISATION COURSE <span>→</span></a>
+        <a href="{{ "courses/piano-improvisation/" | relLangURL }}" class="primary"> {{- i18n "softplanet.home_piano_course" }} <span>→</span></a>
         <a href="{{ "courses/" | relLangURL }}" class="secondary">{{ i18n "softplanet.browse_music_courses" }}</a>
       </div>
 
@@ -31,7 +31,7 @@
 </section>
 
 <section class="softplanet-resources">
-  <div class="section-tag">WHAT WE DO</div>
+  <div class="section-tag">{{ i18n "softplanet.home_services_label" }}</div>
   <h2>{{ i18n "softplanet.resources_for_musicians_amp_educators" }}</h2>
   <p>
     {{ i18n "softplanet.whether_you_re_a_music_creator_educator" }}
@@ -44,7 +44,7 @@
         <div class="service-icon">◌</div>
         <h3>{{ i18n "softplanet.learn_piano_improvisation" }}</h3>
         <p>{{ i18n "softplanet.learn_to_play_piano_by_ear_build" }}</p>
-        <a href="{{ "courses/piano-improvisation/" | relLangURL }}">EXPLORE THE PIANO COURSE <span>→</span></a>
+        <a href="{{ "courses/piano-improvisation/" | relLangURL }}"> {{- i18n "softplanet.home_explore_piano_course" }} <span>→</span></a>
       </div>
     </article>
 
@@ -70,6 +70,18 @@
 
   </div>
 </section>
+
+
+{{ if eq .Language.Lang "es" }}
+  <section class="softplanet-resources" aria-labelledby="home-practice-title">
+    <h2 id="home-practice-title">Practica piano gratis</h2>
+    <p>
+      <a class="underline" href="{{ "tools/chord-finder/" | relLangURL }}">Identifica un acorde por sus notas</a>,
+      <a class="underline" href="{{ "tools/daily-piano-improvisation/" | relLangURL }}">improvisa con el acompañamiento del reto diario</a>
+      o empieza con los <a class="underline" href="{{ "tutorials/how-to-learn-piano-improvisation/" | relLangURL }}">cinco ejercicios de improvisación para principiantes</a>.
+    </p>
+  </section>
+{{ end }}
 
 <section class="softplanet-benefits">
   <div class="benefit-item">

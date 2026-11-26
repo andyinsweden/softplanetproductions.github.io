@@ -1,6 +1,6 @@
 ---
-title: "Cornfield Chase | Partitura para piano solo de nivel intermedio"
-description: "Toca Cornfield Chase de Interstellar. Escucha el arreglo de John Montgomery, consulta la muestra y compra la partitura digital imprimible."
+title: "Cornfield Chase: partitura de Interstellar para piano"
+description: "Escucha Cornfield Chase de Interstellar y consulta la partitura imprimible de John Montgomery para piano solo de nivel intermedio."
 slug: cornfield-chase
 author: John Montgomery
 ---

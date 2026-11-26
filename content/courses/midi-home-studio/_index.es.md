@@ -1,6 +1,6 @@
 ---
 title: "Curso de MIDI para estudios en casa"
-description: "Descubre el curso de MIDI previsto para 2027. Aprende a enrutar señales MIDI, configurar controladores, automatizar mensajes CC y sincronizar equipos con tu DAW."
+description: "Conoce el curso de MIDI previsto para 2027. Aprende sobre controladores, automatización CC y sincronización de equipos con tu DAW."
 heroImage: "/midi-home-studio-hero.webp"
 heroEyebrow: "PREVISTO PARA 2027"
 images:

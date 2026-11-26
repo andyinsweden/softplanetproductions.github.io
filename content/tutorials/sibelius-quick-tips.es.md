@@ -1,8 +1,7 @@
 ---
-title: 'Consejos rápidos de Sibelius: Menos clics, más composición'
+title: "Sibelius: consejos y atajos para editar partituras"
 date: 2026-10-26
-description: Muévete en Sibelius con consejos prácticos para instrumentos, tripletes, reproducción, diseño de partituras
-  y activación, además de prácticos accesos directos para Windows y Mac.
+description: "Aprende a añadir instrumentos, escribir tresillos, ajustar la reproducción y maquetar partituras. Incluye atajos de Sibelius para Windows y Mac."
 summary: Un refrescante Sibelius para ayudarte a organizar instrumentos, crear trillizos, restaurar la reproducción y
   ordenar tu partitura.
 author: John Montgomery
