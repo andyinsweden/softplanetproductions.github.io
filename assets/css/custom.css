@@ -1516,6 +1516,8 @@ main iframe[src*="youtube-nocookie.com/embed"] {
   inset-inline-end: 0;
   z-index: 50;
   min-width: 100%;
+  max-height: min(65vh, 26rem);
+  overflow-y: auto;
   margin: .25rem 0 0;
   padding: .25rem;
   list-style: none;
@@ -1541,6 +1543,7 @@ main iframe[src*="youtube-nocookie.com/embed"] {
 
 #menu-wrapper .softplanet-language ul {
   position: static;
+  max-height: none;
 }
 
 .softplanet-header {

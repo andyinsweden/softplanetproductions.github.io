@@ -1,0 +1,164 @@
+
+
+[[main]]
+  name = "Курсы"
+  pageRef = "courses"
+  identifier = "courses"
+  weight = 20
+
+[[main]]
+  name = "Курс MIDI"
+  pageRef = "courses/midi-home-studio"
+  parent = "courses"
+  weight = 21
+
+[[main]]
+  name = "Курс импровизации на фортепиано"
+  pageRef = "courses/piano-improvisation"
+  parent = "courses"
+  weight = 22
+
+[[main]]
+  name = "Услуги"
+  pageRef = "services"
+  identifier = "services"
+  weight = 30
+
+[[main]]
+  name = "Лицензии Sibelius для школ"
+  pageRef = "services/sibelius-site-licenses"
+  parent = "services"
+  weight = 31
+
+[[main]]
+  name = "Устранение ошибок в Sibelius"
+  pageRef = "tutorials/sibelius-troubleshooting"
+  parent = "services"
+  weight = 32
+
+[[main]]
+  name = "Ноты"
+    pageRef = "piano-scores"
+  identifier = "piano-scores"
+  weight = 40
+
+[[main]]
+  name = "Cornfield Chase"
+  pageRef = "piano-scores/cornfield-chase"
+  parent = "piano-scores"
+  weight = 41
+
+[[main]]
+  name = "Paint By Numbers"
+  pageRef = "piano-scores/paint-by-numbers"
+  parent = "piano-scores"
+  weight = 42
+
+[[main]]
+  name = "Bohemian Rhapsody Finale"
+  pageRef = "piano-scores/bohemian-rhapsody-finale"
+  parent = "piano-scores"
+  weight = 43
+
+[[main]]
+  name = "Бесплатные инструменты"
+  pageRef = "tools"
+  identifier = "tools"
+  weight = 45
+
+[[main]]
+  name = "Упражнение дня"
+  pageRef = "tools/daily-piano-improvisation"
+  parent = "tools"
+  weight = 46
+
+[[main]]
+  name = "Поиск аккордов"
+  pageRef = "tools/chord-finder"
+  parent = "tools"
+  weight = 47
+
+[[main]]
+  name = "Руководства"
+  pageRef = "tutorials"
+  identifier = "tutorials"
+  weight = 50
+
+[[main]]
+  name = "Аккорды для начинающих"
+  pageRef = "tutorials/piano-chord-progressions-for-beginners"
+  parent = "tutorials"
+  weight = 51
+
+[[main]]
+  name = "Импровизация двумя руками"
+  pageRef = "tutorials/piano-improvisation-with-both-hands"
+  parent = "tutorials"
+  weight = 52
+
+[[main]]
+  name = "Импровизация с пентатоникой"
+  pageRef = "tutorials/pentatonic-piano-improvisation"
+  parent = "tutorials"
+  weight = 53
+
+[[main]]
+  name = "Пианино Yamaha"
+  pageRef = "tutorials/yamaha-p45-p225-p525-compared"
+  parent = "tutorials"
+  weight = 54
+
+[[main]]
+  name = "Волнение перед выступлением"
+  pageRef = "tutorials/stage-fright-musicians-performers"
+  parent = "tutorials"
+  weight = 55
+
+[[main]]
+  name = "Советы по Sibelius"
+  pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-tutorial"
+  parent = "tutorials"
+  weight = 56
+
+[[main]]
+  name = "Советы по Sibelius"
+  pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-service"
+  parent = "services"
+  weight = 33
+
+
+[[main]]
+  name = "Импровизация на фортепиано"
+  pageRef = "tutorials/how-to-learn-piano-improvisation"
+  parent = "tutorials"
+  weight = 57
+
+[[main]]
+  name = "Игра на слух"
+  pageRef = "tutorials/playing-piano-by-ear-after-classical-training"
+  parent = "tutorials"
+  weight = 58
+
+[[main]]
+  name = "Аранжировки для школьных ансамблей"
+  pageRef = "tutorials/arranging-music-for-school-ensembles"
+  parent = "tutorials"
+  weight = 59
+
+[[main]]
+  name = "Сетевые лицензии Sibelius"
+  pageRef = "tutorials/sibelius-network-licences-for-schools"
+  parent = "tutorials"
+  weight = 60
+
+[[main]]
+  name = "О нас"
+  pageRef = "about"
+  weight = 60
+
+[[main]]
+  name = "Контакты"
+  pageRef = "contact"
+  weight = 70

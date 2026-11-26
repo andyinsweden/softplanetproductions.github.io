@@ -1,0 +1,164 @@
+
+
+[[main]]
+  name = "पाठ्यक्रम"
+  pageRef = "courses"
+  identifier = "courses"
+  weight = 20
+
+[[main]]
+  name = "MIDI पाठ्यक्रम"
+  pageRef = "courses/midi-home-studio"
+  parent = "courses"
+  weight = 21
+
+[[main]]
+  name = "पियानो इम्प्रोवाइज़ेशन पाठ्यक्रम"
+  pageRef = "courses/piano-improvisation"
+  parent = "courses"
+  weight = 22
+
+[[main]]
+  name = "सेवाएँ"
+  pageRef = "services"
+  identifier = "services"
+  weight = 30
+
+[[main]]
+  name = "स्कूलों के लिए Sibelius लाइसेंस"
+  pageRef = "services/sibelius-site-licenses"
+  parent = "services"
+  weight = 31
+
+[[main]]
+  name = "Sibelius समस्या निवारण"
+  pageRef = "tutorials/sibelius-troubleshooting"
+  parent = "services"
+  weight = 32
+
+[[main]]
+  name = "शीट म्यूज़िक"
+    pageRef = "piano-scores"
+  identifier = "piano-scores"
+  weight = 40
+
+[[main]]
+  name = "Cornfield Chase"
+  pageRef = "piano-scores/cornfield-chase"
+  parent = "piano-scores"
+  weight = 41
+
+[[main]]
+  name = "Paint By Numbers"
+  pageRef = "piano-scores/paint-by-numbers"
+  parent = "piano-scores"
+  weight = 42
+
+[[main]]
+  name = "Bohemian Rhapsody Finale"
+  pageRef = "piano-scores/bohemian-rhapsody-finale"
+  parent = "piano-scores"
+  weight = 43
+
+[[main]]
+  name = "मुफ़्त टूल"
+  pageRef = "tools"
+  identifier = "tools"
+  weight = 45
+
+[[main]]
+  name = "आज का पियानो अभ्यास"
+  pageRef = "tools/daily-piano-improvisation"
+  parent = "tools"
+  weight = 46
+
+[[main]]
+  name = "पियानो कॉर्ड फ़ाइंडर"
+  pageRef = "tools/chord-finder"
+  parent = "tools"
+  weight = 47
+
+[[main]]
+  name = "ट्यूटोरियल"
+  pageRef = "tutorials"
+  identifier = "tutorials"
+  weight = 50
+
+[[main]]
+  name = "शुरुआती पियानो कॉर्ड"
+  pageRef = "tutorials/piano-chord-progressions-for-beginners"
+  parent = "tutorials"
+  weight = 51
+
+[[main]]
+  name = "दोनों हाथों से इम्प्रोवाइज़ करें"
+  pageRef = "tutorials/piano-improvisation-with-both-hands"
+  parent = "tutorials"
+  weight = 52
+
+[[main]]
+  name = "पेंटाटोनिक इम्प्रोवाइज़ेशन"
+  pageRef = "tutorials/pentatonic-piano-improvisation"
+  parent = "tutorials"
+  weight = 53
+
+[[main]]
+  name = "Yamaha पियानो गाइड"
+  pageRef = "tutorials/yamaha-p45-p225-p525-compared"
+  parent = "tutorials"
+  weight = 54
+
+[[main]]
+  name = "मंच का डर और प्रस्तुति"
+  pageRef = "tutorials/stage-fright-musicians-performers"
+  parent = "tutorials"
+  weight = 55
+
+[[main]]
+  name = "Sibelius के छोटे सुझाव"
+  pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-tutorial"
+  parent = "tutorials"
+  weight = 56
+
+[[main]]
+  name = "Sibelius के छोटे सुझाव"
+  pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-service"
+  parent = "services"
+  weight = 33
+
+
+[[main]]
+  name = "पियानो इम्प्रोवाइज़ेशन सीखें"
+  pageRef = "tutorials/how-to-learn-piano-improvisation"
+  parent = "tutorials"
+  weight = 57
+
+[[main]]
+  name = "सुनकर पियानो बजाएँ"
+  pageRef = "tutorials/playing-piano-by-ear-after-classical-training"
+  parent = "tutorials"
+  weight = 58
+
+[[main]]
+  name = "स्कूल समूहों के लिए संगीत संयोजन"
+  pageRef = "tutorials/arranging-music-for-school-ensembles"
+  parent = "tutorials"
+  weight = 59
+
+[[main]]
+  name = "Sibelius नेटवर्क लाइसेंस"
+  pageRef = "tutorials/sibelius-network-licences-for-schools"
+  parent = "tutorials"
+  weight = 60
+
+[[main]]
+  name = "हमारे बारे में"
+  pageRef = "about"
+  weight = 60
+
+[[main]]
+  name = "संपर्क"
+  pageRef = "contact"
+  weight = 70

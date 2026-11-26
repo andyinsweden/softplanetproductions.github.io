@@ -1,0 +1,178 @@
+list:
+  no_articles: ''
+softplanet:
+  rss_title: '{{ .Title }} w {{ .Site }}'
+  rss_summary: Nowe treści w {{ .Site }}
+  rss_section_summary: Nowe treści w dziale {{ .Title }} na {{ .Site }}
+  home_authors: John i Andy Montgomery
+  home_piano_course: KURS IMPROWIZACJI NA PIANINIE
+  home_services_label: CO ROBIMY
+  home_explore_piano_course: ZOBACZ KURS GRY NA PIANINIE
+  music_courses: Kursy muzyczne,
+  piano_scores: nuty na fortepian
+  amp_sibelius_support: i pomoc z Sibeliusem
+  create_piano_lessons_sheet_music_and_tools: tworzą lekcje gry na pianinie, nuty i narzędzia dla muzyków oraz doradzają
+    brytyjskim szkołom w sprawie licencji Sibelius.
+  browse_music_courses: Zobacz kursy muzyczne
+  expert_training: Szkolenia ekspertów
+  creative_inspiration: Kreatywne inspiracje
+  professional_solutions: Profesjonalne rozwiązania
+  resources_for_musicians_amp_educators: Zasoby dla muzyków i edukatorów
+  whether_you_re_a_music_creator_educator: Niezależnie od tego, czy jesteś twórcą muzyki, edukatorem czy instytucją,
+    zapewniamy narzędzia, szkolenia i wsparcie, które pomogą Ci odnieść sukces.
+  learn_piano_improvisation: Ucz się improwizacji fortepianu
+  learn_to_play_piano_by_ear_build: Naucz się grać na fortepianie za pomocą ucha, budować akordy i tworzyć oryginalne
+    melodie z własnym tempie John Montgomery kurs online.
+  sibelius_amp_notation: Sibelius & Notation
+  standalone_and_network_licences_extra_seats_and: Licencje standalone i sieciowe, dodatkowe miejsca i porady instalacyjne
+    dla szkół i szkół wyższych w Zjednoczonym Królestwie.
+  sibelius_site_licences: Licencje na terenie Sibelius
+  piano_sheet_music: Muzyka na arkuszu fortepianu
+  digital_solo_arrangements_by_john_montgomery_from: Digital solo aranżations by John Montgomery, from Interstellar to
+    Queen and Harry Styles.
+  browse_piano_sheet_music: Przeglądaj muzykę arkusza fortepianu
+  trusted_by_educators: Ufani przez Edukatorów
+  solutions_used_in_schools_and_institutions_worldwide: Rozwiązania stosowane w szkołach i instytucjach na całym świecie.
+  quality_you_can_rely_on: Jakość można polerować na
+  professional_tools_and_training_from_industry_experts: Profesjonalne narzędzia i szkolenia od ekspertów branżowych.
+  global_community: Wspólnota światowa
+  join_a_community_of_creators_and_lifelong: Dołącz do wspólnoty twórców i osób uczących się przez całe życie.
+  built_for_creators: Zbudowany dla twórców
+  everything_you_need_to_create_and_grow: Wszystko, czego potrzebujesz do stworzenia i rozwoju.
+  get_10_off_this_course_on_udemy: Uzyskaj 10 € rabatu na Udemy
+  explore_the_course_lessons: Poznaj lekcje kursu
+  save_10_on_the_piano_improvisation_course: Zaoszczędź 10 €na kursie improwizacji fortepianu
+  see_the_hands_hear_the_notes_and: Zobacz ręce, usłyszeć notatki i postępuj zgodnie z notatką.
+  watch_the_free_course_preview_on_udemy: Obejrzyj podgląd kursu na Udemy
+  learn_to_create_not_just_repeat: Naucz się tworzyć, nie tylko powtarzać
+  why_this_piano_improvisation_course_is_different: Dlaczego ten kurs improwizacji fortepianu jest inny
+  there_is_a_difference_between_learning_a: Istnieje różnica między nauką a wiedzą, co grać, gdy wynik znika. Lekcje
+    Johna łączą proste, praktyczne demonstracje z wystarczającą ilością teorii muzycznej, aby pomóc Ci dokonać własnych
+    wyborów na klawiaturze.
+  try_improvising_right_now: Spróbuj improwizować.
+  how_to_improvise_on_piano_a_simple: 'Jak improwizować na fortepianie: proste ćwiczenie początkujących'
+  you_do_not_need_a_complex_piece: Nie potrzebujesz skomplikowanego utworu, żeby zacząć. Spróbuj tego krótkiego ćwiczenia
+    na fortepianie lub klawiaturze, aby usłyszeć, jak małe wybory mogą stać się oryginalną melodią.
+  step_1: Etap 1
+  choose_a_few_notes: Wybierz kilka notatek
+  find_middle_c_and_play_c_d: Znajdź środek C i grać C, D, E i G prawą ręką. Utrzymuj wygodny, stabilny puls.
+  step_2: Etap 2
+  give_it_a_foundation: Daj mu fundament.
+  play_a_lower_c_with_your_left: Odtwarzaj dolną C lewą ręką na początku każdego krótkiego zdania. Niech nuta basowa
+    wspiera twoją melodię.
+  step_3: Etap 3
+  change_the_melody: Zmień melodię
+  rearrange_the_four_right_hand_notes_vary: Zaznacz cztery notatki, zmieniaj rytm i pozostaw sporadyczne przestrzenie.
+    Powtórz ulubiony pomysł, a potem odpowiedz nowym.
+  that_is_the_starting_point_of_piano: 'Jest to punkt wyjścia improwizacji fortepianu: słuchać, eksperymentować i rozwijać
+    pomysł muzyczny. W pełnym kursie, John Montgomery pokazuje, jak rozszerzyć to podejście za pomocą akordów, różnych
+    sygnatur czasu, dwuręcznych wzorów i utworów podręcznych.'
+  free_lessons_to_try_before_you_enrol: Bezpłatne lekcje, aby spróbować przed zapisać
+  practise_piano_improvisation_with_these_beginner_guides: Ćwicz improwizację fortepianu z tych początkujących przewodników
+  start_with_a_short_lesson_that_answers: Zacznij od krótkiej lekcji, która odpowiada na pytanie, które masz dzisiaj,
+    a następnie powrócić do programu nauczania dla usystematyzowanej ścieżki poprzez akordy, rytm, melodie i niezależność
+    rąk.
+  how_to_start_improvising_on_piano: Jak zacząć improwizować na fortepianie
+  five_manageable_exercises_for_your_first_melodies: '- pięć możliwych do opanowania ćwiczeń dla pierwszych melodii.'
+  piano_chord_progressions_for_beginners: Progresje akordów fortepianowych dla początkujących
+  play_four_useful_harmonic_loops: '- zagraj cztery przydatne pętle harmoniczne.'
+  how_to_improvise_with_both_hands: Jak improwizować obiema rękami
+  coordinate_a_steady_bass_with_a_simple: '- koordynować stały bas z prostą melodią.'
+  pentatonic_scale_improvisation: Improwizacja skali pentatonicznej
+  make_music_with_five_notes: '- tworzyć muzykę z pięcioma nutami.'
+  playing_piano_by_ear_after_classical_training: Gra na fortepianie przez ucho po treningu klasycznym
+  use_your_reading_skills_as_a_foundation: '- używać swoich umiejętności czytania jako podstawy kreatywnej gry.'
+  free_daily_piano_improvisation_challenge: Bezpłatne codzienna improwizacja fortepianu wyzwanie
+  practise_with_a_browser_based_chord_loop: '- ćwiczyć z pętlą akordową i rytmem bębnowym.'
+  a_clear_path_from_your_first_note: Czysta ścieżka z pierwszej nuty
+  what_will_you_be_able_to_play: Co będziesz w stanie zagrać?
+  discover_your_sound_and_develop_simple_musical: Odkryj swój dźwięk i rozwijaj proste pomysły muzyczne do ekspresji
+    improwizacji fortepianu. Wybierz ilustrację, aby wyświetlić ją w pełnym rozmiarze.
+  a_substantial_practical_learning_programme: Znaczący, praktyczny program nauczania
+  explore_the_piano_improvisation_course_curriculum: Poznaj kurs improwizacji fortepianowej
+  with_15_sections_and_110_lectures_on: Z 15 sekcji i 110 wykładów na Udemy, jest wiele do odkrycia. Otwórz poniższe
+    sekcje, aby zobaczyć konkretne tematy lekcji, ćwiczenia i umiejętności muzyczne, które rozwijają.
+  your_goal: 'Twój cel:'
+  skills_covered: Zakres umiejętności
+  lesson_programme: Program lekcji
+  view_the_current_full_syllabus_preview_videos: Wyświetl bieżący program, podgląd wideo i opcje rejestracji na Udemy
+  ready_to_make_music_of_your_own: Gotowy na własną muzykę?
+  find_your_own_way_around_the_keyboard: Znajdź własną drogę wokół klawiatury z praktycznym kursem wideo nauczanym przez
+    John Montgomery.
+  see_the_course_on_udemy: Zobacz Kurs na Udemy
+  everything_works_together: Wszystko działa razem.
+  what_is_included_in_the_course: Co jest zawarte w kursie?
+  learn_at_your_own_pace: Naucz się we własnym tempie
+  who_is_this_piano_course_for: Dla kogo jest ten kurs fortepianu?
+  whether_you_are_taking_your_first_steps: Niezależnie od tego, czy podejmujesz pierwsze kroki na fortepianie, czy możesz
+    już grać utwory czytając muzykę, kurs ten jest przeznaczony do rozwijania zdolności do improwizacji.
+  good_to_know_before_you_enrol: Dobrze wiedzieć, zanim się zaciągniesz.
+  piano_improvisation_course_frequently_asked_questions: 'Kurs improwizacji fortepianu: często zadawane pytania'
+  udemy_course_offer: Oferta kursu Udemy
+  course_at_a_glance: Kurs na rzut oka
+  open_the_free_piano_course_preview_on: Otwórz bezpłatny podgląd kursu fortepianowego na Udemy
+  preview_of_john_montgomery_s_piano_improvisation: Podgląd lekcji improwizacji fortepianowej John Montgomery pokazujących
+    widok na klawiaturę i notację
+  open_the_piano_improvisation_creative_journey_illustration: Otwórz improwizację fortepianu twórcza podróż ilustracja
+    pełna rozmiar
+  colourful_piano_improvisation_journey_discover_your_sound: 'Kolorowa improwizacja fortepianowa: odkryj swój dźwięk,
+    zacznij od prostych melodii, poznaj akordy i harmonię, obejmij kreatywną wolność i tworzyć spontanicznie.'
+  overhead_hand_sync_footage: Nagrania z nagłej strony
+  animated_score: Animowany wynik
+  studio_recorded_backing_tracks: Ścieżki tylne studiowe
+  join_the_piano_improvisation_course: Dołącz do kursu improwizacji fortepianu
+  lecture: lekcja
+  lectures: lekcje
+  the_course_videos_on_udemy_are_taught: Lekcje wideo na Udemy są po angielsku.
+  enroll_in_the_course_on_udemy: Zapisać się do kursu na Udemy
+  lesson_preview: Podgląd lekcji
+  interactive_keyboard_lesson_with_overhead_view_notation: Interaktywna lekcja klawiatury z widokiem ogólnym, notacją
+    i real- time muzyczną reakcją.
+  identify_a_chord: Rozpoznaj akord
+  find_keys: Znajdź klawisze
+  chord_name: Nazwa akordu
+  show_keys: Pokaż klawisze
+  inversion: Przewrót
+  tap_the_piano_keys_to_choose_notes: Stuknij klawisze fortepianu, aby wybrać notatki.
+  play_chord: ▶ Odtwórz akord
+  play_notes_in_order: Odtwarzanie notatek w kolejności
+  clear: Wyczyść
+  acoustic_piano: 'Pianino akustyczne:'
+  by_alexander_holm: Alexander Holm (
+  selected_recordings_pitch_shifted_for_this_keyboard: ); dla tej klawiatury został przesunięty wybrany grat nagrań.
+  type_notes: Wpisz dźwięki
+  identify: Identyfikacja
+  computer_keyboard_and_midi: Klawiatura komputerowa i MIDI
+  computer_keys: Klucze komputerowe
+  connect_midi: Połącz MIDI
+  use_z_s_x_d_c_v: Dla dolnej oktawy należy użyć Z S X D C V G B H N J M i Q 2 W 3 E R 5 T 6 Y 7 U dla górnej oktawy.
+  enable_javascript_to_use_the_interactive_piano: Włącz JavaScript, aby używać interaktywnego urządzenia do wyszukiwania
+    fortepianu i akordów.
+  interactive_piano_chord_finder: Interaktywny wykrywacz akordów fortepianowych
+  chord_finder_mode: Tryb wykrywania akordów
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9 lub C/E
+  piano_keyboard: Klawiatura fortepianowa
+  keyboard_octave: Oktawa klawiaturowa
+  down_an_octave: W dół oktawy
+  up_an_octave: W górę oktawę
+  keyboard_appearance: Wygląd klawiatury
+  example_chords: Przykładowe akordy
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4 lub 60 64 67
+  search_questions_and_answers: Szukaj w pytaniach i odpowiedziach
+  filter_by_category: Filtruj według kategorii
+  all_categories: Wszystkie kategorie
+  sound_and_playback: Dźwięk i odtwarzanie
+  midi_and_note_input: MIDI i wejście uwagi
+  notation_voices_and_rhythm: Notatki, głosy i rytmy
+  score_layout_and_spacing: Ocena układu i odstępów
+  parts_printing_and_exporting: Części, drukowanie i eksportowanie
+  saving_recovery_and_performance: Oszczędność, odzysk i wydajność
+  main_navigation: Menu główne
+  toggle_navigation_menu: Otwórz lub zamknij menu
+  close_menu: Zamknij menu
+  language: Język
+  home_free_practice: Ćwicz grę na pianinie za darmo
+  home_find_chord: Identyfikacja akordu z jego notatek
+  home_daily_practice: improwizuj z dzienną ścieżką podparcia
+  home_practice_or: lub rozpocząć od
+  home_five_exercises: pięć ćwiczeń improwizacji dla początkujących

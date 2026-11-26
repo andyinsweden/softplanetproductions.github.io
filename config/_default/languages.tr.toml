@@ -1,0 +1,21 @@
+locale = "tr"
+label = "Türkçe"
+direction = "ltr"
+weight = 11
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Piyano kursları, notalar, ücretsiz müzik araçları ve Birleşik Krallık’taki okullara Sibelius lisans danışmanlığı."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Müzik üretimi, eğitimi ve icrası"
+  bio = "Okullar, müzisyenler ve topluluklar için müzikaller, eğitim kaynakları ve araçlar hazırlıyoruz."
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/tr/" },
+  ]

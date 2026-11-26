@@ -1,0 +1,180 @@
+list:
+  no_articles: ''
+softplanet:
+  rss_title: '{{ .Title }} на {{ .Site }}'
+  rss_summary: Новые материалы на {{ .Site }}
+  rss_section_summary: Новые материалы раздела «{{ .Title }}» на {{ .Site }}
+  home_authors: Джон и Энди Монтгомери
+  home_piano_course: КУРС ИМПРОВИЗАЦИИ НА ФОРТЕПИАНО
+  home_services_label: ЧТО МЫ ДЕЛАЕМ
+  home_explore_piano_course: ПОДРОБНЕЕ О КУРСЕ
+  music_courses: Музыкальные курсы,
+  piano_scores: ноты для фортепиано
+  amp_sibelius_support: и поддержка Sibelius
+  create_piano_lessons_sheet_music_and_tools: создают уроки фортепиано, ноты и инструменты для музыкантов и консультируют
+    британские школы по лицензиям Sibelius.
+  browse_music_courses: Смотреть музыкальные курсы
+  expert_training: Подготовка экспертов
+  creative_inspiration: Творческое вдохновение
+  professional_solutions: Профессиональные решения
+  resources_for_musicians_amp_educators: Ресурсы для музыкантов и педагогов
+  whether_you_re_a_music_creator_educator: Независимо от того, являетесь ли вы создателем музыки, педагогом или учебным
+    заведением, мы предоставляем инструменты, обучение и поддержку, чтобы помочь вам добиться успеха.
+  learn_piano_improvisation: Учиться импровизации фортепиано
+  learn_to_play_piano_by_ear_build: Научитесь играть на фортепиано на слух, создавать аккорды и создавать оригинальные
+    мелодии с помощью самостоятельного онлайн-курса John Montgomery.
+  sibelius_amp_notation: Сибелиус и нотация
+  standalone_and_network_licences_extra_seats_and: Автономные и сетевые лицензии, дополнительные места и рекомендации
+    по установке для школ и колледжей Великобритании.
+  sibelius_site_licences: Лицензии на сайт Sibelius
+  piano_sheet_music: Фортепианная музыка
+  digital_solo_arrangements_by_john_montgomery_from: Цифровые сольные аранжировки John Montgomery, от Interstellar до
+    Queen и Harry Styles.
+  browse_piano_sheet_music: Просмотр музыки для фортепиано
+  trusted_by_educators: Доверие к педагогам
+  solutions_used_in_schools_and_institutions_worldwide: Решения, используемые в школах и учреждениях по всему миру.
+  quality_you_can_rely_on: Качество, на которое вы можете положиться
+  professional_tools_and_training_from_industry_experts: Профессиональные инструменты и обучение от отраслевых экспертов.
+  global_community: Глобальное сообщество
+  join_a_community_of_creators_and_lifelong: Присоединяйтесь к сообществу создателей и пожизненных учеников.
+  built_for_creators: Создан для создателей
+  everything_you_need_to_create_and_grow: Все, что вам нужно, чтобы расти и развиваться.
+  get_10_off_this_course_on_udemy: Получить скидку 10 € на Udemy
+  explore_the_course_lessons: Исследуйте уроки курса
+  save_10_on_the_piano_improvisation_course: Сэкономьте 10 евро на курсах импровизации пианино
+  see_the_hands_hear_the_notes_and: Смотрите на руки, слушайте заметки и следуйте за записью.
+  watch_the_free_course_preview_on_udemy: Смотреть бесплатный предварительный просмотр курса на Udemy
+  learn_to_create_not_just_repeat: Учитесь творить, а не просто повторять
+  why_this_piano_improvisation_course_is_different: Почему этот курс импровизации для фортепиано отличается
+  there_is_a_difference_between_learning_a: Существует разница между изучением пьесы и знанием того, что играть, когда
+    счет исчезает. Уроки Джона сочетают в себе простые, практические демонстрации с достаточной теорией музыки, чтобы
+    помочь вам сделать свой собственный выбор на клавиатуре.
+  try_improvising_right_now: Попробуйте импровизировать прямо сейчас
+  how_to_improvise_on_piano_a_simple: 'Как импровизировать на фортепиано: простое упражнение для начинающих'
+  you_do_not_need_a_complex_piece: Вам не нужно сложное музыкальное произведение, чтобы начать. Попробуйте это короткое
+    упражнение на любом фортепиано или клавиатуре, чтобы услышать, как маленькие варианты могут стать оригинальной мелодией.
+  step_1: Шаг 1
+  choose_a_few_notes: Выберите несколько нот
+  find_middle_c_and_play_c_d: Найдите середину C и сыграйте C, D, E и G правой рукой. Держите удобный, устойчивый пульс.
+  step_2: Шаг 2
+  give_it_a_foundation: Дайте ему фундамент
+  play_a_lower_c_with_your_left: В начале каждой короткой фразы сыграйте левой рукой нижнюю букву C. Пусть басовая нота
+    поддержит вашу мелодию.
+  step_3: Шаг 3
+  change_the_melody: Изменить мелодию
+  rearrange_the_four_right_hand_notes_vary: Перегруппируйте четыре правые ноты, измените ритм и оставьте случайные места.
+    Повторите любимую идею, а затем ответьте на нее новой.
+  that_is_the_starting_point_of_piano: 'Это отправная точка импровизации фортепиано: слушайте, экспериментируйте и развивайте
+    музыкальную идею. В полном курсе John Montgomery демонстрирует, как расширить этот подход с помощью аккордов, различных
+    временных сигнатур, двухручных шаблонов и бэк-треков.'
+  free_lessons_to_try_before_you_enrol: Бесплатные уроки, чтобы попробовать, прежде чем записаться
+  practise_piano_improvisation_with_these_beginner_guides: Практикуйте импровизацию фортепиано с этими начинающими гидами
+  start_with_a_short_lesson_that_answers: Начните с короткого урока, который отвечает на ваш вопрос сегодня, а затем
+    вернитесь к учебной программе курса для структурированного пути через аккорды, ритм, мелодии и независимость рук.
+  how_to_start_improvising_on_piano: Как начать импровизировать на фортепиано
+  five_manageable_exercises_for_your_first_melodies: Пять упражнений для ваших первых мелодий.
+  piano_chord_progressions_for_beginners: Прогрессия фортепианных аккордов для начинающих
+  play_four_useful_harmonic_loops: Играйте в четыре полезных гармонических петли.
+  how_to_improvise_with_both_hands: Как импровизировать обеими руками
+  coordinate_a_steady_bass_with_a_simple: — скоординировать устойчивый бас с простой мелодией.
+  pentatonic_scale_improvisation: Пентатоническая масштабная импровизация
+  make_music_with_five_notes: — делать музыку с пятью нотами.
+  playing_piano_by_ear_after_classical_training: Игра на фортепиано на слух после классической тренировки
+  use_your_reading_skills_as_a_foundation: Используйте свои навыки чтения в качестве основы для творческой игры.
+  free_daily_piano_improvisation_challenge: Бесплатный ежедневный конкурс импровизации фортепиано
+  practise_with_a_browser_based_chord_loop: — практиковать с помощью браузера на основе аккордного цикла и барабанного
+    ритма.
+  a_clear_path_from_your_first_note: Ясный путь из вашей первой записки
+  what_will_you_be_able_to_play: Что вы сможете сыграть?
+  discover_your_sound_and_develop_simple_musical: Откройте для себя звук и развивайте простые музыкальные идеи в экспрессивную
+    импровизацию на фортепиано. Выберите иллюстрацию, чтобы просмотреть ее полный размер.
+  a_substantial_practical_learning_programme: Существенная, практическая программа обучения
+  explore_the_piano_improvisation_course_curriculum: Изучите учебную программу курса импровизации фортепиано
+  with_15_sections_and_110_lectures_on: С 15 разделами и 110 лекциями по Удемии, есть много, чтобы открыть для себя.
+    Откройте разделы ниже, чтобы увидеть конкретные предметы урока, упражнения и музыкальные навыки, которые они развивают.
+  your_goal: 'Ваша цель:'
+  skills_covered: Навыки, покрытые
+  lesson_programme: Программа уроков
+  view_the_current_full_syllabus_preview_videos: Просмотр полной программы, предварительный просмотр видео и варианты
+    зачисления на Udemy
+  ready_to_make_music_of_your_own: Готовы ли вы создавать музыку самостоятельно?
+  find_your_own_way_around_the_keyboard: Найдите свой собственный путь вокруг клавиатуры с практическим видеокурсом,
+    преподаваемым John Montgomery.
+  see_the_course_on_udemy: Смотреть Курсы на Удемы
+  everything_works_together: Все работает вместе
+  what_is_included_in_the_course: Что включено в курс?
+  learn_at_your_own_pace: Учитесь в своем собственном темпе
+  who_is_this_piano_course_for: Для кого этот курс фортепиано?
+  whether_you_are_taking_your_first_steps: Независимо от того, делаете ли вы свои первые шаги на фортепиано или уже можете
+    играть пьесы, читая музыку, этот курс предназначен для развития вашей способности импровизировать.
+  good_to_know_before_you_enrol: Хорошо знать, прежде чем записаться
+  piano_improvisation_course_frequently_asked_questions: 'Курс импровизации пианино: часто задаваемые вопросы'
+  udemy_course_offer: Курс Udemy предлагает
+  course_at_a_glance: Курс с первого взгляда
+  open_the_free_piano_course_preview_on: Откройте бесплатный курс фортепиано на Udemy
+  preview_of_john_montgomery_s_piano_improvisation: Предварительный просмотр уроков импровизации фортепиано John Montgomery,
+    показывающих внешний вид клавиатуры и нотацию
+  open_the_piano_improvisation_creative_journey_illustration: Открыть фортепианную импровизацию творческой иллюстрацией
+    путешествия полного размера
+  colourful_piano_improvisation_journey_discover_your_sound: 'Красочное путешествие по импровизации фортепиано: откройте
+    для себя свой звук, начните с простых мелодий, исследуйте аккорды и гармонию, примите творческую свободу и создавайте
+    спонтанно.'
+  overhead_hand_sync_footage: Запись с синхронизацией рук
+  animated_score: Анимированный счет
+  studio_recorded_backing_tracks: Записанные студией бэк-треки
+  join_the_piano_improvisation_course: Присоединяйтесь к курсу импровизации фортепиано
+  lecture: урок
+  lectures: уроков
+  the_course_videos_on_udemy_are_taught: Видеоуроки на Udemy идут на английском языке.
+  enroll_in_the_course_on_udemy: Записаться на курс по Udemy
+  lesson_preview: Урок предварительный
+  interactive_keyboard_lesson_with_overhead_view_notation: Интерактивный урок клавиатуры с видом сверху, нотацией и музыкальным
+    откликом в реальном времени.
+  identify_a_chord: Определить аккорд
+  find_keys: Найти клавиши
+  chord_name: Название аккорда
+  show_keys: Показать клавиши
+  inversion: Обращение
+  tap_the_piano_keys_to_choose_notes: Нажмите клавиши фортепиано, чтобы выбрать ноты.
+  play_chord: ▶ Воспроизвести аккорд
+  play_notes_in_order: Играть в ноты по порядку
+  clear: Ясно.
+  acoustic_piano: 'Акустический фортепиано:'
+  by_alexander_holm: Александр Холм (Alexander Holm)
+  selected_recordings_pitch_shifted_for_this_keyboard: ); выбранные записи, сдвинутые для этой клавиатуры.
+  type_notes: Ввести ноты
+  identify: Определить
+  computer_keyboard_and_midi: Компьютерная клавиатура и MIDI
+  computer_keys: Компьютерные ключи
+  connect_midi: Подключение MIDI
+  use_z_s_x_d_c_v: Используйте Z S X D C V G B H N J M для нижней октавы и Q 2 W 3 E R 5 T 6 Y 7 U для верхней октавы.
+  enable_javascript_to_use_the_interactive_piano: Включите JavaScript для использования интерактивного фортепиано и поиска
+    аккордов.
+  interactive_piano_chord_finder: Интерактивный поиск фортепианных аккордов
+  chord_finder_mode: Режим поиска аккордов
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9 или C/E
+  piano_keyboard: фортепианная клавиатура
+  keyboard_octave: октава клавиатуры
+  down_an_octave: Вниз по октаве
+  up_an_octave: Вверх по октаве
+  keyboard_appearance: Внешний вид клавиатуры
+  example_chords: Примеры аккордов
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4, или 60 64 67
+  search_questions_and_answers: Поиск по вопросам и ответам
+  filter_by_category: Фильтр по теме
+  all_categories: Все категории
+  sound_and_playback: Звук и воспроизведение
+  midi_and_note_input: MIDI и Note Input
+  notation_voices_and_rhythm: Нотация, голоса и ритм
+  score_layout_and_spacing: Укладка и прокладка
+  parts_printing_and_exporting: Части, печать и экспорт
+  saving_recovery_and_performance: Экономия, восстановление и производительность
+  main_navigation: Основное меню
+  toggle_navigation_menu: Открыть или закрыть меню
+  close_menu: Закрыть меню
+  language: Язык
+  home_free_practice: Бесплатная практика на фортепиано
+  home_find_chord: Определить аккорд из его нот
+  home_daily_practice: Импровизировать с ежедневным треком
+  home_practice_or: или начать с
+  home_five_exercises: Пять импровизирующих упражнений для начинающих

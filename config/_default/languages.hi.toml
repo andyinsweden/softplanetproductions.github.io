@@ -1,0 +1,21 @@
+locale = "hi"
+label = "हिन्दी"
+direction = "ltr"
+weight = 9
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "पियानो पाठ्यक्रम, शीट म्यूज़िक, मुफ़्त संगीत टूल और ब्रिटेन के स्कूलों के लिए Sibelius लाइसेंस की सलाह।"
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "संगीत रचना, शिक्षण और प्रस्तुति"
+  bio = "हम स्कूलों, संगीतकारों और संगीत समूहों के लिए संगीत नाटक, शिक्षण सामग्री और टूल बनाते हैं।"
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/hi/" },
+  ]
