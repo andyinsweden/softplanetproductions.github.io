@@ -7,7 +7,8 @@
     return;
   }
 
-  const spanish = document.documentElement.lang === "es";
+  const language = document.documentElement.lang.split("-")[0];
+  const message = (english, spanish, german) => ({ es: spanish, de: german })[language] ?? english;
   const search = controls.querySelector("#sibelius-search-query");
   const categoryFilter = controls.querySelector("#sibelius-search-category");
   const status = controls.querySelector(".sibelius-search__status");
@@ -98,18 +99,22 @@
     }
 
     if (visibleCount === 0) {
-      status.textContent = spanish
-        ? "Ninguna pregunta coincide con los filtros."
-        : "No questions match your filters.";
+      status.textContent = message(
+        "No questions match your filters.",
+        "Ninguna pregunta coincide con los filtros.",
+        "Keine Fragen passen zu den gewählten Filtern."
+      );
       return;
     }
 
     const categoryText = selectedCategory
-      ? ` ${spanish ? "en" : "in"} ${categoryNames.get(selectedCategory)}`
+      ? ` ${message("in", "en", "in der Kategorie")} ${categoryNames.get(selectedCategory)}`
       : "";
-    status.textContent = spanish
-      ? `Se muestran ${visibleCount} de ${questions.length} preguntas${categoryText}.`
-      : `Showing ${visibleCount} of ${questions.length} questions${categoryText}.`;
+    status.textContent = message(
+      `Showing ${visibleCount} of ${questions.length} questions${categoryText}.`,
+      `Se muestran ${visibleCount} de ${questions.length} preguntas${categoryText}.`,
+      `${visibleCount} von ${questions.length} Fragen${categoryText}.`
+    );
   }
 
   search.addEventListener("input", updateResults);

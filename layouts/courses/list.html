@@ -14,7 +14,7 @@
         <h1 id="courses-hero-title">{{ .Params.heroTitle | default .Title }}</h1>
         <p class="courses-hero__intro">{{ .Params.heroIntro }}</p>
         {{ if $isEditorialCourse }}
-          {{ if eq .Language.Lang "es" }}<p>{{ i18n "softplanet.the_course_videos_on_udemy_are_taught" }}</p>{{ end }}
+          {{ if ne .Language.Lang "en" }}<p>{{ i18n "softplanet.the_course_videos_on_udemy_are_taught" }}</p>{{ end }}
           <div class="piano-hero-actions">
             <a class="piano-btn piano-btn--primary" href="{{ $couponURL }}" target="_blank" rel="noopener" style="background: #fbbf24; color: #211500;">{{ i18n "softplanet.get_10_off_this_course_on_udemy" }}</a>
             <a class="piano-btn piano-btn--secondary" href="#piano-improvisation-curriculum">{{ i18n "softplanet.explore_the_course_lessons" }}</a>

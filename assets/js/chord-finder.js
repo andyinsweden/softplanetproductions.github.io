@@ -4,8 +4,8 @@
   const tool = document.querySelector('#sp-chord-finder');
   if (!tool) return;
 
-  const spanish = document.documentElement.lang === "es";
-  const message = (english, español) => spanish ? español : english;
+  const language = document.documentElement.lang.split("-")[0];
+  const message = (english, spanish, german) => ({ es: spanish, de: german })[language] ?? english;
   const find = selector => tool.querySelector(selector);
   const piano = find('[data-piano]');
   const noteInput = find('#sp-chord-notes');
@@ -104,12 +104,12 @@
   function parseNote(text) {
     if (/^\d+$/.test(text) && Number(text) < 128) return { midi: Number(text) };
     const match = text.match(/^([A-G])([#b]{0,2})(-?\d{1,2})?$/i);
-    if (!match) throw new Error(message('Use note names such as C E♭ G, octaves such as C4, or MIDI numbers 0–127.', "Usa notas como C E♭ G, octavas como C4 o números MIDI del 0 al 127."));
+    if (!match) throw new Error(message('Use note names such as C E♭ G, octaves such as C4, or MIDI numbers 0–127.', "Usa notas como C E♭ G, octavas como C4 o números MIDI del 0 al 127.", "Gib Notennamen wie C E♭ G, Töne mit Oktavnummer wie C4 oder MIDI-Notennummern von 0 bis 127 ein."));
     const spelling = display(match[1].toUpperCase() + match[2].replaceAll('B', 'b'));
     const pitch = pitchOf(spelling);
     if (match[3] === undefined) return { pitch, spelling };
     const midi = (Number(match[3]) + 1) * 12 + pitch;
-    if (midi < 0 || midi > 127) throw new Error(message('One of those notes is outside the MIDI range (0–127).', "Una de las notas queda fuera del intervalo MIDI (0–127)."));
+    if (midi < 0 || midi > 127) throw new Error(message('One of those notes is outside the MIDI range (0–127).', "Una de las notas queda fuera del intervalo MIDI (0–127).", "Einer dieser Töne liegt außerhalb des MIDI-Bereichs (0–127)."));
     return { midi, spelling };
   }
 
@@ -118,7 +118,7 @@
     return normalize(text.trim()).split(/[\s,;–—]+|(?<=[A-Ga-g0-9#b])-(?=[A-Ga-g])/).filter(Boolean).map(token => {
       const note = parseNote(token);
       const midi = note.midi ?? previous + (pc(note.pitch - previous) || 12);
-      if (midi > 127) throw new Error(message('Use octaves to keep the notes within the MIDI range (0–127).', "Especifica las octavas para mantener las notas dentro del intervalo MIDI (0–127)."));
+      if (midi > 127) throw new Error(message('Use octaves to keep the notes within the MIDI range (0–127).', "Especifica las octavas para mantener las notas dentro del intervalo MIDI (0–127).", "Gib Oktavnummern an, damit die Töne im MIDI-Bereich (0–127) bleiben."));
       previous = midi;
       return { midi, spelling: note.spelling };
     });
@@ -140,14 +140,14 @@
 
   function parseChord(text) {
     const match = normalize(text.trim()).match(/^([A-Ga-g])([#b]{0,2})(.*?)(?:\/([A-Ga-g][#b]{0,2}))?$/);
-    if (!match) throw new Error(message('Enter a chord such as Cmaj7, B♭m9 or C/E.', "Escribe un acorde como Cmaj7, B♭m9 o C/E."));
+    if (!match) throw new Error(message('Enter a chord such as Cmaj7, B♭m9 or C/E.', "Escribe un acorde como Cmaj7, B♭m9 o C/E.", "Gib einen Akkord wie Cmaj7, B♭m9 oder C/E ein."));
     const root = display(match[1].toUpperCase() + match[2]);
     const quality = match[3].replace(/\s+/g, '');
     const compact = quality.replace(/[()]/g, '');
     const template = templates.find(type => type.aliases.includes(quality)) ??
       templates.find(type => type.aliases.includes(compact)) ??
       templates.find(type => type.aliases.includes(compact.toLowerCase()));
-    if (!template) throw new Error(message('Chord type not found. Try a symbol such as Fmaj7, G7♭9 or Dsus4.', "No se reconoce el tipo de acorde. Prueba con Fmaj7, G7♭9 o Dsus4."));
+    if (!template) throw new Error(message('Chord type not found. Try a symbol such as Fmaj7, G7♭9 or Dsus4.', "No se reconoce el tipo de acorde. Prueba con Fmaj7, G7♭9 o Dsus4.", "Akkordtyp nicht erkannt. Probiere ein Symbol wie Fmaj7, G7♭9 oder Dsus4."));
     const slash = match[4];
     const bass = slash ? display(slash[0].toUpperCase() + slash.slice(1)) : root;
     const toneIndex = template.tones.findIndex(tone => pc(pitchOf(root) + tone.semitones) === pc(pitchOf(bass)));
@@ -277,7 +277,7 @@
     find('[data-arpeggio]').disabled = !notes.length;
     if (input.hasAttribute('aria-invalid')) return;
     if (!notes.length) {
-      setResult(message('Tap the piano keys to choose notes.', "Pulsa las teclas del piano para elegir las notas."));
+      setResult(message('Tap the piano keys to choose notes.', "Pulsa las teclas del piano para elegir las notas.", "Tippe auf die Klaviertasten, um Töne auszuwählen."));
       return;
     }
     const matches = lookup ? [describeVoicing()] : identify(notes);
@@ -287,10 +287,10 @@
       return name + ((midi - pitchOf(name)) / 12 - 1);
     });
     const pitchCount = new Set(notes.map(pc)).size;
-    const fallback = pitchCount === 1 ? message('Choose more notes to find a chord.', "Añade notas para encontrar un acorde.") :
-      pitchCount === 2 ? message('Two distinct notes. Add a third to check for a chord.', "Has elegido dos notas distintas. Añade una tercera para buscar un acorde.") : message('No matching chord for these notes.', "No se encontró ningún acorde para estas notas.");
+    const fallback = pitchCount === 1 ? message('Choose more notes to find a chord.', "Añade notas para encontrar un acorde.", "Wähle weitere Töne, um einen Akkord zu finden.") :
+      pitchCount === 2 ? message('Two distinct notes. Add a third to check for a chord.', "Has elegido dos notas distintas. Añade una tercera para buscar un acorde.", "Zwei unterschiedliche Töne. Füge einen dritten hinzu, um den Akkord zu bestimmen.") : message('No matching chord for these notes.', "No se encontró ningún acorde para estas notas.", "Kein passender Akkord für diese Töne.");
     setResult(best?.symbol ?? fallback, labels.join(' · '),
-      matches.length > 1 ? message('Also fits: ', "También coincide con: ") + matches.slice(1).map(match => match.symbol).join(', ') : '');
+      matches.length > 1 ? message('Also fits: ', "También coincide con: ", "Ebenfalls möglich: ") + matches.slice(1).map(match => match.symbol).join(', ') : '');
   }
 
   function describeVoicing() {
@@ -324,7 +324,7 @@
       chord = parseChord(chordInput.value);
       clearError(chordInput);
       const options = chord.template.tones.map((tone, index) => new Option(
-        index === 0 ? message('Root position', "Posición fundamental") : message('Inversion ', "Inversión ") + index + ' (' + spellTone(chord.root, tone) + message(' in bass)', " en el bajo)"),
+        index === 0 ? message('Root position', "Posición fundamental", "Grundstellung") : message('Inversion ', "Inversión ", "Umkehrung ") + index + ' (' + spellTone(chord.root, tone) + message(' in bass)', " en el bajo)", " im Bass)"),
         String(index),
       ));
       if (chord.inversion < 0) options.unshift(new Option(chord.bass + ' in bass (slash chord)', '-1'));
@@ -350,17 +350,17 @@
   async function loadPianoSamples() {
     if (pianoLoadPromise) return pianoLoadPromise;
     pianoLoadPromise = (async () => {
-      status('[data-audio-status]', message('Loading acoustic grand piano samples…', "Cargando las muestras de piano de cola…"));
+      status('[data-audio-status]', message('Loading acoustic grand piano samples…', "Cargando las muestras de piano de cola…", "Klavieraufnahmen werden geladen …"));
       const results = await Promise.allSettled(pianoSampleNotes.map(async ([midi, name]) => {
         const response = await fetch(pianoSampleBase + name + '.mp3');
-        if (!response.ok) throw new Error(message('Piano sample unavailable', "Muestra de piano no disponible"));
+        if (!response.ok) throw new Error(message('Piano sample unavailable', "Muestra de piano no disponible", "Klavieraufnahme nicht verfügbar"));
         const buffer = await response.arrayBuffer();
         pianoSamples.set(midi, await audio.decodeAudioData(buffer));
       }));
       const loaded = results.filter(result => result.status === 'fulfilled').length;
       status('[data-audio-status]', loaded ?
-        (loaded === pianoSampleNotes.length ? '' : message('Some piano samples unavailable; using nearest available recordings.', "Faltan algunas muestras de piano. Se usarán las grabaciones más cercanas.")) :
-        message('Piano samples unavailable; using synthesized audio instead.', "Las muestras de piano no están disponibles. Se usará sonido sintetizado."));
+        (loaded === pianoSampleNotes.length ? '' : message('Some piano samples unavailable; using nearest available recordings.', "Faltan algunas muestras de piano. Se usarán las grabaciones más cercanas.", "Einige Klavieraufnahmen fehlen. Es werden die nächstgelegenen verfügbaren Aufnahmen verwendet.")) :
+        message('Piano samples unavailable; using synthesized audio instead.', "Las muestras de piano no están disponibles. Se usará sonido sintetizado.", "Die Klavieraufnahmen sind nicht verfügbar. Das Tool verwendet stattdessen synthetischen Klang."));
     })();
     return pianoLoadPromise;
   }
@@ -390,7 +390,7 @@
     if (!notes.length) return;
     try {
       const Audio = window.AudioContext || window.webkitAudioContext;
-      if (!Audio) throw new Error(message('Audio playback is unavailable in this browser.', "Este navegador no permite reproducir audio."));
+      if (!Audio) throw new Error(message('Audio playback is unavailable in this browser.', "Este navegador no permite reproducir audio.", "Dieser Browser unterstützt keine Audiowiedergabe."));
       audio ??= new Audio();
       if (audio.state !== 'running') await audio.resume();
       await loadPianoSamples();
@@ -419,7 +419,7 @@
       });
     } catch {
       if (audio?.state === 'running') playSynth(notes, step);
-      status('[data-audio-status]', message('Sample playback unavailable. Using synthesized audio instead.', "No se pueden reproducir las muestras. Se usará sonido sintetizado."));
+      status('[data-audio-status]', message('Sample playback unavailable. Using synthesized audio instead.', "No se pueden reproducir las muestras. Se usará sonido sintetizado.", "Die Aufnahmen lassen sich nicht abspielen. Stattdessen erklingt synthetischer Ton."));
     }
   }
 
@@ -460,8 +460,8 @@
       midiNotes.set(id, notes);
       midiListeners.set(id, { port, listener });
     }
-    status('[data-midi-status]', inputs.size ? message('MIDI connected. Play a chord on your keyboard.', "MIDI conectado. Toca un acorde en tu teclado.") :
-      message('No MIDI input found. Connect a keyboard and check again.', "No se detectó una entrada MIDI. Conecta un teclado y vuelve a intentarlo."));
+    status('[data-midi-status]', inputs.size ? message('MIDI connected. Play a chord on your keyboard.', "MIDI conectado. Toca un acorde en tu teclado.", "MIDI verbunden. Spiele einen Akkord auf deinem Keyboard.") :
+      message('No MIDI input found. Connect a keyboard and check again.', "No se detectó una entrada MIDI. Conecta un teclado y vuelve a intentarlo.", "Kein MIDI-Eingang gefunden. Schließe ein Keyboard an und versuche es erneut."));
   }
 
   const pressedNotes = () => mode === 'lookup' ? voicing : [...selected].sort((a, b) => a - b);
@@ -549,7 +549,7 @@
     button.disabled = true;
     try {
       if (!navigator.requestMIDIAccess) {
-        status('[data-midi-status]', message('Web MIDI is unavailable in this browser. Try Chrome or Edge with a connected MIDI keyboard.', "Este navegador no ofrece Web MIDI. Prueba Chrome o Edge con un teclado MIDI conectado."));
+        status('[data-midi-status]', message('Web MIDI is unavailable in this browser. Try Chrome or Edge with a connected MIDI keyboard.', "Este navegador no ofrece Web MIDI. Prueba Chrome o Edge con un teclado MIDI conectado.", "Web MIDI ist in diesem Browser nicht verfügbar. Probiere Chrome oder Edge mit angeschlossenem MIDI-Keyboard."));
         return;
       }
       if (!midiAccess) {
@@ -558,7 +558,7 @@
       }
       connectInputs();
     } catch {
-      status('[data-midi-status]', message('MIDI access was denied or is unavailable. Check your browser’s site permissions.', "No se pudo acceder a MIDI. Revisa los permisos del sitio en el navegador."));
+      status('[data-midi-status]', message('MIDI access was denied or is unavailable. Check your browser’s site permissions.', "No se pudo acceder a MIDI. Revisa los permisos del sitio en el navegador.", "Der MIDI-Zugriff wurde verweigert oder ist nicht verfügbar. Prüfe die Berechtigungen für diese Website."));
     } finally {
       button.disabled = false;
     }
