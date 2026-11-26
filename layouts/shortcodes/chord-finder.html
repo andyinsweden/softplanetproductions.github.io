@@ -1,75 +1,75 @@
 {{- $style := resources.Get "css/chord-finder.css" | minify | fingerprint -}}
 {{- $script := resources.Get "js/chord-finder.js" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-<div class="sp-chord" id="sp-chord-finder" aria-label="Interactive piano chord finder">
-  <div class="sp-chord__modes" role="group" aria-label="Chord finder mode">
-    <button type="button" data-mode="identify" aria-pressed="true">Identify a chord</button>
-    <button type="button" data-mode="lookup" aria-pressed="false">Find keys</button>
+<div class="sp-chord" id="sp-chord-finder" aria-label="{{ i18n "softplanet.interactive_piano_chord_finder" }}">
+  <div class="sp-chord__modes" role="group" aria-label="{{ i18n "softplanet.chord_finder_mode" }}">
+    <button type="button" data-mode="identify" aria-pressed="true">{{ i18n "softplanet.identify_a_chord" }}</button>
+    <button type="button" data-mode="lookup" aria-pressed="false">{{ i18n "softplanet.find_keys" }}</button>
   </div>
 
   <div data-panel="lookup" hidden>
     <form class="sp-chord__form" data-chord-form>
-      <label for="sp-chord-symbol">Chord name</label>
+      <label for="sp-chord-symbol">{{ i18n "softplanet.chord_name" }}</label>
       <div class="sp-chord__row">
-        <input id="sp-chord-symbol" type="text" value="Cmaj7" maxlength="40" spellcheck="false" autocomplete="off" autocapitalize="none" placeholder="Cmaj7, B♭m9, or C/E">
-        <button type="submit">Show keys</button>
+        <input id="sp-chord-symbol" type="text" value="Cmaj7" maxlength="40" spellcheck="false" autocomplete="off" autocapitalize="none" placeholder="{{ i18n "softplanet.cmaj7_b_m9_or_c_e" }}">
+        <button type="submit">{{ i18n "softplanet.show_keys" }}</button>
       </div>
     </form>
     <div class="sp-chord__row sp-chord__inversion">
-      <label for="sp-chord-inversion">Inversion</label>
+      <label for="sp-chord-inversion">{{ i18n "softplanet.inversion" }}</label>
       <select id="sp-chord-inversion"></select>
     </div>
   </div>
 
-  <div class="sp-chord__keyboard" role="group" aria-label="Piano keyboard" data-piano data-depth="true"></div>
+  <div class="sp-chord__keyboard" role="group" aria-label="{{ i18n "softplanet.piano_keyboard" }}" data-piano data-depth="true"></div>
   <div class="sp-chord__settings">
-    <div class="sp-chord__row" role="group" aria-label="Keyboard octave">
-      <button data-octave="-1" type="button" aria-label="Down an octave">‹</button>
+    <div class="sp-chord__row" role="group" aria-label="{{ i18n "softplanet.keyboard_octave" }}">
+      <button data-octave="-1" type="button" aria-label="{{ i18n "softplanet.down_an_octave" }}">‹</button>
       <span data-range></span>
-      <button data-octave="1" type="button" aria-label="Up an octave">›</button>
+      <button data-octave="1" type="button" aria-label="{{ i18n "softplanet.up_an_octave" }}">›</button>
     </div>
-    <div class="sp-chord__row" role="group" aria-label="Keyboard appearance">
+    <div class="sp-chord__row" role="group" aria-label="{{ i18n "softplanet.keyboard_appearance" }}">
       <button type="button" data-depth-button="false" aria-pressed="false">2D</button>
       <button type="button" data-depth-button="true" aria-pressed="true">3D</button>
     </div>
   </div>
 
   <div class="sp-chord__result" role="status" aria-live="polite" aria-atomic="true">
-    <strong data-result>Tap the piano keys to choose notes.</strong>
+    <strong data-result>{{ i18n "softplanet.tap_the_piano_keys_to_choose_notes" }}</strong>
     <span data-notes></span>
     <small data-alternatives></small>
   </div>
   <div class="sp-chord__row sp-chord__actions">
-    <button type="button" data-play disabled>▶ Play chord</button>
-    <button type="button" data-arpeggio disabled>Play notes in order</button>
-    <button type="button" data-clear data-panel="identify">Clear</button>
+    <button type="button" data-play disabled>{{ i18n "softplanet.play_chord" }}</button>
+    <button type="button" data-arpeggio disabled>{{ i18n "softplanet.play_notes_in_order" }}</button>
+    <button type="button" data-clear data-panel="identify">{{ i18n "softplanet.clear" }}</button>
   </div>
   <p data-audio-status role="status" aria-live="polite" hidden></p>
-  <small class="sp-chord__sample-credit">Acoustic piano: <a href="https://github.com/sfzinstruments/SalamanderGrandPiano" target="_blank" rel="noopener noreferrer">Salamander Grand Piano V3</a> by Alexander Holm (<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>); selected recordings pitch-shifted for this keyboard.</small>
+  <small class="sp-chord__sample-credit">{{ i18n "softplanet.acoustic_piano" }} <a href="https://github.com/sfzinstruments/SalamanderGrandPiano" target="_blank" rel="noopener noreferrer">Salamander Grand Piano V3</a> {{ i18n "softplanet.by_alexander_holm" }}<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>{{ i18n "softplanet.selected_recordings_pitch_shifted_for_this_keyboard" }}</small>
 
   <div data-panel="identify">
-    <div class="sp-chord__row sp-chord__examples" aria-label="Example chords">
+    <div class="sp-chord__row sp-chord__examples" aria-label="{{ i18n "softplanet.example_chords" }}">
       <button type="button" data-example="C3 E3 G3">C–E–G</button>
       <button type="button" data-example="E3 G3 C4">E–G–C</button>
       <button type="button" data-example="C3 Eb3 G3 Bb3">C–E♭–G–B♭</button>
     </div>
     <form class="sp-chord__form" data-note-form>
-      <label for="sp-chord-notes">Type notes</label>
+      <label for="sp-chord-notes">{{ i18n "softplanet.type_notes" }}</label>
       <div class="sp-chord__row">
-        <input id="sp-chord-notes" type="text" maxlength="160" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="C E G, C4 E4 G4, or 60 64 67">
-        <button type="submit">Identify</button>
+        <input id="sp-chord-notes" type="text" maxlength="160" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="{{ i18n "softplanet.c_e_g_c4_e4_g4_or" }}">
+        <button type="submit">{{ i18n "softplanet.identify" }}</button>
       </div>
     </form>
     <details class="sp-chord__inputs">
-      <summary>Computer keyboard and MIDI</summary>
+      <summary>{{ i18n "softplanet.computer_keyboard_and_midi" }}</summary>
       <div class="sp-chord__row">
-        <button type="button" data-computer aria-pressed="false">Computer keys</button>
-        <button type="button" data-midi>Connect MIDI</button>
+        <button type="button" data-computer aria-pressed="false">{{ i18n "softplanet.computer_keys" }}</button>
+        <button type="button" data-midi>{{ i18n "softplanet.connect_midi" }}</button>
       </div>
-      <p data-computer-help hidden>Use Z S X D C V G B H N J M for the lower octave and Q 2 W 3 E R 5 T 6 Y 7 U for the upper octave.</p>
+      <p data-computer-help hidden>{{ i18n "softplanet.use_z_s_x_d_c_v" }}</p>
       <p data-midi-status role="status" hidden></p>
     </details>
   </div>
-  <noscript>Enable JavaScript to use the interactive piano and chord finder.</noscript>
+  <noscript>{{ i18n "softplanet.enable_javascript_to_use_the_interactive_piano" }}</noscript>
 </div>
 <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous" defer></script>

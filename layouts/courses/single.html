@@ -37,10 +37,10 @@
               <figure class="course-editorial__video">
                 <div class="course-editorial__video-frame">
                   <div class="course-editorial__video-placeholder">
-                    <span>Lesson Preview</span>
+                    <span>{{ i18n "softplanet.lesson_preview" }}</span>
                   </div>
                 </div>
-                <figcaption>Interactive keyboard lesson with overhead view, notation, and real-time musical response.</figcaption>
+                <figcaption>{{ i18n "softplanet.interactive_keyboard_lesson_with_overhead_view_notation" }}</figcaption>
               </figure>
             </div>
 
@@ -74,15 +74,15 @@
                 <article class="course-editorial__card">
                   {{ if eq .title "Overhead hand-sync footage" }}
                     <div class="course-editorial__card-media course-editorial__card-media--image">
-                      <img src="/piano-improvisation-overhead.webp" alt="Overhead hand-sync footage" loading="lazy" />
+                      <img src="/piano-improvisation-overhead.webp" alt="{{ i18n "softplanet.overhead_hand_sync_footage" }}" loading="lazy" />
                     </div>
                   {{ else if eq .title "Animated scores" }}
                     <div class="course-editorial__card-media course-editorial__card-media--image">
-                      <img src="/animated-score-card.webp" alt="Animated score" loading="lazy" />
+                      <img src="/animated-score-card.webp" alt="{{ i18n "softplanet.animated_score" }}" loading="lazy" />
                     </div>
                   {{ else if eq .title "Studio-recorded backing tracks" }}
                     <div class="course-editorial__card-media course-editorial__card-media--image media-3">
-                      <img src="/studio-recordings.jpg" alt="Studio-recorded backing tracks" loading="lazy" />
+                      <img src="/studio-recordings.jpg" alt="{{ i18n "softplanet.studio_recorded_backing_tracks" }}" loading="lazy" />
                     </div>
                   {{ else if .heroImage }}
                     <div class="course-editorial__card-media course-editorial__card-media--image {{ .mediaClass }}">
@@ -116,7 +116,7 @@
                   <p>{{ . }}</p>
                 {{ end }}
                 {{ with .Params.ctaUrl }}
-                  <a class="course-editorial__cta" href="{{ $.Params.ctaUrl }}" target="_blank" rel="noopener">{{ $.Params.ctaText | default "Enroll in the course on Udemy" }}</a>
+                  <a class="course-editorial__cta" href="{{ $.Params.ctaUrl }}" target="_blank" rel="noopener">{{ $.Params.ctaText | default (i18n "softplanet.enroll_in_the_course_on_udemy") }}</a>
                 {{ end }}
               </div>
             </div>

@@ -1,8 +1,8 @@
 {{ define "main" }}
   {{ $couponURL := "https://www.udemy.com/course/modern-piano-improvisation-2026/?couponCode=3D93BC4843A58A5BAA43" }}
-  {{ $isEditorialCourse := eq .RelPermalink "/courses/piano-improvisation/" }}
+  {{ $isEditorialCourse := eq .Path "/courses/piano-improvisation" }}
 
-  {{ if $isEditorialCourse }}
+  {{ if and $isEditorialCourse (eq .Language.Lang "en") }}
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Course","@id":"https://softplanetproductions.com/courses/piano-improvisation/#course","name":"Piano Improvisation Course: Learn to Play by Ear","alternateName":"Modern Piano Improvisation 2026","description":"Self-paced online piano improvisation course with John Montgomery. Learn to play piano by ear, improvise melodies, master chords, rhythm and blues, and practise with studio-recorded backing tracks.","url":"https://softplanetproductions.com/courses/piano-improvisation/","image":"https://softplanetproductions.com/piano-improvisation-udemy.webp","inLanguage":"en","educationalLevel":"Beginner and intermediate","provider":{"@type":"Organization","name":"Softplanet Productions","url":"https://softplanetproductions.com/"},"instructor":{"@type":"Person","name":"John Montgomery"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"online","courseWorkload":"PT4H46M"},"teaches":["Piano improvisation","Playing piano by ear","Piano chords and chord progressions","Piano scales and musical phrasing","Rhythm and piano melodies","Two-hand independence"],"sameAs":"https://www.udemy.com/course/modern-piano-improvisation-2026/"}
     </script>
@@ -14,18 +14,19 @@
         <h1 id="courses-hero-title">{{ .Params.heroTitle | default .Title }}</h1>
         <p class="courses-hero__intro">{{ .Params.heroIntro }}</p>
         {{ if $isEditorialCourse }}
+          {{ if eq .Language.Lang "es" }}<p>{{ i18n "softplanet.the_course_videos_on_udemy_are_taught" }}</p>{{ end }}
           <div class="piano-hero-actions">
-            <a class="piano-btn piano-btn--primary" href="{{ $couponURL }}" target="_blank" rel="noopener" style="background: #fbbf24; color: #211500;">Get €10 off this course on Udemy</a>
-            <a class="piano-btn piano-btn--secondary" href="#piano-improvisation-curriculum">Explore the Course Lessons</a>
+            <a class="piano-btn piano-btn--primary" href="{{ $couponURL }}" target="_blank" rel="noopener" style="background: #fbbf24; color: #211500;">{{ i18n "softplanet.get_10_off_this_course_on_udemy" }}</a>
+            <a class="piano-btn piano-btn--secondary" href="#piano-improvisation-curriculum">{{ i18n "softplanet.explore_the_course_lessons" }}</a>
           </div>
         {{ end }}
       </div>
     </section>
 
     {{ if $isEditorialCourse }}
-      <aside aria-label="Udemy course offer" style="background: #fbbf24; color: #211500; padding: clamp(1.25rem, 4vw, 2rem) 1rem; text-align: center;">
-        <p style="margin: 0 0 0.85rem; font-size: clamp(1.35rem, 4vw, 1.8rem); font-weight: 800; line-height: 1.25;">Save €10 on the Piano Improvisation Course</p>
-        <a class="piano-btn piano-btn--primary" href="{{ $couponURL }}" target="_blank" rel="noopener" style="background: #211500; color: #fff; font-size: 1rem; white-space: normal;">Get €10 off this course on Udemy</a>
+      <aside aria-label="{{ i18n "softplanet.udemy_course_offer" }}" style="background: #fbbf24; color: #211500; padding: clamp(1.25rem, 4vw, 2rem) 1rem; text-align: center;">
+        <p style="margin: 0 0 0.85rem; font-size: clamp(1.35rem, 4vw, 1.8rem); font-weight: 800; line-height: 1.25;">{{ i18n "softplanet.save_10_on_the_piano_improvisation_course" }}</p>
+        <a class="piano-btn piano-btn--primary" href="{{ $couponURL }}" target="_blank" rel="noopener" style="background: #211500; color: #fff; font-size: 1rem; white-space: normal;">{{ i18n "softplanet.get_10_off_this_course_on_udemy" }}</a>
       </aside>
       <article class="courses-content courses-detail">
         <div class="courses-detail__body">
@@ -40,7 +41,7 @@
             </div>
 
             {{ with .Params.courseStats }}
-              <div class="piano-course-stats" aria-label="Course at a glance">
+              <div class="piano-course-stats" aria-label="{{ i18n "softplanet.course_at_a_glance" }}">
                 {{ range . }}
                   <div class="piano-course-stat"><strong>{{ .value }}</strong><span>{{ .label }}</span></div>
                 {{ end }}
@@ -62,12 +63,12 @@
 
                 <figure class="course-editorial__video">
                   <div class="course-editorial__video-frame course-editorial__video-frame--image">
-                    <a class="piano-preview-link" href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener" aria-label="Open the free piano course preview on Udemy">
-                      <img src="/piano-improvisation-udemy.webp" alt="Preview of John Montgomery's piano improvisation lessons showing an overhead keyboard view and notation" loading="eager" />
+                    <a class="piano-preview-link" href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener" aria-label="{{ i18n "softplanet.open_the_free_piano_course_preview_on" }}">
+                      <img src="/piano-improvisation-udemy.webp" alt="{{ i18n "softplanet.preview_of_john_montgomery_s_piano_improvisation" }}" loading="eager" />
                       <span class="piano-preview-play" aria-hidden="true">▶</span>
                     </a>
                   </div>
-                  <figcaption>See the hands, hear the notes and follow the notation. <a href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener">Watch the free course preview on Udemy</a>.</figcaption>
+                  <figcaption>{{ i18n "softplanet.see_the_hands_hear_the_notes_and" }} <a href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener">{{ i18n "softplanet.watch_the_free_course_preview_on_udemy" }}</a>.</figcaption>
                 </figure>
               </div>
 
@@ -88,9 +89,9 @@
 
             {{ with .Params.courseBenefits }}
               <section class="piano-selling-section" id="why-this-piano-course">
-                <p class="piano-section-kicker">Learn to create, not just repeat</p>
-                <h2>Why This Piano Improvisation Course Is Different</h2>
-                <p>There is a difference between learning a piece and knowing what to play when the score disappears. John's lessons combine simple, practical demonstrations with just enough music theory to help you make your own choices on the keyboard.</p>
+                <p class="piano-section-kicker">{{ i18n "softplanet.learn_to_create_not_just_repeat" }}</p>
+                <h2>{{ i18n "softplanet.why_this_piano_improvisation_course_is_different" }}</h2>
+                <p>{{ i18n "softplanet.there_is_a_difference_between_learning_a" }}</p>
                 <div class="piano-benefit-grid">
                   {{ range . }}
                     <div class="piano-benefit-card"><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
@@ -99,38 +100,38 @@
               </section>
             {{ end }}
             <section class="piano-selling-section" aria-labelledby="beginner-piano-exercise-title">
-              <p class="piano-section-kicker">Try improvising right now</p>
-              <h2 id="beginner-piano-exercise-title">How to Improvise on Piano: A Simple Beginner Exercise</h2>
-              <p>You do not need a complex piece of music to get started. Try this short exercise on any piano or keyboard to hear how small choices can become an original melody.</p>
+              <p class="piano-section-kicker">{{ i18n "softplanet.try_improvising_right_now" }}</p>
+              <h2 id="beginner-piano-exercise-title">{{ i18n "softplanet.how_to_improvise_on_piano_a_simple" }}</h2>
+              <p>{{ i18n "softplanet.you_do_not_need_a_complex_piece" }}</p>
               <div class="piano-journey">
-                <div class="piano-journey__step"><b>Step 1</b><h3>Choose a few notes</h3><p>Find middle C and play C, D, E and G with your right hand. Keep a comfortable, steady pulse.</p></div>
-                <div class="piano-journey__step"><b>Step 2</b><h3>Give it a foundation</h3><p>Play a lower C with your left hand at the start of each short phrase. Let the bass note support your melody.</p></div>
-                <div class="piano-journey__step"><b>Step 3</b><h3>Change the melody</h3><p>Rearrange the four right-hand notes, vary the rhythm and leave occasional spaces. Repeat a favourite idea, then answer it with a new one.</p></div>
+                <div class="piano-journey__step"><b>{{ i18n "softplanet.step_1" }}</b><h3>{{ i18n "softplanet.choose_a_few_notes" }}</h3><p>{{ i18n "softplanet.find_middle_c_and_play_c_d" }}</p></div>
+                <div class="piano-journey__step"><b>{{ i18n "softplanet.step_2" }}</b><h3>{{ i18n "softplanet.give_it_a_foundation" }}</h3><p>{{ i18n "softplanet.play_a_lower_c_with_your_left" }}</p></div>
+                <div class="piano-journey__step"><b>{{ i18n "softplanet.step_3" }}</b><h3>{{ i18n "softplanet.change_the_melody" }}</h3><p>{{ i18n "softplanet.rearrange_the_four_right_hand_notes_vary" }}</p></div>
               </div>
-              <p>That is the starting point of piano improvisation: listen, experiment and develop a musical idea. In the full course, John Montgomery demonstrates how to expand this approach using chords, different time signatures, two-hand patterns and backing tracks.</p>
+              <p>{{ i18n "softplanet.that_is_the_starting_point_of_piano" }}</p>
             </section>
             <section class="piano-selling-section" aria-labelledby="piano-free-lesson-title">
-              <p class="piano-section-kicker">Free lessons to try before you enrol</p>
-              <h2 id="piano-free-lesson-title">Practise Piano Improvisation with These Beginner Guides</h2>
-              <p>Start with a short lesson that answers the question you have today, then return to the course curriculum for a structured path through chords, rhythm, melodies and hand independence.</p>
+              <p class="piano-section-kicker">{{ i18n "softplanet.free_lessons_to_try_before_you_enrol" }}</p>
+              <h2 id="piano-free-lesson-title">{{ i18n "softplanet.practise_piano_improvisation_with_these_beginner_guides" }}</h2>
+              <p>{{ i18n "softplanet.start_with_a_short_lesson_that_answers" }}</p>
               <ul class="piano-extras">
-                <li><a href="/tutorials/how-to-learn-piano-improvisation/">How to start improvising on piano</a> — five manageable exercises for your first melodies.</li>
-                <li><a href="/tutorials/piano-chord-progressions-for-beginners/">Piano chord progressions for beginners</a> — play four useful harmonic loops.</li>
-                <li><a href="/tutorials/piano-improvisation-with-both-hands/">How to improvise with both hands</a> — coordinate a steady bass with a simple melody.</li>
-                <li><a href="/tutorials/pentatonic-piano-improvisation/">Pentatonic scale improvisation</a> — make music with five notes.</li>
-                <li><a href="/tutorials/playing-piano-by-ear-after-classical-training/">Playing piano by ear after classical training</a> — use your reading skills as a foundation for creative playing.</li>
-                <li><a href="/tools/daily-piano-improvisation/">Free daily piano improvisation challenge</a> — practise with a browser-based chord loop and drum rhythm.</li>
+                <li><a href="{{ "tutorials/how-to-learn-piano-improvisation/" | relLangURL }}">{{ i18n "softplanet.how_to_start_improvising_on_piano" }}</a> {{ i18n "softplanet.five_manageable_exercises_for_your_first_melodies" }}</li>
+                <li><a href="{{ "tutorials/piano-chord-progressions-for-beginners/" | relLangURL }}">{{ i18n "softplanet.piano_chord_progressions_for_beginners" }}</a> {{ i18n "softplanet.play_four_useful_harmonic_loops" }}</li>
+                <li><a href="{{ "tutorials/piano-improvisation-with-both-hands/" | relLangURL }}">{{ i18n "softplanet.how_to_improvise_with_both_hands" }}</a> {{ i18n "softplanet.coordinate_a_steady_bass_with_a_simple" }}</li>
+                <li><a href="{{ "tutorials/pentatonic-piano-improvisation/" | relLangURL }}">{{ i18n "softplanet.pentatonic_scale_improvisation" }}</a> {{ i18n "softplanet.make_music_with_five_notes" }}</li>
+                <li><a href="{{ "tutorials/playing-piano-by-ear-after-classical-training/" | relLangURL }}">{{ i18n "softplanet.playing_piano_by_ear_after_classical_training" }}</a> {{ i18n "softplanet.use_your_reading_skills_as_a_foundation" }}</li>
+                <li><a href="{{ "tools/daily-piano-improvisation/" | relLangURL }}">{{ i18n "softplanet.free_daily_piano_improvisation_challenge" }}</a> {{ i18n "softplanet.practise_with_a_browser_based_chord_loop" }}</li>
               </ul>
             </section>
             {{ with .Params.studentJourney }}
               <section class="piano-selling-section" aria-labelledby="journey-title">
-                <p class="piano-section-kicker">A clear path from your first note</p>
-                <h2 id="journey-title">What Will You Be Able to Play?</h2>
+                <p class="piano-section-kicker">{{ i18n "softplanet.a_clear_path_from_your_first_note" }}</p>
+                <h2 id="journey-title">{{ i18n "softplanet.what_will_you_be_able_to_play" }}</h2>
                 <figure class="piano-journey-illustration">
-                  <a href="/piano-improvisation-creative-journey.webp" target="_blank" rel="noopener" aria-label="Open the piano improvisation creative journey illustration full size">
-                    <img src="/piano-improvisation-creative-journey.webp" alt="Colourful piano improvisation journey: discover your sound, start with simple melodies, explore chords and harmony, embrace creative freedom and create spontaneously." width="1536" height="838" loading="lazy" decoding="async" />
+                  <a href="/piano-improvisation-creative-journey.webp" target="_blank" rel="noopener" aria-label="{{ i18n "softplanet.open_the_piano_improvisation_creative_journey_illustration" }}">
+                    <img src="/piano-improvisation-creative-journey.webp" alt="{{ i18n "softplanet.colourful_piano_improvisation_journey_discover_your_sound" }}" width="1536" height="838" loading="lazy" decoding="async" />
                   </a>
-                  <figcaption>Discover your sound and develop simple musical ideas into expressive piano improvisation. Select the illustration to view it full size.</figcaption>
+                  <figcaption>{{ i18n "softplanet.discover_your_sound_and_develop_simple_musical" }}</figcaption>
                 </figure>
                 <div class="piano-journey">
                   {{ range . }}
@@ -154,15 +155,15 @@
                   <article class="course-editorial__card">
                     {{ if eq .title "Overhead hand-sync footage" }}
                       <div class="course-editorial__card-media course-editorial__card-media--image">
-                        <img src="/piano-improvisation-overhead.webp" alt="Overhead hand-sync footage" loading="lazy" />
+                        <img src="/piano-improvisation-overhead.webp" alt="{{ i18n "softplanet.overhead_hand_sync_footage" }}" loading="lazy" />
                       </div>
                     {{ else if eq .title "Animated scores" }}
                       <div class="course-editorial__card-media course-editorial__card-media--image">
-                        <img src="/animated-score-card.webp" alt="Animated score" loading="lazy" />
+                        <img src="/animated-score-card.webp" alt="{{ i18n "softplanet.animated_score" }}" loading="lazy" />
                       </div>
                     {{ else if eq .title "Studio-recorded backing tracks" }}
                       <div class="course-editorial__card-media course-editorial__card-media--image media-3">
-                        <img src="/studio-recordings.jpg" alt="Studio-recorded backing tracks" loading="lazy" />
+                        <img src="/studio-recordings.jpg" alt="{{ i18n "softplanet.studio_recorded_backing_tracks" }}" loading="lazy" />
                       </div>
                     {{ else if .heroImage }}
                       <div class="course-editorial__card-media course-editorial__card-media--image {{ .mediaClass }}">
@@ -183,54 +184,54 @@
 
             {{ with .Params.sectionsDetailed }}
               <section class="piano-selling-section" id="piano-improvisation-curriculum" aria-labelledby="curriculum-title">
-                <p class="piano-section-kicker">A substantial, practical learning programme</p>
-                <h2 id="curriculum-title">Explore the Piano Improvisation Course Curriculum</h2>
-                <p>With 15 sections and 110 lectures on Udemy, there is plenty to discover. Open the sections below to see specific lesson subjects, exercises and the musical skills they develop.</p>
+                <p class="piano-section-kicker">{{ i18n "softplanet.a_substantial_practical_learning_programme" }}</p>
+                <h2 id="curriculum-title">{{ i18n "softplanet.explore_the_piano_improvisation_course_curriculum" }}</h2>
+                <p>{{ i18n "softplanet.with_15_sections_and_110_lectures_on" }}</p>
                 <div class="piano-course-curriculum">
                   {{ range $index, $module := . }}
                     <details class="piano-curriculum-entry" {{ if eq $index 0 }}open{{ end }}>
                       <summary>
                         <span class="piano-curriculum-index">{{ printf "%02d" (add $index 1) }}</span>
-                        <span class="piano-curriculum-name">{{ $module.title }}<span class="piano-curriculum-meta">{{ $module.count }} {{ if eq $module.count 1 }}lecture{{ else }}lectures{{ end }} · {{ $module.time }}</span></span>
+                        <span class="piano-curriculum-name">{{ $module.title }}<span class="piano-curriculum-meta">{{ $module.count }} {{ if eq $module.count 1 }}{{ i18n "softplanet.lecture" }}{{ else }}{{ i18n "softplanet.lectures" }}{{ end }} · {{ $module.time }}</span></span>
                       </summary>
                       <div class="piano-curriculum-body">
                         <p>{{ $module.summary }}</p>
-                        <p class="piano-curriculum-outcome"><strong>Your goal:</strong> {{ $module.result }}</p>
-                        <h3>Skills covered</h3>
+                        <p class="piano-curriculum-outcome"><strong>{{ i18n "softplanet.your_goal" }}</strong> {{ $module.result }}</p>
+                        <h3>{{ i18n "softplanet.skills_covered" }}</h3>
                         <ul>{{ range $module.topics }}<li>{{ . }}</li>{{ end }}</ul>
-                        <h3>Lesson programme</h3>
+                        <h3>{{ i18n "softplanet.lesson_programme" }}</h3>
                         <ol>{{ range $module.lessons }}<li>{{ . }}</li>{{ end }}</ol>
                       </div>
                     </details>
                   {{ end }}
                 </div>
                 {{ with $.Params.curriculumCaveat }}<p class="piano-curriculum-note">{{ . }}</p>{{ end }}
-                <p><a href="{{ $.Params.ctaUrl }}" target="_blank" rel="noopener">View the current full syllabus, preview videos and enrolment options on Udemy</a>.</p>
+                <p><a href="{{ $.Params.ctaUrl }}" target="_blank" rel="noopener">{{ i18n "softplanet.view_the_current_full_syllabus_preview_videos" }}</a>.</p>
               </section>
             {{ end }}
-            <section class="piano-inline-cta" aria-label="Join the piano improvisation course">
-              <div><h3>Ready to make music of your own?</h3><p>Find your own way around the keyboard with a practical video course taught by John Montgomery.</p></div>
-              <a class="piano-btn piano-btn--primary" href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener">See the Course on Udemy</a>
+            <section class="piano-inline-cta" aria-label="{{ i18n "softplanet.join_the_piano_improvisation_course" }}">
+              <div><h3>{{ i18n "softplanet.ready_to_make_music_of_your_own" }}</h3><p>{{ i18n "softplanet.find_your_own_way_around_the_keyboard" }}</p></div>
+              <a class="piano-btn piano-btn--primary" href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener">{{ i18n "softplanet.see_the_course_on_udemy" }}</a>
             </section>
             {{ with .Params.courseExtras }}
               <section class="piano-selling-section" aria-labelledby="included-title">
-                <p class="piano-section-kicker">Everything works together</p>
-                <h2 id="included-title">What Is Included in the Course?</h2>
+                <p class="piano-section-kicker">{{ i18n "softplanet.everything_works_together" }}</p>
+                <h2 id="included-title">{{ i18n "softplanet.what_is_included_in_the_course" }}</h2>
                 <ul class="piano-extras">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
               </section>
             {{ end }}
             {{ with .Params.audience }}
               <section class="piano-selling-section" aria-labelledby="audience-title">
-                <p class="piano-section-kicker">Learn at your own pace</p>
-                <h2 id="audience-title">Who Is This Piano Course For?</h2>
-                <p>Whether you are taking your first steps on the piano or can already play pieces by reading music, this course is designed to develop your ability to improvise.</p>
+                <p class="piano-section-kicker">{{ i18n "softplanet.learn_at_your_own_pace" }}</p>
+                <h2 id="audience-title">{{ i18n "softplanet.who_is_this_piano_course_for" }}</h2>
+                <p>{{ i18n "softplanet.whether_you_are_taking_your_first_steps" }}</p>
                 <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
               </section>
             {{ end }}
             {{ with .Params.courseFAQ }}
               <section class="piano-selling-section" aria-labelledby="faq-title">
-                <p class="piano-section-kicker">Good to know before you enrol</p>
-                <h2 id="faq-title">Piano Improvisation Course: Frequently Asked Questions</h2>
+                <p class="piano-section-kicker">{{ i18n "softplanet.good_to_know_before_you_enrol" }}</p>
+                <h2 id="faq-title">{{ i18n "softplanet.piano_improvisation_course_frequently_asked_questions" }}</h2>
                 <div class="piano-faq">
                   {{ range . }}<details><summary>{{ .question }}</summary><p>{{ .answer }}</p></details>{{ end }}
                 </div>
@@ -252,7 +253,7 @@
                   {{ with .Params.bioText }}
                     <p>{{ . }}</p>
                   {{ end }}
-                  <a class="course-editorial__cta" href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener">{{ .Params.ctaText | default "Enroll in the course on Udemy" }}</a>
+                  <a class="course-editorial__cta" href="{{ .Params.ctaUrl }}" target="_blank" rel="noopener">{{ .Params.ctaText | default (i18n "softplanet.enroll_in_the_course_on_udemy") }}</a>
                 </div>
               </div>
             </section>
@@ -266,7 +267,7 @@
         </div>
 
         {{ if .Data.Pages }}
-          <h2>Browse music courses</h2>
+          <h2>{{ i18n "softplanet.browse_music_courses" }}</h2>
           <div class="courses-list">
             {{ range (.Paginate .Pages).Pages }}
               {{ partial "article-link.html" . }}

@@ -1479,3 +1479,74 @@ main iframe[src*="youtube-nocookie.com/embed"] {
   }
   .yamaha-model-showcase__photo-credit{margin-top:.6rem}
 }
+
+.softplanet-language {
+  position: relative;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.softplanet-language summary {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .45rem .65rem;
+  border: 1px solid #ffffff66;
+  border-radius: .35rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.softplanet-language summary::-webkit-details-marker {
+  display: none;
+}
+
+.softplanet-language summary::after {
+  content: "";
+  width: .45em;
+  height: .45em;
+  margin-inline-start: .15em;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-.1em) rotate(45deg);
+}
+
+.softplanet-language ul {
+  position: absolute;
+  inset-inline-end: 0;
+  z-index: 50;
+  min-width: 100%;
+  margin: .25rem 0 0;
+  padding: .25rem;
+  list-style: none;
+  border: 1px solid #ffffff66;
+  border-radius: .35rem;
+  background: #000;
+}
+
+.softplanet-language a {
+  display: block;
+  padding: .4rem .55rem;
+}
+
+.softplanet-language a[aria-current],
+.softplanet-language a:hover {
+  background: #282828;
+}
+
+#menu-wrapper .softplanet-language {
+  width: max-content;
+  margin-bottom: 1.5rem;
+}
+
+#menu-wrapper .softplanet-language ul {
+  position: static;
+}
+
+@media (min-width: 640px) and (max-width: 1160px) {
+  header nav > ul {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: .15rem;
+  }
+}

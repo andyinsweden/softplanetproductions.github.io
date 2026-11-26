@@ -1,5 +1,5 @@
 <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
-  <nav class="flex items-center justify-between" aria-label="Main Navigation">
+  <nav class="flex items-center justify-between" aria-label="{{ i18n "softplanet.main_navigation" }}">
     {{ $page := . }}
     
     {{/* Site Logo / Title */}}
@@ -15,7 +15,7 @@
         type="button" 
         aria-expanded="false" 
         aria-controls="menu-wrapper"
-        aria-label="Toggle navigation menu"
+        aria-label="{{ i18n "softplanet.toggle_navigation_menu" }}"
         class="flex items-center justify-center cursor-pointer p-1 sm:hidden focus:outline-none"
       >
         <svg 
@@ -46,7 +46,7 @@
             <button 
               id="menu-close"
               type="button" 
-              aria-label="Close menu"
+              aria-label="{{ i18n "softplanet.close_menu" }}"
               class="cursor-pointer p-1 text-white focus:outline-none"
             >
               <svg 
@@ -65,6 +65,7 @@
             </button>
           </li>
 
+          {{ partial "language-switcher.html" . }}
           {{ range .Site.Menus.main }}
             {{ if and (eq .Params.action "locale") (or (not page.IsTranslated) (not hugo.IsMultilingual)) }}
               {{ continue }}
@@ -124,6 +125,7 @@
             {{ end }}
           </li>
         {{ end }}
+        {{ partial "language-switcher.html" . }}
       </ul>
 
     {{ end }}
@@ -172,6 +174,12 @@
       }
 
       document.addEventListener("keydown", function(e) {
+        const languageMenu = e.target.closest(".softplanet-language[open]");
+        if (e.key === "Escape" && languageMenu) {
+          languageMenu.open = false;
+          languageMenu.querySelector("summary").focus();
+          return;
+        }
         if (e.key === "Escape" && wrapper && !wrapper.classList.contains("invisible")) {
           e.preventDefault();
           closeMenu();
