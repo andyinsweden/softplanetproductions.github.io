@@ -1,9 +1,8 @@
-<header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
-  <nav class="flex items-center justify-between" aria-label="{{ i18n "softplanet.main_navigation" }}">
-    {{ $page := . }}
+<header class="softplanet-header font-semibold text-white print:hidden">
+  <nav class="flex items-center justify-between gap-4" aria-label="{{ i18n "softplanet.main_navigation" }}">
     
     {{/* Site Logo / Title */}}
-    <div class="z-40 flex flex-row items-center">
+    <div class="softplanet-brand z-40 flex items-center">
       {{ partial "logo.html" . }}
     </div>
 
@@ -16,7 +15,7 @@
         aria-expanded="false" 
         aria-controls="menu-wrapper"
         aria-label="{{ i18n "softplanet.toggle_navigation_menu" }}"
-        class="flex items-center justify-center cursor-pointer p-1 sm:hidden focus:outline-none"
+        class="softplanet-menu-toggle cursor-pointer"
       >
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
@@ -26,7 +25,7 @@
           stroke-width="2.5" 
           stroke-linecap="round" 
           stroke-linejoin="round"
-          style="width: 36px !important; height: 36px !important; display: block !important;"
+          width="26" height="26"
         >
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -38,7 +37,7 @@
       <div 
         id="menu-wrapper"
         aria-hidden="true"
-        class="invisible fixed inset-0 z-50 h-full w-full overflow-auto opacity-0 transition-opacity sm:hidden"
+        class="invisible fixed inset-0 z-50 h-full w-full overflow-auto opacity-0 transition-opacity"
         style="background-color: #000000 !important;"
       >
         <ul class="mx-auto flex w-full max-w-7xl list-none flex-col px-6 py-6 text-start text-white sm:px-14 sm:py-10 md:px-24 lg:px-32">
@@ -47,7 +46,7 @@
               id="menu-close"
               type="button" 
               aria-label="{{ i18n "softplanet.close_menu" }}"
-              class="cursor-pointer p-1 text-white focus:outline-none"
+              class="cursor-pointer p-1 text-white"
             >
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -57,7 +56,7 @@
                 stroke-width="2.5" 
                 stroke-linecap="round" 
                 stroke-linejoin="round"
-                style="width: 36px !important; height: 36px !important; display: block !important;"
+                width="26" height="26"
               >
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -95,19 +94,19 @@
       </div>
 
       {{/* Desktop Menu */}}
-      <ul class="hidden list-none items-center gap-6 sm:flex">
+      <ul class="softplanet-desktop-menu list-none items-center">
         {{ range .Site.Menus.main }}
           {{ if and (eq .Params.action "locale") (or (not page.IsTranslated) (not hugo.IsMultilingual)) }}
             {{ continue }}
           {{ end }}
           <li class="group relative">
             {{ if .HasChildren }}
-              <a href="{{ .URL }}" title="{{ .Title }}" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-md text-white transition-colors hover:bg-black hover:text-white">
-                {{ .Name | markdownify | emojify }}<span class="text-[0.6em]">&#9662;</span>
+              <a href="{{ .URL }}" title="{{ .Title }}" class="softplanet-nav-link inline-flex items-center gap-1.5 rounded-md">
+                {{ .Name | markdownify | emojify }}<span class="softplanet-chevron" aria-hidden="true"></span>
               </a>
               {{/* Solid Black Dropdown Submenu */}}
               <ul 
-                class="invisible absolute start-0 top-full z-50 mt-1 min-w-[12rem] list-none rounded-md py-2 text-start opacity-0 shadow-xl transition-all duration-150 group-hover:visible group-hover:opacity-100"
+                class="softplanet-submenu invisible absolute start-0 top-full z-50 min-w-[12rem] list-none rounded-md py-2 text-start opacity-0 shadow-xl transition-all duration-150 group-hover:visible group-hover:opacity-100"
                 style="background-color: #000000 !important;"
               >
                 {{ range .Children }}
@@ -119,7 +118,7 @@
                 {{ end }}
               </ul>
             {{ else }}
-              <div class="inline-block px-3 py-2 rounded-md transition-colors hover:bg-black">
+              <div class="softplanet-nav-link inline-block rounded-md">
                 {{ partial "nav-item-actions.html" (dict "item" . "context" $) }}
               </div>
             {{ end }}

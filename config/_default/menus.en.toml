@@ -61,7 +61,7 @@
   weight = 43
 
 [[main]]
-  name = "Free Music Tools"
+  name = "Free Tools"
   pageRef = "tools"
   identifier = "tools"
   weight = 45

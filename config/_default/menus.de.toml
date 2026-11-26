@@ -19,7 +19,7 @@
   weight = 22
 
 [[main]]
-  name = "Dienstleistungen"
+  name = "Service"
   pageRef = "services"
   identifier = "services"
   weight = 30
@@ -61,7 +61,7 @@
   weight = 43
 
 [[main]]
-  name = "Kostenlose Musiktools"
+  name = "Musiktools"
   pageRef = "tools"
   identifier = "tools"
   weight = 45

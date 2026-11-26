@@ -1543,15 +1543,65 @@ main iframe[src*="youtube-nocookie.com/embed"] {
   position: static;
 }
 
-@media (min-width: 640px) and (max-width: 1160px) {
-  header nav > ul {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: .15rem;
-  }
+.softplanet-header {
+  padding-block: .875rem;
+  font-size: 1rem;
+  line-height: 1.35;
 }
 
-html[lang="de"] header nav > ul {
-  flex-wrap: wrap;
-  justify-content: flex-end;
+.softplanet-brand {
+  flex: none;
+  white-space: nowrap;
+}
+
+.softplanet-brand img {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+}
+
+.softplanet-desktop-menu {
+  display: none;
+  flex: none;
+  gap: clamp(.25rem, 1vw, .875rem);
+  white-space: nowrap;
+}
+
+.softplanet-menu-toggle {
+  display: grid;
+  place-items: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+}
+
+.softplanet-nav-link {
+  padding: .6rem .3rem;
+}
+
+.softplanet-chevron {
+  width: .4em;
+  height: .4em;
+  border-inline-end: 1px solid currentColor;
+  border-block-end: 1px solid currentColor;
+  transform: translateY(-.1em) rotate(45deg);
+}
+
+.softplanet-submenu {
+  border: 1px solid #ffffff35;
+}
+
+.softplanet-desktop-menu li:focus-within > .softplanet-submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .softplanet-desktop-menu {
+    display: flex;
+  }
+
+  .softplanet-menu-toggle,
+  #menu-wrapper {
+    display: none;
+  }
 }

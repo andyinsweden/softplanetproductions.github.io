@@ -2,9 +2,9 @@
   <li>
     <details class="softplanet-language">
       <summary>
-        <span aria-hidden="true">🌐</span>
         <span class="sr-only">{{ i18n "softplanet.language" }}: </span>
-        {{ if eq .Language.Lang "en" }}English{{ else }}{{ .Language.Label }}{{ end }}
+        <span aria-hidden="true">{{ .Language.Lang | upper }}</span>
+        <span class="sr-only">{{ if eq .Language.Lang "en" }}English{{ else }}{{ .Language.Label }}{{ end }}</span>
       </summary>
       <ul>
         {{ $page := . }}
