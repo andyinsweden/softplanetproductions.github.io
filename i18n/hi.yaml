@@ -1,0 +1,179 @@
+list:
+  no_articles: ''
+softplanet:
+  rss_title: '{{ .Site }} पर {{ .Title }}'
+  rss_summary: '{{ .Site }} की नई सामग्री'
+  rss_section_summary: '{{ .Site }} पर {{ .Title }} की नई सामग्री'
+  home_authors: जॉन और एंडी मॉन्टगोमरी
+  home_piano_course: पियानो इम्प्रोवाइज़ेशन पाठ्यक्रम
+  home_services_label: हमारी सेवाएँ
+  home_explore_piano_course: पियानो पाठ्यक्रम देखें
+  music_courses: संगीत पाठ्यक्रम,
+  piano_scores: पियानो शीट म्यूज़िक
+  amp_sibelius_support: और Sibelius सहायता
+  create_piano_lessons_sheet_music_and_tools: पियानो पाठ, शीट म्यूज़िक और संगीत टूल बनाते हैं और ब्रिटेन के स्कूलों को
+    Sibelius लाइसेंस पर सलाह देते हैं।
+  browse_music_courses: संगीत पाठ्यक्रम देखें
+  expert_training: विशेषज्ञ प्रशिक्षण
+  creative_inspiration: रचनात्मक प्रेरणा
+  professional_solutions: व्यावसायिक समाधान
+  resources_for_musicians_amp_educators: संगीतकारों और शिक्षकों के लिए संसाधन
+  whether_you_re_a_music_creator_educator: चाहे आप एक संगीत निर्माता हों, शिक्षक या संस्था, हम आपको सफल बनाने में मदद
+    करने के लिए उपकरण, प्रशिक्षण और समर्थन प्रदान करते हैं।
+  learn_piano_improvisation: जानें पियानो इम्प्रूवमेंट
+  learn_to_play_piano_by_ear_build: कान से पियानो खेलने के लिए जानें, कॉर्ड प्रगति का निर्माण करें और John Montgomery
+    के स्वयं-पैक ऑनलाइन पाठ्यक्रम के साथ मूल मेलोडी बनाएं।
+  sibelius_amp_notation: सिबेलियस और नोटेशन
+  standalone_and_network_licences_extra_seats_and: स्टैंडअलोन और नेटवर्क लाइसेंस, अतिरिक्त सीटें और यूके स्कूलों और कॉलेजों
+    के लिए स्थापना सलाह।
+  sibelius_site_licences: सिबेलियस साइट लाइसेंस
+  piano_sheet_music: पियानो शीट संगीत
+  digital_solo_arrangements_by_john_montgomery_from: John Montgomery द्वारा डिजिटल एकल व्यवस्था, Interstellar से Queen
+    और Harry Styles तक।
+  browse_piano_sheet_music: पियानो शीट संगीत
+  trusted_by_educators: एडुकेटर्स द्वारा ट्रस्टेड
+  solutions_used_in_schools_and_institutions_worldwide: समाधान दुनिया भर में स्कूलों और संस्थानों में इस्तेमाल किया।
+  quality_you_can_rely_on: गुणवत्ता आप पर रीली कर सकते हैं
+  professional_tools_and_training_from_industry_experts: व्यावसायिक उपकरण और उद्योग विशेषज्ञों से प्रशिक्षण।
+  global_community: वैश्विक समुदाय
+  join_a_community_of_creators_and_lifelong: रचनाकारों और आजीवन शिक्षार्थियों के एक समुदाय में शामिल हों।
+  built_for_creators: रचनाकारों के लिए निर्मित
+  everything_you_need_to_create_and_grow: आपको जो कुछ भी बनाने और विकसित करने की आवश्यकता है।
+  get_10_off_this_course_on_udemy: Udemy पर €10 की छूट पाएँ
+  explore_the_course_lessons: पाठ्यक्रम पाठ का अन्वेषण करें
+  save_10_on_the_piano_improvisation_course: €10 को पियानो इम्प्रूवाइजेशन कोर्स पर सहेजें
+  see_the_hands_hear_the_notes_and: हाथ देखें, नोट्स सुनें और नोटेशन का पालन करें।
+  watch_the_free_course_preview_on_udemy: Udemy पर मुफ्त पाठ्यक्रम पूर्वावलोकन देखें
+  learn_to_create_not_just_repeat: बनाना सीखें, न केवल दोहराना
+  why_this_piano_improvisation_course_is_different: क्यों यह पियानो इम्प्रूवेशन कोर्स अलग है
+  there_is_a_difference_between_learning_a: एक टुकड़ा सीखने और यह जानने के बीच अंतर है कि स्कोर गायब होने पर क्या खेलना
+    है। जॉन के पाठ में सरल, व्यावहारिक प्रदर्शनों को शामिल किया गया है, जिसमें सिर्फ पर्याप्त संगीत सिद्धांत है ताकि
+    आप कीबोर्ड पर अपना खुद का विकल्प बना सकें।
+  try_improvising_right_now: अब सही ढंग से सुधारने की कोशिश करें
+  how_to_improvise_on_piano_a_simple: 'कैसे पियानो पर सुधार करने के लिए: एक सरल शुरुआती व्यायाम'
+  you_do_not_need_a_complex_piece: आपको शुरू करने के लिए संगीत का एक जटिल टुकड़ा की आवश्यकता नहीं है। किसी भी पियानो
+    या कीबोर्ड पर इस लघु व्यायाम को यह सुनने के लिए कि कैसे छोटे विकल्प एक मूल मेलोडी बन सकते हैं।
+  step_1: चरण 1
+  choose_a_few_notes: कुछ नोट्स चुनें
+  find_middle_c_and_play_c_d: मध्य सी और अपने दाहिने हाथ के साथ सी, डी, ई और जी खेलते हैं। एक आरामदायक, स्थिर नाड़ी रखें।
+  step_2: चरण 2
+  give_it_a_foundation: इसे एक आधार दें
+  play_a_lower_c_with_your_left: प्रत्येक लघु वाक्यांश के प्रारंभ में अपने बाएं हाथ के साथ एक निचले सी खेलते हैं। बास
+    नोट अपने मेलोडी का समर्थन करते हैं।
+  step_3: चरण 3
+  change_the_melody: मधुर परिवर्तन
+  rearrange_the_four_right_hand_notes_vary: चार दाहिने हाथ के नोटों को फिर से व्यवस्थित करें, लय को भिन्न करें और कभी-कभी
+    रिक्त स्थान छोड़ दें। एक पसंदीदा विचार दोहराएं, फिर इसे एक नए विचार के साथ जवाब दें।
+  that_is_the_starting_point_of_piano: 'यह पियानो की शुरूआती बिंदु है: सुनो, प्रयोग और संगीत विचार विकसित करें। पूर्ण
+    पाठ्यक्रम में, John Montgomery यह दर्शाता है कि यह दृष्टिकोण चोरों, विभिन्न समय हस्ताक्षरों, दो-हाथ के पैटर्न और
+    बैकिंग ट्रैक्स का उपयोग करके कैसे विस्तार किया जाए।'
+  free_lessons_to_try_before_you_enrol: 'इससे पहले कि आप एनरोल करें कोशिश करने के लिए नि: शुल्क सबक'
+  practise_piano_improvisation_with_these_beginner_guides: इन शुरुआती गाइडों के साथ प्रैक्टिस पियानो इम्प्रूवेशन
+  start_with_a_short_lesson_that_answers: एक लघु पाठ के साथ शुरू करें जो आज आपके द्वारा पूछे जाने वाले प्रश्न का उत्तर
+    देता है, फिर कॉर्ड, लय, धुन और हाथ की स्वतंत्रता के माध्यम से एक संरचित पथ के लिए पाठ्यक्रम पाठ्यक्रम में वापस लौटें।
+  how_to_start_improvising_on_piano: कैसे पियानो पर improvising शुरू
+  five_manageable_exercises_for_your_first_melodies: '- अपने पहले धुनों के लिए पांच प्रबंधनीय अभ्यास।'
+  piano_chord_progressions_for_beginners: शुरुआती के लिए पियानो कॉर्ड प्रगति
+  play_four_useful_harmonic_loops: '- चार उपयोगी हार्मोनिक लूप्स खेलते हैं।'
+  how_to_improvise_with_both_hands: दोनों हाथों से कैसे सुधारें
+  coordinate_a_steady_bass_with_a_simple: '- एक सरल मेलोडी के साथ एक स्थिर बास का समन्वय करें।'
+  pentatonic_scale_improvisation: पेंटाटोनिक पैमाने में सुधार
+  make_music_with_five_notes: '- पांच नोटों के साथ संगीत बनाएं।'
+  playing_piano_by_ear_after_classical_training: शास्त्रीय प्रशिक्षण के बाद कान द्वारा पियानो बजाना
+  use_your_reading_skills_as_a_foundation: '- रचनात्मक खेल के लिए नींव के रूप में अपने पढ़ने कौशल का उपयोग करें।'
+  free_daily_piano_improvisation_challenge: 'नि: शुल्क दैनिक पियानो improvization चुनौती'
+  practise_with_a_browser_based_chord_loop: '- ब्राउज़र-आधारित कॉर्ड लूप और ड्रम लय के साथ अभ्यास करें।'
+  a_clear_path_from_your_first_note: अपने पहले नोट से स्पष्ट पथ
+  what_will_you_be_able_to_play: क्या आप खेलने में सक्षम होंगे?
+  discover_your_sound_and_develop_simple_musical: अपनी ध्वनि की खोज करें और सरल विचारों को अभिव्यक्तिपूर्ण पियानो सुधार
+    में विकसित करें। इसे पूर्ण आकार देखने के लिए चित्रण का चयन करें।
+  a_substantial_practical_learning_programme: पर्याप्त, व्यावहारिक सीखने का कार्यक्रम
+  explore_the_piano_improvisation_course_curriculum: पियानो इम्प्रूवाइज़ेशन कोर्स पाठ्यक्रम का अन्वेषण करें
+  with_15_sections_and_110_lectures_on: उडेमी पर 15 खंडों और 110 व्याख्यानों के साथ, खोज के लिए बहुत कुछ है। विशिष्ट
+    पाठ विषयों, अभ्यासों और संगीत कौशल को देखने के लिए नीचे दिए गए अनुभागों को खोलें।
+  your_goal: 'आपका लक्ष्य:'
+  skills_covered: कवर कौशल
+  lesson_programme: पाठ कार्यक्रम
+  view_the_current_full_syllabus_preview_videos: Udemy पर वर्तमान पूर्ण पाठ्यक्रम, पूर्वावलोकन वीडियो और नामांकन विकल्प
+    देखें
+  ready_to_make_music_of_your_own: अपने आप को संगीत बनाने के लिए तैयार?
+  find_your_own_way_around_the_keyboard: एक व्यावहारिक वीडियो पाठ्यक्रम के साथ कीबोर्ड के चारों ओर अपना रास्ता ढूंढें
+    जिसे John Montgomery द्वारा पढ़ाया जाता है।
+  see_the_course_on_udemy: Udemy पर पाठ्यक्रम देखें
+  everything_works_together: सब कुछ मिलकर काम करता है
+  what_is_included_in_the_course: पाठ्यक्रम में क्या शामिल है?
+  learn_at_your_own_pace: अपनी गति से सीखिए
+  who_is_this_piano_course_for: यह पियानो कोर्स किसके लिए है?
+  whether_you_are_taking_your_first_steps: चाहे आप पियानो पर अपना पहला कदम उठा रहे हों या पहले से ही संगीत पढ़ने के द्वारा
+    टुकड़े खेल सकते हैं, इस कोर्स को सुधारने की आपकी क्षमता विकसित करने के लिए डिज़ाइन किया गया है।
+  good_to_know_before_you_enrol: इससे पहले कि आप एनरोल करें
+  piano_improvisation_course_frequently_asked_questions: 'पियानो इम्प्रूवाइज़ेशन कोर्स: अक्सर पूछे जाने वाले प्रश्न'
+  udemy_course_offer: Udemy पाठ्यक्रम की पेशकश
+  course_at_a_glance: एक नज़र में पाठ्यक्रम
+  open_the_free_piano_course_preview_on: Udemy पर मुक्त पियानो पाठ्यक्रम पूर्वावलोकन खोलें
+  preview_of_john_montgomery_s_piano_improvisation: John Montgomery के पियानो इम्प्रूवेशन पाठ का पूर्वावलोकन एक ओवरहेड
+    कीबोर्ड व्यू और नोटेशन दिखा रहा है
+  open_the_piano_improvisation_creative_journey_illustration: पियानो improvization रचनात्मक यात्रा चित्रण पूर्ण आकार
+    खोलें
+  colourful_piano_improvisation_journey_discover_your_sound: 'रंगीन पियानो अप्रवर्तन यात्रा: अपनी ध्वनि की खोज, सरल धुनों
+    के साथ शुरू, कॉर्ड और सद्भाव का पता लगाने, रचनात्मक स्वतंत्रता को गले लगाने और सहज रूप से बनाने के लिए।'
+  overhead_hand_sync_footage: ओवरहेड हैंड सिंक फुटेज
+  animated_score: एनिमेटेड स्कोर
+  studio_recorded_backing_tracks: स्टूडियो-रिकॉर्डेड बैकिंग ट्रैक
+  join_the_piano_improvisation_course: पियानो सुधार पाठ्यक्रम में शामिल हों
+  lecture: पाठ
+  lectures: पाठ
+  the_course_videos_on_udemy_are_taught: Udemy के वीडियो पाठ अंग्रेज़ी में हैं।
+  enroll_in_the_course_on_udemy: Udemy पर पाठ्यक्रम में दाखिला लिया
+  lesson_preview: पाठ पूर्वावलोकन
+  interactive_keyboard_lesson_with_overhead_view_notation: ओवरहेड व्यू, नोटेशन और रीयल-टाइम संगीत प्रतिक्रिया के साथ
+    इंटरएक्टिव कीबोर्ड पाठ।
+  identify_a_chord: कॉर्ड पहचानें
+  find_keys: कीज़ ढूँढें
+  chord_name: कॉर्ड का नाम
+  show_keys: कीज़ दिखाएँ
+  inversion: इन्वर्ज़न
+  tap_the_piano_keys_to_choose_notes: नोट चुनने के लिए पियानो कुंजी टैप करें।
+  play_chord: ▶ कॉर्ड बजाएँ
+  play_notes_in_order: क्रम में नोट्स चलायें
+  clear: स्पष्ट
+  acoustic_piano: 'ध्वनिक पियानो:'
+  by_alexander_holm: by अलेक्जेंडर होल्म (Alexander Holm)
+  selected_recordings_pitch_shifted_for_this_keyboard: इस कीबोर्ड के लिए चयनित रिकॉर्डिंग पिच-shifted।
+  type_notes: स्वर लिखें
+  identify: पहचान
+  computer_keyboard_and_midi: कंप्यूटर कीबोर्ड और मिडी
+  computer_keys: कंप्यूटर कुंजी
+  connect_midi: MIDI कनेक्ट
+  use_z_s_x_d_c_v: निचले ओक्टवे और Q 2 W 3 E R 5 T 6 Y 7 U के लिए Z S X D C V G B H N J M का उपयोग ऊपरी ओक्टवे के लिए
+    करें।
+  enable_javascript_to_use_the_interactive_piano: इंटरैक्टिव पियानो और कॉर्ड खोजकर्ता का उपयोग करने के लिए जावास्क्रिप्ट
+    सक्षम करें।
+  interactive_piano_chord_finder: इंटरएक्टिव पियानो कॉर्ड खोजक
+  chord_finder_mode: कॉर्ड खोजक मोड
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9, या C/E
+  piano_keyboard: पियानो कीबोर्ड
+  keyboard_octave: कीबोर्ड octave
+  down_an_octave: नीचे एक ओक्टवे
+  up_an_octave: एक ओक्टवे
+  keyboard_appearance: कीबोर्ड उपस्थिति
+  example_chords: उदाहरण कॉर्ड
+  c_e_g_c4_e4_g4_or: सी ई जी, C4 E4 G4, या 60 64 67
+  search_questions_and_answers: सवाल और जवाब खोजें
+  filter_by_category: श्रेणी के अनुसार फ़िल्टर करें
+  all_categories: सभी श्रेणियां
+  sound_and_playback: ध्वनि और प्लेबैक
+  midi_and_note_input: मिडी और नोट इनपुट
+  notation_voices_and_rhythm: नोटेशन, आवाज और राइम
+  score_layout_and_spacing: स्कोर लेआउट और स्पेसिंग
+  parts_printing_and_exporting: भागों, मुद्रण और निर्यात
+  saving_recovery_and_performance: बचत, वसूली और प्रदर्शन
+  main_navigation: मुख्य मेनू
+  toggle_navigation_menu: मेनू खोलें या बंद करें
+  close_menu: मेनू बंद करें
+  language: भाषा
+  home_free_practice: मुफ़्त पियानो अभ्यास
+  home_find_chord: अपने नोट्स से एक तार की पहचान करें
+  home_daily_practice: दैनिक समर्थन ट्रैक के साथ सुधार
+  home_practice_or: या शुरू करना
+  home_five_exercises: शुरुआती के लिए पांच सुधार अभ्यास

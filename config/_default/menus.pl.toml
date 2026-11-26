@@ -1,0 +1,164 @@
+
+
+[[main]]
+  name = "Kursy"
+  pageRef = "courses"
+  identifier = "courses"
+  weight = 20
+
+[[main]]
+  name = "Kurs MIDI"
+  pageRef = "courses/midi-home-studio"
+  parent = "courses"
+  weight = 21
+
+[[main]]
+  name = "Kurs improwizacji na pianinie"
+  pageRef = "courses/piano-improvisation"
+  parent = "courses"
+  weight = 22
+
+[[main]]
+  name = "Usługi"
+  pageRef = "services"
+  identifier = "services"
+  weight = 30
+
+[[main]]
+  name = "Licencje Sibelius dla szkół"
+  pageRef = "services/sibelius-site-licenses"
+  parent = "services"
+  weight = 31
+
+[[main]]
+  name = "Rozwiązywanie problemów w Sibeliusie"
+  pageRef = "tutorials/sibelius-troubleshooting"
+  parent = "services"
+  weight = 32
+
+[[main]]
+  name = "Nuty"
+    pageRef = "piano-scores"
+  identifier = "piano-scores"
+  weight = 40
+
+[[main]]
+  name = "Cornfield Chase"
+  pageRef = "piano-scores/cornfield-chase"
+  parent = "piano-scores"
+  weight = 41
+
+[[main]]
+  name = "Paint By Numbers"
+  pageRef = "piano-scores/paint-by-numbers"
+  parent = "piano-scores"
+  weight = 42
+
+[[main]]
+  name = "Bohemian Rhapsody Finale"
+  pageRef = "piano-scores/bohemian-rhapsody-finale"
+  parent = "piano-scores"
+  weight = 43
+
+[[main]]
+  name = "Darmowe narzędzia"
+  pageRef = "tools"
+  identifier = "tools"
+  weight = 45
+
+[[main]]
+  name = "Ćwiczenie fortepianowe dnia"
+  pageRef = "tools/daily-piano-improvisation"
+  parent = "tools"
+  weight = 46
+
+[[main]]
+  name = "Wyszukiwarka akordów"
+  pageRef = "tools/chord-finder"
+  parent = "tools"
+  weight = 47
+
+[[main]]
+  name = "Poradniki"
+  pageRef = "tutorials"
+  identifier = "tutorials"
+  weight = 50
+
+[[main]]
+  name = "Akordy dla początkujących"
+  pageRef = "tutorials/piano-chord-progressions-for-beginners"
+  parent = "tutorials"
+  weight = 51
+
+[[main]]
+  name = "Improwizacja obiema rękami"
+  pageRef = "tutorials/piano-improvisation-with-both-hands"
+  parent = "tutorials"
+  weight = 52
+
+[[main]]
+  name = "Improwizacja pentatoniczna"
+  pageRef = "tutorials/pentatonic-piano-improvisation"
+  parent = "tutorials"
+  weight = 53
+
+[[main]]
+  name = "Pianina Yamaha"
+  pageRef = "tutorials/yamaha-p45-p225-p525-compared"
+  parent = "tutorials"
+  weight = 54
+
+[[main]]
+  name = "Trema przed występem"
+  pageRef = "tutorials/stage-fright-musicians-performers"
+  parent = "tutorials"
+  weight = 55
+
+[[main]]
+  name = "Wskazówki do Sibeliusa"
+  pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-tutorial"
+  parent = "tutorials"
+  weight = 56
+
+[[main]]
+  name = "Wskazówki do Sibeliusa"
+  pageRef = "tutorials/sibelius-quick-tips"
+  identifier = "sibelius-quick-tips-service"
+  parent = "services"
+  weight = 33
+
+
+[[main]]
+  name = "Nauka improwizacji na pianinie"
+  pageRef = "tutorials/how-to-learn-piano-improvisation"
+  parent = "tutorials"
+  weight = 57
+
+[[main]]
+  name = "Gra na pianinie ze słuchu"
+  pageRef = "tutorials/playing-piano-by-ear-after-classical-training"
+  parent = "tutorials"
+  weight = 58
+
+[[main]]
+  name = "Aranżacja dla zespołów szkolnych"
+  pageRef = "tutorials/arranging-music-for-school-ensembles"
+  parent = "tutorials"
+  weight = 59
+
+[[main]]
+  name = "Licencje sieciowe Sibelius"
+  pageRef = "tutorials/sibelius-network-licences-for-schools"
+  parent = "tutorials"
+  weight = 60
+
+[[main]]
+  name = "O nas"
+  pageRef = "about"
+  weight = 60
+
+[[main]]
+  name = "Kontakt"
+  pageRef = "contact"
+  weight = 70

@@ -1,0 +1,21 @@
+locale = "uk"
+label = "Українська"
+direction = "ltr"
+weight = 12
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Курси фортепіано, ноти, безплатні музичні інструменти й консультації щодо ліцензій Sibelius для британських шкіл."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Створення, викладання й виконання музики"
+  bio = "Ми створюємо мюзикли, навчальні матеріали та інструменти для шкіл, музикантів і ансамблів."
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/uk/" },
+  ]
