@@ -1,0 +1,21 @@
+locale = "nl"
+label = "Nederlands"
+direction = "ltr"
+weight = 18
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = "2 January 2006"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Leer improviseren op de piano met online cursussen en gratis muziekhulpmiddelen. Ontdek bladmuziek en advies over Sibelius-licenties."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Muziek maken, lesgeven en optreden"
+  bio = "Softplanet Productions maakt originele musicals, lesmateriaal en praktische hulpmiddelen voor scholen, musici en ensembles."
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/nl/" },
+  ]
