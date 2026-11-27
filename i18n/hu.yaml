@@ -1,0 +1,179 @@
+list:
+  no_articles: ''
+softplanet:
+  rss_title: '{{ .Title }} – {{ .Site }}'
+  rss_summary: 'Friss tartalom: {{ .Site }}'
+  rss_section_summary: Friss tartalom a(z) {{ .Title }} rovatban – {{ .Site }}
+  home_authors: John és Andy Montgomery
+  home_piano_course: ZONGORAIMPROVIZÁCIÓS TANFOLYAM
+  home_services_label: AMIVEL FOGLALKOZUNK
+  home_explore_piano_course: NÉZD MEG A TANFOLYAMOT
+  music_courses: Zenei tanfolyamok,
+  piano_scores: zongorakották
+  amp_sibelius_support: és Sibelius-támogatás
+  create_piano_lessons_sheet_music_and_tools: Zongoraleckéket, kottákat és zenészek számára szolgáló eszközöket hoz
+    létre, és Sibelius licenceket nyújt az egyesült királyságbeli iskoláknak.
+  browse_music_courses: Zenei kurzusok böngészése
+  expert_training: Szakértői képzés
+  creative_inspiration: Kreatív inspiráció
+  professional_solutions: Szakmai megoldások
+  resources_for_musicians_amp_educators: A zenészek és oktatók erőforrásai
+  whether_you_re_a_music_creator_educator: Akár zeneszerző, oktató vagy intézmény, mi biztosítjuk az eszközöket, képzést
+    és támogatást, hogy sikerüljön.
+  learn_piano_improvisation: Zongoraimprovizáció
+  learn_to_play_piano_by_ear_build: Tanulj meg zongorázni fülenként, építs akkord előrehaladást, és készíts eredeti
+    dallamokat John Montgomery önjáró online kurzusával.
+  sibelius_amp_notation: Sibelius & Notation
+  standalone_and_network_licences_extra_seats_and: Az Egyesült Királyság iskolái és főiskolái számára a készenléti és
+    hálózati engedélyek, a póthelyek és a telepítési tanácsadás.
+  sibelius_site_licences: Sibelius telephely-engedélyek
+  piano_sheet_music: Zongora lemezzene
+  digital_solo_arrangements_by_john_montgomery_from: A digitális szólók John Montgomery-től, a csillagcsillagtól a Queen-ig
+    és Harry Styles-ig.
+  browse_piano_sheet_music: Zongora kották böngészése
+  trusted_by_educators: Az oktatók megbíznak benne
+  solutions_used_in_schools_and_institutions_worldwide: Az iskolákban és intézményekben világszerte alkalmazott megoldások.
+  quality_you_can_rely_on: Quality You can Rely On
+  professional_tools_and_training_from_industry_experts: Szakmai eszközök és az ipari szakértők képzése.
+  global_community: Globális Közösség
+  join_a_community_of_creators_and_lifelong: Csatlakozz az alkotók és az egész életen át tanulók közösségéhez.
+  built_for_creators: Épület a Teremtőknek
+  everything_you_need_to_create_and_grow: Minden, amire szükséged van, hogy létrehozd és növeld.
+  get_10_off_this_course_on_udemy: 10 €levonása ebből a kurzusból az Udemy-n
+  explore_the_course_lessons: Fedezze fel a tanfolyam leckék
+  save_10_on_the_piano_improvisation_course: 10 €mentés a zongora improvizációs tanfolyamon
+  see_the_hands_hear_the_notes_and: Nézd meg a kezeket, hallgasd meg a jegyzeteket, és kövesd a jegyzetet.
+  watch_the_free_course_preview_on_udemy: Nézd meg az ingyenes tanfolyam preview on Udemy
+  learn_to_create_not_just_repeat: Tanulj meg alkotni, ne csak ismételni.
+  why_this_piano_improvisation_course_is_different: Miért ez a zongora improvizációs tanfolyam más
+  there_is_a_difference_between_learning_a: Van egy különbség a tanulás egy darab, és tudja, mit kell játszani, amikor
+    a pontszám eltűnik. John leckék kombinációja egyszerű, gyakorlati demonstrációk csak elég zenei elmélet, hogy segítsen,
+    hogy a saját döntéseit a billentyűzet.
+  try_improvising_right_now: Próbáljon improvizálni.
+  how_to_improvise_on_piano_a_simple: 'Hogyan lehet improvizálni a zongora: egy egyszerű kezdő gyakorlat'
+  you_do_not_need_a_complex_piece: Nem kell egy összetett darab zene kezdeni. Próbálja ki ezt a rövid gyakorlat bármely
+    zongora vagy billentyűzet hallani, hogy a kis választás válhat eredeti dallam.
+  step_1: lépés
+  choose_a_few_notes: Válasszon néhány megjegyzést
+  find_middle_c_and_play_c_d: Keresse meg a középső C, és játszani C, D, E és G a jobb kezét. Tartsa a kényelmes, állandó
+    pulzus.
+  step_2: lépés
+  give_it_a_foundation: Adj neki egy alapot.
+  play_a_lower_c_with_your_left: Játssz egy alsó C a bal kéz elején minden rövid kifejezés. Hagyja, hogy a basszusjegyzet
+    támogatja a dallam.
+  step_3: 3. lépés
+  change_the_melody: A dallam megváltoztatása
+  rearrange_the_four_right_hand_notes_vary: A négy jobb oldali jegyzet átállítása, a ritmus változtatása és az alkalmi
+    helyek elhagyása. Ismételje meg a kedvenc ötletét, majd válaszoljon rá egy újjal.
+  that_is_the_starting_point_of_piano: 'Ez a kiindulópont a zongora improvizáció: hallgatni, kísérletezni és fejleszteni
+    egy zenei ötlet. A teljes tanfolyam, John Montgomery bemutatja, hogyan lehet bővíteni ezt a megközelítést akkordokkal,
+    különböző időaláírások, kétkezes minták és háttérpályák.'
+  free_lessons_to_try_before_you_enrol: Ingyenes leckék, hogy megpróbálja, mielőtt beiratkozik
+  practise_piano_improvisation_with_these_beginner_guides: Gyakorold a zongora improvizációt ezekkel a kezdő útmutatókkal
+  start_with_a_short_lesson_that_answers: Kezdjük egy rövid leckével, ami választ ad a ma feltett kérdésre, majd térjünk
+    vissza a tanfolyam tantervéhez egy strukturált útvonalra akkordon, ritmuson, dallamokon és kézfüggetlenségen keresztül.
+  how_to_start_improvising_on_piano: Hogyan kezdhetünk improvizálni a zongorán?
+  five_manageable_exercises_for_your_first_melodies: '- öt kezelhető gyakorlat az első melódiáidhoz.'
+  piano_chord_progressions_for_beginners: Zongoraakkord-progressziók kezdőknek
+  play_four_useful_harmonic_loops: '- négy hasznos harmonikus hurkot.'
+  how_to_improvise_with_both_hands: Hogyan improvizálj mindkét kezeddel?
+  coordinate_a_steady_bass_with_a_simple: '- egy sima basszust egy egyszerű melódiával.'
+  pentatonic_scale_improvisation: Pentatonic scale improvizáció
+  make_music_with_five_notes: '- öt hanggal zenélni.'
+  playing_piano_by_ear_after_classical_training: Zongorázni a fül után klasszikus képzés
+  use_your_reading_skills_as_a_foundation: '- használd az olvasási képességeidet a kreatív játék alapjaként.'
+  free_daily_piano_improvisation_challenge: Ingyenes napi zongora improvizáció kihívás
+  practise_with_a_browser_based_chord_loop: '- gyakorlás browser- alapú akkord hurokkal és dobritmussal.'
+  a_clear_path_from_your_first_note: Egy tiszta ösvény az első hangtól.
+  what_will_you_be_able_to_play: Mit tudsz majd játszani?
+  discover_your_sound_and_develop_simple_musical: Fedezze fel a hangot, és dolgozzon ki egyszerű zenei ötletek kifejező
+    zongora improvizáció. Válassza ki az illusztráció, hogy a teljes méretű.
+  a_substantial_practical_learning_programme: Jelentős, gyakorlati tanulási program
+  explore_the_piano_improvisation_course_curriculum: Fedezze fel a zongora improvizációs tanfolyam tanterv
+  with_15_sections_and_110_lectures_on: A 15 szakasz és 110 előadások Udemy, van sok felfedezni. Nyissa meg az alábbi
+    szakaszok, hogy speciális tantárgyak, gyakorlatok és a zenei készségeket fejlesztik.
+  your_goal: 'A cél:'
+  skills_covered: Az érintett készségek
+  lesson_programme: Tanulmányi program
+  view_the_current_full_syllabus_preview_videos: Az aktuális teljes tanterv, előnézet videók és beiratkozási lehetőségek
+    az Udemy-n
+  ready_to_make_music_of_your_own: Készen állsz a saját zenédre?
+  find_your_own_way_around_the_keyboard: Keresse meg a saját utat a billentyűzet körül egy praktikus videó kurzus által
+    tanított John Montgomery.
+  see_the_course_on_udemy: Lásd a kurzus az Udemy
+  everything_works_together: Minden együtt működik.
+  what_is_included_in_the_course: Mit tartalmaz a kurzus?
+  learn_at_your_own_pace: Tanulj a saját tempódban.
+  who_is_this_piano_course_for: Kinek szól ez a zongora tanfolyam?
+  whether_you_are_taking_your_first_steps: Akár megteszi az első lépéseket a zongora, vagy már játszani darabokat olvasás
+    zene, ez a tanfolyam célja, hogy fejlessze a képességét, hogy improvizáljon.
+  good_to_know_before_you_enrol: Jó tudni, mielőtt jelentkezel.
+  piano_improvisation_course_frequently_asked_questions: 'Zongoraimprovizációs tanfolyam: Gyakran ismételt kérdések'
+  udemy_course_offer: Udemy course ajánlat
+  course_at_a_glance: A tanfolyam egy pillantásra
+  open_the_free_piano_course_preview_on: Nyissa meg az ingyenes zongora tanfolyam előnézetét Udemy
+  preview_of_john_montgomery_s_piano_improvisation: John Montgomery zongoraimprovizációs leckéinek előnézete a felső
+    billentyűzetre és a jelölésre
+  open_the_piano_improvisation_creative_journey_illustration: Nyissa meg a zongora improvizáció kreatív utazás illusztráció
+    teljes mérete
+  colourful_piano_improvisation_journey_discover_your_sound: 'Színes zongora improvizációs út: felfedezni a hangot,
+    kezdeni egyszerű dallamok, felfedezni akkordok és harmónia, átöleli a kreatív szabadságot, és hozzon létre spontán.'
+  overhead_hand_sync_footage: Felszíni kézi szinkron felvétel
+  animated_score: Animációs pontszám
+  studio_recorded_backing_tracks: A Studios- rögzített háttámlák
+  join_the_piano_improvisation_course: Csatlakozz a zongora improvizációs tanfolyamhoz
+  lecture: előadás
+  lectures: előadások
+  the_course_videos_on_udemy_are_taught: Az Udemy videóleckéi angol nyelvűek.
+  enroll_in_the_course_on_udemy: Feliratkozás az Udemy-i tanfolyamra
+  lesson_preview: Előzetes lecke
+  interactive_keyboard_lesson_with_overhead_view_notation: Interaktív billentyűzetóra, általános kilátással, jelöléssel
+    és valós idejű zenei válasszal.
+  identify_a_chord: Akkord felismerése
+  find_keys: Billentyűk keresése
+  chord_name: Akkordjel
+  show_keys: Billentyűk megjelenítése
+  inversion: Megfordítás
+  tap_the_piano_keys_to_choose_notes: A hangok kiválasztásához érintsd meg a billentyűket.
+  play_chord: ▶ Akkord lejátszása
+  play_notes_in_order: Hangok lejátszása egymás után
+  clear: Törlés
+  acoustic_piano: 'Akusztikus zongora:'
+  by_alexander_holm: by Alexander Holm (
+  selected_recordings_pitch_shifted_for_this_keyboard: ); válogatott felvételek vas- eltolódott ehhez a billentyűzethez.
+  type_notes: Írd be a hangokat
+  identify: Felismerés
+  computer_keyboard_and_midi: Számítógépes billentyűzet és MIDI
+  computer_keys: Számítógépes kulcsok
+  connect_midi: Csatlakoztassa a MIDI-t
+  use_z_s_x_d_c_v: A Z S X D C V G B H N J M-et az alsó oktávhoz és Q 2 W 3 E R 5 T 6 Y 7 U-t a felső oktávhoz.
+  enable_javascript_to_use_the_interactive_piano: Engedélyezze a JavaScript használatát az interaktív zongora és akkord
+    kereső.
+  interactive_piano_chord_finder: Interaktív zongora akkord kereső
+  chord_finder_mode: Akkordkereső üzemmód
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9 vagy C/E
+  piano_keyboard: Zongora billentyűzet
+  keyboard_octave: Billentyűzet oktávja
+  down_an_octave: Down a octave
+  up_an_octave: Fel egy oktáv
+  keyboard_appearance: Billentyűzet megjelenése
+  example_chords: Példa akkordok
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4 vagy 60 64 67
+  search_questions_and_answers: Keresés a kérdésekben és válaszokban
+  filter_by_category: Szűrés kategóriánként
+  all_categories: Minden kategória
+  sound_and_playback: Hang és lejátszás
+  midi_and_note_input: MIDI és hangbevitel
+  notation_voices_and_rhythm: Kottaírás, szólamok és ritmus
+  score_layout_and_spacing: Kottaelrendezés és térközök
+  parts_printing_and_exporting: Szólamok, nyomtatás és export
+  saving_recovery_and_performance: Mentés, helyreállítás és teljesítmény
+  main_navigation: Fő navigáció
+  toggle_navigation_menu: Navigációs menü ki- be kapcsolása
+  close_menu: A menü bezárása
+  language: Nyelv
+  home_free_practice: Ingyenes zongoragyakorlás
+  home_find_chord: Ismerj fel akkordot a hangjaiból
+  home_daily_practice: improvizálj a napi kísérettel
+  home_practice_or: 'vagy kezdd el itt:'
+  home_five_exercises: öt gyakorlat kezdőknek

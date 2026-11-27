@@ -1,0 +1,21 @@
+locale = "el"
+label = "Ελληνικά"
+direction = "ltr"
+weight = 21
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = "2 January 2006"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Μαθήματα αυτοσχεδιασμού στο πιάνο, παρτιτούρες, δωρεάν μουσικά εργαλεία και υποστήριξη για άδειες Sibelius."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Μουσική δημιουργία, εκπαίδευση και ερμηνεία"
+  bio = "Η Softplanet Productions δημιουργεί πρωτότυπα μιούζικαλ, εκπαιδευτικό υλικό και πρακτικά εργαλεία για σχολεία, μουσικούς και σύνολα."
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/el/" },
+  ]

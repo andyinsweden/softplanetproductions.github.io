@@ -1,0 +1,186 @@
+list:
+  no_articles: ''
+softplanet:
+  rss_title: '{{ .Title }} στο {{ .Site }}'
+  rss_summary: Πρόσφατο περιεχόμενο στο {{ .Site }}
+  rss_section_summary: Πρόσφατο περιεχόμενο στην ενότητα {{ .Title }} στο {{ .Site }}
+  home_authors: John και Andy Montgomery
+  home_piano_course: ΜΑΘΗΜΑ ΑΥΤΟΣΧΕΔΙΑΣΜΟΥ ΣΤΟ ΠΙΑΝΟ
+  home_services_label: ΤΙ ΚΑΝΟΥΜΕ
+  home_explore_piano_course: ΔΕΣ ΤΟ ΜΑΘΗΜΑ ΠΙΑΝΟΥ
+  music_courses: Μαθήματα μουσικής,
+  piano_scores: παρτιτούρες για πιάνο
+  amp_sibelius_support: και υποστήριξη Sibelius
+  create_piano_lessons_sheet_music_and_tools: Δημιουργήστε μαθήματα πιάνου, παρτιτούρες μουσικής και εργαλεία για μουσικούς,
+    και να παρέχει Sibelius αδειοδότηση υποστήριξη για τα σχολεία του Ηνωμένου Βασιλείου.
+  browse_music_courses: Περιήγηση σε μαθήματα μουσικής
+  expert_training: Κατάρτιση εμπειρογνωμόνων
+  creative_inspiration: Δημιουργική Έμπνευση
+  professional_solutions: Επαγγελματικές Λύσεις
+  resources_for_musicians_amp_educators: Πόροι για Μουσικούς & Παιδαγωγούς
+  whether_you_re_a_music_creator_educator: Είτε είστε δημιουργός μουσικής, εκπαιδευτικός ή θεσμός, παρέχουμε τα εργαλεία,
+    την εκπαίδευση και την υποστήριξη για να σας βοηθήσει να πετύχετε.
+  learn_piano_improvisation: Μάθετε τον Αυτοσχεδιασμό του Πιάνο
+  learn_to_play_piano_by_ear_build: Μάθετε να παίζετε πιάνο με το αυτί, να χτίζετε προόδους συγχορδίας και να δημιουργείτε
+    πρωτότυπες μελωδίες με το online μάθημα του John Montgomery.
+  sibelius_amp_notation: Σημείωμα Sibelius
+  standalone_and_network_licences_extra_seats_and: Αυτόνομες και άδειες δικτύου, επιπλέον θέσεις και συμβουλές εγκατάστασης
+    για τα σχολεία και τα κολέγια του Ηνωμένου Βασιλείου.
+  sibelius_site_licences: Άδεια εγκατάστασης Sibelius
+  piano_sheet_music: Μουσική φύλλων πιάνου
+  digital_solo_arrangements_by_john_montgomery_from: Ψηφιακές σόλο ρυθμίσεις του Τζον Μοντγκόμερι, από το Interstellar
+    μέχρι το Queen και το Harry Styles.
+  browse_piano_sheet_music: Περιήγηση στη μουσική φύλλων πιάνου
+  trusted_by_educators: Εμπιστευόμενοι από Εκπαιδευτικούς
+  solutions_used_in_schools_and_institutions_worldwide: Λύσεις που χρησιμοποιούνται σε σχολεία και ιδρύματα σε όλο τον
+    κόσμο.
+  quality_you_can_rely_on: Ποιότητα που Μπορείτε να Επιμείνετε
+  professional_tools_and_training_from_industry_experts: Επαγγελματικά εργαλεία και κατάρτιση από ειδικούς της βιομηχανίας.
+  global_community: Παγκόσμια Κοινότητα
+  join_a_community_of_creators_and_lifelong: Συμμετέχετε σε μια κοινότητα δημιουργών και ισόβιων μαθητών.
+  built_for_creators: Χτισμένο για Δημιουργούς
+  everything_you_need_to_create_and_grow: Ό,τι χρειάζεσαι για να δημιουργήσεις και να μεγαλώσεις.
+  get_10_off_this_course_on_udemy: Πάρτε €10 από αυτό το μάθημα για Udemy
+  explore_the_course_lessons: Εξερευνήστε τα Μαθήματα Μαθημάτων
+  save_10_on_the_piano_improvisation_course: Εξοικονομήστε €10 στο μάθημα αυτοσχεδιασμού πιάνου
+  see_the_hands_hear_the_notes_and: Δείτε τα χέρια, ακούστε τις σημειώσεις και ακολουθήστε τη σημειογραφία.
+  watch_the_free_course_preview_on_udemy: Δείτε την προεπισκόπηση της ελεύθερης πορείας στο Udemy
+  learn_to_create_not_just_repeat: Μάθε να δημιουργείς, όχι μόνο να επαναλαμβάνεις.
+  why_this_piano_improvisation_course_is_different: Γιατί Αυτή η Πορεία Αυτοσχεδιασμού του Πιάνο Είναι Διαφορετική
+  there_is_a_difference_between_learning_a: Υπάρχει μια διαφορά μεταξύ της εκμάθησης ενός κομματιού και της γνώσης τι
+    να παίξει όταν το σκορ εξαφανίζεται. Τα μαθήματα του John συνδυάζουν απλές, πρακτικές επιδείξεις με ακριβώς αρκετή
+    μουσική θεωρία για να σας βοηθήσει να κάνετε τις δικές σας επιλογές στο πληκτρολόγιο.
+  try_improvising_right_now: Προσπάθησε να αυτοσχεδιάσεις τώρα.
+  how_to_improvise_on_piano_a_simple: 'Πώς να αυτοσχεδιάσετε στο πιάνο: Μια απλή άσκηση αρχάριου'
+  you_do_not_need_a_complex_piece: Δοκιμάστε αυτή τη σύντομη άσκηση σε οποιοδήποτε πιάνο ή πληκτρολόγιο για να ακούσετε
+    πώς μικρές επιλογές μπορούν να γίνουν μια πρωτότυπη μελωδία.
+  step_1: Στάδιο 1
+  choose_a_few_notes: Επιλέξτε μερικές σημειώσεις
+  find_middle_c_and_play_c_d: Βρείτε το μεσαίο C και παίξτε C, D, E και G με το δεξί σας χέρι. Κρατήστε ένα άνετο, σταθερό
+    παλμό.
+  step_2: Βήμα 2
+  give_it_a_foundation: Δώστε του ένα θεμέλιο.
+  play_a_lower_c_with_your_left: Παίξτε ένα χαμηλότερο C με το αριστερό σας χέρι στην αρχή κάθε σύντομης φράσης. Αφήστε
+    το μπάσο να υποστηρίξει τη μελωδία σας.
+  step_3: Στάδιο 3
+  change_the_melody: Αλλάξτε τη μελωδία
+  rearrange_the_four_right_hand_notes_vary: Αναδιαμορφώστε τις τέσσερις δεξιές νότες, διαφοροποιήστε τον ρυθμό και αφήστε
+    περιστασιακούς χώρους. Επαναλάβετε μια αγαπημένη ιδέα και απαντήστε με μια νέα.
+  that_is_the_starting_point_of_piano: 'Αυτό είναι το σημείο εκκίνησης του αυτοσχεδιασμού του πιάνου: ακούστε, πειραματιστείτε
+    και αναπτύξτε μια μουσική ιδέα. Σε όλη την πορεία, ο John Montgomery δείχνει πώς να επεκτείνει αυτή την προσέγγιση
+    χρησιμοποιώντας συγχορδίες, διαφορετικές χρονικές υπογραφές, δύο-χέρι μοτίβα και backing κομμάτια.'
+  free_lessons_to_try_before_you_enrol: Δωρεάν μαθήματα για να δοκιμάσετε πριν εγγραφείτε
+  practise_piano_improvisation_with_these_beginner_guides: Ασκήστε τον Αυτοσχεδιασμό του Πιάνο με αυτούς τους Οδηγούς
+    Αρχάριους
+  start_with_a_short_lesson_that_answers: Ξεκινήστε με ένα σύντομο μάθημα που απαντά στην ερώτηση που έχετε σήμερα,
+    στη συνέχεια, επιστρέφοντας στο πρόγραμμα μαθημάτων για μια δομημένη διαδρομή μέσα από συγχορδίες, ρυθμό, μελωδίες
+    και την ανεξαρτησία των χεριών.
+  how_to_start_improvising_on_piano: Πώς να αρχίσετε να αυτοσχεδιάζεστε στο πιάνο
+  five_manageable_exercises_for_your_first_melodies: — πέντε διαχειρίσιμες ασκήσεις για τις πρώτες σας μελωδίες.
+  piano_chord_progressions_for_beginners: Εξέλιξη χορδών πιάνου για αρχάριους
+  play_four_useful_harmonic_loops: — να παίζουν τέσσερις χρήσιμους αρμονικούς βρόχους.
+  how_to_improvise_with_both_hands: Πώς να αυτοσχεδιάσετε με τα δύο χέρια
+  coordinate_a_steady_bass_with_a_simple: — να συντονίσει ένα σταθερό μπάσο με μια απλή μελωδία.
+  pentatonic_scale_improvisation: Αυτοσχεδιασμός πεντατονικής κλίμακας
+  make_music_with_five_notes: — να κάνει μουσική με πέντε νότες.
+  playing_piano_by_ear_after_classical_training: Παίζοντας πιάνο με το αυτί μετά την κλασική εκπαίδευση
+  use_your_reading_skills_as_a_foundation: — να χρησιμοποιείτε τις ικανότητες σας ως βάση για δημιουργικό παιχνίδι.
+  free_daily_piano_improvisation_challenge: Δωρεάν καθημερινή πρόκληση αυτοσχεδιασμού πιάνου
+  practise_with_a_browser_based_chord_loop: — να εξασκείται με βρόχο χορδής και ρυθμό τυμπάνου με βάση το πρόγραμμα
+    περιήγησης.
+  a_clear_path_from_your_first_note: Ένα καθαρό μονοπάτι από την πρώτη σας νότα
+  what_will_you_be_able_to_play: Τι θα Είστε Ικανοί να Παίξετε;
+  discover_your_sound_and_develop_simple_musical: Ανακαλύψτε τον ήχο σας και αναπτύξτε απλές μουσικές ιδέες σε εκφραστικό
+    αυτοσχεδιασμό πιάνου. Επιλέξτε την εικόνα για να τον δείτε σε πλήρες μέγεθος.
+  a_substantial_practical_learning_programme: Ένα ουσιαστικό, πρακτικό πρόγραμμα μάθησης
+  explore_the_piano_improvisation_course_curriculum: Εξερευνήστε το πρόγραμμα μαθημάτων αυτοσχεδιασμού πιάνου
+  with_15_sections_and_110_lectures_on: Με 15 ενότητες και 110 διαλέξεις για το Udemy, υπάρχουν πολλά να ανακαλύψετε.
+    Ανοίξτε τα παρακάτω τμήματα για να δείτε συγκεκριμένα μαθήματα, ασκήσεις και τις μουσικές δεξιότητες που αναπτύσσουν.
+  your_goal: 'Ο στόχος σας:'
+  skills_covered: Καλυπτόμενες δεξιότητες
+  lesson_programme: Πρόγραμμα μαθημάτων
+  view_the_current_full_syllabus_preview_videos: Δείτε το τρέχον πλήρες πρόγραμμα σπουδών, βίντεο προεπισκόπησης και
+    επιλογές εγγραφής στο Udemy
+  ready_to_make_music_of_your_own: Έτοιμος να φτιάξεις δική σου μουσική;
+  find_your_own_way_around_the_keyboard: Βρείτε το δικό σας δρόμο γύρω από το πληκτρολόγιο με ένα πρακτικό μάθημα βίντεο
+    που διδάσκεται από τον John Montgomery.
+  see_the_course_on_udemy: Βλέπε την Πορεία για τον Ουδέμι
+  everything_works_together: Όλα δουλεύουν μαζί.
+  what_is_included_in_the_course: Τι Περιλαμβάνεται στην Πορεία;
+  learn_at_your_own_pace: Μάθε με το δικό σου ρυθμό.
+  who_is_this_piano_course_for: Για ποιον είναι αυτή η πορεία πιάνου;
+  whether_you_are_taking_your_first_steps: Είτε κάνετε τα πρώτα σας βήματα στο πιάνο είτε μπορείτε ήδη να παίξετε κομμάτια
+    διαβάζοντας μουσική, αυτό το μάθημα έχει σχεδιαστεί για να αναπτύξει την ικανότητά σας να αυτοσχεδιάσετε.
+  good_to_know_before_you_enrol: Χαίρομαι που το μαθαίνω πριν εγγραφείς.
+  piano_improvisation_course_frequently_asked_questions: 'Μαθήματα Αυτοσχεδιασμού Πιάνο: Συχνές Ερωτήσεις'
+  udemy_course_offer: Προσφορά μαθημάτων Udemy
+  course_at_a_glance: Πορεία με μια ματιά
+  open_the_free_piano_course_preview_on: Ανοίξτε την προεπισκόπηση του δωρεάν μαθήματος πιάνου στο Udemy
+  preview_of_john_montgomery_s_piano_improvisation: Προεπισκόπηση των μαθημάτων αυτοσχεδιασμού πιάνου του John Montgomery
+    που δείχνουν μια εναέρια προβολή και σημειογραφία πληκτρολογίου
+  open_the_piano_improvisation_creative_journey_illustration: Ανοίξτε τον αυτοσχεδιασμό πιάνου δημιουργικό ταξίδι εικονογράφηση
+    πλήρους μεγέθους
+  colourful_piano_improvisation_journey_discover_your_sound: 'Πολύχρωμο ταξίδι αυτοσχεδιασμού πιάνου: ανακαλύψτε τον
+    ήχο σας, ξεκινήστε με απλές μελωδίες, εξερευνήστε συγχορδίες και αρμονία, αγκαλιάστε τη δημιουργική ελευθερία και
+    δημιουργήστε αυθόρμητα.'
+  overhead_hand_sync_footage: Υλικό hand-sync
+  animated_score: Κινούμενη βαθμολογία
+  studio_recorded_backing_tracks: Στούντιο-ηχογραφημένα κομμάτια στήριξης
+  join_the_piano_improvisation_course: Συμμετοχή στο μάθημα αυτοσχεδιασμού πιάνου
+  lecture: διάλεξη
+  lectures: διαλέξεις
+  the_course_videos_on_udemy_are_taught: Τα βιντεομαθήματα στο Udemy είναι στα αγγλικά.
+  enroll_in_the_course_on_udemy: Εγγραφή στην πορεία του Udemy
+  lesson_preview: Προεπισκόπηση μαθήματος
+  interactive_keyboard_lesson_with_overhead_view_notation: Διαδραστικό μάθημα πληκτρολογίου με θέα, σημειογραφία και
+    μουσική ανταπόκριση σε πραγματικό χρόνο.
+  identify_a_chord: Αναγνώριση συγχορδίας
+  find_keys: Εύρεση πλήκτρων
+  chord_name: Σύμβολο συγχορδίας
+  show_keys: Εμφάνιση πλήκτρων
+  inversion: Αναστροφή
+  tap_the_piano_keys_to_choose_notes: Πάτησε τα πλήκτρα για να επιλέξεις νότες.
+  play_chord: ▶ Άκου τη συγχορδία
+  play_notes_in_order: Άκου τις νότες διαδοχικά
+  clear: Εκκαθάριση
+  acoustic_piano: 'Ακουστικό πιάνο:'
+  by_alexander_holm: του Alexander Holm (
+  selected_recordings_pitch_shifted_for_this_keyboard: ), επιλεγμένες ηχογραφήσεις που έχουν μετατοπιστεί για αυτό το
+    πληκτρολόγιο.
+  type_notes: Πληκτρολόγησε τις νότες
+  identify: Αναγνώριση
+  computer_keyboard_and_midi: Πληκτρολόγιο υπολογιστών και MIDI
+  computer_keys: Κλειδιά υπολογιστή
+  connect_midi: Σύνδεση MIDI
+  use_z_s_x_d_c_v: Χρησιμοποιήστε Z S X D C V G B H N J M για την κάτω οκτάβα και Q 2 W 3 E R 5 T 6 Y 7 U για την άνω
+    οκτάβα.
+  enable_javascript_to_use_the_interactive_piano: Ενεργοποίηση JavaScript για χρήση του διαδραστικού εντοπιστή πιάνου
+    και χορδής.
+  interactive_piano_chord_finder: Διαδραστικός ανιχνευτής χορδών πιάνου
+  chord_finder_mode: Λειτουργία αναζήτησης χορδών
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9 ή C/E
+  piano_keyboard: Πληκτρολόγιο πιάνου
+  keyboard_octave: Οκτάβα πληκτρολογίου
+  down_an_octave: Κάτω από μια οκτάβα
+  up_an_octave: Πάνω από μια οκτάβα
+  keyboard_appearance: Εμφάνιση πληκτρολογίου
+  example_chords: Παράδειγμα συγχορδιών
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4 ή 60 64 67
+  search_questions_and_answers: Αναζήτηση σε ερωτήσεις και απαντήσεις
+  filter_by_category: Φίλτρο ανά κατηγορία
+  all_categories: Όλες οι κατηγορίες
+  sound_and_playback: Ήχος και αναπαραγωγή
+  midi_and_note_input: MIDI και εισαγωγή νοτών
+  notation_voices_and_rhythm: Σημειογραφία, φωνές και ρυθμός
+  score_layout_and_spacing: Διάταξη και αποστάσεις παρτιτούρας
+  parts_printing_and_exporting: Μέρη, εκτύπωση και εξαγωγή
+  saving_recovery_and_performance: Αποθήκευση, ανάκτηση και απόδοση
+  main_navigation: Κύρια πλοήγηση
+  toggle_navigation_menu: Εναλλαγή μενού πλοήγησης
+  close_menu: Κλείσιμο μενού
+  language: Γλώσσα
+  home_free_practice: Δωρεάν εξάσκηση στο πιάνο
+  home_find_chord: Αναγνώρισε μια συγχορδία από τις νότες της
+  home_daily_practice: αυτοσχεδίασε με την καθημερινή συνοδεία
+  home_practice_or: ή ξεκίνα με
+  home_five_exercises: πέντε ασκήσεις για αρχάριους

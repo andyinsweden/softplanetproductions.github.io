@@ -1,0 +1,21 @@
+locale = "hu"
+label = "Magyar"
+direction = "ltr"
+weight = 22
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = "2006. January 2."
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Zongoraimprovizációs tanfolyamok, zongorakották, ingyenes zenei eszközök és segítség a Sibelius-licencekhez."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Zenei alkotás, oktatás és előadás"
+  bio = "A Softplanet Productions eredeti musicaleket, oktatási anyagokat és gyakorlati eszközöket készít iskolák, zenészek és együttesek számára."
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/hu/" },
+  ]

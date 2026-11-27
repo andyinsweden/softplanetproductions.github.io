@@ -1,0 +1,176 @@
+list:
+  no_articles: ''
+softplanet:
+  rss_title: "{{ .Title }} bei {{ .Site }}"
+  rss_summary: "Neue Inhalte bei {{ .Site }}"
+  rss_section_summary: "Neue Inhalte zu {{ .Title }} bei {{ .Site }}"
+  home_authors: John und Andy Montgomery
+  home_piano_course: KURS ZUR KLAVIERIMPROVISATION
+  home_services_label: UNSER ANGEBOT
+  home_explore_piano_course: KLAVIERKURS ENTDECKEN
+  music_courses: Musikkurse,
+  piano_scores: Klaviernoten
+  amp_sibelius_support: und Sibelius-Beratung
+  create_piano_lessons_sheet_music_and_tools: entwickeln Klavierkurse, Noten und Musiktools und beraten britische Schulen
+    zu Sibelius-Lizenzen.
+  browse_music_courses: Musikkurse ansehen
+  expert_training: Praxisnaher Unterricht
+  creative_inspiration: Anregungen zum Musizieren
+  professional_solutions: Beratung für Schulen
+  resources_for_musicians_amp_educators: Material für Musiker und Lehrkräfte
+  whether_you_re_a_music_creator_educator: Kurse, Noten und Unterstützung für alle, die Musik machen oder unterrichten.
+  learn_piano_improvisation: Klavierimprovisation lernen
+  learn_to_play_piano_by_ear_build: Lerne in John Montgomerys Onlinekurs in deinem Tempo, nach Gehör zu spielen, Akkorde
+    zu verbinden und eigene Melodien zu erfinden.
+  sibelius_amp_notation: Sibelius und Notensatz
+  standalone_and_network_licences_extra_seats_and: Einzel- und Netzwerklizenzen, zusätzliche Arbeitsplätze und Hilfe
+    bei der Einrichtung für britische Bildungseinrichtungen.
+  sibelius_site_licences: Sibelius-Lizenzen für Schulen
+  piano_sheet_music: Klaviernoten
+  digital_solo_arrangements_by_john_montgomery_from: Digitale Klavierarrangements von John Montgomery, von Interstellar
+    über Queen bis Harry Styles.
+  browse_piano_sheet_music: Klaviernoten ansehen
+  trusted_by_educators: Für den Musikunterricht
+  solutions_used_in_schools_and_institutions_worldwide: Schulen und Bildungseinrichtungen weltweit nutzen unsere Angebote.
+  quality_you_can_rely_on: Praxiserfahrung
+  professional_tools_and_training_from_industry_experts: Musiktools und Kurse von erfahrenen Musikern.
+  global_community: International lernen
+  join_a_community_of_creators_and_lifelong: Lerne gemeinsam mit Menschen, die Musik machen und sich weiterentwickeln
+    möchten.
+  built_for_creators: Für deine Musik
+  everything_you_need_to_create_and_grow: Material zum Üben, Spielen und Komponieren.
+  get_10_off_this_course_on_udemy: 10 € Rabatt auf Udemy sichern
+  explore_the_course_lessons: Kurslektionen ansehen
+  save_10_on_the_piano_improvisation_course: Spare 10 € beim Kurs zur Klavierimprovisation
+  see_the_hands_hear_the_notes_and: Beobachte die Hände, höre die Töne und verfolge die Noten.
+  watch_the_free_course_preview_on_udemy: Kostenlose Kursvorschau auf Udemy ansehen
+  learn_to_create_not_just_repeat: Entwickle deine eigenen Ideen
+  why_this_piano_improvisation_course_is_different: So lernst du in diesem Improvisationskurs
+  there_is_a_difference_between_learning_a: Was spielst du, wenn keine Noten vor dir liegen? John verbindet praktische
+    Vorführungen mit der Musiktheorie, die dir beim freien Spiel am Klavier hilft.
+  try_improvising_right_now: Probiere es direkt aus
+  how_to_improvise_on_piano_a_simple: 'Klavierimprovisation: eine einfache Übung für Anfänger'
+  you_do_not_need_a_complex_piece: Du kannst auf jedem Klavier oder Keyboard mit wenigen Tönen anfangen. Höre, wie sich
+    aus kleinen Veränderungen eine eigene Melodie ergibt.
+  step_1: Schritt 1
+  choose_a_few_notes: Wähle ein paar Töne
+  find_middle_c_and_play_c_d: Suche das mittlere C und spiele C, D, E und G mit der rechten Hand. Halte einen ruhigen,
+    gleichmässigen Puls.
+  step_2: Schritt 2
+  give_it_a_foundation: Ergänze einen Basston
+  play_a_lower_c_with_your_left: Spiele mit der linken Hand zu Beginn jeder kurzen Phrase ein tieferes C. Dieser Basston
+    trägt deine Melodie.
+  step_3: Schritt 3
+  change_the_melody: Verändere die Melodie
+  rearrange_the_four_right_hand_notes_vary: Spiele die vier Töne in einer anderen Reihenfolge, variiere den Rhythmus
+    und lasse gelegentlich eine Pause. Wiederhole dein Lieblingsmotiv und antworte mit einer neuen Idee.
+  that_is_the_starting_point_of_piano: 'So fängt Improvisieren an: Hinhören, ausprobieren und eine musikalische Idee
+    weiterentwickeln. Im Kurs zeigt John, wie du Akkorde, Taktarten, beidhändige Muster und Begleittracks einsetzt.'
+  free_lessons_to_try_before_you_enrol: Kostenlose Übungen zum Ausprobieren
+  practise_piano_improvisation_with_these_beginner_guides: Anleitungen zur Klavierimprovisation für Anfänger
+  start_with_a_short_lesson_that_answers: Wähle die Übung, die dir gerade weiterhilft. Im Kurs kannst du Akkorde, Rhythmus,
+    Melodie und das Zusammenspiel beider Hände Schritt für Schritt vertiefen.
+  how_to_start_improvising_on_piano: Erste Schritte beim Improvisieren am Klavier
+  five_manageable_exercises_for_your_first_melodies: – fünf kurze Übungen für deine ersten Melodien.
+  piano_chord_progressions_for_beginners: Klavier-Akkordfolgen für Anfänger
+  play_four_useful_harmonic_loops: – spiele vier Akkordfolgen zum Üben.
+  how_to_improvise_with_both_hands: Mit beiden Händen improvisieren
+  coordinate_a_steady_bass_with_a_simple: – verbinde einen gleichmässigen Bass mit einer einfachen Melodie.
+  pentatonic_scale_improvisation: Mit der Pentatonik improvisieren
+  make_music_with_five_notes: – erfinde Melodien aus fünf Tönen.
+  playing_piano_by_ear_after_classical_training: Nach Gehör spielen, wenn du schon Noten liest
+  use_your_reading_skills_as_a_foundation: – nutze deine Erfahrung mit Noten als Grundlage für freies Spielen.
+  free_daily_piano_improvisation_challenge: Tägliche kostenlose Klavierübung
+  practise_with_a_browser_based_chord_loop: – übe im Browser mit Akkorden und Schlagzeugbegleitung.
+  a_clear_path_from_your_first_note: Vom ersten Ton zur eigenen Melodie
+  what_will_you_be_able_to_play: Was kannst du danach spielen?
+  discover_your_sound_and_develop_simple_musical: Entwickle deine Ideen zu ausdrucksvollen Improvisationen. Wähle die
+    Abbildung aus, um sie zu vergrössern.
+  a_substantial_practical_learning_programme: Ein Übungsprogramm mit klarer Reihenfolge
+  explore_the_piano_improvisation_course_curriculum: Inhalte des Kurses zur Klavierimprovisation
+  with_15_sections_and_110_lectures_on: Auf Udemy erwarten dich 15 Abschnitte und mehr als 100 Lektionen. Öffne die Abschnitte
+    unten, um Themen, Übungen und Lernziele zu sehen.
+  your_goal: 'Dein Ziel:'
+  skills_covered: Das übst du
+  lesson_programme: Die Lektionen
+  view_the_current_full_syllabus_preview_videos: Aktuellen Lehrplan, Vorschau und Anmeldung auf Udemy ansehen
+  ready_to_make_music_of_your_own: Möchtest du eigene Musik machen?
+  find_your_own_way_around_the_keyboard: Lerne mit John Montgomerys Videokurs, dich frei auf der Klaviatur zu bewegen.
+  see_the_course_on_udemy: Kurs auf Udemy ansehen
+  everything_works_together: Material für deinen Übungsalltag
+  what_is_included_in_the_course: Was ist im Kurs enthalten?
+  learn_at_your_own_pace: Lerne in deinem Tempo
+  who_is_this_piano_course_for: Für wen eignet sich der Klavierkurs?
+  whether_you_are_taking_your_first_steps: Der Kurs begleitet dich beim Improvisieren, egal ob du gerade anfängst oder
+    schon Stücke nach Noten spielst.
+  good_to_know_before_you_enrol: Vor der Anmeldung
+  piano_improvisation_course_frequently_asked_questions: Häufige Fragen zum Improvisationskurs
+  udemy_course_offer: Kursangebot bei Udemy
+  course_at_a_glance: Kurs auf einen Blick
+  open_the_free_piano_course_preview_on: Kostenlose Klavierkursvorschau auf Udemy öffnen
+  preview_of_john_montgomery_s_piano_improvisation: Vorschau auf John Montgomerys Klavierunterricht mit Blick von oben
+    auf die Tasten und eingeblendeten Noten
+  open_the_piano_improvisation_creative_journey_illustration: Abbildung zum Lernweg in Originalgrösse öffnen
+  colourful_piano_improvisation_journey_discover_your_sound: 'Lernweg zur Klavierimprovisation: einfache Melodien, Akkorde,
+    Harmonien und freies Spiel.'
+  overhead_hand_sync_footage: Blick von oben auf die Hände
+  animated_score: Animierte Noten
+  studio_recorded_backing_tracks: Im Studio aufgenommene Begleittracks
+  join_the_piano_improvisation_course: Für den Kurs zur Klavierimprovisation anmelden
+  lecture: Lektion
+  lectures: Lektionen
+  the_course_videos_on_udemy_are_taught: Die Videolektionen auf Udemy sind auf Englisch.
+  enroll_in_the_course_on_udemy: Auf Udemy zum Kurs anmelden
+  lesson_preview: Lektionsvorschau
+  interactive_keyboard_lesson_with_overhead_view_notation: Klavierlektion mit Blick von oben auf die Tasten und eingeblendeten
+    Noten.
+  identify_a_chord: Akkord bestimmen
+  find_keys: Tasten finden
+  chord_name: Akkordname
+  show_keys: Tasten anzeigen
+  inversion: Umkehrung
+  tap_the_piano_keys_to_choose_notes: Tippe auf die Klaviertasten, um Töne auszuwählen.
+  play_chord: ▶ Akkord abspielen
+  play_notes_in_order: Töne nacheinander abspielen
+  clear: Auswahl löschen
+  acoustic_piano: 'Akustisches Klavier:'
+  by_alexander_holm: von Alexander Holm (
+  selected_recordings_pitch_shifted_for_this_keyboard: ); für dieses Keyboard wurden einzelne Aufnahmen in der Tonhöhe
+    angepasst.
+  type_notes: Töne eingeben
+  identify: Bestimmen
+  computer_keyboard_and_midi: Computertastatur und MIDI
+  computer_keys: Computertastatur
+  connect_midi: MIDI verbinden
+  use_z_s_x_d_c_v: Nutze Z S X D C V G B H N J M für die tiefere Oktave und Q 2 W 3 E R 5 T 6 Y 7 U für die höhere Oktave.
+    Auf QWERTZ-Tastaturen stehen Y und Z an anderen Positionen.
+  enable_javascript_to_use_the_interactive_piano: Aktiviere JavaScript, um das interaktive Klavier und den Akkordfinder
+    zu nutzen.
+  interactive_piano_chord_finder: Interaktiver Akkordfinder für Klavier
+  chord_finder_mode: Suchmodus für Akkorde
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9 oder C/E
+  piano_keyboard: Klaviatur
+  keyboard_octave: Oktavlage
+  down_an_octave: Eine Oktave tiefer
+  up_an_octave: Eine Oktave höher
+  keyboard_appearance: Darstellung der Klaviatur
+  example_chords: Beispielakkorde
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4 oder 60 64 67
+  search_questions_and_answers: Fragen und Antworten durchsuchen
+  filter_by_category: Nach Kategorie filtern
+  all_categories: Alle Kategorien
+  sound_and_playback: Klang und Wiedergabe
+  midi_and_note_input: MIDI und Noteneingabe
+  notation_voices_and_rhythm: Notation, Stimmen und Rhythmus
+  score_layout_and_spacing: Notenlayout und Abstände
+  parts_printing_and_exporting: Einzelstimmen, Drucken und Exportieren
+  saving_recovery_and_performance: Speichern, Wiederherstellung und Leistung
+  main_navigation: Hauptnavigation
+  toggle_navigation_menu: Navigationsmenü öffnen oder schliessen
+  close_menu: Menü schliessen
+  language: Sprache
+  home_free_practice: Kostenlos Klavier üben
+  home_find_chord: Bestimme einen Akkord anhand seiner Töne
+  home_daily_practice: improvisiere mit der täglichen Klavierbegleitung
+  home_practice_or: oder starte mit
+  home_five_exercises: fünf Improvisationsübungen für Anfänger

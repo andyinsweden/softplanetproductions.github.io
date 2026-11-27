@@ -1,0 +1,182 @@
+list:
+  no_articles: ''
+softplanet:
+  rss_title: '{{ .Title }} pe {{ .Site }}'
+  rss_summary: Conținut recent pe {{ .Site }}
+  rss_section_summary: Conținut recent din {{ .Title }} pe {{ .Site }}
+  home_authors: John și Andy Montgomery
+  home_piano_course: CURS DE IMPROVIZAȚIE LA PIAN
+  home_services_label: CE FACEM
+  home_explore_piano_course: DESCOPERĂ CURSUL DE PIAN
+  music_courses: Cursuri de muzică,
+  piano_scores: partituri
+  amp_sibelius_support: și asistență Sibelius
+  create_piano_lessons_sheet_music_and_tools: crearea de lecții de pian, partituri și instrumente pentru muzicieni și
+    acordarea de sprijin pentru acordarea de licențe Sibelius școlilor din Marea Britanie.
+  browse_music_courses: Navighează cursurile de muzică
+  expert_training: Instruire de experți
+  creative_inspiration: Inspiraţie creativă
+  professional_solutions: Soluţii profesionale
+  resources_for_musicians_amp_educators: Resurse pentru muzicieni şi educatori
+  whether_you_re_a_music_creator_educator: Fie că sunteți un creator de muzică, educator sau instituție, vă oferim instrumentele,
+    formarea și sprijinul pentru a vă ajuta să reușiți.
+  learn_piano_improvisation: Învață improvizația pianului
+  learn_to_play_piano_by_ear_build: Învață să cânți la pian după ureche, să construiești progresii ale corzilor și să
+    creezi melodii originale cu cursul online auto-paced al lui John Montgomery.
+  sibelius_amp_notation: Sibelius & Notation
+  standalone_and_network_licences_extra_seats_and: Licențe de sine stătătoare și de rețea, scaune suplimentare și consiliere
+    de instalare pentru școlile și colegiile din Marea Britanie.
+  sibelius_site_licences: Licenţe pentru sibelius
+  piano_sheet_music: Piano Sheet Music
+  digital_solo_arrangements_by_john_montgomery_from: Aranjamente digitale solo de John Montgomery, de la Interstelar
+    la Queen și Harry Styles.
+  browse_piano_sheet_music: Răsfoiește muzică de pian
+  trusted_by_educators: Încredere în educatori
+  solutions_used_in_schools_and_institutions_worldwide: Soluţii utilizate în şcoli şi instituţii din întreaga lume.
+  quality_you_can_rely_on: Calitate pe care o poţi găsi
+  professional_tools_and_training_from_industry_experts: Instrumente și formare profesională din partea experților din
+    industrie.
+  global_community: Comunitatea Globală
+  join_a_community_of_creators_and_lifelong: Alăturaţi-vă unei comunităţi de creatori şi cursanţi de-a lungul vieţii.
+  built_for_creators: Construit pentru Creatori
+  everything_you_need_to_create_and_grow: Tot ce ai nevoie pentru a crea și să crească.
+  get_10_off_this_course_on_udemy: Ia 10 euro de pe acest curs pe Udemy
+  explore_the_course_lessons: Explorează lecţiile de curs
+  save_10_on_the_piano_improvisation_course: Salvați € 10 pe cursul de improvizație pian
+  see_the_hands_hear_the_notes_and: Vezi mâinile, auzi notele şi urmează notaţia.
+  watch_the_free_course_preview_on_udemy: Uita-te la previzualizare curs gratuit pe Udemy
+  learn_to_create_not_just_repeat: Învaţă să creezi, nu doar să repeţi
+  why_this_piano_improvisation_course_is_different: De ce acest curs de improvizaţie pian este diferit
+  there_is_a_difference_between_learning_a: Există o diferență între a învăța o piesă și a ști ce să joace atunci când
+    scorul dispare. Lecțiile lui John combină demonstrații simple, practice cu doar suficientă teorie de muzică pentru
+    a vă ajuta să faceți propriile alegeri pe tastatură.
+  try_improvising_right_now: Încearcă să improvizezi chiar acum.
+  how_to_improvise_on_piano_a_simple: 'Cum de a improviza pe pian: un exercițiu simplu începător'
+  you_do_not_need_a_complex_piece: Nu aveți nevoie de o piesă complexă de muzică pentru a începe. Încercați acest exercițiu
+    scurt pe orice pian sau tastatură pentru a auzi cum alegerile mici pot deveni o melodie originală.
+  step_1: Etapa 1
+  choose_a_few_notes: Alege câteva note
+  find_middle_c_and_play_c_d: Găsiți mijloc C și jucați C, D, E și G cu mâna dreaptă. Păstrați un puls confortabil,
+    constant.
+  step_2: Etapa 2
+  give_it_a_foundation: Dă-i o fundaţie.
+  play_a_lower_c_with_your_left: Joacă un C mai mic cu mâna stângă la începutul fiecărei fraze scurte. Lasă nota bas
+    să-ţi susţină melodia.
+  step_3: Pasul 3
+  change_the_melody: Schimbă melodia
+  rearrange_the_four_right_hand_notes_vary: Rearanjaţi cele patru note din dreapta, variaţi ritmul şi părăsiţi spaţiile
+    ocazionale. Repetaţi o idee favorită, apoi răspundeţi cu una nouă.
+  that_is_the_starting_point_of_piano: 'Acesta este punctul de plecare al improvizaţiei pianului: ascultaţi, experimentaţi
+    şi dezvoltaţi o idee muzicală. În întregul curs, John Montgomery demonstrează cum să extindă această abordare folosind
+    acorduri, semnături temporale diferite, modele cu două mâini şi piese de suport.'
+  free_lessons_to_try_before_you_enrol: Lecții gratuite pentru a încerca înainte de a vă înscrie
+  practise_piano_improvisation_with_these_beginner_guides: Exersează improvizaţia pianului cu aceste ghiduri începătoare
+  start_with_a_short_lesson_that_answers: Începeți cu o lecție scurtă care răspunde la întrebarea pe care o aveți astăzi,
+    apoi reveniți la curriculum-ul cursului pentru o cale structurată prin acorduri, ritm, melodii și independență a
+    mâinilor.
+  how_to_start_improvising_on_piano: Cum să începi să improvizezi la pian
+  five_manageable_exercises_for_your_first_melodies: Cinci exerciţii gestionabile pentru primele tale melodii.
+  piano_chord_progressions_for_beginners: Progresii ale corzilor pianului pentru începători
+  play_four_useful_harmonic_loops: Joacă patru bucle armonice utile.
+  how_to_improvise_with_both_hands: Cum sa improvizezi cu ambele maini
+  coordinate_a_steady_bass_with_a_simple: Coordonează un bas constant cu o melodie simplă.
+  pentatonic_scale_improvisation: Improvizație la scară pentatonică
+  make_music_with_five_notes: Face muzica cu cinci note.
+  playing_piano_by_ear_after_classical_training: Joacă pian după ureche după antrenamentul clasic
+  use_your_reading_skills_as_a_foundation: Folosiţi - vă aptitudinile de citire ca bază pentru a vă juca creativ.
+  free_daily_piano_improvisation_challenge: Provocarea improvizării pianului zilnic gratuit
+  practise_with_a_browser_based_chord_loop: Exersați cu o buclă de coardă pe bază de browser și ritmul tamburului.
+  a_clear_path_from_your_first_note: O cale clară de la prima ta notă
+  what_will_you_be_able_to_play: Ce veţi putea juca?
+  discover_your_sound_and_develop_simple_musical: Descoperiți sunetul și dezvoltați idei muzicale simple în improvizația
+    pianului expresiv. Selectați ilustrația pentru a o vizualiza pe întreaga dimensiune.
+  a_substantial_practical_learning_programme: Un program de învăţare practică şi substanţială
+  explore_the_piano_improvisation_course_curriculum: Explorează cursul de improvizaţie a pianului
+  with_15_sections_and_110_lectures_on: Cu 15 secţiuni şi 110 prelegeri despre Udemy, există o mulţime de descoperit.
+    Deschideţi secţiunile de mai jos pentru a vedea subiecte lecţii specifice, exerciţii şi abilităţile muzicale pe
+    care le dezvoltă.
+  your_goal: 'Scopul tau:'
+  skills_covered: Competențe acoperite
+  lesson_programme: Program de lecţie
+  view_the_current_full_syllabus_preview_videos: Vizualizați programul curent complet, videoclipurile previzualizare
+    și opțiunile de înscriere pe Udemy
+  ready_to_make_music_of_your_own: Eşti gata să faci muzica ta?
+  find_your_own_way_around_the_keyboard: Găsiți-vă propriul drum în jurul tastaturii cu un curs video practic predat
+    de John Montgomery.
+  see_the_course_on_udemy: Vezi Cursul de Udemy
+  everything_works_together: Totul funcţionează împreună.
+  what_is_included_in_the_course: Ce este inclus în curs?
+  learn_at_your_own_pace: Învaţă în ritmul tău
+  who_is_this_piano_course_for: Pentru cine este cursul ăsta de pian?
+  whether_you_are_taking_your_first_steps: Fie că faceţi primii paşi pe pian sau puteţi cânta deja piese citind muzică,
+    acest curs este conceput pentru a vă dezvolta capacitatea de a improviza.
+  good_to_know_before_you_enrol: E bine de ştiut înainte să te înrolezi.
+  piano_improvisation_course_frequently_asked_questions: 'Curs de improvizaţie pian: întrebări frecvente'
+  udemy_course_offer: Oferta de curs Udemy
+  course_at_a_glance: Desigur, dintr-o privire
+  open_the_free_piano_course_preview_on: Deschide avanpremiera gratuita a cursului de pian despre Udemy
+  preview_of_john_montgomery_s_piano_improvisation: Previzualizarea lecțiilor de improvizație a pianului lui John Montgomery
+    care arată o vedere deasupra tastaturii și notație
+  open_the_piano_improvisation_creative_journey_illustration: Deschide improvizaţia pianului. Călătorie creativă. Ilustraţie
+    completă.
+  colourful_piano_improvisation_journey_discover_your_sound: 'Călătorie de improvizație pian colorat: descoperi sunetul,
+    începe cu melodii simple, explora acorduri și armonie, îmbrățișează libertatea creativă și creează spontan.'
+  overhead_hand_sync_footage: Imagini suprapuse de mână-sincronizare
+  animated_score: Scorul animat
+  studio_recorded_backing_tracks: Urme de suport înregistrate în studio
+  join_the_piano_improvisation_course: Alătură-te cursului de improvizare a pianului.
+  lecture: prelegere
+  lectures: prelegeri
+  the_course_videos_on_udemy_are_taught: Lecțiile video de pe Udemy sunt în limba engleză.
+  enroll_in_the_course_on_udemy: Înscrieți-vă în curs pe Udemy
+  lesson_preview: Previzualizare lecţie
+  interactive_keyboard_lesson_with_overhead_view_notation: Lecție interactivă de tastatură cu vedere deasupra capului,
+    notație și răspuns muzical în timp real.
+  identify_a_chord: Identifică un acord
+  find_keys: Găsește clapele
+  chord_name: Numele acordului
+  show_keys: Arată clapele
+  inversion: Răsturnare
+  tap_the_piano_keys_to_choose_notes: Atinge clapele pentru a alege notele.
+  play_chord: ▶ Ascultă acordul
+  play_notes_in_order: Ascultă notele pe rând
+  clear: Șterge selecția
+  acoustic_piano: 'Pianul acustic:'
+  by_alexander_holm: de Alexander Holm (
+  selected_recordings_pitch_shifted_for_this_keyboard: ); înregistrări selectate smoking-schimbat pentru această tastatură.
+  type_notes: Introdu notele
+  identify: Identifică
+  computer_keyboard_and_midi: Tastatură computerizată și MIDI
+  computer_keys: Cheile computerului
+  connect_midi: Conectează MIDI
+  use_z_s_x_d_c_v: Utilizaţi Z S X D C V G B H N J M pentru octava inferioară şi Q 2 W 3 E R 5 T 6 Y 7 U pentru octava
+    superioară.
+  enable_javascript_to_use_the_interactive_piano: Activați JavaScript pentru a utiliza pian interactiv și finder coardă.
+  interactive_piano_chord_finder: Detector interactiv de coardă de pian
+  chord_finder_mode: Modul de căutare Chord
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9 sau C/E
+  piano_keyboard: Tastatură pian
+  keyboard_octave: Octavă de tastatură
+  down_an_octave: Jos o octavă
+  up_an_octave: Sus o octavă
+  keyboard_appearance: Aspect tastatură
+  example_chords: Coarde de exemplu
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4 sau 60 64 67
+  search_questions_and_answers: Caută în întrebări și răspunsuri
+  filter_by_category: Filtrează după categorie
+  all_categories: Toate categoriile
+  sound_and_playback: Sunet și redare
+  midi_and_note_input: MIDI și introducerea notelor
+  notation_voices_and_rhythm: Notație, voci și ritm
+  score_layout_and_spacing: Aspectul și spațierea partiturii
+  parts_printing_and_exporting: Știme, imprimare și export
+  saving_recovery_and_performance: Salvare, recuperare și performanță
+  main_navigation: Navigație principală
+  toggle_navigation_menu: Comută meniul de navigație
+  close_menu: Închide meniul
+  language: Limba
+  home_free_practice: Exersează gratuit la pian
+  home_find_chord: Identifică un acord de pian după note
+  home_daily_practice: improvizează cu acompaniamentul zilnic
+  home_practice_or: sau începe cu
+  home_five_exercises: cinci exerciții pentru începători
