@@ -1,0 +1,180 @@
+list:
+  no_articles: ''
+softplanet:
+  rss_title: '{{ .Title }} op {{ .Site }}'
+  rss_summary: Nieuwe inhoud op {{ .Site }}
+  rss_section_summary: Nieuwe inhoud in {{ .Title }} op {{ .Site }}
+  home_authors: John en Andy Montgomery
+  home_piano_course: CURSUS PIANO-IMPROVISATIE
+  home_services_label: WAT WE DOEN
+  home_explore_piano_course: BEKIJK DE PIANOCURSUS
+  music_courses: Muziekcursussen,
+  piano_scores: bladmuziek
+  amp_sibelius_support: en Sibelius-ondersteuning
+  create_piano_lessons_sheet_music_and_tools: maken pianolessen, bladmuziek en hulpmiddelen voor musici en adviseren
+    Britse scholen over Sibelius-licenties.
+  browse_music_courses: Bekijk de muziekcursussen
+  expert_training: Opleiding van deskundigen
+  creative_inspiration: Creatieve inspiratie
+  professional_solutions: Professionele oplossingen
+  resources_for_musicians_amp_educators: Middelen voor muzikanten en opvoeders
+  whether_you_re_a_music_creator_educator: Of u nu een muziekschepper, opvoeder of instelling bent, wij bieden de tools,
+    training en ondersteuning om u te helpen slagen.
+  learn_piano_improvisation: Leer improviseren op de piano
+  learn_to_play_piano_by_ear_build: Leer op gehoor spelen, akkoorden verbinden en eigen melodieën maken in de online
+    cursus van John Montgomery.
+  sibelius_amp_notation: Sibelius & Notatie
+  standalone_and_network_licences_extra_seats_and: Standalone en netwerklicenties, extra stoelen en installatieadvies
+    voor scholen en hogescholen in het Verenigd Koninkrijk.
+  sibelius_site_licences: Sibelius-locatielicenties
+  piano_sheet_music: Bladmuziek voor piano
+  digital_solo_arrangements_by_john_montgomery_from: Digitale solo arrangementen van John Montgomery, van Interstellar
+    tot Queen en Harry Styles.
+  browse_piano_sheet_music: Bekijk de pianobladmuziek
+  trusted_by_educators: Vertrouwd door opleiders
+  solutions_used_in_schools_and_institutions_worldwide: Oplossingen gebruikt in scholen en instellingen wereldwijd.
+  quality_you_can_rely_on: Kwaliteit waar je op kunt vertrouwen
+  professional_tools_and_training_from_industry_experts: Professionele tools en training van experts uit de industrie.
+  global_community: Wereldwijde Gemeenschap
+  join_a_community_of_creators_and_lifelong: Word lid van een gemeenschap van makers en levenslang lerenden.
+  built_for_creators: Gebouwd voor makers
+  everything_you_need_to_create_and_grow: Alles wat je nodig hebt om te creëren en te groeien.
+  get_10_off_this_course_on_udemy: Krijg € 10 korting op deze cursus op Udemy
+  explore_the_course_lessons: Bekijk de lessen
+  save_10_on_the_piano_improvisation_course: Bespaar € 10 op de cursus piano-improvisatie
+  see_the_hands_hear_the_notes_and: Zie de handen, hoor de noten en volg de notatie.
+  watch_the_free_course_preview_on_udemy: Bekijk de gratis cursusvoorbeeld op Udemy
+  learn_to_create_not_just_repeat: Leren maken, niet alleen herhalen
+  why_this_piano_improvisation_course_is_different: Waarom deze Piano Improvisatie Cursus anders is
+  there_is_a_difference_between_learning_a: Er is een verschil tussen het leren van een stuk en het weten wat te spelen
+    wanneer de score verdwijnt. John's lessen combineren eenvoudige, praktische demonstraties met net genoeg muziektheorie
+    om je eigen keuzes te maken op het toetsenbord.
+  try_improvising_right_now: Probeer nu te improviseren.
+  how_to_improvise_on_piano_a_simple: 'Hoe te improviseren op Piano: Een eenvoudige Beginner Oefening'
+  you_do_not_need_a_complex_piece: Je hebt geen complex muziekstuk nodig om te beginnen. Probeer deze korte oefening
+    op een piano of keyboard om te horen hoe kleine keuzes een originele melodie kunnen worden.
+  step_1: Stap 1
+  choose_a_few_notes: Kies een paar notities
+  find_middle_c_and_play_c_d: Zoek middelste C en speel C, D, E en G met je rechterhand. Houd een comfortabele, stabiele
+    pols.
+  step_2: Stap 2
+  give_it_a_foundation: Geef het een fundering
+  play_a_lower_c_with_your_left: Speel een lagere C met je linkerhand aan het begin van elke korte zin. Laat de basnoot
+    je melodie ondersteunen.
+  step_3: Stap 3
+  change_the_melody: Verander de melodie
+  rearrange_the_four_right_hand_notes_vary: Herschikken van de vier rechter noten, variëren het ritme en verlaten af
+    en toe spaties. Herhaal een favoriet idee, dan antwoord met een nieuwe.
+  that_is_the_starting_point_of_piano: 'Dat is het uitgangspunt van piano improvisatie: luisteren, experimenteren en
+    een muzikaal idee ontwikkelen. John Montgomery demonstreert in de volledige cursus hoe je deze aanpak kunt uitbreiden
+    met akkoorden, verschillende tijdsignaturen, twee-hands patronen en backing tracks.'
+  free_lessons_to_try_before_you_enrol: Gratis lessen om te proberen voordat u zich inschrijft
+  practise_piano_improvisation_with_these_beginner_guides: Piano Improvisatie met deze beginnershandleidingen oefenen
+  start_with_a_short_lesson_that_answers: Begin met een korte les die antwoord geeft op de vraag die je vandaag hebt,
+    ga dan terug naar het cursus curriculum voor een gestructureerd pad door akkoorden, ritme, melodieën en handonafhankelijkheid.
+  how_to_start_improvising_on_piano: Hoe te beginnen met improviseren op piano
+  five_manageable_exercises_for_your_first_melodies: Vijf beheersbare oefeningen voor je eerste melodieën.
+  piano_chord_progressions_for_beginners: Piano akkoord progressies voor beginners
+  play_four_useful_harmonic_loops: Speel vier handige harmonische loops.
+  how_to_improvise_with_both_hands: Hoe improviseren met beide handen
+  coordinate_a_steady_bass_with_a_simple: Coördineer een vaste bas met een eenvoudige melodie.
+  pentatonic_scale_improvisation: Pentatonische schaalimprovisatie
+  make_music_with_five_notes: Maak muziek met vijf noten.
+  playing_piano_by_ear_after_classical_training: Piano spelen met het oor na klassieke training
+  use_your_reading_skills_as_a_foundation: Gebruik je leesvaardigheden als basis voor creatief spelen.
+  free_daily_piano_improvisation_challenge: Gratis dagelijkse piano improvisatie uitdaging
+  practise_with_a_browser_based_chord_loop: Beoefenen met een browser-gebaseerde akkoordenlus en drumritme.
+  a_clear_path_from_your_first_note: Een duidelijk pad vanaf je eerste noot
+  what_will_you_be_able_to_play: Wat zal je in staat zijn te spelen?
+  discover_your_sound_and_develop_simple_musical: Ontdek uw geluid en ontwikkel eenvoudige muzikale ideeën tot expressieve
+    piano improvisatie. Selecteer de illustratie om het volledig te bekijken.
+  a_substantial_practical_learning_programme: Een substantieel, praktisch leerprogramma
+  explore_the_piano_improvisation_course_curriculum: Ontdek de Piano Improvisatie Cursus Curriculum
+  with_15_sections_and_110_lectures_on: Met 15 secties en 110 lezingen over Udemy is er genoeg te ontdekken. Open de
+    onderstaande secties om specifieke lesonderwerpen, oefeningen en de muzikale vaardigheden te zien die ze ontwikkelen.
+  your_goal: 'Jouw doel:'
+  skills_covered: Behandelde vaardigheden
+  lesson_programme: Lesprogramma
+  view_the_current_full_syllabus_preview_videos: Bekijk de huidige volledige syllabus, voorbeeldvideo's en inschrijfopties
+    op Udemy
+  ready_to_make_music_of_your_own: Klaar om zelf muziek te maken?
+  find_your_own_way_around_the_keyboard: Vind je eigen weg rond het toetsenbord met een praktische videocursus onderwezen
+    door John Montgomery.
+  see_the_course_on_udemy: Zie de cursus over Udemy
+  everything_works_together: Alles werkt samen.
+  what_is_included_in_the_course: Wat is inbegrepen in de cursus?
+  learn_at_your_own_pace: Leer op je eigen tempo
+  who_is_this_piano_course_for: Voor wie is deze pianocursus?
+  whether_you_are_taking_your_first_steps: Of u nu uw eerste stappen op de piano zet of al stukken kunt afspelen door
+    muziek te lezen, deze cursus is ontworpen om uw vermogen om te improviseren te ontwikkelen.
+  good_to_know_before_you_enrol: Goed om te weten voordat u zich inschrijft
+  piano_improvisation_course_frequently_asked_questions: 'Piano Improvisatie Cursus: Veelgestelde vragen'
+  udemy_course_offer: Udemy cursus aanbod
+  course_at_a_glance: Koers in één oogopslag
+  open_the_free_piano_course_preview_on: Open de gratis preview van de pianobaan op Udemy
+  preview_of_john_montgomery_s_piano_improvisation: Voorbeeld van John Montgomery's piano improvisatie lessen met een
+    overhead keyboard weergave en notatie
+  open_the_piano_improvisation_creative_journey_illustration: Open de piano improvisatie creatieve reis illustratie
+    volledige grootte
+  colourful_piano_improvisation_journey_discover_your_sound: 'Kleurrijke piano-improvisatiereis: ontdek je klank, begin
+    met eenvoudige melodieën, ontdek akkoorden en harmonie, omarm creatieve vrijheid en creëer spontaan.'
+  overhead_hand_sync_footage: Overhead-handsync-beelden
+  animated_score: Geanimeerde score
+  studio_recorded_backing_tracks: Studio-opgenomen backing tracks
+  join_the_piano_improvisation_course: Doe mee aan de piano improvisatie cursus
+  lecture: lezing
+  lectures: lezingen
+  the_course_videos_on_udemy_are_taught: De videolessen op Udemy zijn Engelstalig.
+  enroll_in_the_course_on_udemy: Schrijf je in in de cursus op Udemy
+  lesson_preview: Lesson Preview
+  interactive_keyboard_lesson_with_overhead_view_notation: Interactieve keyboardles met bovenzicht, notatie en real-time
+    muzikale respons.
+  identify_a_chord: Akkoord herkennen
+  find_keys: Toetsen zoeken
+  chord_name: Akkoordnaam
+  show_keys: Toetsen tonen
+  inversion: Omkering
+  tap_the_piano_keys_to_choose_notes: Tik op de pianotoetsen om tonen te kiezen.
+  play_chord: ▶ Akkoord afspelen
+  play_notes_in_order: Tonen na elkaar afspelen
+  clear: Wissen
+  acoustic_piano: 'Akoestische piano:'
+  by_alexander_holm: door Alexander Holm (
+  selected_recordings_pitch_shifted_for_this_keyboard: ); geselecteerde opnames pitch-shifted voor dit toetsenbord.
+  type_notes: Voer tonen in
+  identify: Herkennen
+  computer_keyboard_and_midi: Computertoetsenbord en MIDI
+  computer_keys: Computertoetsen
+  connect_midi: MIDI verbinden
+  use_z_s_x_d_c_v: Gebruik Z S X D C V G B H N J M voor het onderste octaaf en Q 2 W 3 E R 5 T 6 Y 7 U voor het bovenste
+    octaaf.
+  enable_javascript_to_use_the_interactive_piano: Schakel JavaScript in om de interactieve piano en akkoordzoeker te
+    gebruiken.
+  interactive_piano_chord_finder: Interactieve piano-akkoordenzoeker
+  chord_finder_mode: Koorvindermodus
+  cmaj7_b_m9_or_c_e: Cmaj7, B♭m9 of C/E
+  piano_keyboard: Pianoklavier
+  keyboard_octave: Octaaf van het klavier
+  down_an_octave: Eén octaaf lager
+  up_an_octave: Eén octaaf hoger
+  keyboard_appearance: Weergave van het klavier
+  example_chords: Voorbeeldakkoorden
+  c_e_g_c4_e4_g4_or: C E G, C4 E4 G4 of 60 64 67
+  search_questions_and_answers: Doorzoek vragen en antwoorden
+  filter_by_category: Filter op categorie
+  all_categories: Alle categorieën
+  sound_and_playback: Geluid en afspelen
+  midi_and_note_input: MIDI en noteninvoer
+  notation_voices_and_rhythm: Notatie, stemmen en ritme
+  score_layout_and_spacing: Partituuropmaak en afstanden
+  parts_printing_and_exporting: Partijen, afdrukken en exporteren
+  saving_recovery_and_performance: Opslaan, herstellen en prestaties
+  main_navigation: Hoofdnavigatie
+  toggle_navigation_menu: Navigatiemenu openen of sluiten
+  close_menu: Menu sluiten
+  language: Taal
+  home_free_practice: Gratis piano oefenen
+  home_find_chord: Herken een pianoakkoord aan de tonen
+  home_daily_practice: speel mee met de dagelijkse piano-oefening
+  home_practice_or: of begin met
+  home_five_exercises: vijf improvisatieoefeningen voor beginners
