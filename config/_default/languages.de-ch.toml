@@ -1,0 +1,21 @@
+locale = "de-CH"
+label = "Deutsch (Schweiz)"
+direction = "ltr"
+weight = 24
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = "2. January 2006"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Online-Kurse zur Klavierimprovisation, Klaviernoten und kostenlose Übungen für Pianistinnen und Pianisten in der Schweiz. Beratung zu Sibelius-Lizenzen für britische Schulen."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Musik gestalten, unterrichten und aufführen"
+  bio = "Softplanet Productions entwickelt Musicals, Unterrichtsmaterial und praktische Werkzeuge für Schulen, Musikschaffende und Ensembles."
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/de-ch/" },
+  ]

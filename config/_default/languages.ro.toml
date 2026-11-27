@@ -1,0 +1,21 @@
+locale = "ro"
+label = "Română"
+direction = "ltr"
+weight = 19
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = "2 January 2006"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Cursuri de improvizație la pian, partituri, instrumente gratuite și asistență pentru licențele Sibelius."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Creație muzicală, educație și interpretare"
+  bio = "Softplanet Productions creează musicaluri originale, materiale didactice și instrumente practice pentru școli, muzicieni și ansambluri."
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/ro/" },
+  ]

@@ -1,0 +1,21 @@
+locale = "cs"
+label = "Čeština"
+direction = "ltr"
+weight = 20
+
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = "2. January 2006"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Kurzy klavírní improvizace, noty pro klavír, bezplatné hudební nástroje a pomoc s licencemi Sibelius."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Hudební tvorba, výuka a interpretace"
+  bio = "Softplanet Productions vytváří původní muzikály, výukové materiály a praktické pomůcky pro školy, hudebníky a soubory."
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/cs/" },
+  ]
