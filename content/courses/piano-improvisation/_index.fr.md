@@ -1,16 +1,14 @@
 ---
-title: Cours d’improvisation au piano pour débutants
-description: Cours d'improvisation au piano pour débutants. Apprenez à jouer par oreille, à construire des accords et
-  à créer des mélodies avec des leçons de vidéo et des pistes de support de John Montgomery.
+title: "Cours de piano en ligne | Improvisation et jeu à l’oreille"
+description: "Apprenez à improviser, jouer à l’oreille et maîtriser les accords de piano. Plus de 500 élèves. Vidéos en anglais, à votre rythme."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: COURS D’IMPROVISATION AU PIANO EN LIGNE
-heroTitle: Cours d’improvisation au piano pour débutants
-heroIntro: Apprenez à improviser au piano avec John Montgomery. Travaillez les accords, les mélodies et le rythme avec
-  des pistes d’accompagnement, même si vous ne lisez pas la musique.
+heroEyebrow: "COURS DE PIANO EN LIGNE POUR DÉBUTANTS ET ADULTES"
+heroTitle: "Apprenez à improviser au piano et à jouer à l’oreille"
+heroIntro: "Maîtrisez les accords de piano et créez votre propre musique. Rejoignez plus de 500 élèves de John Montgomery avec des vidéos en anglais et des pistes d’accompagnement enregistrées en studio."
 kicker: De vos premières idées musicales à l'improvisation confiante
-headline: De vos premières notes à l’improvisation au piano
+headline: "Cours de piano en ligne : des premières notes à la création musicale"
 lede: Imaginez vous asseoir au piano et faire de la musique sans suivre une partition. Ce cours d'improvisation de piano
   auto-rapide aide les débutants et les joueurs expérimentés à apprendre à jouer par l'oreille, à construire des progressions
   expressives d'accords et à transformer des idées simples en leurs propres mélodies.
@@ -145,12 +143,12 @@ curriculum:
   - Reconnaissance de l'intervalle par oreille
   - Utiliser des intervalles pour l'improvisation expressive
 audience:
+- "Adultes qui débutent ou reprennent le piano et souhaitent apprendre à leur rythme."
 - Des débutants complets qui veulent commencer immédiatement à faire de la musique.
 - Joueurs autodidacte qui veulent comprendre les accords et jouer par l'oreille.
 - Les lecteurs de partitions qui voudraient improviser plus librement.
 - Claviers, compositeurs et producteurs de musique construisant des idées musicales originales.
-coursePromise: Arrête de demander quoi jouer ensuite. Joignez-vous à des centaines d'apprenants pour découvrir comment
-  des notes, accords et rythmes simples peuvent devenir de la musique propre.
+coursePromise: "Maîtrisez les accords de piano et créez votre propre musique. Rejoignez plus de 500 élèves de John Montgomery avec des vidéos en anglais et des pistes d’accompagnement enregistrées en studio."
 courseBenefits:
 - title: Jouer au lieu de mémoriser
   text: Commencez à créer des mélodies dès les premières leçons, puis développez progressivement la technique pour les
@@ -176,6 +174,8 @@ studentJourney:
   headline: Donnez à votre musique son propre caractère
   text: Combiner mélodie, harmonie, toucher, arpèges et intervalles musicaux pour former un son distinct.
 courseStats:
+- value: "500+"
+  label: "élèves inscrits sur Udemy"
 - value: '15'
   label: sections dans le cours Udemy
 - value: '110'
