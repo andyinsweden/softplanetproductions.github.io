@@ -1,16 +1,14 @@
 ---
-title: Kursus i klaverimprovisation for begyndere
-description: Piano improvisation kursus for begyndere. Lær at spille efter øre, bygge akkorder og skabe melodier med
-  John Montgomery video lektioner og backing spor.
+title: "Online klaverkursus | Improvisation og spil efter gehør"
+description: "Lær klaverimprovisation, akkorder og spil efter gehør. Over 500 kursister. Engelske videolektioner i dit eget tempo."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: ONLINEKURSUS I KLAVERIMPROVISATION
-heroTitle: Kursus i klaverimprovisation for begyndere
-heroIntro: Lær at improvisere på klaver med John Montgomery. Øv akkorder, melodier og rytmer med indspillet akkompagnement,
-  også hvis du ikke kan læse noder.
+heroEyebrow: "ONLINE KLAVERKURSUS FOR BEGYNDERE OG TILBAGEVENDENDE"
+heroTitle: "Lær at improvisere på klaver og spille efter gehør"
+heroIntro: "Lær klaverakkorder og skab din egen musik. Bliv en af over 500 kursister på John Montgomerys kursus med engelske videolektioner og studieindspillede backingtracks."
 kicker: Fra dine første musikalske ideer til selvsikker improvisation
-headline: Fra de første toner til fri klaverimprovisation
+headline: "Online klaverundervisning: fra de første toner til egen musik"
 lede: Forestil dig at sidde ved klaveret og lave musik uden at følge en score. Denne selvoptagede klaverimprovisation
   kursus hjælper begyndere og erfarne spillere lære at spille efter øre, opbygge ekspressive akkord progressioner og
   forvandle enkle ideer til deres egne melodier.
@@ -143,12 +141,12 @@ curriculum:
   - Intervalgenkendelse efter øre
   - Brug af intervaller til ekspressiv improvisation
 audience:
+- "Voksne, der vil begynde eller genoptage klaverspil og lære i deres eget tempo."
 - Komplet begyndere, der ønsker at begynde at lave musik med det samme.
 - Self-underviste spillere, der ønsker at forstå akkorder og spille for øre.
 - Læsere af noder, der gerne vil improvisere mere frit.
 - Keyboardts, komponister og musikproducenter bygger originale musikalske ideer.
-coursePromise: Hold op med at spørge, hvad der skal spilles nu. Deltag hundredvis af elever opdage, hvor enkle noter,
-  akkorder og rytmer kan blive musik af deres egen.
+coursePromise: "Lær klaverakkorder og skab din egen musik. Bliv en af over 500 kursister på John Montgomerys kursus med engelske videolektioner og studieindspillede backingtracks."
 courseBenefits:
 - title: Spil i stedet for at huske
   text: Begynd at skabe melodier fra de allerførste lektioner, derefter gradvist udvikle teknikken til at gøre dem mere
@@ -170,6 +168,8 @@ studentJourney:
   headline: Giv din musik sin egen karakter
   text: Kombiner melodi, harmoni, touch, arpeggios og musikalske intervaller til at forme en tydelig lyd.
 courseStats:
+- value: "500+"
+  label: "kursister på Udemy"
 - value: '15'
   label: sektioner i Udemykurset
 - value: '110'
