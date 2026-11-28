@@ -1,16 +1,14 @@
 ---
-title: Kurs i pianoimprovisasjon for nybegynnere
-description: Piano improvisasjon kurs for nybegynnere. Lær å spille med øret, bygge akkorder og skape melodier med John
-  Montgomerys video leksjoner og støttespor.
+title: "Pianokurs på nett | Improvisasjon og gehørspill"
+description: "Lær pianoimprovisasjon, akkorder og å spille på gehør. Over 500 kursdeltakere. Engelske videoleksjoner i eget tempo."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: NETTKURS I PIANOIMPROVISASJON
-heroTitle: Kurs i pianoimprovisasjon for nybegynnere
-heroIntro: Lær å improvisere på piano med John Montgomery. Øv på akkorder, melodier og rytmer med innspilt akkompagnement,
-  også om du ikke kan lese noter.
+heroEyebrow: "PIANOKURS PÅ NETT FOR NYBEGYNNERE OG VIDEREKOMNE NYSTARTERE"
+heroTitle: "Lær å improvisere på piano og spille på gehør"
+heroIntro: "Lær pianoakkorder og skap egen musikk. Bli med over 500 deltakere på John Montgomerys kurs med engelske videoleksjoner og studioinnspilte backing tracks."
 kicker: Fra dine første musikalske ideer til å stole på improvisasjon
-headline: Fra dine første notater til å sikre pianoimprovisering
+headline: "Pianotimer på nett: fra de første tonene til egen musikk"
 lede: Tenk deg å sitte på piano og lage musikk uten å følge en score. Dette selvpacated piano improvisasjon kurs hjelper
   nybegynnere og erfarne spillere lære å spille av øret, bygge uttrykkelige akkorder progresjoner og gjøre enkle ideer
   til sine egne melodier.
@@ -142,12 +140,12 @@ curriculum:
   - Intervallgjenkjenning av øret
   - Bruk av intervaller for uttrykkelig improvisasjon
 audience:
+- "Voksne som begynner eller tar opp pianospill igjen og ønsker å lære i eget tempo."
 - Komplette nybegynnere som vil begynne å lage musikk med en gang.
 - Selvlærte spillere som ønsker å forstå akkorder og spille med øret.
 - Lesere av musikk som ønsker å improvisere mer fritt.
 - Keyboardists, komponister og musikkprodusenter bygger originale musikkideer.
-coursePromise: Slutt å spørre hva som skal spilles neste gang. Bli med hundrevis av elever oppdager hvordan enkle notater,
-  akkorder og rytmer kan bli deres egen musikk.
+coursePromise: "Lær pianoakkorder og skap egen musikk. Bli med over 500 deltakere på John Montgomerys kurs med engelske videoleksjoner og studioinnspilte backing tracks."
 courseBenefits:
 - title: Spill i stedet for memorering
   text: Begynn å skape melodier fra de aller første leksjonene, så gradvis utvikle teknikken for å gjøre dem mer interessante.
@@ -168,6 +166,8 @@ studentJourney:
   headline: Gi musikken din egen karakter
   text: Kombiner melodi, harmoni, berøring, arggios og musikalske intervaller for å forme en distinkt lyd.
 courseStats:
+- value: "500+"
+  label: "kursdeltakere på Udemy"
 - value: '15'
   label: seksjoner i Utemy-kurset
 - value: '110'
