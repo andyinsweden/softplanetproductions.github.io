@@ -1,16 +1,14 @@
 ---
-title: 'Curs de improvizație la pian: învață să cânți după ureche'
-description: Învață să cânți după ureche, să construiești acorduri și să creezi melodii cu lecțiile video și acompaniamentele
-  lui John Montgomery.
+title: "Curs online de pian | Improvizație și cântat după ureche"
+description: "Învață improvizația la pian, acordurile și cântatul după ureche. Peste 500 de cursanți. Lecții video în engleză."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: Cursul ONLINE DE IMPOZITARE PIANO
-heroTitle: 'Curs de improvizație la pian: învață să cânți după ureche'
-heroIntro: Învață să cânți după ureche, să construiești acorduri și să creezi melodii cu lecțiile video și acompaniamentele
-  lui John Montgomery.
+heroEyebrow: "CURS ONLINE DE PIAN PENTRU ÎNCEPĂTORI ȘI ADULȚI"
+heroTitle: "Învață să improvizezi la pian și să cânți după ureche"
+heroIntro: "Învață acordurile de pian și creează propria muzică. Alătură-te celor peste 500 de cursanți ai lui John Montgomery, cu lecții video în engleză și acompaniamente înregistrate."
 kicker: De la primele tale idei muzicale până la o improvizaţie încrezătoare
-headline: De la primele tale notiţe la improvizaţia pianului încrezător
+headline: "Lecții online de pian: de la primele note la propria muzică"
 lede: Imaginați-vă stând la pian și făcând muzică fără a urma un scor. Acest curs de improvizație pian auto-paced ajută
   începătorii și jucătorii experimentați să învețe să cânte după ureche, să construiască progresii ale corzilor expresive
   și să transforme idei simple în melodiile lor.
@@ -144,12 +142,12 @@ curriculum:
   - Recunoasterea intervalului dupa ureche
   - Utilizarea intervalelor pentru improvizarea expresivă
 audience:
+- "Adulți care încep sau reiau studiul pianului și doresc să învețe în ritmul propriu."
 - Incepatori completi care vor sa inceapa sa faca muzica imediat.
 - Jucători auto-învățat care doresc să înțeleagă acorduri și să joace după ureche.
 - Cititorii de partituri muzicale care ar dori să improvizeze mai liber.
 - Keyboardiști, compozitori și producători de muzică construind idei muzicale originale.
-coursePromise: Nu mai întreba ce să joace în continuare. Alăturați-vă sute de cursanți descoperind cât de simple note,
-  acorduri și ritmuri pot deveni muzica proprie.
+coursePromise: "Învață acordurile de pian și creează propria muzică. Alătură-te celor peste 500 de cursanți ai lui John Montgomery, cu lecții video în engleză și acompaniamente înregistrate."
 courseBenefits:
 - title: Joacă în loc să memorezi
   text: Începe să creezi melodii din primele lecţii, apoi dezvoltă treptat tehnica pentru a le face mai interesante.
@@ -172,6 +170,8 @@ studentJourney:
   headline: Dă muzica ta propriul său caracter
   text: Combină melodia, armonia, atingerea, arpeggios și intervalele muzicale pentru a forma un sunet distinct.
 courseStats:
+- value: "500+"
+  label: "cursanți pe Udemy"
 - value: '15'
   label: secțiuni în cursul Udemy
 - value: '110'
