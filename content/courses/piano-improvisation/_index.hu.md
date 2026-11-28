@@ -1,16 +1,14 @@
 ---
-title: 'Zongoraimprovizációs tanfolyam: tanulj hallás után játszani'
-description: Tanulj hallás után játszani, akkordokat összekapcsolni és saját dallamokat alkotni John Montgomery videóleckéivel
-  és kísérősávjaival.
+title: "Online zongoratanfolyam | Improvizáció és hallás utáni játék"
+description: "Tanulj zongoraimprovizációt, akkordokat és hallás utáni játékot. Több mint 500 tanuló. Angol nyelvű videóleckék."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: ONLINE PIANO JAVÍTÁSI SZÖVETSÉG
-heroTitle: 'Zongoraimprovizációs tanfolyam: tanulj hallás után játszani'
-heroIntro: Tanulj hallás után játszani, akkordokat összekapcsolni és saját dallamokat alkotni John Montgomery videóleckéivel
-  és kísérősávjaival.
+heroEyebrow: "ONLINE ZONGORATANFOLYAM KEZDŐKNEK ÉS ÚJRAKEZDŐKNEK"
+heroTitle: "Tanulj zongorán improvizálni és hallás után játszani"
+heroIntro: "Sajátítsd el a zongoraakkordokat és alkoss saját zenét. Csatlakozz John Montgomery több mint 500 tanulójához, angol videóleckékkel és stúdióban rögzített kíséretekkel."
 kicker: Az első zenei ötleteidtől a magabiztos improvizációig
-headline: Az első megjegyzéseidtől a magabiztos zongoraimprovizációig
+headline: "Online zongoraleckék: az első hangoktól a saját zenéig"
 lede: Képzeljék el, hogy leülnek a zongorához, és zenélnek anélkül, hogy egy pontot követnének. Ez az önjáró zongora
   improvizációs kurzus segít a kezdőknek és a tapasztalt játékosoknak megtanulni a fül által történő játékot, expresszív
   akkord fejlődést épít, és az egyszerű ötleteket saját dallamokká alakítja.
@@ -143,12 +141,12 @@ curriculum:
   - A fülek internálása
   - Időközök alkalmazása expresszív improvizáláshoz
 audience:
+- "Felnőtteknek, akik most kezdenek vagy visszatérnek a zongorához, és saját tempójukban szeretnének tanulni."
 - Teljes kezdők, akik azonnal elkezdenek zenélni.
 - Self- tanított játékosok, akik szeretnék megérteni akkordok és játszani a fül.
 - A kották olvasói, akik szabadabban szeretnének improvizálni.
 - Keyboardisták, zeneszerzők és zenei producerek eredeti zenei ötleteket építenek.
-coursePromise: Ne kérdezz többet, hogy mit játssz. Csatlakozz több száz tanulóhoz, akik felfedezik, hogy az egyszerű
-  jegyzetek, akkordok és ritmusok saját zenéjükké válhatnak.
+coursePromise: "Sajátítsd el a zongoraakkordokat és alkoss saját zenét. Csatlakozz John Montgomery több mint 500 tanulójához, angol videóleckékkel és stúdióban rögzített kíséretekkel."
 courseBenefits:
 - title: Lejátszás memorizálás helyett
   text: Kezdje el létrehozni a dallamokat a legelső leckék, majd fokozatosan fejleszteni a technikát, hogy azok érdekesebbek.
@@ -172,6 +170,8 @@ studentJourney:
   text: Keverjük össze a dallamot, harmóniát, érintést, arpeggiókat és zenei intervallumokat, hogy alakítsunk egy külön
     hangot.
 courseStats:
+- value: "500+"
+  label: "tanuló az Udemy-n"
 - value: '15'
   label: szekciók az Udemy kurzus
 - value: '110'
