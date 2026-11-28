@@ -1,16 +1,14 @@
 ---
-title: Corso di improvvisazione al pianoforte per principianti
-description: Corso di improvvisazione per principianti. Impara a suonare per orecchio, costruisci accordi e crea melodie
-  con le lezioni video di John Montgomery e le tracce di supporto.
+title: "Corso di pianoforte online | Improvvisare e suonare a orecchio"
+description: "Impara a improvvisare, suonare a orecchio e usare gli accordi. Oltre 500 studenti. Videolezioni in inglese al tuo ritmo."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: CORSO ONLINE DI IMPROVVISAZIONE AL PIANOFORTE
-heroTitle: Corso di improvvisazione al pianoforte per principianti
-heroIntro: Impara a improvvisare con John Montgomery. Esercitati con accordi, melodie, ritmi e basi di accompagnamento,
-  anche se non sai leggere lo spartito.
+heroEyebrow: "CORSO DI PIANOFORTE ONLINE PER PRINCIPIANTI E ADULTI"
+heroTitle: "Impara a improvvisare al pianoforte e suonare a orecchio"
+heroIntro: "Padroneggia gli accordi e crea la tua musica. Unisciti agli oltre 500 studenti di John Montgomery con videolezioni in inglese e basi registrate in studio."
 kicker: Dalle tue prime idee musicali all'improvvisazione sicura
-headline: Dalle prime note all’improvvisazione al pianoforte
+headline: "Lezioni di pianoforte online: dalle prime note alla tua musica"
 lede: Immaginate di sedersi al pianoforte e fare musica senza seguire un punteggio. Questo corso di improvvisazione per
   pianoforte auto-paziato aiuta i principianti e i giocatori esperti imparano a suonare per orecchio, costruire progressioni
   di accordi espressivi e trasformare idee semplici nelle loro melodie.
@@ -144,12 +142,12 @@ curriculum:
   - Riconoscimento intervalente dell'orecchio
   - Utilizzo di intervalli per l'improvvisazione espressiva
 audience:
+- "Adulti che iniziano o riprendono a suonare il pianoforte e desiderano imparare al proprio ritmo."
 - I principianti completi che vogliono iniziare a fare musica subito.
 - Giocatori autodidatta che vogliono capire gli accordi e suonare a orecchio.
 - Lettori di spartito che desiderano improvvisare più liberamente.
 - Tastiere, compositori e produttori di musica che costruiscono idee musicali originali.
-coursePromise: Smetti di chiedere cosa giocare dopo. Unisciti a centinaia di studenti scoprendo come semplici note, accordi
-  e ritmi possono diventare musica di loro.
+coursePromise: "Padroneggia gli accordi e crea la tua musica. Unisciti agli oltre 500 studenti di John Montgomery con videolezioni in inglese e basi registrate in studio."
 courseBenefits:
 - title: Suona invece di memorizzare
   text: Inizia a creare melodie dalle prime lezioni, poi gradualmente sviluppare la tecnica per renderle più interessanti.
@@ -171,6 +169,8 @@ studentJourney:
   headline: Dare alla vostra musica il suo carattere
   text: Combina melodia, armonia, tocco, arpeggi e intervalli musicali per modellare un suono distinto.
 courseStats:
+- value: "500+"
+  label: "studenti su Udemy"
 - value: '15'
   label: sezioni del corso Udemy
 - value: '110'
