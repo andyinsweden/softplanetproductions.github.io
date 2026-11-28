@@ -1,0 +1,19 @@
+locale = "pt-PT"
+label = "Português (Portugal)"
+direction = "ltr"
+weight = 32
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Aulas de piano online, improvisação, partituras, ferramentas musicais gratuitas e licenças Sibelius."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Criação musical, ensino e interpretação"
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/pt-pt/" },
+  ]

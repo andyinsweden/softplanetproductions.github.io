@@ -1,0 +1,19 @@
+locale = "th"
+label = "ไทย"
+direction = "ltr"
+weight = 36
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "เรียนเปียโนออนไลน์ การเล่นด้นสด โน้ตเพลง เครื่องมือดนตรีฟรี และบริการด้านลิขสิทธิ์ Sibelius"
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "การสร้างสรรค์ การสอน และการแสดงดนตรี"
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/th/" },
+  ]

@@ -1,0 +1,19 @@
+locale = "ar"
+label = "العربية"
+direction = "rtl"
+weight = 33
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "دروس البيانو عبر الإنترنت والارتجال والنوتات الموسيقية وأدوات الموسيقى المجانية ودعم تراخيص Sibelius."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "الإبداع الموسيقي والتعليم والأداء"
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/ar/" },
+  ]

@@ -1,0 +1,19 @@
+locale = "id"
+label = "Bahasa Indonesia"
+direction = "ltr"
+weight = 34
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Kursus piano online, improvisasi, partitur, alat musik gratis, dan dukungan lisensi Sibelius."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Kreasi musik, pendidikan, dan pertunjukan"
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/id/" },
+  ]

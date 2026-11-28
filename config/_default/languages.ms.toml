@@ -1,0 +1,19 @@
+locale = "ms"
+label = "Bahasa Melayu"
+direction = "ltr"
+weight = 37
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Kelas piano dalam talian, improvisasi, skor muzik, alat muzik percuma dan sokongan lesen Sibelius."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Penciptaan, pendidikan dan persembahan muzik"
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/ms/" },
+  ]

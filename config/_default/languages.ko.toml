@@ -1,0 +1,19 @@
+locale = "ko"
+label = "한국어"
+direction = "ltr"
+weight = 30
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "피아노 레슨, 즉흥연주, 악보, 무료 음악 도구 및 Sibelius 라이선스 지원."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "음악 창작, 교육 및 연주"
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/ko/" },
+  ]

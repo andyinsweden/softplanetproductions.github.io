@@ -1,0 +1,19 @@
+locale = "zh-TW"
+label = "繁體中文"
+direction = "ltr"
+weight = 31
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "線上鋼琴課程、即興演奏、樂譜、免費音樂工具及 Sibelius 授權支援。"
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "音樂創作、教學與演奏"
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/zh-tw/" },
+  ]

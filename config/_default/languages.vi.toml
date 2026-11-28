@@ -1,0 +1,19 @@
+locale = "vi"
+label = "Tiếng Việt"
+direction = "ltr"
+weight = 35
+title = "Softplanet Productions"
+copyright = "&copy; 2026 Softplanet Productions"
+
+[params]
+  dateFormat = ":date_long"
+  mainSections = ["courses", "services", "tutorials", "piano-scores"]
+  description = "Khóa học piano trực tuyến, ứng tấu, bản nhạc, công cụ âm nhạc miễn phí và hỗ trợ giấy phép Sibelius."
+
+[params.author]
+  name = "John & Andy Montgomery"
+  headline = "Sáng tạo, giáo dục và biểu diễn âm nhạc"
+  links = [
+    { email = "mailto:info@softplanetproductions.co.uk" },
+    { website = "https://softplanetproductions.com/vi/" },
+  ]
