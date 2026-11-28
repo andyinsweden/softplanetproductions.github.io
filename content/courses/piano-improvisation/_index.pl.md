@@ -1,16 +1,14 @@
 ---
-title: Kurs improwizacji na pianinie dla początkujących
-description: Kurs improwizacji fortepianu dla początkujących. Naucz się grać uchem, budować akordy i tworzyć melodie
-  za pomocą lekcji wideo John Montgomery i backboardowych utworów.
+title: "Kurs gry na pianinie online | Improwizacja i gra ze słuchu"
+description: "Naucz się improwizacji, akordów i gry ze słuchu. Ponad 500 kursantów. Lekcje wideo po angielsku we własnym tempie."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: KURS ONLINE IMPROWIZACJI NA PIANINIE
-heroTitle: Kurs improwizacji na pianinie dla początkujących
-heroIntro: Naucz się improwizować na pianinie z Johnem Montgomerym. Ćwicz akordy, melodie i rytmy z nagranym akompaniamentem,
-  nawet jeśli nie czytasz nut.
+heroEyebrow: "KURS GRY NA PIANINIE ONLINE DLA POCZĄTKUJĄCYCH I DOROSŁYCH"
+heroTitle: "Naucz się improwizować na pianinie i grać ze słuchu"
+heroIntro: "Opanuj akordy fortepianowe i twórz własną muzykę. Dołącz do ponad 500 kursantów Johna Montgomery’ego, korzystając z lekcji wideo po angielsku i nagranych podkładów."
 kicker: Od twoich pierwszych muzycznych pomysłów do pewnej improwizacji
-headline: Od pierwszych notatek po improwizację fortepianu.
+headline: "Lekcje gry na pianinie online: od pierwszych dźwięków do własnej muzyki"
 lede: Wyobraź sobie siedzenie przy pianinie i robienie muzyki bez oglądania wyników. Ten kurs improwizacji fortepianowej
   pomaga początkującym i doświadczonym graczom nauczyć się grać uchem, budować ekspresywne akordy i przekształcać proste
   pomysły w ich własne melodie.
@@ -142,12 +140,12 @@ curriculum:
   - Rozpoznawanie interwalne przez ucho
   - Korzystanie z przerw do improwizacji ekspresji
 audience:
+- "Dorośli, którzy zaczynają lub wracają do gry na pianinie i chcą uczyć się we własnym tempie."
 - Kompletni początkujący, którzy chcą natychmiast zacząć tworzyć muzykę.
 - Samouczeni gracze, którzy chcą zrozumieć akordy i grać przez ucho.
 - Czytelnicy nut, którzy chcieliby improwizować bardziej swobodnie.
 - Keyboardiści, kompozytorzy i producenci muzyki budujący oryginalne pomysły muzyczne.
-coursePromise: Przestań pytać, co dalej. Dołącz do setek uczących się odkrywających jak proste nuty, akordy i rytmy mogą
-  stać się muzyką ich własnych.
+coursePromise: "Opanuj akordy fortepianowe i twórz własną muzykę. Dołącz do ponad 500 kursantów Johna Montgomery’ego, korzystając z lekcji wideo po angielsku i nagranych podkładów."
 courseBenefits:
 - title: Graj zamiast zapamiętywania
   text: Zacznij tworzyć melodie z pierwszych lekcji, a następnie stopniowo rozwijać technikę, aby uczynić je bardziej
@@ -169,6 +167,8 @@ studentJourney:
   headline: Daj swojej muzyce swój własny charakter
   text: Połącz melodię, harmonię, dotyk, arpeggios i interwały muzyczne, aby kształtować wyraźny dźwięk.
 courseStats:
+- value: "500+"
+  label: "kursantów na Udemy"
 - value: '15'
   label: odcinki kursu Udemy
 - value: '110'
