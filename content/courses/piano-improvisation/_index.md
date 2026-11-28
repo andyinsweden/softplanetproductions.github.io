@@ -1,17 +1,17 @@
 ---
-title: "Piano Improvisation Course | Play by Ear & Create Music"
-description: "Piano improvisation course for beginners. Learn to play by ear, build chords and create melodies with John Montgomery’s video lessons and backing tracks."
+title: "Online Piano Course | Learn Improvisation & Play by Ear"
+description: "Learn piano improvisation, play by ear and master piano chords with self-paced online piano lessons. Join 500+ students and create your own music."
 
 images:
   - "/piano-improvisation-udemy.webp"
 
 heroImage: "/courses-hero.webp"
-heroEyebrow: "ONLINE PIANO IMPROVISATION COURSE"
-heroTitle: "Piano Improvisation Course: Learn to Play by Ear"
-heroIntro: "An online piano improvisation course with John Montgomery. Discover practical chords, melodies, rhythms and backing-track exercises — even if you cannot read sheet music."
+heroEyebrow: "ONLINE PIANO COURSE FOR BEGINNERS AND RETURNING PLAYERS"
+heroTitle: "Learn Piano Improvisation and Play by Ear"
+heroIntro: "Master piano chords, create your own music and play with confidence. Join over 500 students in John Montgomery’s self-paced online piano improvisation course, with practical video lessons and studio-recorded backing tracks."
 
 kicker: "From your first musical ideas to confident improvisation"
-headline: "From Your First Notes to Confident Piano Improvisation"
+headline: "Online Piano Lessons: From Your First Notes to Creative Playing"
 lede: "Imagine sitting down at the piano and making music without following a score. This self-paced piano improvisation course helps beginners and experienced players learn to play by ear, build expressive chord progressions and turn simple ideas into their own melodies."
 
 intro: "Rather than asking you to memorise one piece after another, John Montgomery teaches you the building blocks of musical freedom. Start with just three notes, develop rhythm and melody, explore scales and piano chords, then practise improvisation over studio-recorded backing tracks. The lessons feature overhead keyboard demonstrations and animated scores, helping you connect what you see and hear with what your hands play. If you are new to the piano, begin at the beginning; if you already play, use the practical modules to become more confident playing by ear and creating original musical ideas."
@@ -83,11 +83,12 @@ curriculum:
     summary: "Hear and play the distances between notes so you can deliberately choose bright, tense, gentle or reflective melodic shapes."
     topics: ["Major and perfect intervals", "Minor intervals", "Interval recognition by ear", "Using intervals for expressive improvisation"]
 audience:
+  - "Adults learning piano for the first time or returning after a break who want flexible online piano lessons rather than fixed weekly appointments."
   - "Complete beginners who want to start making music straight away."
   - "Self-taught players who want to understand chords and play by ear."
   - "Readers of sheet music who would like to improvise more freely."
   - "Keyboardists, composers and music producers building original musical ideas."
-coursePromise: "Stop asking what to play next. Join hundreds of learners discovering how simple notes, chords and rhythms can become music of their own."
+coursePromise: "Join over 500 students discovering how simple notes, piano chords and rhythms can become music of their own. Learn at your own pace, without relying on sheet music."
 courseBenefits:
   - title: "Play instead of memorising"
     text: "Start creating melodies from the very first lessons, then gradually develop the technique to make them more interesting."
@@ -108,6 +109,8 @@ studentJourney:
     headline: "Give your music its own character"
     text: "Combine melody, harmony, touch, arpeggios and musical intervals to shape a distinct sound."
 courseStats:
+  - value: "500+"
+    label: "students enrolled on Udemy"
   - value: "15"
     label: "sections in the Udemy course"
   - value: "110"
@@ -197,6 +200,12 @@ sectionsDetailed:
     topics: ["Major seconds, thirds, sixths and sevenths", "Perfect fourths, fifths and octaves", "Minor seconds, thirds, sixths and sevenths", "Using interval sounds as melodic choices"]
     lessons: ["Major Intervals: Build More Expressive Melodies", "Minor Intervals: Add Emotion to Your Melodies"]
 courseFAQ:
+  - question: "Is this online piano course suitable for adults returning to piano?"
+    answer: "Yes. Adults can work through the self-paced lessons at home, revisit familiar chords and scales, and develop the confidence to improvise without following a score. Beginners can start with the introductory keyboard exercises."
+  - question: "How can I learn piano chords and chord progressions?"
+    answer: "The course introduces major and minor chords, inversions and practical progressions. Play a repeating progression with your left hand, then experiment with a simple right-hand melody using notes from the key. The video lessons and backing tracks help you develop this skill gradually."
+  - question: "How do I learn to play piano by ear?"
+    answer: "Start by listening to a short musical phrase and repeating it on the keyboard. Gradually recognise intervals, chord sounds and rhythmic patterns, then use them to create your own melodies. The course combines listening, visual demonstrations and practical improvisation."
   - question: "Can I start this course without playing piano before?"
     answer: "Yes. The course begins with posture, note recognition and very short musical ideas before introducing chords, scales and coordination. If you already play, you can start from the material most relevant to you."
   - question: "Do I need to read sheet music?"
