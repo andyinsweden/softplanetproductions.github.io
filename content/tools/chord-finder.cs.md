@@ -11,6 +11,8 @@ Použít tento zdarma **piano akord finder** Chcete-li pojmenovat akord z pozná
 
 {{< chord-finder >}}
 
+**[Přehled klavírních akordů: C · C♯ / D♭ · D · E♭ / D♯ · E · F · F♯ / G♭ · G · A♭ / G♯ · A · B♭ / A♯ · B]({{< relref "tools/piano-chords" >}})**
+
 Vyberte základní tón a akord. Příslušné klávesy se zvýrazní. Přehrajte akord a poslechněte si všechny tóny současně.
 
 ## Typy klavírních akordů

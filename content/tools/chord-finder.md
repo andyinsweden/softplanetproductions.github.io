@@ -11,6 +11,8 @@ Learn **piano chords** with this free interactive piano chord chart and chord fi
 
 {{< chord-finder >}}
 
+**[Piano Chord Charts: C · C♯ / D♭ · D · E♭ / D♯ · E · F · F♯ / G♭ · G · A♭ / G♯ · A · B♭ / A♯ · B]({{< relref "tools/piano-chords" >}})**
+
 ## Piano chord chart: 65 chord types in every root
 
 Explore 780 root-and-type combinations across the 12 chromatic pitches, or 1,105 labelled combinations when enharmonic spellings such as C♯ and D♭ are counted separately. Popular chords appear first. Slash chords and inversions provide additional voicings.

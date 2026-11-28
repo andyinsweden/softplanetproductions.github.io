@@ -11,6 +11,8 @@ Mit diesem kostenlosen **Akkordfinder fürs Klavier** kannst du einen Akkord anh
 
 {{< chord-finder >}}
 
+**[Klavierakkord-Tabelle: C · C♯ / D♭ · D · E♭ / D♯ · E · F · F♯ / G♭ · G · A♭ / G♯ · A · B♭ / A♯ · B]({{< relref "tools/piano-chords" >}})**
+
 Wähle Grundton und Akkord. Die passenden Klaviertasten leuchten automatisch auf. Spiele den Akkord ab, um alle Töne gemeinsam zu hören.
 
 ## Klavierakkorde und Akkordtypen

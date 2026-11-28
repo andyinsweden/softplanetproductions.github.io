@@ -11,6 +11,8 @@ Usa este **buscador de acordes de piano** gratuito para identificar un acorde a 
 
 {{< chord-finder >}}
 
+**[Tabla de acordes de piano: C · C♯ / D♭ · D · E♭ / D♯ · E · F · F♯ / G♭ · G · A♭ / G♯ · A · B♭ / A♯ · B]({{< relref "tools/piano-chords" >}})**
+
 Elige la nota fundamental y el acorde; las teclas se iluminan automáticamente. Pulsa reproducir para escuchar todas las notas juntas.
 
 ## Tipos de acordes de piano

@@ -11,6 +11,8 @@ Met deze gratis **piano-akkoordenzoeker** vind je de naam van een akkoord aan de
 
 {{< chord-finder >}}
 
+**[Pianoakkoorden overzicht: C · C♯ / D♭ · D · E♭ / D♯ · E · F · F♯ / G♭ · G · A♭ / G♯ · A · B♭ / A♯ · B]({{< relref "tools/piano-chords" >}})**
+
 Kies de grondtoon en het akkoord. De pianotoetsen lichten automatisch op. Speel het akkoord af om alle noten tegelijk te horen.
 
 ## Soorten pianoakkoorden
