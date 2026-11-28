@@ -1,16 +1,14 @@
 ---
-title: 'Klavierimprovisation lernen: Onlinekurs für Anfänger'
-description: Lerne mit John Montgomery, nach Gehör Klavier zu spielen und eigene Melodien zu improvisieren. Mit Begleittracks
-  und englischen Videos auf Udemy.
+title: "Online-Klavierkurs | Improvisieren und nach Gehör spielen"
+description: "Lerne Klavierimprovisation, Akkorde und Spielen nach Gehör. Über 500 Teilnehmende. Englische Videolektionen im eigenen Tempo."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: ONLINEKURS ZUR KLAVIERIMPROVISATION
-heroTitle: 'Klavierimprovisation lernen: Onlinekurs für Anfänger'
-heroIntro: Lerne mit John Montgomery, nach Gehör zu spielen und aus Akkorden, Rhythmen und wenigen Tönen eigene Melodien
-  zu erfinden. Du kannst ohne Notenkenntnisse anfangen.
+heroEyebrow: "ONLINE-KLAVIERKURS FÜR ANFÄNGER UND WIEDEREINSTEIGER"
+heroTitle: "Klavierimprovisation lernen und nach Gehör spielen"
+heroIntro: "Lerne Klavierakkorde und entwickle eigene Melodien. Über 500 Teilnehmende lernen mit John Montgomerys englischen Videolektionen und professionellen Begleittracks."
 kicker: Von den ersten Ideen zur freien Improvisation
-headline: Entwickle eigene Melodien am Klavier
+headline: "Online-Klavierunterricht: von den ersten Tönen zur eigenen Musik"
 lede: Stell dir vor, du setzt dich ans Klavier und erfindest ein Stück, ohne Noten vor dir zu haben. Mit diesem Kurs
   lernst du, nach Gehör zu spielen, Akkordfolgen aufzubauen und eigene Melodien zu gestalten.
 intro: Beginne mit drei Tönen. Entwickle ein Gefühl für Rhythmus und Melodie, lerne Tonleitern und Akkorde kennen und
@@ -139,11 +137,12 @@ curriculum:
   - Intervallerkennung durch Ohr
   - Verwendung von Intervallen für expressive Improvisation
 audience:
+- "Erwachsene, die Klavier lernen oder nach einer Pause wieder einsteigen und in ihrem eigenen Tempo üben möchten."
 - Komplette Anfänger, die sofort anfangen wollen, Musik zu machen.
 - Selbstlernende Spieler, die Akkorde verstehen und mit dem Ohr spielen wollen.
 - Notenleser, die sich freier improvisieren möchten.
 - Keyboarder, Komponisten und Musikproduzenten bauen originelle musikalische Ideen auf.
-coursePromise: Entdecke, wie du aus wenigen Tönen, Akkorden und Rhythmen eigene Musik machen kannst.
+coursePromise: "Lerne Klavierakkorde und entwickle eigene Melodien. Über 500 Teilnehmende lernen mit John Montgomerys englischen Videolektionen und professionellen Begleittracks."
 courseBenefits:
 - title: Spielen statt auswendig lernen
   text: Beginnen Sie Melodien aus den allerersten Lektionen zu schaffen, dann entwickeln Sie allmählich die Technik,
@@ -168,6 +167,8 @@ studentJourney:
   text: Kombinieren Sie Melodie, Harmonie, Touch, Arpeggios und musikalische Intervalle, um einen deutlichen Klang zu
     gestalten.
 courseStats:
+- value: "500+"
+  label: "Teilnehmende auf Udemy"
 - value: '15'
   label: Abschnitte auf Udemy
 - value: 100+
