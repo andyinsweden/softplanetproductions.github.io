@@ -1,16 +1,14 @@
 ---
-title: Cursus piano-improvisatie | Leer spelen op gehoor
-description: Leer op gehoor spelen, akkoorden verbinden en eigen melodieën improviseren met videolessen en begeleidingsopnamen
-  van John Montgomery.
+title: "Online pianocursus | Improviseren en spelen op gehoor"
+description: "Leer piano improviseren, akkoorden spelen en spelen op gehoor. Meer dan 500 cursisten. Engelstalige videolessen op eigen tempo."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: ONLINE CURSUS PIANO-IMPROVISATIE
-heroTitle: 'Cursus piano-improvisatie: leer spelen op gehoor'
-heroIntro: Leer improviseren op de piano met John Montgomery. Oefen met akkoorden, melodieën, ritmes en begeleidingsopnamen.
-  Je hoeft geen bladmuziek te kunnen lezen.
+heroEyebrow: "ONLINE PIANOCURSUS VOOR BEGINNERS EN HERSTARTERS"
+heroTitle: "Leer improviseren op piano en spelen op gehoor"
+heroIntro: "Leer pianoakkoorden en maak je eigen muziek. Sluit je aan bij meer dan 500 cursisten van John Montgomery, met Engelstalige videolessen en begeleidingsopnamen."
 kicker: Van je eerste ideeën naar vrij improviseren
-headline: Van je eerste noten naar zelfverzekerd improviseren
+headline: "Online pianolessen: van je eerste noten naar eigen muziek"
 lede: Ga achter de piano zitten en maak muziek zonder partituur. In deze cursus leer je op je eigen tempo op gehoor
   spelen, expressieve akkoordprogressies maken en eenvoudige ideeën uitwerken tot je eigen melodieën.
 intro: John Montgomery laat je zien hoe je vrij muziek maakt. Begin met drie noten, ontdek ritme en melodie en verken
@@ -140,12 +138,12 @@ curriculum:
   - Intervalherkenning per oor
   - Met tussenpozen voor expressieve improvisatie
 audience:
+- "Volwassenen die beginnen of opnieuw piano leren spelen en flexibel willen oefenen."
 - Complete beginner die meteen muziek wil gaan maken.
 - Zelfopgeleide spelers die akkoorden willen begrijpen en met het oor willen spelen.
 - Lezers van bladmuziek die vrijer willen improviseren.
 - Keyboardisten, componisten en muziekproducenten bouwen originele muzikale ideeën.
-coursePromise: Stop met vragen wat te spelen volgende. Doe mee honderden leerlingen ontdekken hoe eenvoudige noten,
-  akkoorden en ritmes kunnen worden muziek van hun eigen.
+coursePromise: "Leer pianoakkoorden en maak je eigen muziek. Sluit je aan bij meer dan 500 cursisten van John Montgomery, met Engelstalige videolessen en begeleidingsopnamen."
 courseBenefits:
 - title: Afspelen in plaats van memoriseren
   text: Begin met het maken van melodieën vanaf de allereerste lessen, dan geleidelijk ontwikkelen van de techniek om
@@ -168,6 +166,8 @@ studentJourney:
   headline: Geef je muziek een eigen karakter
   text: Combineer melodie, harmonie, touch, arpeggio's en muzikale intervallen om een duidelijk geluid te vormen.
 courseStats:
+- value: "500+"
+  label: "cursisten op Udemy"
 - value: '15'
   label: secties in de Udemy cursus
 - value: '110'
