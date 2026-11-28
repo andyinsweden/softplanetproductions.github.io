@@ -601,5 +601,7 @@
   });
 
   buildKeyboard();
+  const requestedChord = new URLSearchParams(window.location.search).get('chord');
+  if (requestedChord && requestedChord.length <= 40) chordInput.value = requestedChord;
   lookupChord();
 })();
