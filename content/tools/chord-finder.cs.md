@@ -1,9 +1,7 @@
 ---
-title: 'Vyhledávač klavírních akordů: určujte akordy podle tónů'
-description: Poznejte akord podle tónů nebo vyhledejte jeho značku. Podívejte se, které klávesy stisknout, poslechněte
-  si akord a vyzkoušejte obraty.
-summary: Klepněte na možnost nebo zadejte poznámky pro identifikaci akordu piána, nebo vyhledejte název akordu, abyste
-  viděli a slyšeli jeho klíče.
+title: "Klavírní akordy: bezplatný interaktivní přehled"
+description: "Prozkoumejte 65 typů klavírních akordů. Zobrazte klávesy, poslechněte si akordy a procvičujte obraty s MIDI."
+summary: "Prozkoumejte 65 typů klavírních akordů. Zobrazte klávesy, poslechněte si akordy a procvičujte obraty s MIDI."
 showTableOfContents: false
 showReadingTime: false
 webApplication: true
@@ -12,6 +10,23 @@ webApplication: true
 Použít tento zdarma **piano akord finder** Chcete-li pojmenovat akord z poznámek, které hrajete. Pokud již znáte akord symbol, zadejte jej vidět klíče, slyšet akord a zkuste jeho inverze. Nástroj běží ve vašem prohlížeči bez účtu.
 
 {{< chord-finder >}}
+
+Vyberte základní tón a akord. Příslušné klávesy se zvýrazní. Přehrajte akord a poslechněte si všechny tóny současně.
+
+## Typy klavírních akordů
+
+Durové, mollové, kvintové, zmenšené, zvětšené, sus, sextové, septimové, nonové, undecimové a tercdecimové akordy, akordy s přidanými tóny a alterované jazzové akordy. Také lomené akordy a obraty.
+
+**C · Cm · C5 · Cdim · Caug · Csus2 · Csus4 · C6 · Cm6 · C6/9 · C7 · Cmaj7 · Cm7 · Cm(maj7) · Cm7♭5 · Cdim7 · Cadd9 · Cadd11 · Cadd13 · C9 · Cm9 · Cmaj9 · C11 · Cm11 · Cmaj11 · C13 · Cm13 · Cmaj13 · C7♭9 · C7♯9 · C7♯11 · C7alt · C/E**
+
+- C7: C–E–G–B♭
+- Cm9: C–E♭–G–B♭–D
+- C13: C–E–G–B♭–D–F–A
+
+**65 × 12 = 780** · **65 × 17 = 1,105**
+
+[Naučte se klavírní akordy a improvizaci]({{< relref "courses/piano-improvisation" >}})
+
 
 ## Co je to za akord? Identifikovat akord podle jeho poznámky
 
@@ -26,7 +41,7 @@ Když zadáte poznámky bez oktáv, nálezce je umístí do vzestupného pořad�
 | C–E♭–G–B♭ | Cm7 | C menší sedmý |
 | G–B–D–F | G7 | G dominantní sedmý |
 
-Nálezce rozpoznává 57 akordů, od velkých a menších triád až po zavěšené, přidané akordy a upravené akordy. **C–E–G–A** může být **C6** nebo **Am7/C**. Klíč a akordy kolem něj vám může pomoci vybrat správné jméno.
+Nálezce rozpoznává 65 akordů, od velkých a menších triád až po zavěšené, přidané akordy a upravené akordy. **C–E–G–A** může být **C6** nebo **Am7/C**. Klíč a akordy kolem něj vám může pomoci vybrat správné jméno.
 
 ## Vyhledat si noty a inverze na klavír
 

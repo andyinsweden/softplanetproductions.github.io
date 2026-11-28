@@ -1,9 +1,7 @@
 ---
-title: Piano-akkoordenzoeker | Herken akkoorden aan hun tonen
-description: Zoek een pianoakkoord op naam of herken het aan de tonen. Bekijk en beluister de toetsen, probeer omkeringen
-  en gebruik desgewenst een USB-MIDI-klavier.
-summary: Tik op de toetsen of voer tonen in om een pianoakkoord te herkennen. Je kunt ook een akkoordsymbool opzoeken
-  en de tonen beluisteren.
+title: "Pianoakkoorden: gratis interactieve akkoordzoeker"
+description: "Ontdek 65 soorten pianoakkoorden in alle toonsoorten. Bekijk de toetsen, beluister akkoorden en oefen omkeringen met MIDI."
+summary: "Ontdek 65 soorten pianoakkoorden in alle toonsoorten. Bekijk de toetsen, beluister akkoorden en oefen omkeringen met MIDI."
 showTableOfContents: false
 showReadingTime: false
 webApplication: true
@@ -12,6 +10,23 @@ webApplication: true
 Met deze gratis **piano-akkoordenzoeker** vind je de naam van een akkoord aan de hand van de tonen die je speelt. Ken je het symbool al? Vul het in om te zien welke toetsen je nodig hebt, luister naar het akkoord en probeer verschillende omkeringen. De tool werkt in je browser, zonder account.
 
 {{< chord-finder >}}
+
+Kies de grondtoon en het akkoord. De pianotoetsen lichten automatisch op. Speel het akkoord af om alle noten tegelijk te horen.
+
+## Soorten pianoakkoorden
+
+Majeur, mineur, powerchords, verminderd, overmatig, sus-akkoorden, sext-, septiem-, none-, undeciem- en tredeciemakkoorden, toegevoegde tonen en gealtereerde jazzakkoorden. Ook slash-akkoorden en omkeringen.
+
+**C · Cm · C5 · Cdim · Caug · Csus2 · Csus4 · C6 · Cm6 · C6/9 · C7 · Cmaj7 · Cm7 · Cm(maj7) · Cm7♭5 · Cdim7 · Cadd9 · Cadd11 · Cadd13 · C9 · Cm9 · Cmaj9 · C11 · Cm11 · Cmaj11 · C13 · Cm13 · Cmaj13 · C7♭9 · C7♯9 · C7♯11 · C7alt · C/E**
+
+- C7: C–E–G–B♭
+- Cm9: C–E♭–G–B♭–D
+- C13: C–E–G–B♭–D–F–A
+
+**65 × 12 = 780** · **65 × 17 = 1,105**
+
+[Leer pianoakkoorden en improvisatie]({{< relref "courses/piano-improvisation" >}})
+
 
 ## Welk akkoord is dit? Herken een akkoord aan zijn tonen
 
@@ -26,7 +41,7 @@ Als je geen octaven opgeeft, plaatst de tool de tonen in stijgende volgorde, zoa
 | C–E♭–G–B♭ | Cm7 | C-mineurseptiemakkoord |
 | G–B–D–F | G7 | Dominantseptiemakkoord op G |
 
-De zoektool herkent 57 akkoordsoorten, van majeur- en mineurdrieklanken tot sus-akkoorden, akkoorden met toegevoegde tonen en gealtereerde akkoorden. Als dezelfde tonen bij meerdere akkoordsymbolen passen, zie je de alternatieven. Zo kan **C–E–G–A** zowel **C6** als **Am7/C** zijn. De toonsoort en de akkoorden eromheen helpen je bij de keuze.
+De zoektool herkent 65 akkoordsoorten, van majeur- en mineurdrieklanken tot sus-akkoorden, akkoorden met toegevoegde tonen en gealtereerde akkoorden. Als dezelfde tonen bij meerdere akkoordsymbolen passen, zie je de alternatieven. Zo kan **C–E–G–A** zowel **C6** als **Am7/C** zijn. De toonsoort en de akkoorden eromheen helpen je bij de keuze.
 
 ## Zoek de toetsen en omkeringen van een pianoakkoord op
 

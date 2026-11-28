@@ -1,9 +1,7 @@
 ---
-title: 'Zongoraakkord-kereső: ismerd fel az akkordot hangokból'
-description: Azonosíts zongoraakkordot a hangjai alapján, vagy keress rá a jelölésére. Nézd meg és hallgasd meg a hangokat,
-  és próbáld ki a megfordításokat.
-summary: Koppintsunk a zongora akkord azonosítására szolgáló jegyekre, vagy keressünk fel egy akkord nevet, hogy lássuk
-  és halljuk a kulcsait.
+title: "Zongoraakkordok: ingyenes interaktív akkordkereső"
+description: "Fedezz fel 65 zongoraakkord-típust. Nézd meg a billentyűket, hallgasd meg az akkordokat és gyakorold a fordításokat MIDI-vel."
+summary: "Fedezz fel 65 zongoraakkord-típust. Nézd meg a billentyűket, hallgasd meg az akkordokat és gyakorold a fordításokat MIDI-vel."
 showTableOfContents: false
 showReadingTime: false
 webApplication: true
@@ -12,6 +10,23 @@ webApplication: true
 Használja ezt ingyen **Zongora akkord kereső** Ha már ismeri az akkord szimbólumot, írja be, hogy lássa a billentyűket, hallja az akkordot, és próbálja meg az inverziókat. Az eszköz fut a böngészőben anélkül, hogy fiókot.
 
 {{< chord-finder >}}
+
+Válaszd ki az alaphangot és az akkordot. A megfelelő billentyűk automatikusan kiemelődnek. Játszd le az akkordot az összes hang együttes meghallgatásához.
+
+## Zongoraakkord-típusok
+
+Dúr, moll, kvint-, szűkített, bővített, sus, szext-, szeptim-, nón-, undecim- és tercdecimakkordok, hozzáadott hangok és alterált jazzakkordok. Perjeles akkordok és fordítások is elérhetők.
+
+**C · Cm · C5 · Cdim · Caug · Csus2 · Csus4 · C6 · Cm6 · C6/9 · C7 · Cmaj7 · Cm7 · Cm(maj7) · Cm7♭5 · Cdim7 · Cadd9 · Cadd11 · Cadd13 · C9 · Cm9 · Cmaj9 · C11 · Cm11 · Cmaj11 · C13 · Cm13 · Cmaj13 · C7♭9 · C7♯9 · C7♯11 · C7alt · C/E**
+
+- C7: C–E–G–B♭
+- Cm9: C–E♭–G–B♭–D
+- C13: C–E–G–B♭–D–F–A
+
+**65 × 12 = 780** · **65 × 17 = 1,105**
+
+[Tanulj zongoraakkordokat és improvizációt]({{< relref "courses/piano-improvisation" >}})
+
 
 ## Milyen akkord ez? Azonosítsa az akkordot a jegyzeteivel
 
@@ -26,7 +41,7 @@ Ha oktávok nélkül gépel jegyzeteket, a kereső felmenő sorrendben adja meg 
 | C–E♭–G–B♭ | Cm7 | C kisebb, hetedik |
 | G–B–D–F | G7 | G domináns hetedik |
 
-A kereső felismeri az 57 akkord típusokat, a nagyobb és kisebb triádoktól a felfüggesztett, added- jegyzetig és a megváltozott akkordokig. **C–E–G–A** lehet **C6** vagy **Am7/C**. A kulcs és az akkordok körülötte segíthet kiválasztani a megfelelő nevet.
+A kereső felismeri az 65 akkord típusokat, a nagyobb és kisebb triádoktól a felfüggesztett, added- jegyzetig és a megváltozott akkordokig. **C–E–G–A** lehet **C6** vagy **Am7/C**. A kulcs és az akkordok körülötte segíthet kiválasztani a megfelelő nevet.
 
 ## Keresse meg a zongora akkord jegyzetek és inverziók
 

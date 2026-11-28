@@ -1,7 +1,7 @@
 ---
-title: "Buscador de acordes de piano por notas"
-description: "Identifica un acorde tocando sus notas o búscalo por nombre. Escucha 57 tipos de acordes de piano, prueba inversiones y conecta tu teclado MIDI."
-summary: "Pulsa o escribe las notas para identificar un acorde, o búscalo por su nombre para ver y escuchar las teclas."
+title: "Acordes de piano: buscador y tabla interactiva gratis"
+description: "Explora 65 tipos de acordes de piano en todas las tonalidades. Consulta las teclas, escucha los acordes y practica inversiones con MIDI."
+summary: "Explora 65 tipos de acordes de piano en todas las tonalidades. Consulta las teclas, escucha los acordes y practica inversiones con MIDI."
 showTableOfContents: false
 showReadingTime: false
 webApplication: true
@@ -10,6 +10,23 @@ webApplication: true
 Usa este **buscador de acordes de piano** gratuito para identificar un acorde a partir de las notas que tocas. Si ya sabes su nombre, escribe el símbolo para ver las teclas, escuchar el acorde y probar sus inversiones. Funciona en tu navegador sin necesidad de crear una cuenta.
 
 {{< chord-finder >}}
+
+Elige la nota fundamental y el acorde; las teclas se iluminan automáticamente. Pulsa reproducir para escuchar todas las notas juntas.
+
+## Tipos de acordes de piano
+
+Mayores y menores; de quinta, disminuidos y aumentados; suspendidos; de sexta, séptima, novena, undécima y decimotercera; con notas añadidas y alterados de jazz. También puedes consultar acordes con bajo indicado e inversiones.
+
+**C · Cm · C5 · Cdim · Caug · Csus2 · Csus4 · C6 · Cm6 · C6/9 · C7 · Cmaj7 · Cm7 · Cm(maj7) · Cm7♭5 · Cdim7 · Cadd9 · Cadd11 · Cadd13 · C9 · Cm9 · Cmaj9 · C11 · Cm11 · Cmaj11 · C13 · Cm13 · Cmaj13 · C7♭9 · C7♯9 · C7♯11 · C7alt · C/E**
+
+- C7: C–E–G–B♭
+- Cm9: C–E♭–G–B♭–D
+- C13: C–E–G–B♭–D–F–A
+
+**65 × 12 = 780** · **65 × 17 = 1,105**
+
+[Aprende acordes e improvisación al piano]({{< relref "courses/piano-improvisation" >}})
+
 
 ## ¿Qué acorde es? Identifícalo por sus notas
 
@@ -24,7 +41,7 @@ Cuando escribes notas sin especificar la octava, el buscador las coloca en orden
 | C–E♭–G–B♭ | Cm7 | Do menor con séptima |
 | G–B–D–F | G7 | Sol con séptima de dominante |
 
-El buscador reconoce 57 tipos de acordes, desde tríadas mayores y menores hasta acordes suspendidos, con notas añadidas o con alteraciones. Si las mismas notas admiten varios nombres, los muestra. Por ejemplo, **C–E–G–A** puede ser **C6** o **Am7/C**. La tonalidad y los acordes que lo rodean te ayudan a elegir el nombre adecuado.
+El buscador reconoce 65 tipos de acordes, desde tríadas mayores y menores hasta acordes suspendidos, con notas añadidas o con alteraciones. Si las mismas notas admiten varios nombres, los muestra. Por ejemplo, **C–E–G–A** puede ser **C6** o **Am7/C**. La tonalidad y los acordes que lo rodean te ayudan a elegir el nombre adecuado.
 
 ## Consulta las notas y las inversiones de un acorde
 

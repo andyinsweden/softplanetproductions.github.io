@@ -1,8 +1,7 @@
 ---
-title: "Akkordfinder für Klavier: Akkorde nach Tönen bestimmen"
-description: "Finde Klavierakkorde anhand ihrer Töne oder Namen. Höre 57 Akkordtypen, vergleiche Umkehrungen und nutze optional ein USB-MIDI-Keyboard."
-summary: Tippen Sie auf Notizen, um einen Klavierakkord zu identifizieren, oder suchen Sie einen Akkordnamen auf, um
-  seine Tasten zu sehen und zu hören.
+title: "Klavierakkorde: kostenloser Akkordfinder mit Klang"
+description: "Entdecke 65 Akkordtypen für alle Grundtöne. Klaviertasten anzeigen, Akkorde anhören, Umkehrungen üben und MIDI nutzen."
+summary: "Entdecke 65 Akkordtypen für alle Grundtöne. Klaviertasten anzeigen, Akkorde anhören, Umkehrungen üben und MIDI nutzen."
 showTableOfContents: false
 showReadingTime: false
 webApplication: true
@@ -11,6 +10,23 @@ webApplication: true
 Mit diesem kostenlosen **Akkordfinder fürs Klavier** kannst du einen Akkord anhand seiner Töne bestimmen. Wenn du das Akkordsymbol schon kennst, zeigt dir das Tool die passenden Tasten. Du kannst den Akkord anhören und seine Umkehrungen ausprobieren.
 
 {{< chord-finder >}}
+
+Wähle Grundton und Akkord. Die passenden Klaviertasten leuchten automatisch auf. Spiele den Akkord ab, um alle Töne gemeinsam zu hören.
+
+## Klavierakkorde und Akkordtypen
+
+Dur und Moll; Quintakkorde, verminderte und übermässige Akkorde; Vorhaltsakkorde; Sext-, Sept-, Nonen-, Undezim- und Tredezimakkorde; Akkorde mit Zusatztönen und alterierte Jazzakkorde. Auch Slash-Akkorde und Umkehrungen sind verfügbar.
+
+**C · Cm · C5 · Cdim · Caug · Csus2 · Csus4 · C6 · Cm6 · C6/9 · C7 · Cmaj7 · Cm7 · Cm(maj7) · Cm7♭5 · Cdim7 · Cadd9 · Cadd11 · Cadd13 · C9 · Cm9 · Cmaj9 · C11 · Cm11 · Cmaj11 · C13 · Cm13 · Cmaj13 · C7♭9 · C7♯9 · C7♯11 · C7alt · C/E**
+
+- C7: C–E–G–B♭
+- Cm9: C–E♭–G–B♭–D
+- C13: C–E–G–B♭–D–F–A
+
+**65 × 12 = 780** · **65 × 17 = 1,105**
+
+[Klavierakkorde und Improvisation lernen]({{< relref "courses/piano-improvisation" >}})
+
 
 ## Welcher Akkord ist das? Akkorde anhand ihrer Töne erkennen
 
@@ -25,7 +41,7 @@ Bei Eingaben ohne Oktavnummer ordnet das Tool die Töne in der eingegebenen Reih
 | C–E♭–G–B♭ | Cm7 | C-Moll mit kleiner Septime |
 | G–B–D–F | G7 | G-Dominantseptakkord |
 
-Das Tool erkennt 57 Akkordtypen, von Dur- und Molldreiklängen bis zu Vorhaltsakkorden und alterierten Akkorden. Bei mehreren möglichen Namen zeigt es Alternativen an. **C–E–G–A** kann zum Beispiel **C6** oder **Am7/C** sein. Tonart und Nachbarakkorde geben Hinweise auf die passende Bezeichnung.
+Das Tool erkennt 65 Akkordtypen, von Dur- und Molldreiklängen bis zu Vorhaltsakkorden und alterierten Akkorden. Bei mehreren möglichen Namen zeigt es Alternativen an. **C–E–G–A** kann zum Beispiel **C6** oder **Am7/C** sein. Tonart und Nachbarakkorde geben Hinweise auf die passende Bezeichnung.
 
 ## Akkordtöne und Umkehrungen nachschlagen
 
