@@ -1,16 +1,14 @@
 ---
-title: Pianoimprovisaation verkkokurssi aloittelijoille
-description: Pianoimprovisaatiokurssi aloittelijoille. Opi pelaamaan korvalla, rakentamaan sointuja ja luomaan melodioita
-  John Montgomery
+title: "Pianon verkkokurssi | Improvisointi ja korvakuulolta soittaminen"
+description: "Opi pianoimprovisaatiota, sointuja ja soittamaan korvakuulolta. Yli 500 opiskelijaa. Englanninkieliset videotunnit."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: PIANOIMPROVISAATION VERKKOKURSSI
-heroTitle: Pianoimprovisaation verkkokurssi aloittelijoille
-heroIntro: Opi improvisoimaan pianolla John Montgomeryn johdolla. Harjoittele sointuja, melodioita ja rytmejä taustanauhojen
-  avulla, vaikka et osaisi lukea nuotteja.
+heroEyebrow: "PIANON VERKKOKURSSI ALOITTELIJOILLE JA PALAAVILLE SOITTAJILLE"
+heroTitle: "Opi improvisoimaan pianolla ja soittamaan korvakuulolta"
+heroIntro: "Opi pianon soinnut ja luo omaa musiikkia. Liity yli 500 opiskelijan joukkoon John Montgomeryn kurssilla, jossa on englanninkielisiä videotunteja ja studiossa äänitettyjä taustanauhoja."
 kicker: Ensimmäisestä musiikillisesta ideasta itsevarmaan improvisaatioon
-headline: Ensimmäisistä sävelistä vapaaseen pianoimprovisaatioon
+headline: "Pianotunnit verkossa: ensimmäisistä sävelistä omaan musiikkiin"
 lede: Kuvittele istua pianon äärellä ja tehdä musiikkia seuraamatta pisteitä. Tämä itsepaneva pianoimprovisaatiokurssi
   auttaa aloittelijoita ja kokeneita pelaajia oppimaan soittamaan korvalla, rakentamaan ilmekkäitä sointuja ja muuttamaan
   yksinkertaiset ideat omiksi melodioiksi.
@@ -142,12 +140,12 @@ curriculum:
   - Korvan välinen tunnistus
   - Expressiivisen improvisaation aikaväleillä
 audience:
+- "Aikuiset, jotka aloittavat pianonsoiton tai palaavat sen pariin ja haluavat oppia omaan tahtiinsa."
 - Täydellinen aloittelijat, jotka haluavat aloittaa musiikin tekemisen heti.
 - Itseoppinut pelaajia, jotka haluavat ymmärtää sointuja ja pelata korvasta.
 - Nuotteja, jotka haluavat improvisoida vapaammin.
 - Näppäimistöt, säveltäjät ja musiikintuottajat rakentavat musiikillisia ideoita.
-coursePromise: Älä kysy, mitä seuraavaksi. Liity satoihin oppijoihin, jotka selvittävät, miten yksinkertaisista muistiinpanoista,
-  soinnuista ja rytmeistä voi tulla omaa musiikkiaan.
+coursePromise: "Opi pianon soinnut ja luo omaa musiikkia. Liity yli 500 opiskelijan joukkoon John Montgomeryn kurssilla, jossa on englanninkielisiä videotunteja ja studiossa äänitettyjä taustanauhoja."
 courseBenefits:
 - title: Pelataan ulkoa ulkoa
   text: Aloita melodioiden luominen ensimmäisistä oppitunneista ja kehitä sitten vähitellen tekniikkaa tehdäksesi niistä
@@ -169,6 +167,8 @@ studentJourney:
   headline: Anna musiikin oma luonne
   text: Yhdistä melodia, harmonia, kosketus, arpeggios ja musiikilliset välit muokata erillistä ääntä.
 courseStats:
+- value: "500+"
+  label: "opiskelijaa Udemyssä"
 - value: '15'
   label: Udemy-kurssin jaksot
 - value: '110'
