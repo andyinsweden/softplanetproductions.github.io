@@ -1,16 +1,14 @@
 ---
-title: Yeni başlayanlar için piyano doğaçlama kursu
-description: Yeni başlayanlar için piyano improvizasyon kursu. Kulakla oynamayı öğrenin, chords inşa edin ve John Montgomery'in
-  video dersleriyle melodileri yaratın ve parçalara geri dönün.
+title: "Online piyano kursu | Doğaçlama ve kulaktan çalma"
+description: "Piyanoda doğaçlama, akorlar ve kulaktan çalmayı öğrenin. 500’den fazla öğrenci. İngilizce video dersler."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: ÇEVRİM İÇİ PİYANO DOĞAÇLAMA KURSU
-heroTitle: Yeni başlayanlar için piyano doğaçlama kursu
-heroIntro: John Montgomery ile piyanoda doğaçlama öğrenin. Kayıtlı eşliklerle akorları, melodileri ve ritimleri çalışın.
-  Nota okumayı bilmeden de başlayabilirsiniz.
+heroEyebrow: "BAŞLANGIÇ VE PİYANOYA YENİDEN DÖNÜŞ İÇİN ONLINE PİYANO KURSU"
+heroTitle: "Piyanoda doğaçlama yapmayı ve kulaktan çalmayı öğrenin"
+heroIntro: "Piyano akorlarını öğrenin ve kendi müziğinizi yaratın. John Montgomery’nin 500’den fazla öğrencisine katılın; İngilizce video dersler ve stüdyo kayıtlı eşlik parçalarıyla çalışın."
 kicker: İlk müzikal fikirlerinizden, doğaçlamaya emin olmak
-headline: İlk Notlardan Confident Piano Improvisationisation
+headline: "Online piyano dersleri: ilk notalardan kendi müziğinize"
 lede: Piyanoda oturup müzik bir puan almadan oturun. Bu kendi kendini kurtarılmış piyano improvizasyon kursu, yeni başlayanlara
   yardımcı olur ve deneyimli oyuncular kulakla oynamayı öğrenir, ifade edici chord ilerlemeleri inşa eder ve kendi melodilerine
   basit fikirler döndürür.
@@ -140,12 +138,12 @@ curriculum:
   - Kulakla Tanıklık
   - Açıklamalı improvizasyon için aralıkları kullanarak
 audience:
+- "Piyanoya başlayan veya yeniden dönen, kendi hızında öğrenmek isteyen yetişkinler."
 - Müzik yapmaya başlamak isteyen yeni başlayanlar hemen uzaklaşın.
 - chords anlamak ve kulakla oynamak isteyen oyuncular.
 - Daha özgürce geliştirmek isteyen sayfa müziği okurlar.
 - Klavyeistler, besteciler ve müzik üreticileri orijinal müzik fikirlerini inşa ederler.
-coursePromise: Bir sonraki ne oynayacaklarını sormayı bırak. Yüzlerce öğrenciye basit notlar, koords ve ritimlerin kendi
-  müzik haline gelebileceğini keşfedin.
+coursePromise: "Piyano akorlarını öğrenin ve kendi müziğinizi yaratın. John Montgomery’nin 500’den fazla öğrencisine katılın; İngilizce video dersler ve stüdyo kayıtlı eşlik parçalarıyla çalışın."
 courseBenefits:
 - title: Oyun yerine memoence
   text: İlk derslerden melodiler oluşturmaya başlayın, sonra yavaş yavaş onları daha ilginç hale getirmek için tekniği
@@ -167,6 +165,8 @@ studentJourney:
   headline: Müziğinize kendi karakterinizi verin
   text: Benilody, harmoni, dokunuş, arpeggios ve müzik aralıklarını farklı bir ses şekillendirmek için birleştirin.
 courseStats:
+- value: "500+"
+  label: "Udemy öğrencisi"
 - value: '15'
   label: Udemy kursundaki bölümler
 - value: '110'
