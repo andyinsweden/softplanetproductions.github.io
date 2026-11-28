@@ -1,16 +1,14 @@
 ---
-title: Kurs i pianoimprovisation för nybörjare
-description: 'Piano improvisation kurs för nybörjare. Lär dig att spela på örat, bygga ackord och skapa melodier med
-  John Montgomery: s videolektioner och bakgrundsspår.'
+title: "Pianokurs online | Improvisation och spela på gehör"
+description: "Lär dig pianoimprovisation, pianoackord och spela på gehör. Över 500 kursdeltagare. Videolektioner på engelska i egen takt."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: ONLINEKURS I PIANOIMPROVISATION
-heroTitle: Kurs i pianoimprovisation för nybörjare
-heroIntro: Lär dig improvisera med John Montgomery. Spela ackord, melodier och rytmer till inspelat komp, även om du
-  inte kan läsa noter.
+heroEyebrow: "PIANOKURS ONLINE FÖR NYBÖRJARE OCH ÅTERVÄNDARE"
+heroTitle: "Lär dig improvisera på piano och spela på gehör"
+heroIntro: "Lär dig pianoackord och skapa egen musik. Gör som över 500 deltagare på John Montgomerys kurs med engelska videolektioner och studioinspelade bakgrundsspår."
 kicker: Från dina första musikaliska idéer till säker improvisation
-headline: Från dina första toner till fri pianoimprovisation
+headline: "Pianolektioner online: från de första tonerna till egen musik"
 lede: Tänk dig att sitta ner på piano och göra musik utan att följa en noter. Denna självbetalda pianoimprovisation kurs
   hjälper nybörjare och erfarna spelare att lära sig spela genom örat, bygga uttrycksfulla ackordföljder och förvandla
   enkla idéer till sina egna melodier.
@@ -142,12 +140,12 @@ curriculum:
   - Intervalligenkänning genom örat
   - Använda intervaller för uttrycksfull improvisation
 audience:
+- "Vuxna som vill börja eller återuppta pianospelandet och lära sig i egen takt."
 - Komplett nybörjare som vill börja göra musik direkt.
 - Självlärda spelare som vill förstå ackord och spela på örat.
 - Läsare av plåtmusik som vill improvisera mer fritt.
 - Keyboardists, kompositörer och musikproducenter bygger originella musikidéer.
-coursePromise: Sluta fråga vad du ska spela nästa. Gå med i hundratals elever som upptäcker hur enkla anteckningar, ackord
-  och rytmer kan bli musik av sig själv.
+coursePromise: "Lär dig pianoackord och skapa egen musik. Gör som över 500 deltagare på John Montgomerys kurs med engelska videolektioner och studioinspelade bakgrundsspår."
 courseBenefits:
 - title: Spela istället för att memorera
   text: Börja skapa melodier från de allra första lektionerna, sedan gradvis utveckla tekniken för att göra dem mer intressanta.
@@ -168,6 +166,8 @@ studentJourney:
   headline: Ge din musik sin egen karaktär
   text: Kombinera melodi, harmoni, beröring, arpeggios och musikaliska intervall för att forma ett distinkt ljud.
 courseStats:
+- value: "500+"
+  label: "kursdeltagare på Udemy"
 - value: '15'
   label: sektioner i Udemy kursen
 - value: '110'
