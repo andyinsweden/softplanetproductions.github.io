@@ -1,16 +1,14 @@
 ---
-title: Curso de improvisação no piano para iniciantes
-description: Curso de improvisação de piano para iniciantes. Aprenda a tocar de ouvido, construir acordes e criar melodias
-  com as aulas de vídeo do John Montgomery e faixas de apoio.
+title: "Curso de piano online | Improvisação e tocar de ouvido"
+description: "Aprenda improvisação, acordes de piano e a tocar de ouvido. Mais de 500 alunos. Videoaulas em inglês no seu ritmo."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: CURSO ONLINE DE IMPROVISAÇÃO NO PIANO
-heroTitle: Curso de improvisação no piano para iniciantes
-heroIntro: Aprenda a improvisar ao piano com John Montgomery. Pratique acordes, melodias e ritmos com acompanhamentos,
-  mesmo sem ler partituras.
+heroEyebrow: "CURSO DE PIANO ONLINE PARA INICIANTES E ADULTOS"
+heroTitle: "Aprenda a improvisar no piano e tocar de ouvido"
+heroIntro: "Domine os acordes de piano e crie sua própria música. Junte-se a mais de 500 alunos do curso de John Montgomery, com videoaulas em inglês e faixas de acompanhamento."
 kicker: Das suas primeiras ideias musicais à improvisação confiante
-headline: A partir de suas primeiras notas para a improvisação Piano confiante
+headline: "Aulas de piano online: das primeiras notas à sua própria música"
 lede: Imagine sentar-se ao piano e fazer música sem seguir uma partitura. Este curso de improvisação de piano auto-acelerado
   ajuda iniciantes e jogadores experientes a aprender a tocar de ouvido, construir progressões expressivas de acordes
   e transformar ideias simples em suas próprias melodias.
@@ -144,12 +142,12 @@ curriculum:
   - Reconhecimento interval por orelha
   - Usando intervalos para improvisação expressiva
 audience:
+- "Adultos que estão começando ou voltando a tocar piano e querem aprender no próprio ritmo."
 - Iniciantes completos que querem começar a fazer música imediatamente.
 - Jogadores autodidatas que querem entender acordes e tocar de ouvido.
 - Leitores de partituras que gostariam de improvisar mais livremente.
 - Teclados, compositores e produtores de música construindo ideias musicais originais.
-coursePromise: Pára de perguntar o que jogar a seguir. Junte-se a centenas de alunos descobrindo como notas, acordes
-  e ritmos simples podem se tornar música própria.
+coursePromise: "Domine os acordes de piano e crie sua própria música. Junte-se a mais de 500 alunos do curso de John Montgomery, com videoaulas em inglês e faixas de acompanhamento."
 courseBenefits:
 - title: Jogar em vez de memorizar
   text: Comece a criar melodias desde as primeiras lições, então gradualmente desenvolva a técnica para torná-las mais
@@ -171,6 +169,8 @@ studentJourney:
   headline: Dê à sua música o seu próprio caráter
   text: Combine melodia, harmonia, toque, arpeggios e intervalos musicais para formar um som distinto.
 courseStats:
+- value: "500+"
+  label: "alunos na Udemy"
 - value: '15'
   label: Seções no curso Udemy
 - value: '110'
