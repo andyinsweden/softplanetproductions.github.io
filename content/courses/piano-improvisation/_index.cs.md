@@ -1,16 +1,14 @@
 ---
-title: 'Kurz klavírní improvizace: naučte se hrát podle sluchu'
-description: Naučte se hrát podle sluchu, spojovat akordy a tvořit melodie s videolekcemi a doprovodnými nahrávkami
-  Johna Montgomeryho.
+title: "Online kurz klavíru | Improvizace a hra podle sluchu"
+description: "Naučte se improvizovat, hrát podle sluchu a používat klavírní akordy. Přes 500 studentů. Videolekce v angličtině."
 images:
 - /piano-improvisation-udemy.webp
 heroImage: /courses-hero.webp
-heroEyebrow: SOUD ZLEPŠOVÁNÍ PLYNU ONLINE PIANO
-heroTitle: 'Kurz klavírní improvizace: naučte se hrát podle sluchu'
-heroIntro: Naučte se hrát podle sluchu, spojovat akordy a tvořit melodie s videolekcemi a doprovodnými nahrávkami Johna
-  Montgomeryho.
+heroEyebrow: "ONLINE KURZ KLAVÍRU PRO ZAČÁTEČNÍKY A NAVRACEJÍCÍ SE HRÁČE"
+heroTitle: "Naučte se improvizovat na klavír a hrát podle sluchu"
+heroIntro: "Osvojte si klavírní akordy a tvořte vlastní hudbu. Přidejte se k více než 500 studentům kurzu Johna Montgomeryho s videolekcemi v angličtině a doprovodnými nahrávkami."
 kicker: Od vašich prvních hudebních nápadů po sebevědomou improvizaci
-headline: Od vašich prvních poznámek k sebevědomí Piano Improvizace
+headline: "Online lekce klavíru: od prvních tónů k vlastní hudbě"
 lede: Představte si, že sedí na klavír a dělat hudbu bez sledování skóre. Tento self-paced klavírní improvizační kurz
   pomáhá začátečníkům a zkušeným hráčům naučit hrát podle uší, budovat expresivní akord progrese a proměnit jednoduché
   myšlenky v jejich vlastní melodie.
@@ -142,12 +140,12 @@ curriculum:
   - Rozpoznání intervalů uchem
   - Používání intervalů pro expresivní improvizaci
 audience:
+- "Dospělí začátečníci i hráči, kteří se ke klavíru vracejí a chtějí studovat vlastním tempem."
 - Kompletní začátečníci, kteří chtějí hned začít dělat hudbu.
 - Self- učil hráče, kteří chtějí pochopit akordy a hrát podle uší.
 - Čtenáři notové hudby, kteří by rádi improvizovali svobodněji.
 - Keyboardists, skladatelé a hudební producenti budovat originální hudební nápady.
-coursePromise: Přestaňte se ptát, co hrát dál. Připojte se k stovkám studentů, kteří zjišťují, jak jednoduché poznámky,
-  akordy a rytmy se mohou stát vlastní hudbou.
+coursePromise: "Osvojte si klavírní akordy a tvořte vlastní hudbu. Přidejte se k více než 500 studentům kurzu Johna Montgomeryho s videolekcemi v angličtině a doprovodnými nahrávkami."
 courseBenefits:
 - title: Přehrát místo zapamatování
   text: Začněte vytvářet melodie z prvních lekcí, pak postupně rozvíjet techniku, aby byly zajímavější.
@@ -168,6 +166,8 @@ studentJourney:
   headline: Dej své hudbě vlastní charakter.
   text: Kombinovat melodii, harmonii, dotek, arpeggios a hudební intervaly tvarovat zřetelný zvuk.
 courseStats:
+- value: "500+"
+  label: "studentů na Udemy"
 - value: '15'
   label: sekce v kurzu Udemy
 - value: '110'
