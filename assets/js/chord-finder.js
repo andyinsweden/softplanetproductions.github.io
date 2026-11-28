@@ -88,6 +88,14 @@
     ['13♯11', '1 3 5 ♭7 9 ♯11 13'],
     ['maj13♯11', '1 3 5 7 9 ♯11 13', 'M13#11'],
     ['7♭9♭13', '1 3 5 ♭7 ♭9 ♭13'],
+    ['add13', '1 3 5 13', 'add6'],
+    ['madd13', '1 ♭3 5 13'],
+    ['maj7add13', '1 3 5 7 13'],
+    ['m7add11', '1 ♭3 5 ♭7 11'],
+    ['7add11', '1 3 5 ♭7 11'],
+    ['7add13', '1 3 5 ♭7 13'],
+    ['13♭9♯11', '1 3 5 ♭7 ♭9 ♯11 13'],
+    ['7alt', '1 3 ♭5 ♯5 ♭7 ♭9 ♯9', 'alt'],
   ].map(([suffix, degrees, aliases = '']) => {
     const tones = degrees.split(' ').map(degree => ({
       step: (Number(degree.replace(/\D/g, '')) - 1) % 7,
@@ -155,7 +163,31 @@
     return { root, template, bass, inversion: toneIndex };
   }
 
-  let mode = 'identify';
+  let mode = 'lookup';
+  const roots = ['C','C♯','D♭','D','D♯','E♭','E','F','F♯','G♭','G','G♯','A♭','A','A♯','B♭','B'];
+  const popular = ['', 'm', '7', 'maj7', 'm7', 'sus4', 'sus2', 'dim', 'aug', '6', 'm6', 'add9', 'm7♭5', 'dim7', '9', 'm9', 'maj9', '11', 'm11', '13', 'm13', 'maj13'];
+  const orderedTemplates = [...popular.map(suffix => templates.find(t => t.suffix === suffix)), ...templates.filter(t => !popular.includes(t.suffix))];
+  let libraryRoot = 'C';
+  let librarySuffix = '';
+  function renderLibrary() {
+    const makeButton = (label, active, action) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = label;
+      button.setAttribute('aria-pressed', String(active));
+      button.addEventListener('click', action);
+      return button;
+    };
+    find('[data-roots]').replaceChildren(...roots.map(root => makeButton(root, root === libraryRoot, () => {
+      libraryRoot = root;
+      chordInput.value = root + librarySuffix;
+      lookupChord();
+    })));
+    find('[data-qualities]').replaceChildren(...orderedTemplates.map(t => makeButton(libraryRoot + t.suffix, t.suffix === librarySuffix, () => {
+      chordInput.value = libraryRoot + t.suffix;
+      lookupChord();
+    })));
+  }
   let keyboardStart = 36;
   let keyboardSpan = 36;
   let selected = new Set();
@@ -323,6 +355,9 @@
   function lookupChord() {
     try {
       chord = parseChord(chordInput.value);
+      libraryRoot = chord.root;
+      librarySuffix = chord.template.suffix;
+      renderLibrary();
       clearError(chordInput);
       const options = chord.template.tones.map((tone, index) => new Option(
         index === 0 ? message('Root position', "Posición fundamental", "Grundstellung") : message('Inversion ', "Inversión ", "Umkehrung ") + index + ' (' + spellTone(chord.root, tone) + message(' in bass)', " en el bajo)", " im Bass)"),
@@ -566,5 +601,5 @@
   });
 
   buildKeyboard();
-  render();
+  lookupChord();
 })();

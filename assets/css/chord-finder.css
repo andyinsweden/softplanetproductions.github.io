@@ -111,3 +111,9 @@
 .sp-chord__inputs { margin-top: .8rem; }
 .sp-chord__inputs summary { cursor: pointer; font-weight: 650; margin-bottom: .45rem; }
 .sp-chord .sp-chord__inputs p, .sp-chord [data-audio-status] { margin: .4rem 0; }
+
+/* Shared chord library, with popular chord families listed first. */
+.sp-chord__library { display:grid; gap:.65rem; margin-bottom:1rem; }
+.sp-chord__roots, .sp-chord__qualities { display:grid; gap:.35rem; grid-template-columns:repeat(auto-fit,minmax(3.2rem,1fr)); }
+.sp-chord__qualities { grid-template-columns:repeat(auto-fit,minmax(5.1rem,1fr)); max-height:15rem; overflow-y:auto; padding:.2rem; }
+.sp-chord__roots button, .sp-chord__qualities button { padding:.35rem .2rem; font-size:.87rem; white-space:nowrap; }
