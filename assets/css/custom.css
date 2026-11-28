@@ -1651,3 +1651,15 @@ a.softplanet-nav-link {
     height: 2.25rem;
   }
 }
+
+/* Piano course: reduce the space above the hero copy on wide screens.
+   Shared by all translated course pages; allow longer translations to grow. */
+@media (min-width: 1025px) {
+  .piano-landing .courses-hero {
+    min-height: max(560px, 43.75cqw);
+    align-items: flex-start;
+    padding-block-start: clamp(3rem, 6.25cqw, 6.5rem);
+    padding-block-end: 4rem;
+    background-size: cover;
+  }
+}
